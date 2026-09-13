@@ -1,0 +1,2947 @@
+{
+  "Collection.get.defaults": {
+    "expected": {
+      "path": "/collection/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "InvalidId",
+        "3": "IsPrivate",
+        "4": "IsDeleted",
+        "InvalidId": 2,
+        "IsPrivate": 3,
+        "IsDeleted": 4
+      }
+    },
+    "response": {
+      "code": 0,
+      "collection": {
+        "@id": 7,
+        "id": 7,
+        "creator": {
+          "id": 7,
+          "login": "sample login",
+          "avatar": "sample avatar",
+          "status": "sample status",
+          "badge": {
+            "id": 7,
+            "name": "sample name",
+            "type": 7
+          },
+          "history": [],
+          "votes": [],
+          "roles": [],
+          "last_activity_time": 7,
+          "register_date": 7,
+          "vk_page": "sample vk_page",
+          "tg_page": "sample tg_page",
+          "inst_page": "sample inst_page",
+          "tt_page": "sample tt_page",
+          "discord_page": "sample discord_page",
+          "ban_expires": 7,
+          "ban_reason": "sample ban_reason",
+          "privilege_level": 0,
+          "watching_count": 7,
+          "plan_count": 7,
+          "completed_count": 7,
+          "hold_on_count": 7,
+          "dropped_count": 7,
+          "favorite_count": 7,
+          "comment_count": 7,
+          "collection_count": 7,
+          "video_count": 7,
+          "friend_count": 7,
+          "subscription_count": 7,
+          "watched_episode_count": 7,
+          "watched_time": 7,
+          "pinned_section_id": 7,
+          "is_private": true,
+          "is_sponsor": true,
+          "is_banned": true,
+          "is_perm_banned": true,
+          "is_deleted": true,
+          "is_deletion_requested": true,
+          "is_bookmarks_transferred": true,
+          "is_sponsor_transferred": true,
+          "is_vk_bound": true,
+          "is_google_bound": true,
+          "is_telegram_bound": true,
+          "is_yandex_bound": true,
+          "is_incognito": true,
+          "episode_channel_widgets_hidden": true,
+          "is_release_type_notifications_enabled": true,
+          "is_episode_notifications_enabled": true,
+          "is_first_episode_notification_enabled": true,
+          "is_related_release_notifications_enabled": true,
+          "is_report_process_notifications_enabled": true,
+          "is_comment_notifications_enabled": true,
+          "is_my_collection_comment_notifications_enabled": true,
+          "is_article_notifications_enabled": true,
+          "is_my_article_comment_notifications_enabled": true,
+          "is_verified": true,
+          "friends_preview": [],
+          "collections_preview": [],
+          "comments_preview": [],
+          "release_videos_preview": [],
+          "watch_dynamics": [],
+          "friend_status": 0,
+          "rating_score": 7,
+          "preferred_genres": [],
+          "preferred_audiences": [],
+          "preferred_themes": [],
+          "theme_enabled": true,
+          "theme_gradient_start_color": "sample theme_gradient_start_color",
+          "theme_gradient_end_color": "sample theme_gradient_end_color",
+          "theme_gradient_angle": "sample theme_gradient_angle",
+          "theme_icon_res_name": "sample theme_icon_res_name",
+          "theme_icon_url": "sample theme_icon_url",
+          "theme_icon_color": "sample theme_icon_color",
+          "theme_icon_alpha": 2.5,
+          "theme_icon_density": "sample theme_icon_density",
+          "theme_icon_size": "sample theme_icon_size",
+          "theme_animation_enabled": true,
+          "theme_animation_speed": "sample theme_animation_speed",
+          "theme_background_url": "sample theme_background_url",
+          "theme_background_mode": "sample theme_background_mode",
+          "theme_background_alpha": 2.5,
+          "deletion_requested_at": 7,
+          "deletion_delete_at": 7,
+          "is_blocked": true,
+          "is_me_blocked": true,
+          "is_stats_hidden": true,
+          "is_counts_hidden": true,
+          "is_social_hidden": true,
+          "is_friend_requests_disallowed": true,
+          "is_online": true
+        },
+        "title": "sample title",
+        "description": "sample description",
+        "image": "sample image",
+        "creation_date": 7,
+        "last_update_date": 7,
+        "comment_count": 7,
+        "favorites_count": 7,
+        "is_private": true,
+        "is_deleted": true,
+        "is_favorite": true,
+        "releases": []
+      },
+      "watching_count": 7,
+      "plan_count": 7,
+      "completed_count": 7,
+      "hold_on_count": 7,
+      "dropped_count": 7
+    }
+  },
+  "Collection.get.explicit": {
+    "expected": {
+      "path": "/collection/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "InvalidId",
+        "3": "IsPrivate",
+        "4": "IsDeleted",
+        "InvalidId": 2,
+        "IsPrivate": 3,
+        "IsDeleted": 4
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "collection": {
+        "@id": 7,
+        "id": 7,
+        "creator": {
+          "id": 7,
+          "login": "sample login",
+          "avatar": "sample avatar",
+          "status": "sample status",
+          "badge": {
+            "id": 7,
+            "name": "sample name",
+            "type": 7
+          },
+          "history": [],
+          "votes": [],
+          "roles": [],
+          "last_activity_time": 7,
+          "register_date": 7,
+          "vk_page": "sample vk_page",
+          "tg_page": "sample tg_page",
+          "inst_page": "sample inst_page",
+          "tt_page": "sample tt_page",
+          "discord_page": "sample discord_page",
+          "ban_expires": 7,
+          "ban_reason": "sample ban_reason",
+          "privilege_level": 0,
+          "watching_count": 7,
+          "plan_count": 7,
+          "completed_count": 7,
+          "hold_on_count": 7,
+          "dropped_count": 7,
+          "favorite_count": 7,
+          "comment_count": 7,
+          "collection_count": 7,
+          "video_count": 7,
+          "friend_count": 7,
+          "subscription_count": 7,
+          "watched_episode_count": 7,
+          "watched_time": 7,
+          "pinned_section_id": 7,
+          "is_private": true,
+          "is_sponsor": true,
+          "is_banned": true,
+          "is_perm_banned": true,
+          "is_deleted": true,
+          "is_deletion_requested": true,
+          "is_bookmarks_transferred": true,
+          "is_sponsor_transferred": true,
+          "is_vk_bound": true,
+          "is_google_bound": true,
+          "is_telegram_bound": true,
+          "is_yandex_bound": true,
+          "is_incognito": true,
+          "episode_channel_widgets_hidden": true,
+          "is_release_type_notifications_enabled": true,
+          "is_episode_notifications_enabled": true,
+          "is_first_episode_notification_enabled": true,
+          "is_related_release_notifications_enabled": true,
+          "is_report_process_notifications_enabled": true,
+          "is_comment_notifications_enabled": true,
+          "is_my_collection_comment_notifications_enabled": true,
+          "is_article_notifications_enabled": true,
+          "is_my_article_comment_notifications_enabled": true,
+          "is_verified": true,
+          "friends_preview": [],
+          "collections_preview": [],
+          "comments_preview": [],
+          "release_videos_preview": [],
+          "watch_dynamics": [],
+          "friend_status": 0,
+          "rating_score": 7,
+          "preferred_genres": [],
+          "preferred_audiences": [],
+          "preferred_themes": [],
+          "theme_enabled": true,
+          "theme_gradient_start_color": "sample theme_gradient_start_color",
+          "theme_gradient_end_color": "sample theme_gradient_end_color",
+          "theme_gradient_angle": "sample theme_gradient_angle",
+          "theme_icon_res_name": "sample theme_icon_res_name",
+          "theme_icon_url": "sample theme_icon_url",
+          "theme_icon_color": "sample theme_icon_color",
+          "theme_icon_alpha": 2.5,
+          "theme_icon_density": "sample theme_icon_density",
+          "theme_icon_size": "sample theme_icon_size",
+          "theme_animation_enabled": true,
+          "theme_animation_speed": "sample theme_animation_speed",
+          "theme_background_url": "sample theme_background_url",
+          "theme_background_mode": "sample theme_background_mode",
+          "theme_background_alpha": 2.5,
+          "deletion_requested_at": 7,
+          "deletion_delete_at": 7,
+          "is_blocked": true,
+          "is_me_blocked": true,
+          "is_stats_hidden": true,
+          "is_counts_hidden": true,
+          "is_social_hidden": true,
+          "is_friend_requests_disallowed": true,
+          "is_online": true
+        },
+        "title": "sample title",
+        "description": "sample description",
+        "image": "sample image",
+        "creation_date": 7,
+        "last_update_date": 7,
+        "comment_count": 7,
+        "favorites_count": 7,
+        "is_private": true,
+        "is_deleted": true,
+        "is_favorite": true,
+        "releases": []
+      },
+      "watching_count": 7,
+      "plan_count": 7,
+      "completed_count": 7,
+      "hold_on_count": 7,
+      "dropped_count": 7
+    }
+  },
+  "Collection.all.defaults": {
+    "expected": {
+      "path": "/collection/all/0",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "query": {
+        "previous_page": 0,
+        "where": 7,
+        "sort": 7
+      }
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "@id": 7,
+          "id": 7,
+          "creator": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "title": "sample title",
+          "description": "sample description",
+          "image": "sample image",
+          "creation_date": 7,
+          "last_update_date": 7,
+          "comment_count": 7,
+          "favorites_count": 7,
+          "is_private": true,
+          "is_deleted": true,
+          "is_favorite": true,
+          "releases": []
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "Collection.all.explicit": {
+    "expected": {
+      "path": "/collection/all/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "query": {
+        "previous_page": 7,
+        "where": 7,
+        "sort": 7
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "@id": 7,
+          "id": 7,
+          "creator": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "title": "sample title",
+          "description": "sample description",
+          "image": "sample image",
+          "creation_date": 7,
+          "last_update_date": 7,
+          "comment_count": 7,
+          "favorites_count": 7,
+          "is_private": true,
+          "is_deleted": true,
+          "is_favorite": true,
+          "releases": []
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "Collection.profileCollections.defaults": {
+    "expected": {
+      "path": "/collection/all/profile/7/0",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      }
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "@id": 7,
+          "id": 7,
+          "creator": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "title": "sample title",
+          "description": "sample description",
+          "image": "sample image",
+          "creation_date": 7,
+          "last_update_date": 7,
+          "comment_count": 7,
+          "favorites_count": 7,
+          "is_private": true,
+          "is_deleted": true,
+          "is_favorite": true,
+          "releases": []
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "Collection.profileCollections.explicit": {
+    "expected": {
+      "path": "/collection/all/profile/7/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "@id": 7,
+          "id": 7,
+          "creator": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "title": "sample title",
+          "description": "sample description",
+          "image": "sample image",
+          "creation_date": 7,
+          "last_update_date": 7,
+          "comment_count": 7,
+          "favorites_count": 7,
+          "is_private": true,
+          "is_deleted": true,
+          "is_favorite": true,
+          "releases": []
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "Collection.releaseCollections.defaults": {
+    "expected": {
+      "path": "/collection/all/release/7/0",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "query": {
+        "sort": 7
+      }
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "@id": 7,
+          "id": 7,
+          "creator": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "title": "sample title",
+          "description": "sample description",
+          "image": "sample image",
+          "creation_date": 7,
+          "last_update_date": 7,
+          "comment_count": 7,
+          "favorites_count": 7,
+          "is_private": true,
+          "is_deleted": true,
+          "is_favorite": true,
+          "releases": []
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "Collection.releaseCollections.explicit": {
+    "expected": {
+      "path": "/collection/all/release/7/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "query": {
+        "sort": 7
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "@id": 7,
+          "id": 7,
+          "creator": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "title": "sample title",
+          "description": "sample description",
+          "image": "sample image",
+          "creation_date": 7,
+          "last_update_date": 7,
+          "comment_count": 7,
+          "favorites_count": 7,
+          "is_private": true,
+          "is_deleted": true,
+          "is_favorite": true,
+          "releases": []
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "Collection.releases.defaults": {
+    "expected": {
+      "path": "/collection/7/releases/0",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      }
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "id": 7,
+          "age_rating": 7,
+          "aired_on_date": 7,
+          "author": "sample author",
+          "broadcast": 7,
+          "can_torlook_search": true,
+          "can_video_appeal": true,
+          "category": 0,
+          "collection_count": 7,
+          "comment_count": 7,
+          "comment_per_day_count": 7,
+          "comments": [],
+          "completed_count": 7,
+          "country": "sample country",
+          "description": "sample description",
+          "director": "sample director",
+          "dropped_count": 7,
+          "duration": 7,
+          "episode_last_update": {},
+          "episodes_total": 7,
+          "episodes_released": 7,
+          "favorite_count": 7,
+          "genres": "sample genres",
+          "grade": 2.5,
+          "hold_on_count": 7,
+          "image": "sample image",
+          "is_adult": true,
+          "is_deleted": true,
+          "is_favorite": true,
+          "is_play_disabled": true,
+          "is_release_type_notifications_enabled": true,
+          "is_ru_blocked": true,
+          "is_tpp_disabled": true,
+          "is_view_blocked": true,
+          "is_viewed": true,
+          "last_view_episode": {
+            "id": 7,
+            "name": "sample name"
+          },
+          "last_view_timestamp": 7,
+          "note": "sample note",
+          "note_background_color_dark": "sample note_background_color_dark",
+          "note_background_color_light": "sample note_background_color_light",
+          "note_text_color_dark": "sample note_text_color_dark",
+          "note_text_color_light": "sample note_text_color_light",
+          "plan_count": 7,
+          "profile_list_status": 7,
+          "profile_release_type_notification_preference_count": 7,
+          "profile_release_type_notification_preferences": [],
+          "rating": 2.5,
+          "recommended_releases": [],
+          "related": {
+            "id": 7,
+            "name": "sample name"
+          },
+          "related_count": 7,
+          "related_releases": [],
+          "release_date": "sample release_date",
+          "screenshot_images": [],
+          "season": 7,
+          "source": "sample source",
+          "status": {
+            "id": 0,
+            "name": "sample name"
+          },
+          "status_id": 7,
+          "studio": "sample studio",
+          "title_original": "sample title_original",
+          "title_ru": "sample title_ru",
+          "title_alt": "sample title_alt",
+          "translators": "sample translators",
+          "video_banners": [],
+          "vote_1_count": 7,
+          "vote_2_count": 7,
+          "vote_3_count": 7,
+          "vote_4_count": 7,
+          "vote_5_count": 7,
+          "vote_count": 7,
+          "voted_at": 7,
+          "watching_count": 7,
+          "year": "sample year",
+          "creation_date": 7,
+          "last_update_date": 7,
+          "your_vote": 7,
+          "my_vote": 7
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "Collection.releases.explicit": {
+    "expected": {
+      "path": "/collection/7/releases/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "id": 7,
+          "age_rating": 7,
+          "aired_on_date": 7,
+          "author": "sample author",
+          "broadcast": 7,
+          "can_torlook_search": true,
+          "can_video_appeal": true,
+          "category": 0,
+          "collection_count": 7,
+          "comment_count": 7,
+          "comment_per_day_count": 7,
+          "comments": [],
+          "completed_count": 7,
+          "country": "sample country",
+          "description": "sample description",
+          "director": "sample director",
+          "dropped_count": 7,
+          "duration": 7,
+          "episode_last_update": {},
+          "episodes_total": 7,
+          "episodes_released": 7,
+          "favorite_count": 7,
+          "genres": "sample genres",
+          "grade": 2.5,
+          "hold_on_count": 7,
+          "image": "sample image",
+          "is_adult": true,
+          "is_deleted": true,
+          "is_favorite": true,
+          "is_play_disabled": true,
+          "is_release_type_notifications_enabled": true,
+          "is_ru_blocked": true,
+          "is_tpp_disabled": true,
+          "is_view_blocked": true,
+          "is_viewed": true,
+          "last_view_episode": {
+            "id": 7,
+            "name": "sample name"
+          },
+          "last_view_timestamp": 7,
+          "note": "sample note",
+          "note_background_color_dark": "sample note_background_color_dark",
+          "note_background_color_light": "sample note_background_color_light",
+          "note_text_color_dark": "sample note_text_color_dark",
+          "note_text_color_light": "sample note_text_color_light",
+          "plan_count": 7,
+          "profile_list_status": 7,
+          "profile_release_type_notification_preference_count": 7,
+          "profile_release_type_notification_preferences": [],
+          "rating": 2.5,
+          "recommended_releases": [],
+          "related": {
+            "id": 7,
+            "name": "sample name"
+          },
+          "related_count": 7,
+          "related_releases": [],
+          "release_date": "sample release_date",
+          "screenshot_images": [],
+          "season": 7,
+          "source": "sample source",
+          "status": {
+            "id": 0,
+            "name": "sample name"
+          },
+          "status_id": 7,
+          "studio": "sample studio",
+          "title_original": "sample title_original",
+          "title_ru": "sample title_ru",
+          "title_alt": "sample title_alt",
+          "translators": "sample translators",
+          "video_banners": [],
+          "vote_1_count": 7,
+          "vote_2_count": 7,
+          "vote_3_count": 7,
+          "vote_4_count": 7,
+          "vote_5_count": 7,
+          "vote_count": 7,
+          "voted_at": 7,
+          "watching_count": 7,
+          "year": "sample year",
+          "creation_date": 7,
+          "last_update_date": 7,
+          "your_vote": 7,
+          "my_vote": 7
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "CollectionComment.get.defaults": {
+    "expected": {
+      "path": "/collection/comment/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      }
+    },
+    "response": {
+      "id": 7,
+      "message": "sample message",
+      "timestamp": 7,
+      "type": 7,
+      "vote": 7,
+      "profile": {
+        "badge_id": 7,
+        "badge_name": "sample badge_name",
+        "badge_type": 7,
+        "badge_url": "sample badge_url",
+        "ban_expires": 7,
+        "ban_reason": "sample ban_reason",
+        "id": 7,
+        "is_banned": true,
+        "is_sponsor": true,
+        "is_verified": true,
+        "privilege_level": 7,
+        "login": "sample login",
+        "avatar": "sample avatar"
+      },
+      "parent_comment_id": 7,
+      "vote_count": 7,
+      "likes_count": 7,
+      "is_spoiler": true,
+      "is_edited": true,
+      "is_deleted": true,
+      "is_reply": true,
+      "reply_count": 7,
+      "can_like": true,
+      "collection": {
+        "@id": 7,
+        "id": 7,
+        "creator": {
+          "id": 7,
+          "login": "sample login",
+          "avatar": "sample avatar",
+          "status": "sample status",
+          "badge": {
+            "id": 7,
+            "name": "sample name",
+            "type": 7
+          },
+          "history": [],
+          "votes": [],
+          "roles": [],
+          "last_activity_time": 7,
+          "register_date": 7,
+          "vk_page": "sample vk_page",
+          "tg_page": "sample tg_page",
+          "inst_page": "sample inst_page",
+          "tt_page": "sample tt_page",
+          "discord_page": "sample discord_page",
+          "ban_expires": 7,
+          "ban_reason": "sample ban_reason",
+          "privilege_level": 0,
+          "watching_count": 7,
+          "plan_count": 7,
+          "completed_count": 7,
+          "hold_on_count": 7,
+          "dropped_count": 7,
+          "favorite_count": 7,
+          "comment_count": 7,
+          "collection_count": 7,
+          "video_count": 7,
+          "friend_count": 7,
+          "subscription_count": 7,
+          "watched_episode_count": 7,
+          "watched_time": 7,
+          "pinned_section_id": 7,
+          "is_private": true,
+          "is_sponsor": true,
+          "is_banned": true,
+          "is_perm_banned": true,
+          "is_deleted": true,
+          "is_deletion_requested": true,
+          "is_bookmarks_transferred": true,
+          "is_sponsor_transferred": true,
+          "is_vk_bound": true,
+          "is_google_bound": true,
+          "is_telegram_bound": true,
+          "is_yandex_bound": true,
+          "is_incognito": true,
+          "episode_channel_widgets_hidden": true,
+          "is_release_type_notifications_enabled": true,
+          "is_episode_notifications_enabled": true,
+          "is_first_episode_notification_enabled": true,
+          "is_related_release_notifications_enabled": true,
+          "is_report_process_notifications_enabled": true,
+          "is_comment_notifications_enabled": true,
+          "is_my_collection_comment_notifications_enabled": true,
+          "is_article_notifications_enabled": true,
+          "is_my_article_comment_notifications_enabled": true,
+          "is_verified": true,
+          "friends_preview": [],
+          "collections_preview": [],
+          "comments_preview": [],
+          "release_videos_preview": [],
+          "watch_dynamics": [],
+          "friend_status": 0,
+          "rating_score": 7,
+          "preferred_genres": [],
+          "preferred_audiences": [],
+          "preferred_themes": [],
+          "theme_enabled": true,
+          "theme_gradient_start_color": "sample theme_gradient_start_color",
+          "theme_gradient_end_color": "sample theme_gradient_end_color",
+          "theme_gradient_angle": "sample theme_gradient_angle",
+          "theme_icon_res_name": "sample theme_icon_res_name",
+          "theme_icon_url": "sample theme_icon_url",
+          "theme_icon_color": "sample theme_icon_color",
+          "theme_icon_alpha": 2.5,
+          "theme_icon_density": "sample theme_icon_density",
+          "theme_icon_size": "sample theme_icon_size",
+          "theme_animation_enabled": true,
+          "theme_animation_speed": "sample theme_animation_speed",
+          "theme_background_url": "sample theme_background_url",
+          "theme_background_mode": "sample theme_background_mode",
+          "theme_background_alpha": 2.5,
+          "deletion_requested_at": 7,
+          "deletion_delete_at": 7,
+          "is_blocked": true,
+          "is_me_blocked": true,
+          "is_stats_hidden": true,
+          "is_counts_hidden": true,
+          "is_social_hidden": true,
+          "is_friend_requests_disallowed": true,
+          "is_online": true
+        },
+        "title": "sample title",
+        "description": "sample description",
+        "image": "sample image",
+        "creation_date": 7,
+        "last_update_date": 7,
+        "comment_count": 7,
+        "favorites_count": 7,
+        "is_private": true,
+        "is_deleted": true,
+        "is_favorite": true,
+        "releases": []
+      }
+    }
+  },
+  "CollectionComment.get.explicit": {
+    "expected": {
+      "path": "/collection/comment/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "id": 7,
+      "message": "sample message",
+      "timestamp": 7,
+      "type": 7,
+      "vote": 7,
+      "profile": {
+        "badge_id": 7,
+        "badge_name": "sample badge_name",
+        "badge_type": 7,
+        "badge_url": "sample badge_url",
+        "ban_expires": 7,
+        "ban_reason": "sample ban_reason",
+        "id": 7,
+        "is_banned": true,
+        "is_sponsor": true,
+        "is_verified": true,
+        "privilege_level": 7,
+        "login": "sample login",
+        "avatar": "sample avatar"
+      },
+      "parent_comment_id": 7,
+      "vote_count": 7,
+      "likes_count": 7,
+      "is_spoiler": true,
+      "is_edited": true,
+      "is_deleted": true,
+      "is_reply": true,
+      "reply_count": 7,
+      "can_like": true,
+      "collection": {
+        "@id": 7,
+        "id": 7,
+        "creator": {
+          "id": 7,
+          "login": "sample login",
+          "avatar": "sample avatar",
+          "status": "sample status",
+          "badge": {
+            "id": 7,
+            "name": "sample name",
+            "type": 7
+          },
+          "history": [],
+          "votes": [],
+          "roles": [],
+          "last_activity_time": 7,
+          "register_date": 7,
+          "vk_page": "sample vk_page",
+          "tg_page": "sample tg_page",
+          "inst_page": "sample inst_page",
+          "tt_page": "sample tt_page",
+          "discord_page": "sample discord_page",
+          "ban_expires": 7,
+          "ban_reason": "sample ban_reason",
+          "privilege_level": 0,
+          "watching_count": 7,
+          "plan_count": 7,
+          "completed_count": 7,
+          "hold_on_count": 7,
+          "dropped_count": 7,
+          "favorite_count": 7,
+          "comment_count": 7,
+          "collection_count": 7,
+          "video_count": 7,
+          "friend_count": 7,
+          "subscription_count": 7,
+          "watched_episode_count": 7,
+          "watched_time": 7,
+          "pinned_section_id": 7,
+          "is_private": true,
+          "is_sponsor": true,
+          "is_banned": true,
+          "is_perm_banned": true,
+          "is_deleted": true,
+          "is_deletion_requested": true,
+          "is_bookmarks_transferred": true,
+          "is_sponsor_transferred": true,
+          "is_vk_bound": true,
+          "is_google_bound": true,
+          "is_telegram_bound": true,
+          "is_yandex_bound": true,
+          "is_incognito": true,
+          "episode_channel_widgets_hidden": true,
+          "is_release_type_notifications_enabled": true,
+          "is_episode_notifications_enabled": true,
+          "is_first_episode_notification_enabled": true,
+          "is_related_release_notifications_enabled": true,
+          "is_report_process_notifications_enabled": true,
+          "is_comment_notifications_enabled": true,
+          "is_my_collection_comment_notifications_enabled": true,
+          "is_article_notifications_enabled": true,
+          "is_my_article_comment_notifications_enabled": true,
+          "is_verified": true,
+          "friends_preview": [],
+          "collections_preview": [],
+          "comments_preview": [],
+          "release_videos_preview": [],
+          "watch_dynamics": [],
+          "friend_status": 0,
+          "rating_score": 7,
+          "preferred_genres": [],
+          "preferred_audiences": [],
+          "preferred_themes": [],
+          "theme_enabled": true,
+          "theme_gradient_start_color": "sample theme_gradient_start_color",
+          "theme_gradient_end_color": "sample theme_gradient_end_color",
+          "theme_gradient_angle": "sample theme_gradient_angle",
+          "theme_icon_res_name": "sample theme_icon_res_name",
+          "theme_icon_url": "sample theme_icon_url",
+          "theme_icon_color": "sample theme_icon_color",
+          "theme_icon_alpha": 2.5,
+          "theme_icon_density": "sample theme_icon_density",
+          "theme_icon_size": "sample theme_icon_size",
+          "theme_animation_enabled": true,
+          "theme_animation_speed": "sample theme_animation_speed",
+          "theme_background_url": "sample theme_background_url",
+          "theme_background_mode": "sample theme_background_mode",
+          "theme_background_alpha": 2.5,
+          "deletion_requested_at": 7,
+          "deletion_delete_at": 7,
+          "is_blocked": true,
+          "is_me_blocked": true,
+          "is_stats_hidden": true,
+          "is_counts_hidden": true,
+          "is_social_hidden": true,
+          "is_friend_requests_disallowed": true,
+          "is_online": true
+        },
+        "title": "sample title",
+        "description": "sample description",
+        "image": "sample image",
+        "creation_date": 7,
+        "last_update_date": 7,
+        "comment_count": 7,
+        "favorites_count": 7,
+        "is_private": true,
+        "is_deleted": true,
+        "is_favorite": true,
+        "releases": []
+      }
+    }
+  },
+  "CollectionComment.add.defaults": {
+    "expected": {
+      "path": "/collection/comment/add/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "EmbeddableNotFound",
+        "3": "CommentNotFound",
+        "4": "ProfileNotFound",
+        "5": "CommentIsTooShort",
+        "6": "CommentIsTooLong",
+        "7": "CommentLimitReached",
+        "8": "InBlocklist",
+        "EmbeddableNotFound": 2,
+        "CommentNotFound": 3,
+        "ProfileNotFound": 4,
+        "CommentIsTooShort": 5,
+        "CommentIsTooLong": 6,
+        "CommentLimitReached": 7,
+        "InBlocklist": 8
+      },
+      "body": {
+        "type": "JSON",
+        "data": {
+          "parentCommentId": 7,
+          "replyToProfileId": 7,
+          "message": "sample message",
+          "spoiler": true
+        }
+      }
+    },
+    "response": {
+      "code": 0,
+      "comment": {
+        "id": 7,
+        "message": "sample message",
+        "timestamp": 7,
+        "type": 7,
+        "vote": 7,
+        "profile": {
+          "badge_id": 7,
+          "badge_name": "sample badge_name",
+          "badge_type": 7,
+          "badge_url": "sample badge_url",
+          "ban_expires": 7,
+          "ban_reason": "sample ban_reason",
+          "id": 7,
+          "is_banned": true,
+          "is_sponsor": true,
+          "is_verified": true,
+          "privilege_level": 7,
+          "login": "sample login",
+          "avatar": "sample avatar"
+        },
+        "parent_comment_id": 7,
+        "vote_count": 7,
+        "likes_count": 7,
+        "is_spoiler": true,
+        "is_edited": true,
+        "is_deleted": true,
+        "is_reply": true,
+        "reply_count": 7,
+        "can_like": true,
+        "collection": {
+          "@id": 7,
+          "id": 7,
+          "creator": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "title": "sample title",
+          "description": "sample description",
+          "image": "sample image",
+          "creation_date": 7,
+          "last_update_date": 7,
+          "comment_count": 7,
+          "favorites_count": 7,
+          "is_private": true,
+          "is_deleted": true,
+          "is_favorite": true,
+          "releases": []
+        }
+      }
+    }
+  },
+  "CollectionComment.add.explicit": {
+    "expected": {
+      "path": "/collection/comment/add/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "EmbeddableNotFound",
+        "3": "CommentNotFound",
+        "4": "ProfileNotFound",
+        "5": "CommentIsTooShort",
+        "6": "CommentIsTooLong",
+        "7": "CommentLimitReached",
+        "8": "InBlocklist",
+        "EmbeddableNotFound": 2,
+        "CommentNotFound": 3,
+        "ProfileNotFound": 4,
+        "CommentIsTooShort": 5,
+        "CommentIsTooLong": 6,
+        "CommentLimitReached": 7,
+        "InBlocklist": 8
+      },
+      "body": {
+        "type": "JSON",
+        "data": {
+          "parentCommentId": 7,
+          "replyToProfileId": 7,
+          "message": "sample message",
+          "spoiler": true
+        }
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "comment": {
+        "id": 7,
+        "message": "sample message",
+        "timestamp": 7,
+        "type": 7,
+        "vote": 7,
+        "profile": {
+          "badge_id": 7,
+          "badge_name": "sample badge_name",
+          "badge_type": 7,
+          "badge_url": "sample badge_url",
+          "ban_expires": 7,
+          "ban_reason": "sample ban_reason",
+          "id": 7,
+          "is_banned": true,
+          "is_sponsor": true,
+          "is_verified": true,
+          "privilege_level": 7,
+          "login": "sample login",
+          "avatar": "sample avatar"
+        },
+        "parent_comment_id": 7,
+        "vote_count": 7,
+        "likes_count": 7,
+        "is_spoiler": true,
+        "is_edited": true,
+        "is_deleted": true,
+        "is_reply": true,
+        "reply_count": 7,
+        "can_like": true,
+        "collection": {
+          "@id": 7,
+          "id": 7,
+          "creator": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "title": "sample title",
+          "description": "sample description",
+          "image": "sample image",
+          "creation_date": 7,
+          "last_update_date": 7,
+          "comment_count": 7,
+          "favorites_count": 7,
+          "is_private": true,
+          "is_deleted": true,
+          "is_favorite": true,
+          "releases": []
+        }
+      }
+    }
+  },
+  "CollectionComment.all.defaults": {
+    "expected": {
+      "path": "/collection/comment/all/7/0",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "query": {
+        "sort": 7
+      }
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "id": 7,
+          "message": "sample message",
+          "timestamp": 7,
+          "type": 7,
+          "vote": 7,
+          "profile": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "parent_comment_id": 7,
+          "vote_count": 7,
+          "likes_count": 7,
+          "is_spoiler": true,
+          "is_edited": true,
+          "is_deleted": true,
+          "is_reply": true,
+          "reply_count": 7,
+          "can_like": true,
+          "collection": {
+            "id": 7
+          }
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "CollectionComment.all.explicit": {
+    "expected": {
+      "path": "/collection/comment/all/7/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "query": {
+        "sort": 7
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "id": 7,
+          "message": "sample message",
+          "timestamp": 7,
+          "type": 7,
+          "vote": 7,
+          "profile": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "parent_comment_id": 7,
+          "vote_count": 7,
+          "likes_count": 7,
+          "is_spoiler": true,
+          "is_edited": true,
+          "is_deleted": true,
+          "is_reply": true,
+          "reply_count": 7,
+          "can_like": true,
+          "collection": {
+            "id": 7
+          }
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "CollectionComment.delete.defaults": {
+    "expected": {
+      "path": "/collection/comment/delete/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "CommentNotFound",
+        "3": "CommentNotOwned",
+        "CommentNotFound": 2,
+        "CommentNotOwned": 3
+      }
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "CollectionComment.delete.explicit": {
+    "expected": {
+      "path": "/collection/comment/delete/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "CommentNotFound",
+        "3": "CommentNotOwned",
+        "CommentNotFound": 2,
+        "CommentNotOwned": 3
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "CollectionComment.edit.defaults": {
+    "expected": {
+      "path": "/collection/comment/edit/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "CommentNotFound",
+        "3": "CommentIsTooShort",
+        "4": "CommentIsTooLong",
+        "5": "CommentNotOwned",
+        "6": "CommentWasDeleted",
+        "7": "EmbeddableNotFound",
+        "CommentNotFound": 2,
+        "CommentIsTooShort": 3,
+        "CommentIsTooLong": 4,
+        "CommentNotOwned": 5,
+        "CommentWasDeleted": 6,
+        "EmbeddableNotFound": 7
+      },
+      "body": {
+        "type": "JSON",
+        "data": {
+          "message": "sample message",
+          "spoiler": true
+        }
+      }
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "CollectionComment.edit.explicit": {
+    "expected": {
+      "path": "/collection/comment/edit/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "CommentNotFound",
+        "3": "CommentIsTooShort",
+        "4": "CommentIsTooLong",
+        "5": "CommentNotOwned",
+        "6": "CommentWasDeleted",
+        "7": "EmbeddableNotFound",
+        "CommentNotFound": 2,
+        "CommentIsTooShort": 3,
+        "CommentIsTooLong": 4,
+        "CommentNotOwned": 5,
+        "CommentWasDeleted": 6,
+        "EmbeddableNotFound": 7
+      },
+      "body": {
+        "type": "JSON",
+        "data": {
+          "message": "sample message",
+          "spoiler": true
+        }
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "CollectionComment.profileComments.defaults": {
+    "expected": {
+      "path": "/collection/comment/all/profile/7/0",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "query": {
+        "sort": 7
+      }
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "id": 7,
+          "message": "sample message",
+          "timestamp": 7,
+          "type": 7,
+          "vote": 7,
+          "profile": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "parent_comment_id": 7,
+          "vote_count": 7,
+          "likes_count": 7,
+          "is_spoiler": true,
+          "is_edited": true,
+          "is_deleted": true,
+          "is_reply": true,
+          "reply_count": 7,
+          "can_like": true,
+          "collection": {
+            "id": 7
+          }
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "CollectionComment.profileComments.explicit": {
+    "expected": {
+      "path": "/collection/comment/all/profile/7/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "query": {
+        "sort": 7
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "id": 7,
+          "message": "sample message",
+          "timestamp": 7,
+          "type": 7,
+          "vote": 7,
+          "profile": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "parent_comment_id": 7,
+          "vote_count": 7,
+          "likes_count": 7,
+          "is_spoiler": true,
+          "is_edited": true,
+          "is_deleted": true,
+          "is_reply": true,
+          "reply_count": 7,
+          "can_like": true,
+          "collection": {
+            "id": 7
+          }
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "CollectionComment.replies.defaults": {
+    "expected": {
+      "path": "/collection/comment/replies/7/0",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "query": {
+        "sort": 7
+      }
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "id": 7,
+          "message": "sample message",
+          "timestamp": 7,
+          "type": 7,
+          "vote": 7,
+          "profile": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "parent_comment_id": 7,
+          "vote_count": 7,
+          "likes_count": 7,
+          "is_spoiler": true,
+          "is_edited": true,
+          "is_deleted": true,
+          "is_reply": true,
+          "reply_count": 7,
+          "can_like": true,
+          "collection": {
+            "id": 7
+          }
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "CollectionComment.replies.explicit": {
+    "expected": {
+      "path": "/collection/comment/replies/7/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "query": {
+        "sort": 7
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "id": 7,
+          "message": "sample message",
+          "timestamp": 7,
+          "type": 7,
+          "vote": 7,
+          "profile": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "parent_comment_id": 7,
+          "vote_count": 7,
+          "likes_count": 7,
+          "is_spoiler": true,
+          "is_edited": true,
+          "is_deleted": true,
+          "is_reply": true,
+          "reply_count": 7,
+          "can_like": true,
+          "collection": {
+            "id": 7
+          }
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "CollectionComment.vote.defaults": {
+    "expected": {
+      "path": "/collection/comment/vote/7/2",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      }
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "CollectionComment.vote.explicit": {
+    "expected": {
+      "path": "/collection/comment/vote/7/2",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "CollectionComment.votes.defaults": {
+    "expected": {
+      "path": "/collection/comment/votes/7/0",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "query": {
+        "sort": 0
+      }
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "id": 7,
+          "login": "sample login",
+          "avatar": "sample avatar",
+          "status": "sample status",
+          "badge": {
+            "id": 7,
+            "name": "sample name",
+            "type": 7
+          },
+          "history": [],
+          "votes": [],
+          "roles": [],
+          "last_activity_time": 7,
+          "register_date": 7,
+          "vk_page": "sample vk_page",
+          "tg_page": "sample tg_page",
+          "inst_page": "sample inst_page",
+          "tt_page": "sample tt_page",
+          "discord_page": "sample discord_page",
+          "ban_expires": 7,
+          "ban_reason": "sample ban_reason",
+          "privilege_level": 0,
+          "watching_count": 7,
+          "plan_count": 7,
+          "completed_count": 7,
+          "hold_on_count": 7,
+          "dropped_count": 7,
+          "favorite_count": 7,
+          "comment_count": 7,
+          "collection_count": 7,
+          "video_count": 7,
+          "friend_count": 7,
+          "subscription_count": 7,
+          "watched_episode_count": 7,
+          "watched_time": 7,
+          "pinned_section_id": 7,
+          "is_private": true,
+          "is_sponsor": true,
+          "is_banned": true,
+          "is_perm_banned": true,
+          "is_deleted": true,
+          "is_deletion_requested": true,
+          "is_bookmarks_transferred": true,
+          "is_sponsor_transferred": true,
+          "is_vk_bound": true,
+          "is_google_bound": true,
+          "is_telegram_bound": true,
+          "is_yandex_bound": true,
+          "is_incognito": true,
+          "episode_channel_widgets_hidden": true,
+          "is_release_type_notifications_enabled": true,
+          "is_episode_notifications_enabled": true,
+          "is_first_episode_notification_enabled": true,
+          "is_related_release_notifications_enabled": true,
+          "is_report_process_notifications_enabled": true,
+          "is_comment_notifications_enabled": true,
+          "is_my_collection_comment_notifications_enabled": true,
+          "is_article_notifications_enabled": true,
+          "is_my_article_comment_notifications_enabled": true,
+          "is_verified": true,
+          "friends_preview": [],
+          "collections_preview": [],
+          "comments_preview": [],
+          "release_videos_preview": [],
+          "watch_dynamics": [],
+          "friend_status": 0,
+          "rating_score": 7,
+          "preferred_genres": [],
+          "preferred_audiences": [],
+          "preferred_themes": [],
+          "theme_enabled": true,
+          "theme_gradient_start_color": "sample theme_gradient_start_color",
+          "theme_gradient_end_color": "sample theme_gradient_end_color",
+          "theme_gradient_angle": "sample theme_gradient_angle",
+          "theme_icon_res_name": "sample theme_icon_res_name",
+          "theme_icon_url": "sample theme_icon_url",
+          "theme_icon_color": "sample theme_icon_color",
+          "theme_icon_alpha": 2.5,
+          "theme_icon_density": "sample theme_icon_density",
+          "theme_icon_size": "sample theme_icon_size",
+          "theme_animation_enabled": true,
+          "theme_animation_speed": "sample theme_animation_speed",
+          "theme_background_url": "sample theme_background_url",
+          "theme_background_mode": "sample theme_background_mode",
+          "theme_background_alpha": 2.5,
+          "deletion_requested_at": 7,
+          "deletion_delete_at": 7,
+          "is_blocked": true,
+          "is_me_blocked": true,
+          "is_stats_hidden": true,
+          "is_counts_hidden": true,
+          "is_social_hidden": true,
+          "is_friend_requests_disallowed": true,
+          "is_online": true
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "CollectionComment.votes.explicit": {
+    "expected": {
+      "path": "/collection/comment/votes/7/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "query": {
+        "sort": 7
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "id": 7,
+          "login": "sample login",
+          "avatar": "sample avatar",
+          "status": "sample status",
+          "badge": {
+            "id": 7,
+            "name": "sample name",
+            "type": 7
+          },
+          "history": [],
+          "votes": [],
+          "roles": [],
+          "last_activity_time": 7,
+          "register_date": 7,
+          "vk_page": "sample vk_page",
+          "tg_page": "sample tg_page",
+          "inst_page": "sample inst_page",
+          "tt_page": "sample tt_page",
+          "discord_page": "sample discord_page",
+          "ban_expires": 7,
+          "ban_reason": "sample ban_reason",
+          "privilege_level": 0,
+          "watching_count": 7,
+          "plan_count": 7,
+          "completed_count": 7,
+          "hold_on_count": 7,
+          "dropped_count": 7,
+          "favorite_count": 7,
+          "comment_count": 7,
+          "collection_count": 7,
+          "video_count": 7,
+          "friend_count": 7,
+          "subscription_count": 7,
+          "watched_episode_count": 7,
+          "watched_time": 7,
+          "pinned_section_id": 7,
+          "is_private": true,
+          "is_sponsor": true,
+          "is_banned": true,
+          "is_perm_banned": true,
+          "is_deleted": true,
+          "is_deletion_requested": true,
+          "is_bookmarks_transferred": true,
+          "is_sponsor_transferred": true,
+          "is_vk_bound": true,
+          "is_google_bound": true,
+          "is_telegram_bound": true,
+          "is_yandex_bound": true,
+          "is_incognito": true,
+          "episode_channel_widgets_hidden": true,
+          "is_release_type_notifications_enabled": true,
+          "is_episode_notifications_enabled": true,
+          "is_first_episode_notification_enabled": true,
+          "is_related_release_notifications_enabled": true,
+          "is_report_process_notifications_enabled": true,
+          "is_comment_notifications_enabled": true,
+          "is_my_collection_comment_notifications_enabled": true,
+          "is_article_notifications_enabled": true,
+          "is_my_article_comment_notifications_enabled": true,
+          "is_verified": true,
+          "friends_preview": [],
+          "collections_preview": [],
+          "comments_preview": [],
+          "release_videos_preview": [],
+          "watch_dynamics": [],
+          "friend_status": 0,
+          "rating_score": 7,
+          "preferred_genres": [],
+          "preferred_audiences": [],
+          "preferred_themes": [],
+          "theme_enabled": true,
+          "theme_gradient_start_color": "sample theme_gradient_start_color",
+          "theme_gradient_end_color": "sample theme_gradient_end_color",
+          "theme_gradient_angle": "sample theme_gradient_angle",
+          "theme_icon_res_name": "sample theme_icon_res_name",
+          "theme_icon_url": "sample theme_icon_url",
+          "theme_icon_color": "sample theme_icon_color",
+          "theme_icon_alpha": 2.5,
+          "theme_icon_density": "sample theme_icon_density",
+          "theme_icon_size": "sample theme_icon_size",
+          "theme_animation_enabled": true,
+          "theme_animation_speed": "sample theme_animation_speed",
+          "theme_background_url": "sample theme_background_url",
+          "theme_background_mode": "sample theme_background_mode",
+          "theme_background_alpha": 2.5,
+          "deletion_requested_at": 7,
+          "deletion_delete_at": 7,
+          "is_blocked": true,
+          "is_me_blocked": true,
+          "is_stats_hidden": true,
+          "is_counts_hidden": true,
+          "is_social_hidden": true,
+          "is_friend_requests_disallowed": true,
+          "is_online": true
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "CollectionFavorite.add.defaults": {
+    "expected": {
+      "path": "/collectionFavorite/add/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "CollectionNotFound",
+        "3": "CollectionAlreadyInFavorite",
+        "CollectionNotFound": 2,
+        "CollectionAlreadyInFavorite": 3
+      }
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "CollectionFavorite.add.explicit": {
+    "expected": {
+      "path": "/collectionFavorite/add/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "CollectionNotFound",
+        "3": "CollectionAlreadyInFavorite",
+        "CollectionNotFound": 2,
+        "CollectionAlreadyInFavorite": 3
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "CollectionFavorite.get.defaults": {
+    "expected": {
+      "path": "/collectionFavorite/all/0",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      }
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "@id": 7,
+          "id": 7,
+          "creator": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "title": "sample title",
+          "description": "sample description",
+          "image": "sample image",
+          "creation_date": 7,
+          "last_update_date": 7,
+          "comment_count": 7,
+          "favorites_count": 7,
+          "is_private": true,
+          "is_deleted": true,
+          "is_favorite": true,
+          "releases": []
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "CollectionFavorite.get.explicit": {
+    "expected": {
+      "path": "/collectionFavorite/all/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "@id": 7,
+          "id": 7,
+          "creator": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "title": "sample title",
+          "description": "sample description",
+          "image": "sample image",
+          "creation_date": 7,
+          "last_update_date": 7,
+          "comment_count": 7,
+          "favorites_count": 7,
+          "is_private": true,
+          "is_deleted": true,
+          "is_favorite": true,
+          "releases": []
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "CollectionFavorite.delete.defaults": {
+    "expected": {
+      "path": "/collectionFavorite/delete/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "CollectionNotFound",
+        "CollectionNotFound": 2
+      }
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "CollectionFavorite.delete.explicit": {
+    "expected": {
+      "path": "/collectionFavorite/delete/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "CollectionNotFound",
+        "CollectionNotFound": 2
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "CollectionMy.create.defaults": {
+    "expected": {
+      "path": "/collectionMy/create",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "InvalidTitle",
+        "3": "InvalidDescription",
+        "4": "InvalidReleases",
+        "5": "CollectionLimitReached",
+        "6": "CollectionNotFound",
+        "7": "CollectionNotOwned",
+        "8": "CollectionDeleted",
+        "9": "ReleaseLimitReached",
+        "InvalidTitle": 2,
+        "InvalidDescription": 3,
+        "InvalidReleases": 4,
+        "CollectionLimitReached": 5,
+        "CollectionNotFound": 6,
+        "CollectionNotOwned": 7,
+        "CollectionDeleted": 8,
+        "ReleaseLimitReached": 9
+      },
+      "body": {
+        "type": "JSON",
+        "data": {
+          "title": "sample title",
+          "description": "sample description",
+          "is_private": true,
+          "releases": [
+            7
+          ]
+        }
+      }
+    },
+    "response": {
+      "code": 0,
+      "collection": {
+        "@id": 7,
+        "id": 7,
+        "creator": {
+          "id": 7,
+          "login": "sample login",
+          "avatar": "sample avatar",
+          "status": "sample status",
+          "badge": {
+            "id": 7,
+            "name": "sample name",
+            "type": 7
+          },
+          "history": [],
+          "votes": [],
+          "roles": [],
+          "last_activity_time": 7,
+          "register_date": 7,
+          "vk_page": "sample vk_page",
+          "tg_page": "sample tg_page",
+          "inst_page": "sample inst_page",
+          "tt_page": "sample tt_page",
+          "discord_page": "sample discord_page",
+          "ban_expires": 7,
+          "ban_reason": "sample ban_reason",
+          "privilege_level": 0,
+          "watching_count": 7,
+          "plan_count": 7,
+          "completed_count": 7,
+          "hold_on_count": 7,
+          "dropped_count": 7,
+          "favorite_count": 7,
+          "comment_count": 7,
+          "collection_count": 7,
+          "video_count": 7,
+          "friend_count": 7,
+          "subscription_count": 7,
+          "watched_episode_count": 7,
+          "watched_time": 7,
+          "pinned_section_id": 7,
+          "is_private": true,
+          "is_sponsor": true,
+          "is_banned": true,
+          "is_perm_banned": true,
+          "is_deleted": true,
+          "is_deletion_requested": true,
+          "is_bookmarks_transferred": true,
+          "is_sponsor_transferred": true,
+          "is_vk_bound": true,
+          "is_google_bound": true,
+          "is_telegram_bound": true,
+          "is_yandex_bound": true,
+          "is_incognito": true,
+          "episode_channel_widgets_hidden": true,
+          "is_release_type_notifications_enabled": true,
+          "is_episode_notifications_enabled": true,
+          "is_first_episode_notification_enabled": true,
+          "is_related_release_notifications_enabled": true,
+          "is_report_process_notifications_enabled": true,
+          "is_comment_notifications_enabled": true,
+          "is_my_collection_comment_notifications_enabled": true,
+          "is_article_notifications_enabled": true,
+          "is_my_article_comment_notifications_enabled": true,
+          "is_verified": true,
+          "friends_preview": [],
+          "collections_preview": [],
+          "comments_preview": [],
+          "release_videos_preview": [],
+          "watch_dynamics": [],
+          "friend_status": 0,
+          "rating_score": 7,
+          "preferred_genres": [],
+          "preferred_audiences": [],
+          "preferred_themes": [],
+          "theme_enabled": true,
+          "theme_gradient_start_color": "sample theme_gradient_start_color",
+          "theme_gradient_end_color": "sample theme_gradient_end_color",
+          "theme_gradient_angle": "sample theme_gradient_angle",
+          "theme_icon_res_name": "sample theme_icon_res_name",
+          "theme_icon_url": "sample theme_icon_url",
+          "theme_icon_color": "sample theme_icon_color",
+          "theme_icon_alpha": 2.5,
+          "theme_icon_density": "sample theme_icon_density",
+          "theme_icon_size": "sample theme_icon_size",
+          "theme_animation_enabled": true,
+          "theme_animation_speed": "sample theme_animation_speed",
+          "theme_background_url": "sample theme_background_url",
+          "theme_background_mode": "sample theme_background_mode",
+          "theme_background_alpha": 2.5,
+          "deletion_requested_at": 7,
+          "deletion_delete_at": 7,
+          "is_blocked": true,
+          "is_me_blocked": true,
+          "is_stats_hidden": true,
+          "is_counts_hidden": true,
+          "is_social_hidden": true,
+          "is_friend_requests_disallowed": true,
+          "is_online": true
+        },
+        "title": "sample title",
+        "description": "sample description",
+        "image": "sample image",
+        "creation_date": 7,
+        "last_update_date": 7,
+        "comment_count": 7,
+        "favorites_count": 7,
+        "is_private": true,
+        "is_deleted": true,
+        "is_favorite": true,
+        "releases": []
+      }
+    }
+  },
+  "CollectionMy.create.explicit": {
+    "expected": {
+      "path": "/collectionMy/create",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "InvalidTitle",
+        "3": "InvalidDescription",
+        "4": "InvalidReleases",
+        "5": "CollectionLimitReached",
+        "6": "CollectionNotFound",
+        "7": "CollectionNotOwned",
+        "8": "CollectionDeleted",
+        "9": "ReleaseLimitReached",
+        "InvalidTitle": 2,
+        "InvalidDescription": 3,
+        "InvalidReleases": 4,
+        "CollectionLimitReached": 5,
+        "CollectionNotFound": 6,
+        "CollectionNotOwned": 7,
+        "CollectionDeleted": 8,
+        "ReleaseLimitReached": 9
+      },
+      "body": {
+        "type": "JSON",
+        "data": {
+          "title": "sample title",
+          "description": "sample description",
+          "is_private": true,
+          "releases": [
+            7
+          ]
+        }
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "collection": {
+        "@id": 7,
+        "id": 7,
+        "creator": {
+          "id": 7,
+          "login": "sample login",
+          "avatar": "sample avatar",
+          "status": "sample status",
+          "badge": {
+            "id": 7,
+            "name": "sample name",
+            "type": 7
+          },
+          "history": [],
+          "votes": [],
+          "roles": [],
+          "last_activity_time": 7,
+          "register_date": 7,
+          "vk_page": "sample vk_page",
+          "tg_page": "sample tg_page",
+          "inst_page": "sample inst_page",
+          "tt_page": "sample tt_page",
+          "discord_page": "sample discord_page",
+          "ban_expires": 7,
+          "ban_reason": "sample ban_reason",
+          "privilege_level": 0,
+          "watching_count": 7,
+          "plan_count": 7,
+          "completed_count": 7,
+          "hold_on_count": 7,
+          "dropped_count": 7,
+          "favorite_count": 7,
+          "comment_count": 7,
+          "collection_count": 7,
+          "video_count": 7,
+          "friend_count": 7,
+          "subscription_count": 7,
+          "watched_episode_count": 7,
+          "watched_time": 7,
+          "pinned_section_id": 7,
+          "is_private": true,
+          "is_sponsor": true,
+          "is_banned": true,
+          "is_perm_banned": true,
+          "is_deleted": true,
+          "is_deletion_requested": true,
+          "is_bookmarks_transferred": true,
+          "is_sponsor_transferred": true,
+          "is_vk_bound": true,
+          "is_google_bound": true,
+          "is_telegram_bound": true,
+          "is_yandex_bound": true,
+          "is_incognito": true,
+          "episode_channel_widgets_hidden": true,
+          "is_release_type_notifications_enabled": true,
+          "is_episode_notifications_enabled": true,
+          "is_first_episode_notification_enabled": true,
+          "is_related_release_notifications_enabled": true,
+          "is_report_process_notifications_enabled": true,
+          "is_comment_notifications_enabled": true,
+          "is_my_collection_comment_notifications_enabled": true,
+          "is_article_notifications_enabled": true,
+          "is_my_article_comment_notifications_enabled": true,
+          "is_verified": true,
+          "friends_preview": [],
+          "collections_preview": [],
+          "comments_preview": [],
+          "release_videos_preview": [],
+          "watch_dynamics": [],
+          "friend_status": 0,
+          "rating_score": 7,
+          "preferred_genres": [],
+          "preferred_audiences": [],
+          "preferred_themes": [],
+          "theme_enabled": true,
+          "theme_gradient_start_color": "sample theme_gradient_start_color",
+          "theme_gradient_end_color": "sample theme_gradient_end_color",
+          "theme_gradient_angle": "sample theme_gradient_angle",
+          "theme_icon_res_name": "sample theme_icon_res_name",
+          "theme_icon_url": "sample theme_icon_url",
+          "theme_icon_color": "sample theme_icon_color",
+          "theme_icon_alpha": 2.5,
+          "theme_icon_density": "sample theme_icon_density",
+          "theme_icon_size": "sample theme_icon_size",
+          "theme_animation_enabled": true,
+          "theme_animation_speed": "sample theme_animation_speed",
+          "theme_background_url": "sample theme_background_url",
+          "theme_background_mode": "sample theme_background_mode",
+          "theme_background_alpha": 2.5,
+          "deletion_requested_at": 7,
+          "deletion_delete_at": 7,
+          "is_blocked": true,
+          "is_me_blocked": true,
+          "is_stats_hidden": true,
+          "is_counts_hidden": true,
+          "is_social_hidden": true,
+          "is_friend_requests_disallowed": true,
+          "is_online": true
+        },
+        "title": "sample title",
+        "description": "sample description",
+        "image": "sample image",
+        "creation_date": 7,
+        "last_update_date": 7,
+        "comment_count": 7,
+        "favorites_count": 7,
+        "is_private": true,
+        "is_deleted": true,
+        "is_favorite": true,
+        "releases": []
+      }
+    }
+  },
+  "CollectionMy.edit.defaults": {
+    "expected": {
+      "path": "/collectionMy/edit/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "InvalidTitle",
+        "3": "InvalidDescription",
+        "4": "InvalidReleases",
+        "5": "CollectionLimitReached",
+        "6": "CollectionNotFound",
+        "7": "CollectionNotOwned",
+        "8": "CollectionDeleted",
+        "9": "ReleaseLimitReached",
+        "InvalidTitle": 2,
+        "InvalidDescription": 3,
+        "InvalidReleases": 4,
+        "CollectionLimitReached": 5,
+        "CollectionNotFound": 6,
+        "CollectionNotOwned": 7,
+        "CollectionDeleted": 8,
+        "ReleaseLimitReached": 9
+      },
+      "body": {
+        "type": "JSON",
+        "data": {
+          "title": "sample title",
+          "description": "sample description",
+          "is_private": true,
+          "releases": [
+            7
+          ]
+        }
+      }
+    },
+    "response": {
+      "code": 0,
+      "collection": {
+        "@id": 7,
+        "id": 7,
+        "creator": {
+          "id": 7,
+          "login": "sample login",
+          "avatar": "sample avatar",
+          "status": "sample status",
+          "badge": {
+            "id": 7,
+            "name": "sample name",
+            "type": 7
+          },
+          "history": [],
+          "votes": [],
+          "roles": [],
+          "last_activity_time": 7,
+          "register_date": 7,
+          "vk_page": "sample vk_page",
+          "tg_page": "sample tg_page",
+          "inst_page": "sample inst_page",
+          "tt_page": "sample tt_page",
+          "discord_page": "sample discord_page",
+          "ban_expires": 7,
+          "ban_reason": "sample ban_reason",
+          "privilege_level": 0,
+          "watching_count": 7,
+          "plan_count": 7,
+          "completed_count": 7,
+          "hold_on_count": 7,
+          "dropped_count": 7,
+          "favorite_count": 7,
+          "comment_count": 7,
+          "collection_count": 7,
+          "video_count": 7,
+          "friend_count": 7,
+          "subscription_count": 7,
+          "watched_episode_count": 7,
+          "watched_time": 7,
+          "pinned_section_id": 7,
+          "is_private": true,
+          "is_sponsor": true,
+          "is_banned": true,
+          "is_perm_banned": true,
+          "is_deleted": true,
+          "is_deletion_requested": true,
+          "is_bookmarks_transferred": true,
+          "is_sponsor_transferred": true,
+          "is_vk_bound": true,
+          "is_google_bound": true,
+          "is_telegram_bound": true,
+          "is_yandex_bound": true,
+          "is_incognito": true,
+          "episode_channel_widgets_hidden": true,
+          "is_release_type_notifications_enabled": true,
+          "is_episode_notifications_enabled": true,
+          "is_first_episode_notification_enabled": true,
+          "is_related_release_notifications_enabled": true,
+          "is_report_process_notifications_enabled": true,
+          "is_comment_notifications_enabled": true,
+          "is_my_collection_comment_notifications_enabled": true,
+          "is_article_notifications_enabled": true,
+          "is_my_article_comment_notifications_enabled": true,
+          "is_verified": true,
+          "friends_preview": [],
+          "collections_preview": [],
+          "comments_preview": [],
+          "release_videos_preview": [],
+          "watch_dynamics": [],
+          "friend_status": 0,
+          "rating_score": 7,
+          "preferred_genres": [],
+          "preferred_audiences": [],
+          "preferred_themes": [],
+          "theme_enabled": true,
+          "theme_gradient_start_color": "sample theme_gradient_start_color",
+          "theme_gradient_end_color": "sample theme_gradient_end_color",
+          "theme_gradient_angle": "sample theme_gradient_angle",
+          "theme_icon_res_name": "sample theme_icon_res_name",
+          "theme_icon_url": "sample theme_icon_url",
+          "theme_icon_color": "sample theme_icon_color",
+          "theme_icon_alpha": 2.5,
+          "theme_icon_density": "sample theme_icon_density",
+          "theme_icon_size": "sample theme_icon_size",
+          "theme_animation_enabled": true,
+          "theme_animation_speed": "sample theme_animation_speed",
+          "theme_background_url": "sample theme_background_url",
+          "theme_background_mode": "sample theme_background_mode",
+          "theme_background_alpha": 2.5,
+          "deletion_requested_at": 7,
+          "deletion_delete_at": 7,
+          "is_blocked": true,
+          "is_me_blocked": true,
+          "is_stats_hidden": true,
+          "is_counts_hidden": true,
+          "is_social_hidden": true,
+          "is_friend_requests_disallowed": true,
+          "is_online": true
+        },
+        "title": "sample title",
+        "description": "sample description",
+        "image": "sample image",
+        "creation_date": 7,
+        "last_update_date": 7,
+        "comment_count": 7,
+        "favorites_count": 7,
+        "is_private": true,
+        "is_deleted": true,
+        "is_favorite": true,
+        "releases": []
+      }
+    }
+  },
+  "CollectionMy.edit.explicit": {
+    "expected": {
+      "path": "/collectionMy/edit/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "InvalidTitle",
+        "3": "InvalidDescription",
+        "4": "InvalidReleases",
+        "5": "CollectionLimitReached",
+        "6": "CollectionNotFound",
+        "7": "CollectionNotOwned",
+        "8": "CollectionDeleted",
+        "9": "ReleaseLimitReached",
+        "InvalidTitle": 2,
+        "InvalidDescription": 3,
+        "InvalidReleases": 4,
+        "CollectionLimitReached": 5,
+        "CollectionNotFound": 6,
+        "CollectionNotOwned": 7,
+        "CollectionDeleted": 8,
+        "ReleaseLimitReached": 9
+      },
+      "body": {
+        "type": "JSON",
+        "data": {
+          "title": "sample title",
+          "description": "sample description",
+          "is_private": true,
+          "releases": [
+            7
+          ]
+        }
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "collection": {
+        "@id": 7,
+        "id": 7,
+        "creator": {
+          "id": 7,
+          "login": "sample login",
+          "avatar": "sample avatar",
+          "status": "sample status",
+          "badge": {
+            "id": 7,
+            "name": "sample name",
+            "type": 7
+          },
+          "history": [],
+          "votes": [],
+          "roles": [],
+          "last_activity_time": 7,
+          "register_date": 7,
+          "vk_page": "sample vk_page",
+          "tg_page": "sample tg_page",
+          "inst_page": "sample inst_page",
+          "tt_page": "sample tt_page",
+          "discord_page": "sample discord_page",
+          "ban_expires": 7,
+          "ban_reason": "sample ban_reason",
+          "privilege_level": 0,
+          "watching_count": 7,
+          "plan_count": 7,
+          "completed_count": 7,
+          "hold_on_count": 7,
+          "dropped_count": 7,
+          "favorite_count": 7,
+          "comment_count": 7,
+          "collection_count": 7,
+          "video_count": 7,
+          "friend_count": 7,
+          "subscription_count": 7,
+          "watched_episode_count": 7,
+          "watched_time": 7,
+          "pinned_section_id": 7,
+          "is_private": true,
+          "is_sponsor": true,
+          "is_banned": true,
+          "is_perm_banned": true,
+          "is_deleted": true,
+          "is_deletion_requested": true,
+          "is_bookmarks_transferred": true,
+          "is_sponsor_transferred": true,
+          "is_vk_bound": true,
+          "is_google_bound": true,
+          "is_telegram_bound": true,
+          "is_yandex_bound": true,
+          "is_incognito": true,
+          "episode_channel_widgets_hidden": true,
+          "is_release_type_notifications_enabled": true,
+          "is_episode_notifications_enabled": true,
+          "is_first_episode_notification_enabled": true,
+          "is_related_release_notifications_enabled": true,
+          "is_report_process_notifications_enabled": true,
+          "is_comment_notifications_enabled": true,
+          "is_my_collection_comment_notifications_enabled": true,
+          "is_article_notifications_enabled": true,
+          "is_my_article_comment_notifications_enabled": true,
+          "is_verified": true,
+          "friends_preview": [],
+          "collections_preview": [],
+          "comments_preview": [],
+          "release_videos_preview": [],
+          "watch_dynamics": [],
+          "friend_status": 0,
+          "rating_score": 7,
+          "preferred_genres": [],
+          "preferred_audiences": [],
+          "preferred_themes": [],
+          "theme_enabled": true,
+          "theme_gradient_start_color": "sample theme_gradient_start_color",
+          "theme_gradient_end_color": "sample theme_gradient_end_color",
+          "theme_gradient_angle": "sample theme_gradient_angle",
+          "theme_icon_res_name": "sample theme_icon_res_name",
+          "theme_icon_url": "sample theme_icon_url",
+          "theme_icon_color": "sample theme_icon_color",
+          "theme_icon_alpha": 2.5,
+          "theme_icon_density": "sample theme_icon_density",
+          "theme_icon_size": "sample theme_icon_size",
+          "theme_animation_enabled": true,
+          "theme_animation_speed": "sample theme_animation_speed",
+          "theme_background_url": "sample theme_background_url",
+          "theme_background_mode": "sample theme_background_mode",
+          "theme_background_alpha": 2.5,
+          "deletion_requested_at": 7,
+          "deletion_delete_at": 7,
+          "is_blocked": true,
+          "is_me_blocked": true,
+          "is_stats_hidden": true,
+          "is_counts_hidden": true,
+          "is_social_hidden": true,
+          "is_friend_requests_disallowed": true,
+          "is_online": true
+        },
+        "title": "sample title",
+        "description": "sample description",
+        "image": "sample image",
+        "creation_date": 7,
+        "last_update_date": 7,
+        "comment_count": 7,
+        "favorites_count": 7,
+        "is_private": true,
+        "is_deleted": true,
+        "is_favorite": true,
+        "releases": []
+      }
+    }
+  },
+  "CollectionMy.editImage.defaults": {
+    "expected": {
+      "path": "/collectionMy/editImage/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "CollectionNotFound",
+        "CollectionNotFound": 2
+      },
+      "body": {
+        "type": "Image",
+        "data": {
+          "name": "image.jpg",
+          "file": [
+            65,
+            66,
+            67
+          ],
+          "type": "image",
+          "fields": {
+            "name": "image"
+          }
+        }
+      }
+    },
+    "response": {
+      "code": 0,
+      "url": "sample url"
+    }
+  },
+  "CollectionMy.editImage.explicit": {
+    "expected": {
+      "path": "/collectionMy/editImage/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "CollectionNotFound",
+        "CollectionNotFound": 2
+      },
+      "body": {
+        "type": "Image",
+        "data": {
+          "name": "sample name",
+          "file": [
+            65,
+            66,
+            67
+          ],
+          "type": "image",
+          "fields": {
+            "name": "image"
+          }
+        }
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "url": "sample url"
+    }
+  },
+  "CollectionMy.delete.defaults": {
+    "expected": {
+      "path": "/collectionMy/delete/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "CollectionNotFound",
+        "3": "CollectionNotOwned",
+        "4": "CollectionDeleted",
+        "CollectionNotFound": 2,
+        "CollectionNotOwned": 3,
+        "CollectionDeleted": 4
+      }
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "CollectionMy.delete.explicit": {
+    "expected": {
+      "path": "/collectionMy/delete/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "CollectionNotFound",
+        "3": "CollectionNotOwned",
+        "4": "CollectionDeleted",
+        "CollectionNotFound": 2,
+        "CollectionNotOwned": 3,
+        "CollectionDeleted": 4
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "CollectionMy.releaseAdd.defaults": {
+    "expected": {
+      "path": "/collectionMy/release/add/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "CollectionNotFound",
+        "3": "CollectionNotOwned",
+        "4": "InvalidRelease",
+        "5": "ReleaseAlreadyInCollection",
+        "6": "CollectionDeleted",
+        "7": "ReleaseLimitReached",
+        "CollectionNotFound": 2,
+        "CollectionNotOwned": 3,
+        "InvalidRelease": 4,
+        "ReleaseAlreadyInCollection": 5,
+        "CollectionDeleted": 6,
+        "ReleaseLimitReached": 7
+      },
+      "query": {
+        "release_id": 7
+      }
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "CollectionMy.releaseAdd.explicit": {
+    "expected": {
+      "path": "/collectionMy/release/add/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "CollectionNotFound",
+        "3": "CollectionNotOwned",
+        "4": "InvalidRelease",
+        "5": "ReleaseAlreadyInCollection",
+        "6": "CollectionDeleted",
+        "7": "ReleaseLimitReached",
+        "CollectionNotFound": 2,
+        "CollectionNotOwned": 3,
+        "InvalidRelease": 4,
+        "ReleaseAlreadyInCollection": 5,
+        "CollectionDeleted": 6,
+        "ReleaseLimitReached": 7
+      },
+      "query": {
+        "release_id": 7
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "CollectionMy.releases.defaults": {
+    "expected": {
+      "path": "/collectionMy/7/releases",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      }
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "id": 7,
+          "age_rating": 7,
+          "aired_on_date": 7,
+          "author": "sample author",
+          "broadcast": 7,
+          "can_torlook_search": true,
+          "can_video_appeal": true,
+          "category": 0,
+          "collection_count": 7,
+          "comment_count": 7,
+          "comment_per_day_count": 7,
+          "comments": [],
+          "completed_count": 7,
+          "country": "sample country",
+          "description": "sample description",
+          "director": "sample director",
+          "dropped_count": 7,
+          "duration": 7,
+          "episode_last_update": {},
+          "episodes_total": 7,
+          "episodes_released": 7,
+          "favorite_count": 7,
+          "genres": "sample genres",
+          "grade": 2.5,
+          "hold_on_count": 7,
+          "image": "sample image",
+          "is_adult": true,
+          "is_deleted": true,
+          "is_favorite": true,
+          "is_play_disabled": true,
+          "is_release_type_notifications_enabled": true,
+          "is_ru_blocked": true,
+          "is_tpp_disabled": true,
+          "is_view_blocked": true,
+          "is_viewed": true,
+          "last_view_episode": {
+            "id": 7,
+            "name": "sample name"
+          },
+          "last_view_timestamp": 7,
+          "note": "sample note",
+          "note_background_color_dark": "sample note_background_color_dark",
+          "note_background_color_light": "sample note_background_color_light",
+          "note_text_color_dark": "sample note_text_color_dark",
+          "note_text_color_light": "sample note_text_color_light",
+          "plan_count": 7,
+          "profile_list_status": 7,
+          "profile_release_type_notification_preference_count": 7,
+          "profile_release_type_notification_preferences": [],
+          "rating": 2.5,
+          "recommended_releases": [],
+          "related": {
+            "id": 7,
+            "name": "sample name"
+          },
+          "related_count": 7,
+          "related_releases": [],
+          "release_date": "sample release_date",
+          "screenshot_images": [],
+          "season": 7,
+          "source": "sample source",
+          "status": {
+            "id": 0,
+            "name": "sample name"
+          },
+          "status_id": 7,
+          "studio": "sample studio",
+          "title_original": "sample title_original",
+          "title_ru": "sample title_ru",
+          "title_alt": "sample title_alt",
+          "translators": "sample translators",
+          "video_banners": [],
+          "vote_1_count": 7,
+          "vote_2_count": 7,
+          "vote_3_count": 7,
+          "vote_4_count": 7,
+          "vote_5_count": 7,
+          "vote_count": 7,
+          "voted_at": 7,
+          "watching_count": 7,
+          "year": "sample year",
+          "creation_date": 7,
+          "last_update_date": 7,
+          "your_vote": 7,
+          "my_vote": 7
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "CollectionMy.releases.explicit": {
+    "expected": {
+      "path": "/collectionMy/7/releases",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "id": 7,
+          "age_rating": 7,
+          "aired_on_date": 7,
+          "author": "sample author",
+          "broadcast": 7,
+          "can_torlook_search": true,
+          "can_video_appeal": true,
+          "category": 0,
+          "collection_count": 7,
+          "comment_count": 7,
+          "comment_per_day_count": 7,
+          "comments": [],
+          "completed_count": 7,
+          "country": "sample country",
+          "description": "sample description",
+          "director": "sample director",
+          "dropped_count": 7,
+          "duration": 7,
+          "episode_last_update": {},
+          "episodes_total": 7,
+          "episodes_released": 7,
+          "favorite_count": 7,
+          "genres": "sample genres",
+          "grade": 2.5,
+          "hold_on_count": 7,
+          "image": "sample image",
+          "is_adult": true,
+          "is_deleted": true,
+          "is_favorite": true,
+          "is_play_disabled": true,
+          "is_release_type_notifications_enabled": true,
+          "is_ru_blocked": true,
+          "is_tpp_disabled": true,
+          "is_view_blocked": true,
+          "is_viewed": true,
+          "last_view_episode": {
+            "id": 7,
+            "name": "sample name"
+          },
+          "last_view_timestamp": 7,
+          "note": "sample note",
+          "note_background_color_dark": "sample note_background_color_dark",
+          "note_background_color_light": "sample note_background_color_light",
+          "note_text_color_dark": "sample note_text_color_dark",
+          "note_text_color_light": "sample note_text_color_light",
+          "plan_count": 7,
+          "profile_list_status": 7,
+          "profile_release_type_notification_preference_count": 7,
+          "profile_release_type_notification_preferences": [],
+          "rating": 2.5,
+          "recommended_releases": [],
+          "related": {
+            "id": 7,
+            "name": "sample name"
+          },
+          "related_count": 7,
+          "related_releases": [],
+          "release_date": "sample release_date",
+          "screenshot_images": [],
+          "season": 7,
+          "source": "sample source",
+          "status": {
+            "id": 0,
+            "name": "sample name"
+          },
+          "status_id": 7,
+          "studio": "sample studio",
+          "title_original": "sample title_original",
+          "title_ru": "sample title_ru",
+          "title_alt": "sample title_alt",
+          "translators": "sample translators",
+          "video_banners": [],
+          "vote_1_count": 7,
+          "vote_2_count": 7,
+          "vote_3_count": 7,
+          "vote_4_count": 7,
+          "vote_5_count": 7,
+          "vote_count": 7,
+          "voted_at": 7,
+          "watching_count": 7,
+          "year": "sample year",
+          "creation_date": 7,
+          "last_update_date": 7,
+          "your_vote": 7,
+          "my_vote": 7
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  }
+}

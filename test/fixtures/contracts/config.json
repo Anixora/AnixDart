@@ -1,0 +1,209 @@
+{
+  "Config.anixPlayer.defaults": {
+    "expected": {
+      "path": "/config/anixplayer",
+      "method": "GET"
+    },
+    "response": {
+      "download_links": {
+        "example": "sample download_links"
+      },
+      "last_version_code": 7,
+      "whats_new": "sample whats_new"
+    }
+  },
+  "Config.anixPlayer.explicit": {
+    "expected": {
+      "path": "/config/anixplayer",
+      "method": "GET",
+      "apiVersion": 3
+    },
+    "response": {
+      "download_links": {
+        "example": "sample download_links"
+      },
+      "last_version_code": 7,
+      "whats_new": "sample whats_new"
+    }
+  },
+  "Config.toggles.defaults": {
+    "expected": {
+      "path": "/config/toggles",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "query": {
+        "version_code": 7,
+        "is_beta": false,
+        "is_api_alt": false
+      }
+    },
+    "response": {
+      "adBannerDelay": 7,
+      "adBannerSizeType": 7,
+      "adInterstitialDelay": 7,
+      "codecProfile": "sample codecProfile",
+      "impMessageEnabled": true,
+      "inAppUpdates": true,
+      "inAppUpdatesFlexibleDelay": 7,
+      "inAppUpdatesImmediate": true,
+      "kodikIframeAd": true,
+      "lastGPVersionCode": 7,
+      "lastVersionCode": 7,
+      "minBlogCreateRatingScore": 7,
+      "minGPVersionCode": 7,
+      "minVersionCode": 7,
+      "overrideGPVersion": true,
+      "sibnetRandUserAgent": true,
+      "snowfall": true,
+      "sponsorshipAvailable": true,
+      "sponsorshipPromotion": true,
+      "whatsNew": "sample whatsNew",
+      "downloadLink": "sample downloadLink",
+      "gpWhatsNew": "sample gpWhatsNew",
+      "gpDownloadLink": "sample gpDownloadLink",
+      "impMessageText": "sample impMessageText",
+      "impMessageBackgroundColor": "sample impMessageBackgroundColor",
+      "impMessageTextColor": "sample impMessageTextColor",
+      "impMessageLink": "sample impMessageLink",
+      "adBannerBlockId": "sample adBannerBlockId",
+      "adInterstitialBlockId": "sample adInterstitialBlockId",
+      "kodikVideoLinksUrl": "sample kodikVideoLinksUrl",
+      "sibnetUserAgent": "sample sibnetUserAgent",
+      "torlookUrl": "sample torlookUrl",
+      "baseUrl": "sample baseUrl",
+      "iframeEmbedUrl": "sample iframeEmbedUrl",
+      "kodikAdIframeUrl": "sample kodikAdIframeUrl",
+      "editorUrl": "sample editorUrl",
+      "staticDomain": "sample staticDomain",
+      "sponsorshipText": "sample sponsorshipText",
+      "pageNoConnectionUrl": "sample pageNoConnectionUrl",
+      "searchBarIconUrl": "sample searchBarIconUrl",
+      "searchBarIconTint": "sample searchBarIconTint",
+      "searchBarIconAction": "sample searchBarIconAction",
+      "searchBarIconValue": "sample searchBarIconValue",
+      "googleAuthAvailable": true,
+      "telegramAuthAvailable": true,
+      "vkAuthAvailable": true,
+      "consentRequired": true
+    }
+  },
+  "Config.toggles.explicit": {
+    "expected": {
+      "path": "/config/toggles",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "query": {
+        "version_code": 7,
+        "is_beta": true,
+        "is_api_alt": true
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "adBannerDelay": 7,
+      "adBannerSizeType": 7,
+      "adInterstitialDelay": 7,
+      "codecProfile": "sample codecProfile",
+      "impMessageEnabled": true,
+      "inAppUpdates": true,
+      "inAppUpdatesFlexibleDelay": 7,
+      "inAppUpdatesImmediate": true,
+      "kodikIframeAd": true,
+      "lastGPVersionCode": 7,
+      "lastVersionCode": 7,
+      "minBlogCreateRatingScore": 7,
+      "minGPVersionCode": 7,
+      "minVersionCode": 7,
+      "overrideGPVersion": true,
+      "sibnetRandUserAgent": true,
+      "snowfall": true,
+      "sponsorshipAvailable": true,
+      "sponsorshipPromotion": true,
+      "whatsNew": "sample whatsNew",
+      "downloadLink": "sample downloadLink",
+      "gpWhatsNew": "sample gpWhatsNew",
+      "gpDownloadLink": "sample gpDownloadLink",
+      "impMessageText": "sample impMessageText",
+      "impMessageBackgroundColor": "sample impMessageBackgroundColor",
+      "impMessageTextColor": "sample impMessageTextColor",
+      "impMessageLink": "sample impMessageLink",
+      "adBannerBlockId": "sample adBannerBlockId",
+      "adInterstitialBlockId": "sample adInterstitialBlockId",
+      "kodikVideoLinksUrl": "sample kodikVideoLinksUrl",
+      "sibnetUserAgent": "sample sibnetUserAgent",
+      "torlookUrl": "sample torlookUrl",
+      "baseUrl": "sample baseUrl",
+      "iframeEmbedUrl": "sample iframeEmbedUrl",
+      "kodikAdIframeUrl": "sample kodikAdIframeUrl",
+      "editorUrl": "sample editorUrl",
+      "staticDomain": "sample staticDomain",
+      "sponsorshipText": "sample sponsorshipText",
+      "pageNoConnectionUrl": "sample pageNoConnectionUrl",
+      "searchBarIconUrl": "sample searchBarIconUrl",
+      "searchBarIconTint": "sample searchBarIconTint",
+      "searchBarIconAction": "sample searchBarIconAction",
+      "searchBarIconValue": "sample searchBarIconValue",
+      "googleAuthAvailable": true,
+      "telegramAuthAvailable": true,
+      "vkAuthAvailable": true,
+      "consentRequired": true
+    }
+  },
+  "Config.urls.defaults": {
+    "expected": {
+      "path": "/config/urls",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "query": {
+        "version_code": 7,
+        "is_beta": false
+      }
+    },
+    "response": {
+      "api_urls": [
+        "sample api_urls"
+      ],
+      "editor_url": "sample editor_url",
+      "static_domain": "sample static_domain",
+      "should_use_mirror_urls": true,
+      "google_auth_available": true,
+      "telegram_auth_available": true,
+      "vk_auth_available": true,
+      "yandex_auth_available": true,
+      "consent_required": true
+    }
+  },
+  "Config.urls.explicit": {
+    "expected": {
+      "path": "/config/urls",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "query": {
+        "version_code": 7,
+        "is_beta": true
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "api_urls": [
+        "sample api_urls"
+      ],
+      "editor_url": "sample editor_url",
+      "static_domain": "sample static_domain",
+      "should_use_mirror_urls": true,
+      "google_auth_available": true,
+      "telegram_auth_available": true,
+      "vk_auth_available": true,
+      "yandex_auth_available": true,
+      "consent_required": true
+    }
+  }
+}

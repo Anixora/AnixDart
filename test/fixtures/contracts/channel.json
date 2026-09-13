@@ -1,0 +1,1919 @@
+{
+  "Channel.articles.defaults": {
+    "expected": {
+      "path": "/channel/7/article/all/0",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      }
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "@id": 7,
+          "id": 7,
+          "channel": {
+            "id": 7
+          },
+          "author": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "repost_article": {
+            "id": 7
+          },
+          "payload": {},
+          "creation_date": 7,
+          "last_update_date": 7,
+          "comment_count": 7,
+          "repost_count": 7,
+          "vote_count": 7,
+          "vote": 7,
+          "contains_repost_article": true,
+          "is_signed": true,
+          "is_pinned": true,
+          "is_muted": true,
+          "is_deleted": true,
+          "has_delete_enforcement": true,
+          "popular_comment": {
+            "id": 7
+          }
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "Channel.articles.explicit": {
+    "expected": {
+      "path": "/channel/7/article/all/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "@id": 7,
+          "id": 7,
+          "channel": {
+            "id": 7
+          },
+          "author": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "repost_article": {
+            "id": 7
+          },
+          "payload": {},
+          "creation_date": 7,
+          "last_update_date": 7,
+          "comment_count": 7,
+          "repost_count": 7,
+          "vote_count": 7,
+          "vote": 7,
+          "contains_repost_article": true,
+          "is_signed": true,
+          "is_pinned": true,
+          "is_muted": true,
+          "is_deleted": true,
+          "has_delete_enforcement": true,
+          "popular_comment": {
+            "id": 7
+          }
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "Channel.avatarUpload.defaults": {
+    "expected": {
+      "path": "/channel/avatar/upload/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "ChannelNotFound",
+        "3": "ChannelNotOwned",
+        "ChannelNotFound": 2,
+        "ChannelNotOwned": 3
+      },
+      "body": {
+        "type": "Image",
+        "data": {
+          "name": "image.jpg",
+          "file": [
+            65,
+            66,
+            67
+          ],
+          "type": "image"
+        }
+      }
+    },
+    "response": {
+      "code": 0,
+      "url": "sample url"
+    }
+  },
+  "Channel.avatarUpload.explicit": {
+    "expected": {
+      "path": "/channel/avatar/upload/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "ChannelNotFound",
+        "3": "ChannelNotOwned",
+        "ChannelNotFound": 2,
+        "ChannelNotOwned": 3
+      },
+      "body": {
+        "type": "Image",
+        "data": {
+          "name": "sample name",
+          "file": [
+            65,
+            66,
+            67
+          ],
+          "type": "image"
+        }
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "url": "sample url"
+    }
+  },
+  "Channel.block.defaults": {
+    "expected": {
+      "path": "/channel/7/block/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "ChannelNotFound",
+        "3": "ChannelNotOwned",
+        "4": "BlockNotFound",
+        "ChannelNotFound": 2,
+        "ChannelNotOwned": 3,
+        "BlockNotFound": 4
+      }
+    },
+    "response": {
+      "code": 0,
+      "channel_block": {
+        "added_date": 7,
+        "expire_date": 7,
+        "reason": "sample reason",
+        "is_perm_blocked": true,
+        "is_reason_showing_enabled": true
+      }
+    }
+  },
+  "Channel.block.explicit": {
+    "expected": {
+      "path": "/channel/7/block/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "ChannelNotFound",
+        "3": "ChannelNotOwned",
+        "4": "BlockNotFound",
+        "ChannelNotFound": 2,
+        "ChannelNotOwned": 3,
+        "BlockNotFound": 4
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "channel_block": {
+        "added_date": 7,
+        "expire_date": 7,
+        "reason": "sample reason",
+        "is_perm_blocked": true,
+        "is_reason_showing_enabled": true
+      }
+    }
+  },
+  "Channel.blockManage.defaults": {
+    "expected": {
+      "path": "/channel/7/block/manage",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "ChannelNotFound",
+        "3": "ChannelNotOwned",
+        "4": "BlockNotFound",
+        "ChannelNotFound": 2,
+        "ChannelNotOwned": 3,
+        "BlockNotFound": 4
+      },
+      "body": {
+        "type": "JSON",
+        "data": {
+          "target_profile_id": 7,
+          "is_blocked": true,
+          "reason": "sample reason",
+          "expire_date": 7,
+          "is_reason_showing_enabled": true,
+          "is_perm_blocked": true
+        }
+      }
+    },
+    "response": {
+      "code": 0,
+      "channel_block": {
+        "added_date": 7,
+        "expire_date": 7,
+        "reason": "sample reason",
+        "is_perm_blocked": true,
+        "is_reason_showing_enabled": true
+      }
+    }
+  },
+  "Channel.blockManage.explicit": {
+    "expected": {
+      "path": "/channel/7/block/manage",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "ChannelNotFound",
+        "3": "ChannelNotOwned",
+        "4": "BlockNotFound",
+        "ChannelNotFound": 2,
+        "ChannelNotOwned": 3,
+        "BlockNotFound": 4
+      },
+      "body": {
+        "type": "JSON",
+        "data": {
+          "target_profile_id": 7,
+          "is_blocked": true,
+          "reason": "sample reason",
+          "expire_date": 7,
+          "is_reason_showing_enabled": true,
+          "is_perm_blocked": true
+        }
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "channel_block": {
+        "added_date": 7,
+        "expire_date": 7,
+        "reason": "sample reason",
+        "is_perm_blocked": true,
+        "is_reason_showing_enabled": true
+      }
+    }
+  },
+  "Channel.blocks.defaults": {
+    "expected": {
+      "path": "/channel/7/block/all/0",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      }
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "badge_id": 7,
+          "badge_name": "sample badge_name",
+          "badge_type": 7,
+          "badge_url": "sample badge_url",
+          "ban_expires": 7,
+          "ban_reason": "sample ban_reason",
+          "id": 7,
+          "is_banned": true,
+          "is_sponsor": true,
+          "is_verified": true,
+          "privilege_level": 7,
+          "login": "sample login",
+          "avatar": "sample avatar",
+          "channel_id": 7,
+          "permission": 0,
+          "permission_creation_date": 7,
+          "is_blocked": true,
+          "is_perm_blocked": true,
+          "block_reason": "sample block_reason",
+          "block_expire_date": 7
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "Channel.blocks.explicit": {
+    "expected": {
+      "path": "/channel/7/block/all/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "badge_id": 7,
+          "badge_name": "sample badge_name",
+          "badge_type": 7,
+          "badge_url": "sample badge_url",
+          "ban_expires": 7,
+          "ban_reason": "sample ban_reason",
+          "id": 7,
+          "is_banned": true,
+          "is_sponsor": true,
+          "is_verified": true,
+          "privilege_level": 7,
+          "login": "sample login",
+          "avatar": "sample avatar",
+          "channel_id": 7,
+          "permission": 0,
+          "permission_creation_date": 7,
+          "is_blocked": true,
+          "is_perm_blocked": true,
+          "block_reason": "sample block_reason",
+          "block_expire_date": 7
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "Channel.blog.defaults": {
+    "expected": {
+      "path": "/channel/blog/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "ChannelNotFound",
+        "ChannelNotFound": 2
+      }
+    },
+    "response": {
+      "code": 0,
+      "channel": {
+        "id": 7,
+        "title": "sample title",
+        "description": "sample description",
+        "cover": "sample cover",
+        "avatar": "sample avatar",
+        "permission": 7,
+        "article_count": 7,
+        "subscriber_count": 7,
+        "creation_date": 7,
+        "last_update_date": 7,
+        "is_blog": true,
+        "is_commenting_enabled": true,
+        "is_article_suggestion_enabled": true,
+        "is_episode_channel_widget_enabled": true,
+        "episode_channel_widget_sort": 0,
+        "episode_channel_widget_popularity_period": 0,
+        "episode_channel_widget_article_count": 7,
+        "is_linked_to_type": true,
+        "recent_article_count": 7,
+        "is_verified": true,
+        "is_deleted": true,
+        "blog_profile_id": 7,
+        "is_subscribed": true,
+        "is_muted": true,
+        "is_blocked": true,
+        "block_reason": "sample block_reason",
+        "block_expire_date": 7,
+        "is_perm_blocked": true,
+        "is_creator": true,
+        "is_administrator_or_higher": true
+      },
+      "suggestion_count": 7
+    }
+  },
+  "Channel.blog.explicit": {
+    "expected": {
+      "path": "/channel/blog/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "ChannelNotFound",
+        "ChannelNotFound": 2
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "channel": {
+        "id": 7,
+        "title": "sample title",
+        "description": "sample description",
+        "cover": "sample cover",
+        "avatar": "sample avatar",
+        "permission": 7,
+        "article_count": 7,
+        "subscriber_count": 7,
+        "creation_date": 7,
+        "last_update_date": 7,
+        "is_blog": true,
+        "is_commenting_enabled": true,
+        "is_article_suggestion_enabled": true,
+        "is_episode_channel_widget_enabled": true,
+        "episode_channel_widget_sort": 0,
+        "episode_channel_widget_popularity_period": 0,
+        "episode_channel_widget_article_count": 7,
+        "is_linked_to_type": true,
+        "recent_article_count": 7,
+        "is_verified": true,
+        "is_deleted": true,
+        "blog_profile_id": 7,
+        "is_subscribed": true,
+        "is_muted": true,
+        "is_blocked": true,
+        "block_reason": "sample block_reason",
+        "block_expire_date": 7,
+        "is_perm_blocked": true,
+        "is_creator": true,
+        "is_administrator_or_higher": true
+      },
+      "suggestion_count": 7
+    }
+  },
+  "Channel.get.defaults": {
+    "expected": {
+      "path": "/channel/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "ChannelNotFound",
+        "ChannelNotFound": 2
+      }
+    },
+    "response": {
+      "code": 0,
+      "channel": {
+        "id": 7,
+        "title": "sample title",
+        "description": "sample description",
+        "cover": "sample cover",
+        "avatar": "sample avatar",
+        "permission": 7,
+        "article_count": 7,
+        "subscriber_count": 7,
+        "creation_date": 7,
+        "last_update_date": 7,
+        "is_blog": true,
+        "is_commenting_enabled": true,
+        "is_article_suggestion_enabled": true,
+        "is_episode_channel_widget_enabled": true,
+        "episode_channel_widget_sort": 0,
+        "episode_channel_widget_popularity_period": 0,
+        "episode_channel_widget_article_count": 7,
+        "is_linked_to_type": true,
+        "recent_article_count": 7,
+        "is_verified": true,
+        "is_deleted": true,
+        "blog_profile_id": 7,
+        "is_subscribed": true,
+        "is_muted": true,
+        "is_blocked": true,
+        "block_reason": "sample block_reason",
+        "block_expire_date": 7,
+        "is_perm_blocked": true,
+        "is_creator": true,
+        "is_administrator_or_higher": true
+      },
+      "suggestion_count": 7
+    }
+  },
+  "Channel.get.explicit": {
+    "expected": {
+      "path": "/channel/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "ChannelNotFound",
+        "ChannelNotFound": 2
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "channel": {
+        "id": 7,
+        "title": "sample title",
+        "description": "sample description",
+        "cover": "sample cover",
+        "avatar": "sample avatar",
+        "permission": 7,
+        "article_count": 7,
+        "subscriber_count": 7,
+        "creation_date": 7,
+        "last_update_date": 7,
+        "is_blog": true,
+        "is_commenting_enabled": true,
+        "is_article_suggestion_enabled": true,
+        "is_episode_channel_widget_enabled": true,
+        "episode_channel_widget_sort": 0,
+        "episode_channel_widget_popularity_period": 0,
+        "episode_channel_widget_article_count": 7,
+        "is_linked_to_type": true,
+        "recent_article_count": 7,
+        "is_verified": true,
+        "is_deleted": true,
+        "blog_profile_id": 7,
+        "is_subscribed": true,
+        "is_muted": true,
+        "is_blocked": true,
+        "block_reason": "sample block_reason",
+        "block_expire_date": 7,
+        "is_perm_blocked": true,
+        "is_creator": true,
+        "is_administrator_or_higher": true
+      },
+      "suggestion_count": 7
+    }
+  },
+  "Channel.all.defaults": {
+    "expected": {
+      "path": "/channel/all/0",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "body": {
+        "type": "JSON",
+        "data": {
+          "permission": 7,
+          "is_blog": true,
+          "is_subscribed": true,
+          "sort": 0
+        }
+      }
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "id": 7,
+          "title": "sample title",
+          "description": "sample description",
+          "cover": "sample cover",
+          "avatar": "sample avatar",
+          "permission": 7,
+          "article_count": 7,
+          "subscriber_count": 7,
+          "creation_date": 7,
+          "last_update_date": 7,
+          "is_blog": true,
+          "is_commenting_enabled": true,
+          "is_article_suggestion_enabled": true,
+          "is_episode_channel_widget_enabled": true,
+          "episode_channel_widget_sort": 0,
+          "episode_channel_widget_popularity_period": 0,
+          "episode_channel_widget_article_count": 7,
+          "is_linked_to_type": true,
+          "recent_article_count": 7,
+          "is_verified": true,
+          "is_deleted": true,
+          "blog_profile_id": 7,
+          "is_subscribed": true,
+          "is_muted": true,
+          "is_blocked": true,
+          "block_reason": "sample block_reason",
+          "block_expire_date": 7,
+          "is_perm_blocked": true,
+          "is_creator": true,
+          "is_administrator_or_higher": true
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "Channel.all.explicit": {
+    "expected": {
+      "path": "/channel/all/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "body": {
+        "type": "JSON",
+        "data": {
+          "permission": 7,
+          "is_blog": true,
+          "is_subscribed": true,
+          "sort": 0
+        }
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "id": 7,
+          "title": "sample title",
+          "description": "sample description",
+          "cover": "sample cover",
+          "avatar": "sample avatar",
+          "permission": 7,
+          "article_count": 7,
+          "subscriber_count": 7,
+          "creation_date": 7,
+          "last_update_date": 7,
+          "is_blog": true,
+          "is_commenting_enabled": true,
+          "is_article_suggestion_enabled": true,
+          "is_episode_channel_widget_enabled": true,
+          "episode_channel_widget_sort": 0,
+          "episode_channel_widget_popularity_period": 0,
+          "episode_channel_widget_article_count": 7,
+          "is_linked_to_type": true,
+          "recent_article_count": 7,
+          "is_verified": true,
+          "is_deleted": true,
+          "blog_profile_id": 7,
+          "is_subscribed": true,
+          "is_muted": true,
+          "is_blocked": true,
+          "block_reason": "sample block_reason",
+          "block_expire_date": 7,
+          "is_perm_blocked": true,
+          "is_creator": true,
+          "is_administrator_or_higher": true
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "Channel.coverDelete.defaults": {
+    "expected": {
+      "path": "/channel/cover/delete/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "ChannelNotFound",
+        "3": "ChannelNotOwned",
+        "ChannelNotFound": 2,
+        "ChannelNotOwned": 3
+      }
+    },
+    "response": {
+      "code": 0,
+      "url": "sample url"
+    }
+  },
+  "Channel.coverDelete.explicit": {
+    "expected": {
+      "path": "/channel/cover/delete/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "ChannelNotFound",
+        "3": "ChannelNotOwned",
+        "ChannelNotFound": 2,
+        "ChannelNotOwned": 3
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "url": "sample url"
+    }
+  },
+  "Channel.coverUpload.defaults": {
+    "expected": {
+      "path": "/channel/cover/upload/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "ChannelNotFound",
+        "3": "ChannelNotOwned",
+        "ChannelNotFound": 2,
+        "ChannelNotOwned": 3
+      },
+      "body": {
+        "type": "Image",
+        "data": {
+          "name": "image.jpg",
+          "file": [
+            65,
+            66,
+            67
+          ],
+          "type": "image"
+        }
+      }
+    },
+    "response": {
+      "code": 0,
+      "url": "sample url"
+    }
+  },
+  "Channel.coverUpload.explicit": {
+    "expected": {
+      "path": "/channel/cover/upload/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "ChannelNotFound",
+        "3": "ChannelNotOwned",
+        "ChannelNotFound": 2,
+        "ChannelNotOwned": 3
+      },
+      "body": {
+        "type": "Image",
+        "data": {
+          "name": "sample name",
+          "file": [
+            65,
+            66,
+            67
+          ],
+          "type": "image"
+        }
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "url": "sample url"
+    }
+  },
+  "Channel.create.defaults": {
+    "expected": {
+      "path": "/channel/create",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "InvalidTitle",
+        "3": "InvalidDescription",
+        "4": "ChannelLimitReached",
+        "5": "ChannelNotFound",
+        "6": "ChannelNotOwned",
+        "7": "ChannelCreatorBanned",
+        "InvalidTitle": 2,
+        "InvalidDescription": 3,
+        "ChannelLimitReached": 4,
+        "ChannelNotFound": 5,
+        "ChannelNotOwned": 6,
+        "ChannelCreatorBanned": 7
+      },
+      "body": {
+        "type": "JSON",
+        "data": {
+          "title": "sample title",
+          "description": "sample description",
+          "is_commenting_enabled": true,
+          "is_article_suggestion_enabled": true,
+          "is_episode_channel_widget_enabled": true,
+          "episode_channel_widget_sort": 0,
+          "episode_channel_widget_popularity_period": 0,
+          "episode_channel_widget_article_count": 7
+        }
+      }
+    },
+    "response": {
+      "code": 0,
+      "channel": {
+        "id": 7,
+        "title": "sample title",
+        "description": "sample description",
+        "cover": "sample cover",
+        "avatar": "sample avatar",
+        "permission": 7,
+        "article_count": 7,
+        "subscriber_count": 7,
+        "creation_date": 7,
+        "last_update_date": 7,
+        "is_blog": true,
+        "is_commenting_enabled": true,
+        "is_article_suggestion_enabled": true,
+        "is_episode_channel_widget_enabled": true,
+        "episode_channel_widget_sort": 0,
+        "episode_channel_widget_popularity_period": 0,
+        "episode_channel_widget_article_count": 7,
+        "is_linked_to_type": true,
+        "recent_article_count": 7,
+        "is_verified": true,
+        "is_deleted": true,
+        "blog_profile_id": 7,
+        "is_subscribed": true,
+        "is_muted": true,
+        "is_blocked": true,
+        "block_reason": "sample block_reason",
+        "block_expire_date": 7,
+        "is_perm_blocked": true,
+        "is_creator": true,
+        "is_administrator_or_higher": true
+      }
+    }
+  },
+  "Channel.create.explicit": {
+    "expected": {
+      "path": "/channel/create",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "InvalidTitle",
+        "3": "InvalidDescription",
+        "4": "ChannelLimitReached",
+        "5": "ChannelNotFound",
+        "6": "ChannelNotOwned",
+        "7": "ChannelCreatorBanned",
+        "InvalidTitle": 2,
+        "InvalidDescription": 3,
+        "ChannelLimitReached": 4,
+        "ChannelNotFound": 5,
+        "ChannelNotOwned": 6,
+        "ChannelCreatorBanned": 7
+      },
+      "body": {
+        "type": "JSON",
+        "data": {
+          "title": "sample title",
+          "description": "sample description",
+          "is_commenting_enabled": true,
+          "is_article_suggestion_enabled": true,
+          "is_episode_channel_widget_enabled": true,
+          "episode_channel_widget_sort": 0,
+          "episode_channel_widget_popularity_period": 0,
+          "episode_channel_widget_article_count": 7
+        }
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "channel": {
+        "id": 7,
+        "title": "sample title",
+        "description": "sample description",
+        "cover": "sample cover",
+        "avatar": "sample avatar",
+        "permission": 7,
+        "article_count": 7,
+        "subscriber_count": 7,
+        "creation_date": 7,
+        "last_update_date": 7,
+        "is_blog": true,
+        "is_commenting_enabled": true,
+        "is_article_suggestion_enabled": true,
+        "is_episode_channel_widget_enabled": true,
+        "episode_channel_widget_sort": 0,
+        "episode_channel_widget_popularity_period": 0,
+        "episode_channel_widget_article_count": 7,
+        "is_linked_to_type": true,
+        "recent_article_count": 7,
+        "is_verified": true,
+        "is_deleted": true,
+        "blog_profile_id": 7,
+        "is_subscribed": true,
+        "is_muted": true,
+        "is_blocked": true,
+        "block_reason": "sample block_reason",
+        "block_expire_date": 7,
+        "is_perm_blocked": true,
+        "is_creator": true,
+        "is_administrator_or_higher": true
+      }
+    }
+  },
+  "Channel.createBlog.defaults": {
+    "expected": {
+      "path": "/channel/blog/create",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "ReputationLevelTooLow",
+        "ReputationLevelTooLow": 2
+      }
+    },
+    "response": {
+      "code": 0,
+      "channel": {
+        "id": 7,
+        "title": "sample title",
+        "description": "sample description",
+        "cover": "sample cover",
+        "avatar": "sample avatar",
+        "permission": 7,
+        "article_count": 7,
+        "subscriber_count": 7,
+        "creation_date": 7,
+        "last_update_date": 7,
+        "is_blog": true,
+        "is_commenting_enabled": true,
+        "is_article_suggestion_enabled": true,
+        "is_episode_channel_widget_enabled": true,
+        "episode_channel_widget_sort": 0,
+        "episode_channel_widget_popularity_period": 0,
+        "episode_channel_widget_article_count": 7,
+        "is_linked_to_type": true,
+        "recent_article_count": 7,
+        "is_verified": true,
+        "is_deleted": true,
+        "blog_profile_id": 7,
+        "is_subscribed": true,
+        "is_muted": true,
+        "is_blocked": true,
+        "block_reason": "sample block_reason",
+        "block_expire_date": 7,
+        "is_perm_blocked": true,
+        "is_creator": true,
+        "is_administrator_or_higher": true
+      }
+    }
+  },
+  "Channel.createBlog.explicit": {
+    "expected": {
+      "path": "/channel/blog/create",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "ReputationLevelTooLow",
+        "ReputationLevelTooLow": 2
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "channel": {
+        "id": 7,
+        "title": "sample title",
+        "description": "sample description",
+        "cover": "sample cover",
+        "avatar": "sample avatar",
+        "permission": 7,
+        "article_count": 7,
+        "subscriber_count": 7,
+        "creation_date": 7,
+        "last_update_date": 7,
+        "is_blog": true,
+        "is_commenting_enabled": true,
+        "is_article_suggestion_enabled": true,
+        "is_episode_channel_widget_enabled": true,
+        "episode_channel_widget_sort": 0,
+        "episode_channel_widget_popularity_period": 0,
+        "episode_channel_widget_article_count": 7,
+        "is_linked_to_type": true,
+        "recent_article_count": 7,
+        "is_verified": true,
+        "is_deleted": true,
+        "blog_profile_id": 7,
+        "is_subscribed": true,
+        "is_muted": true,
+        "is_blocked": true,
+        "block_reason": "sample block_reason",
+        "block_expire_date": 7,
+        "is_perm_blocked": true,
+        "is_creator": true,
+        "is_administrator_or_higher": true
+      }
+    }
+  },
+  "Channel.edit.defaults": {
+    "expected": {
+      "path": "/channel/edit/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "InvalidTitle",
+        "3": "InvalidDescription",
+        "4": "ChannelLimitReached",
+        "5": "ChannelNotFound",
+        "6": "ChannelNotOwned",
+        "7": "ChannelCreatorBanned",
+        "InvalidTitle": 2,
+        "InvalidDescription": 3,
+        "ChannelLimitReached": 4,
+        "ChannelNotFound": 5,
+        "ChannelNotOwned": 6,
+        "ChannelCreatorBanned": 7
+      },
+      "body": {
+        "type": "JSON",
+        "data": {
+          "title": "sample title",
+          "description": "sample description",
+          "is_commenting_enabled": true,
+          "is_article_suggestion_enabled": true,
+          "is_episode_channel_widget_enabled": true,
+          "episode_channel_widget_sort": 0,
+          "episode_channel_widget_popularity_period": 0,
+          "episode_channel_widget_article_count": 7
+        }
+      }
+    },
+    "response": {
+      "code": 0,
+      "channel": {
+        "id": 7,
+        "title": "sample title",
+        "description": "sample description",
+        "cover": "sample cover",
+        "avatar": "sample avatar",
+        "permission": 7,
+        "article_count": 7,
+        "subscriber_count": 7,
+        "creation_date": 7,
+        "last_update_date": 7,
+        "is_blog": true,
+        "is_commenting_enabled": true,
+        "is_article_suggestion_enabled": true,
+        "is_episode_channel_widget_enabled": true,
+        "episode_channel_widget_sort": 0,
+        "episode_channel_widget_popularity_period": 0,
+        "episode_channel_widget_article_count": 7,
+        "is_linked_to_type": true,
+        "recent_article_count": 7,
+        "is_verified": true,
+        "is_deleted": true,
+        "blog_profile_id": 7,
+        "is_subscribed": true,
+        "is_muted": true,
+        "is_blocked": true,
+        "block_reason": "sample block_reason",
+        "block_expire_date": 7,
+        "is_perm_blocked": true,
+        "is_creator": true,
+        "is_administrator_or_higher": true
+      }
+    }
+  },
+  "Channel.edit.explicit": {
+    "expected": {
+      "path": "/channel/edit/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "InvalidTitle",
+        "3": "InvalidDescription",
+        "4": "ChannelLimitReached",
+        "5": "ChannelNotFound",
+        "6": "ChannelNotOwned",
+        "7": "ChannelCreatorBanned",
+        "InvalidTitle": 2,
+        "InvalidDescription": 3,
+        "ChannelLimitReached": 4,
+        "ChannelNotFound": 5,
+        "ChannelNotOwned": 6,
+        "ChannelCreatorBanned": 7
+      },
+      "body": {
+        "type": "JSON",
+        "data": {
+          "title": "sample title",
+          "description": "sample description",
+          "is_commenting_enabled": true,
+          "is_article_suggestion_enabled": true,
+          "is_episode_channel_widget_enabled": true,
+          "episode_channel_widget_sort": 0,
+          "episode_channel_widget_popularity_period": 0,
+          "episode_channel_widget_article_count": 7
+        }
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "channel": {
+        "id": 7,
+        "title": "sample title",
+        "description": "sample description",
+        "cover": "sample cover",
+        "avatar": "sample avatar",
+        "permission": 7,
+        "article_count": 7,
+        "subscriber_count": 7,
+        "creation_date": 7,
+        "last_update_date": 7,
+        "is_blog": true,
+        "is_commenting_enabled": true,
+        "is_article_suggestion_enabled": true,
+        "is_episode_channel_widget_enabled": true,
+        "episode_channel_widget_sort": 0,
+        "episode_channel_widget_popularity_period": 0,
+        "episode_channel_widget_article_count": 7,
+        "is_linked_to_type": true,
+        "recent_article_count": 7,
+        "is_verified": true,
+        "is_deleted": true,
+        "blog_profile_id": 7,
+        "is_subscribed": true,
+        "is_muted": true,
+        "is_blocked": true,
+        "block_reason": "sample block_reason",
+        "block_expire_date": 7,
+        "is_perm_blocked": true,
+        "is_creator": true,
+        "is_administrator_or_higher": true
+      }
+    }
+  },
+  "Channel.editorAvaliable.defaults": {
+    "expected": {
+      "path": "/channel/7/editor/available",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "TemporarilyDisabled",
+        "3": "ArticleLimitReached",
+        "4": "ChannelNotFound",
+        "5": "ChannelNotOwned",
+        "6": "ChannelCreatorBanned",
+        "7": "BlogNotCreated",
+        "TemporarilyDisabled": 2,
+        "ArticleLimitReached": 3,
+        "ChannelNotFound": 4,
+        "ChannelNotOwned": 5,
+        "ChannelCreatorBanned": 6,
+        "BlogNotCreated": 7
+      },
+      "query": {
+        "is_suggestion": false,
+        "is_edit_mode": false
+      }
+    },
+    "response": {
+      "code": 0,
+      "media_upload_token": "sample media_upload_token"
+    }
+  },
+  "Channel.editorAvaliable.explicit": {
+    "expected": {
+      "path": "/channel/7/editor/available",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "TemporarilyDisabled",
+        "3": "ArticleLimitReached",
+        "4": "ChannelNotFound",
+        "5": "ChannelNotOwned",
+        "6": "ChannelCreatorBanned",
+        "7": "BlogNotCreated",
+        "TemporarilyDisabled": 2,
+        "ArticleLimitReached": 3,
+        "ChannelNotFound": 4,
+        "ChannelNotOwned": 5,
+        "ChannelCreatorBanned": 6,
+        "BlogNotCreated": 7
+      },
+      "query": {
+        "is_suggestion": true,
+        "is_edit_mode": true
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "media_upload_token": "sample media_upload_token"
+    }
+  },
+  "Channel.editorAvaliableChannels.defaults": {
+    "expected": {
+      "path": "/channel/editor/available/all",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "query": {
+        "only_subscribed": true
+      }
+    },
+    "response": {
+      "code": 0,
+      "channels": [
+        {
+          "id": 7,
+          "title": "sample title",
+          "avatar": "sample avatar",
+          "subscriber_count": 7,
+          "is_blog": true
+        }
+      ]
+    }
+  },
+  "Channel.editorAvaliableChannels.explicit": {
+    "expected": {
+      "path": "/channel/editor/available/all",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "query": {
+        "only_subscribed": true
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "channels": [
+        {
+          "id": 7,
+          "title": "sample title",
+          "avatar": "sample avatar",
+          "subscriber_count": 7,
+          "is_blog": true
+        }
+      ]
+    }
+  },
+  "Channel.mute.defaults": {
+    "expected": {
+      "path": "/channel/mute/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "ArticleNotFound",
+        "3": "ChannelNotFound",
+        "4": "ChannelOwned",
+        "ArticleNotFound": 2,
+        "ChannelNotFound": 3,
+        "ChannelOwned": 4
+      }
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "Channel.mute.explicit": {
+    "expected": {
+      "path": "/channel/mute/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "ArticleNotFound",
+        "3": "ChannelNotFound",
+        "4": "ChannelOwned",
+        "ArticleNotFound": 2,
+        "ChannelNotFound": 3,
+        "ChannelOwned": 4
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "Channel.mutes.defaults": {
+    "expected": {
+      "path": "/channel/mute/all/0",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      }
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "id": 7,
+          "title": "sample title",
+          "description": "sample description",
+          "cover": "sample cover",
+          "avatar": "sample avatar",
+          "permission": 7,
+          "article_count": 7,
+          "subscriber_count": 7,
+          "creation_date": 7,
+          "last_update_date": 7,
+          "is_blog": true,
+          "is_commenting_enabled": true,
+          "is_article_suggestion_enabled": true,
+          "is_episode_channel_widget_enabled": true,
+          "episode_channel_widget_sort": 0,
+          "episode_channel_widget_popularity_period": 0,
+          "episode_channel_widget_article_count": 7,
+          "is_linked_to_type": true,
+          "recent_article_count": 7,
+          "is_verified": true,
+          "is_deleted": true,
+          "blog_profile_id": 7,
+          "is_subscribed": true,
+          "is_muted": true,
+          "is_blocked": true,
+          "block_reason": "sample block_reason",
+          "block_expire_date": 7,
+          "is_perm_blocked": true,
+          "is_creator": true,
+          "is_administrator_or_higher": true
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "Channel.mutes.explicit": {
+    "expected": {
+      "path": "/channel/mute/all/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "id": 7,
+          "title": "sample title",
+          "description": "sample description",
+          "cover": "sample cover",
+          "avatar": "sample avatar",
+          "permission": 7,
+          "article_count": 7,
+          "subscriber_count": 7,
+          "creation_date": 7,
+          "last_update_date": 7,
+          "is_blog": true,
+          "is_commenting_enabled": true,
+          "is_article_suggestion_enabled": true,
+          "is_episode_channel_widget_enabled": true,
+          "episode_channel_widget_sort": 0,
+          "episode_channel_widget_popularity_period": 0,
+          "episode_channel_widget_article_count": 7,
+          "is_linked_to_type": true,
+          "recent_article_count": 7,
+          "is_verified": true,
+          "is_deleted": true,
+          "blog_profile_id": 7,
+          "is_subscribed": true,
+          "is_muted": true,
+          "is_blocked": true,
+          "block_reason": "sample block_reason",
+          "block_expire_date": 7,
+          "is_perm_blocked": true,
+          "is_creator": true,
+          "is_administrator_or_higher": true
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "Channel.permissionManage.defaults": {
+    "expected": {
+      "path": "/channel/7/permission/manage",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "PermissionInvalid",
+        "3": "TargetProfileNotFound",
+        "4": "ChannelNotFound",
+        "5": "ChannelNotOwned",
+        "PermissionInvalid": 2,
+        "TargetProfileNotFound": 3,
+        "ChannelNotFound": 4,
+        "ChannelNotOwned": 5
+      },
+      "body": {
+        "type": "JSON",
+        "data": {
+          "target_profile_id": 7,
+          "permission": 7
+        }
+      }
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "Channel.permissionManage.explicit": {
+    "expected": {
+      "path": "/channel/7/permission/manage",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "PermissionInvalid",
+        "3": "TargetProfileNotFound",
+        "4": "ChannelNotFound",
+        "5": "ChannelNotOwned",
+        "PermissionInvalid": 2,
+        "TargetProfileNotFound": 3,
+        "ChannelNotFound": 4,
+        "ChannelNotOwned": 5
+      },
+      "body": {
+        "type": "JSON",
+        "data": {
+          "target_profile_id": 7,
+          "permission": 7
+        }
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "Channel.permissions.defaults": {
+    "expected": {
+      "path": "/channel/7/permission/all/0",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "body": {
+        "type": "JSON",
+        "data": {}
+      }
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "badge_id": 7,
+          "badge_name": "sample badge_name",
+          "badge_type": 7,
+          "badge_url": "sample badge_url",
+          "ban_expires": 7,
+          "ban_reason": "sample ban_reason",
+          "id": 7,
+          "is_banned": true,
+          "is_sponsor": true,
+          "is_verified": true,
+          "privilege_level": 7,
+          "login": "sample login",
+          "avatar": "sample avatar",
+          "channel_id": 7,
+          "permission": 0,
+          "permission_creation_date": 7,
+          "is_blocked": true,
+          "is_perm_blocked": true,
+          "block_reason": "sample block_reason",
+          "block_expire_date": 7
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "Channel.permissions.explicit": {
+    "expected": {
+      "path": "/channel/7/permission/all/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "body": {
+        "type": "JSON",
+        "data": {
+          "permission": 7
+        }
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "badge_id": 7,
+          "badge_name": "sample badge_name",
+          "badge_type": 7,
+          "badge_url": "sample badge_url",
+          "ban_expires": 7,
+          "ban_reason": "sample ban_reason",
+          "id": 7,
+          "is_banned": true,
+          "is_sponsor": true,
+          "is_verified": true,
+          "privilege_level": 7,
+          "login": "sample login",
+          "avatar": "sample avatar",
+          "channel_id": 7,
+          "permission": 0,
+          "permission_creation_date": 7,
+          "is_blocked": true,
+          "is_perm_blocked": true,
+          "block_reason": "sample block_reason",
+          "block_expire_date": 7
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "Channel.recommendations.defaults": {
+    "expected": {
+      "path": "/channel/recommendations/0",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "query": {
+        "is_blog": false,
+        "exclude_subscribed": false
+      }
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "id": 7,
+          "title": "sample title",
+          "description": "sample description",
+          "cover": "sample cover",
+          "avatar": "sample avatar",
+          "permission": 7,
+          "article_count": 7,
+          "subscriber_count": 7,
+          "creation_date": 7,
+          "last_update_date": 7,
+          "is_blog": true,
+          "is_commenting_enabled": true,
+          "is_article_suggestion_enabled": true,
+          "is_episode_channel_widget_enabled": true,
+          "episode_channel_widget_sort": 0,
+          "episode_channel_widget_popularity_period": 0,
+          "episode_channel_widget_article_count": 7,
+          "is_linked_to_type": true,
+          "recent_article_count": 7,
+          "is_verified": true,
+          "is_deleted": true,
+          "blog_profile_id": 7,
+          "is_subscribed": true,
+          "is_muted": true,
+          "is_blocked": true,
+          "block_reason": "sample block_reason",
+          "block_expire_date": 7,
+          "is_perm_blocked": true,
+          "is_creator": true,
+          "is_administrator_or_higher": true
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "Channel.recommendations.explicit": {
+    "expected": {
+      "path": "/channel/recommendations/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "query": {
+        "is_blog": true,
+        "exclude_subscribed": true
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "id": 7,
+          "title": "sample title",
+          "description": "sample description",
+          "cover": "sample cover",
+          "avatar": "sample avatar",
+          "permission": 7,
+          "article_count": 7,
+          "subscriber_count": 7,
+          "creation_date": 7,
+          "last_update_date": 7,
+          "is_blog": true,
+          "is_commenting_enabled": true,
+          "is_article_suggestion_enabled": true,
+          "is_episode_channel_widget_enabled": true,
+          "episode_channel_widget_sort": 0,
+          "episode_channel_widget_popularity_period": 0,
+          "episode_channel_widget_article_count": 7,
+          "is_linked_to_type": true,
+          "recent_article_count": 7,
+          "is_verified": true,
+          "is_deleted": true,
+          "blog_profile_id": 7,
+          "is_subscribed": true,
+          "is_muted": true,
+          "is_blocked": true,
+          "block_reason": "sample block_reason",
+          "block_expire_date": 7,
+          "is_perm_blocked": true,
+          "is_creator": true,
+          "is_administrator_or_higher": true
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "Channel.subscribe.defaults": {
+    "expected": {
+      "path": "/channel/subscribe/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "SubscriptionExists",
+        "3": "SubscriptionLimitReached",
+        "SubscriptionExists": 2,
+        "SubscriptionLimitReached": 3
+      }
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "Channel.subscribe.explicit": {
+    "expected": {
+      "path": "/channel/subscribe/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "SubscriptionExists",
+        "3": "SubscriptionLimitReached",
+        "SubscriptionExists": 2,
+        "SubscriptionLimitReached": 3
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "Channel.subscriptionCount.defaults": {
+    "expected": {
+      "path": "/channel/subscription/count",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      }
+    },
+    "response": {
+      "code": 0,
+      "subscription_count": 7
+    }
+  },
+  "Channel.subscriptionCount.explicit": {
+    "expected": {
+      "path": "/channel/subscription/count",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "subscription_count": 7
+    }
+  },
+  "Channel.subscriptions.defaults": {
+    "expected": {
+      "path": "/channel/subscription/all/0",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "query": {}
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "id": 7,
+          "title": "sample title",
+          "description": "sample description",
+          "cover": "sample cover",
+          "avatar": "sample avatar",
+          "permission": 7,
+          "article_count": 7,
+          "subscriber_count": 7,
+          "creation_date": 7,
+          "last_update_date": 7,
+          "is_blog": true,
+          "is_commenting_enabled": true,
+          "is_article_suggestion_enabled": true,
+          "is_episode_channel_widget_enabled": true,
+          "episode_channel_widget_sort": 0,
+          "episode_channel_widget_popularity_period": 0,
+          "episode_channel_widget_article_count": 7,
+          "is_linked_to_type": true,
+          "recent_article_count": 7,
+          "is_verified": true,
+          "is_deleted": true,
+          "blog_profile_id": 7,
+          "is_subscribed": true,
+          "is_muted": true,
+          "is_blocked": true,
+          "block_reason": "sample block_reason",
+          "block_expire_date": 7,
+          "is_perm_blocked": true,
+          "is_creator": true,
+          "is_administrator_or_higher": true
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "Channel.subscriptions.explicit": {
+    "expected": {
+      "path": "/channel/subscription/all/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "query": {
+        "sort": 7
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "id": 7,
+          "title": "sample title",
+          "description": "sample description",
+          "cover": "sample cover",
+          "avatar": "sample avatar",
+          "permission": 7,
+          "article_count": 7,
+          "subscriber_count": 7,
+          "creation_date": 7,
+          "last_update_date": 7,
+          "is_blog": true,
+          "is_commenting_enabled": true,
+          "is_article_suggestion_enabled": true,
+          "is_episode_channel_widget_enabled": true,
+          "episode_channel_widget_sort": 0,
+          "episode_channel_widget_popularity_period": 0,
+          "episode_channel_widget_article_count": 7,
+          "is_linked_to_type": true,
+          "recent_article_count": 7,
+          "is_verified": true,
+          "is_deleted": true,
+          "blog_profile_id": 7,
+          "is_subscribed": true,
+          "is_muted": true,
+          "is_blocked": true,
+          "block_reason": "sample block_reason",
+          "block_expire_date": 7,
+          "is_perm_blocked": true,
+          "is_creator": true,
+          "is_administrator_or_higher": true
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "Channel.unmute.defaults": {
+    "expected": {
+      "path": "/channel/unmute/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "ArticleNotFound",
+        "3": "ChannelNotFound",
+        "4": "ChannelOwned",
+        "ArticleNotFound": 2,
+        "ChannelNotFound": 3,
+        "ChannelOwned": 4
+      }
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "Channel.unmute.explicit": {
+    "expected": {
+      "path": "/channel/unmute/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "ArticleNotFound",
+        "3": "ChannelNotFound",
+        "4": "ChannelOwned",
+        "ArticleNotFound": 2,
+        "ChannelNotFound": 3,
+        "ChannelOwned": 4
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "Channel.unsubscribe.defaults": {
+    "expected": {
+      "path": "/channel/unsubscribe/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "SubscriptionNotExists",
+        "SubscriptionNotExists": 2
+      }
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "Channel.unsubscribe.explicit": {
+    "expected": {
+      "path": "/channel/unsubscribe/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "SubscriptionNotExists",
+        "SubscriptionNotExists": 2
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0
+    }
+  }
+}

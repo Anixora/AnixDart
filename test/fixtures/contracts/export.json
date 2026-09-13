@@ -1,0 +1,237 @@
+{
+  "Export.bookmarks.defaults": {
+    "expected": {
+      "path": "/export/bookmarks",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "InvalidProfileLists",
+        "3": "InvalidExtraFields",
+        "InvalidProfileLists": 2,
+        "InvalidExtraFields": 3
+      },
+      "body": {
+        "type": "JSON",
+        "data": {
+          "bookmarksExportProfileLists": [
+            1
+          ]
+        }
+      },
+      "query": {}
+    },
+    "response": {
+      "code": 0,
+      "releases": [
+        {
+          "id": 7,
+          "age_rating": 7,
+          "aired_on_date": 7,
+          "author": "sample author",
+          "broadcast": 7,
+          "can_torlook_search": true,
+          "can_video_appeal": true,
+          "category": 0,
+          "collection_count": 7,
+          "comment_count": 7,
+          "comment_per_day_count": 7,
+          "comments": [],
+          "completed_count": 7,
+          "country": "sample country",
+          "description": "sample description",
+          "director": "sample director",
+          "dropped_count": 7,
+          "duration": 7,
+          "episode_last_update": {},
+          "episodes_total": 7,
+          "episodes_released": 7,
+          "favorite_count": 7,
+          "genres": "sample genres",
+          "grade": 2.5,
+          "hold_on_count": 7,
+          "image": "sample image",
+          "is_adult": true,
+          "is_deleted": true,
+          "is_favorite": true,
+          "is_play_disabled": true,
+          "is_release_type_notifications_enabled": true,
+          "is_ru_blocked": true,
+          "is_tpp_disabled": true,
+          "is_view_blocked": true,
+          "is_viewed": true,
+          "last_view_episode": {
+            "id": 7,
+            "name": "sample name"
+          },
+          "last_view_timestamp": 7,
+          "note": "sample note",
+          "note_background_color_dark": "sample note_background_color_dark",
+          "note_background_color_light": "sample note_background_color_light",
+          "note_text_color_dark": "sample note_text_color_dark",
+          "note_text_color_light": "sample note_text_color_light",
+          "plan_count": 7,
+          "profile_list_status": 7,
+          "profile_release_type_notification_preference_count": 7,
+          "profile_release_type_notification_preferences": [],
+          "rating": 2.5,
+          "recommended_releases": [],
+          "related": {
+            "id": 7,
+            "name": "sample name"
+          },
+          "related_count": 7,
+          "related_releases": [],
+          "release_date": "sample release_date",
+          "screenshot_images": [],
+          "season": 7,
+          "source": "sample source",
+          "status": {
+            "id": 0,
+            "name": "sample name"
+          },
+          "status_id": 7,
+          "studio": "sample studio",
+          "title_original": "sample title_original",
+          "title_ru": "sample title_ru",
+          "title_alt": "sample title_alt",
+          "translators": "sample translators",
+          "video_banners": [],
+          "vote_1_count": 7,
+          "vote_2_count": 7,
+          "vote_3_count": 7,
+          "vote_4_count": 7,
+          "vote_5_count": 7,
+          "vote_count": 7,
+          "voted_at": 7,
+          "watching_count": 7,
+          "year": "sample year",
+          "creation_date": 7,
+          "last_update_date": 7,
+          "your_vote": 7,
+          "my_vote": 7
+        }
+      ]
+    }
+  },
+  "Export.bookmarks.explicit": {
+    "expected": {
+      "path": "/export/bookmarks",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "InvalidProfileLists",
+        "3": "InvalidExtraFields",
+        "InvalidProfileLists": 2,
+        "InvalidExtraFields": 3
+      },
+      "body": {
+        "type": "JSON",
+        "data": {
+          "bookmarksExportProfileLists": [
+            1
+          ]
+        }
+      },
+      "query": {
+        "sort": 7
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "releases": [
+        {
+          "id": 7,
+          "age_rating": 7,
+          "aired_on_date": 7,
+          "author": "sample author",
+          "broadcast": 7,
+          "can_torlook_search": true,
+          "can_video_appeal": true,
+          "category": 0,
+          "collection_count": 7,
+          "comment_count": 7,
+          "comment_per_day_count": 7,
+          "comments": [],
+          "completed_count": 7,
+          "country": "sample country",
+          "description": "sample description",
+          "director": "sample director",
+          "dropped_count": 7,
+          "duration": 7,
+          "episode_last_update": {},
+          "episodes_total": 7,
+          "episodes_released": 7,
+          "favorite_count": 7,
+          "genres": "sample genres",
+          "grade": 2.5,
+          "hold_on_count": 7,
+          "image": "sample image",
+          "is_adult": true,
+          "is_deleted": true,
+          "is_favorite": true,
+          "is_play_disabled": true,
+          "is_release_type_notifications_enabled": true,
+          "is_ru_blocked": true,
+          "is_tpp_disabled": true,
+          "is_view_blocked": true,
+          "is_viewed": true,
+          "last_view_episode": {
+            "id": 7,
+            "name": "sample name"
+          },
+          "last_view_timestamp": 7,
+          "note": "sample note",
+          "note_background_color_dark": "sample note_background_color_dark",
+          "note_background_color_light": "sample note_background_color_light",
+          "note_text_color_dark": "sample note_text_color_dark",
+          "note_text_color_light": "sample note_text_color_light",
+          "plan_count": 7,
+          "profile_list_status": 7,
+          "profile_release_type_notification_preference_count": 7,
+          "profile_release_type_notification_preferences": [],
+          "rating": 2.5,
+          "recommended_releases": [],
+          "related": {
+            "id": 7,
+            "name": "sample name"
+          },
+          "related_count": 7,
+          "related_releases": [],
+          "release_date": "sample release_date",
+          "screenshot_images": [],
+          "season": 7,
+          "source": "sample source",
+          "status": {
+            "id": 0,
+            "name": "sample name"
+          },
+          "status_id": 7,
+          "studio": "sample studio",
+          "title_original": "sample title_original",
+          "title_ru": "sample title_ru",
+          "title_alt": "sample title_alt",
+          "translators": "sample translators",
+          "video_banners": [],
+          "vote_1_count": 7,
+          "vote_2_count": 7,
+          "vote_3_count": 7,
+          "vote_4_count": 7,
+          "vote_5_count": 7,
+          "vote_count": 7,
+          "voted_at": 7,
+          "watching_count": 7,
+          "year": "sample year",
+          "creation_date": 7,
+          "last_update_date": 7,
+          "your_vote": 7,
+          "my_vote": 7
+        }
+      ]
+    }
+  }
+}

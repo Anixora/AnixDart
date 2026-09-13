@@ -1,0 +1,3997 @@
+{
+  "Article.get.defaults": {
+    "expected": {
+      "path": "/article/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "ArticleDeleted",
+        "ArticleDeleted": 2
+      }
+    },
+    "response": {
+      "code": 0,
+      "article": {
+        "@id": 7,
+        "id": 7,
+        "channel": {
+          "id": 7,
+          "title": "sample title",
+          "description": "sample description",
+          "cover": "sample cover",
+          "avatar": "sample avatar",
+          "permission": 7,
+          "article_count": 7,
+          "subscriber_count": 7,
+          "creation_date": 7,
+          "last_update_date": 7,
+          "is_blog": true,
+          "is_commenting_enabled": true,
+          "is_article_suggestion_enabled": true,
+          "is_episode_channel_widget_enabled": true,
+          "episode_channel_widget_sort": 0,
+          "episode_channel_widget_popularity_period": 0,
+          "episode_channel_widget_article_count": 7,
+          "is_linked_to_type": true,
+          "recent_article_count": 7,
+          "is_verified": true,
+          "is_deleted": true,
+          "blog_profile_id": 7,
+          "is_subscribed": true,
+          "is_muted": true,
+          "is_blocked": true,
+          "block_reason": "sample block_reason",
+          "block_expire_date": 7,
+          "is_perm_blocked": true,
+          "is_creator": true,
+          "is_administrator_or_higher": true
+        },
+        "author": {
+          "id": 7,
+          "login": "sample login",
+          "avatar": "sample avatar"
+        },
+        "repost_article": {
+          "@id": 7,
+          "id": 7,
+          "channel": {
+            "id": 7
+          },
+          "author": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "repost_article": {
+            "id": 7
+          },
+          "payload": {},
+          "creation_date": 7,
+          "last_update_date": 7,
+          "comment_count": 7,
+          "repost_count": 7,
+          "vote_count": 7,
+          "vote": 7,
+          "contains_repost_article": true,
+          "is_signed": true,
+          "is_pinned": true,
+          "is_muted": true,
+          "is_deleted": true,
+          "has_delete_enforcement": true,
+          "popular_comment": {
+            "id": 7
+          }
+        },
+        "payload": {
+          "time": 7,
+          "version": "sample version",
+          "blocks": [],
+          "block_count": 7
+        },
+        "creation_date": 7,
+        "last_update_date": 7,
+        "comment_count": 7,
+        "repost_count": 7,
+        "vote_count": 7,
+        "vote": 7,
+        "contains_repost_article": true,
+        "is_signed": true,
+        "is_pinned": true,
+        "is_muted": true,
+        "is_deleted": true,
+        "has_delete_enforcement": true,
+        "popular_comment": {
+          "id": 7,
+          "profile": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "message": "sample message",
+          "vote_count": 7,
+          "timestamp": 7
+        }
+      }
+    }
+  },
+  "Article.get.explicit": {
+    "expected": {
+      "path": "/article/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "ArticleDeleted",
+        "ArticleDeleted": 2
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "article": {
+        "@id": 7,
+        "id": 7,
+        "channel": {
+          "id": 7,
+          "title": "sample title",
+          "description": "sample description",
+          "cover": "sample cover",
+          "avatar": "sample avatar",
+          "permission": 7,
+          "article_count": 7,
+          "subscriber_count": 7,
+          "creation_date": 7,
+          "last_update_date": 7,
+          "is_blog": true,
+          "is_commenting_enabled": true,
+          "is_article_suggestion_enabled": true,
+          "is_episode_channel_widget_enabled": true,
+          "episode_channel_widget_sort": 0,
+          "episode_channel_widget_popularity_period": 0,
+          "episode_channel_widget_article_count": 7,
+          "is_linked_to_type": true,
+          "recent_article_count": 7,
+          "is_verified": true,
+          "is_deleted": true,
+          "blog_profile_id": 7,
+          "is_subscribed": true,
+          "is_muted": true,
+          "is_blocked": true,
+          "block_reason": "sample block_reason",
+          "block_expire_date": 7,
+          "is_perm_blocked": true,
+          "is_creator": true,
+          "is_administrator_or_higher": true
+        },
+        "author": {
+          "id": 7,
+          "login": "sample login",
+          "avatar": "sample avatar"
+        },
+        "repost_article": {
+          "@id": 7,
+          "id": 7,
+          "channel": {
+            "id": 7
+          },
+          "author": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "repost_article": {
+            "id": 7
+          },
+          "payload": {},
+          "creation_date": 7,
+          "last_update_date": 7,
+          "comment_count": 7,
+          "repost_count": 7,
+          "vote_count": 7,
+          "vote": 7,
+          "contains_repost_article": true,
+          "is_signed": true,
+          "is_pinned": true,
+          "is_muted": true,
+          "is_deleted": true,
+          "has_delete_enforcement": true,
+          "popular_comment": {
+            "id": 7
+          }
+        },
+        "payload": {
+          "time": 7,
+          "version": "sample version",
+          "blocks": [],
+          "block_count": 7
+        },
+        "creation_date": 7,
+        "last_update_date": 7,
+        "comment_count": 7,
+        "repost_count": 7,
+        "vote_count": 7,
+        "vote": 7,
+        "contains_repost_article": true,
+        "is_signed": true,
+        "is_pinned": true,
+        "is_muted": true,
+        "is_deleted": true,
+        "has_delete_enforcement": true,
+        "popular_comment": {
+          "id": 7,
+          "profile": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "message": "sample message",
+          "vote_count": 7,
+          "timestamp": 7
+        }
+      }
+    }
+  },
+  "Article.create.defaults": {
+    "expected": {
+      "path": "/article/create/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "InvalidRepostArticle",
+        "3": "InvalidPayload",
+        "4": "InvalidTags",
+        "5": "TemporarilyDisabled",
+        "6": "ArticleLimitReached",
+        "7": "ChannelNotFound",
+        "8": "ChannelNotOwned",
+        "9": "ChannelCreatorBanned",
+        "10": "ChannelBlocked",
+        "11": "ArticleNotFound",
+        "12": "ArticleDeleted",
+        "13": "BlogNotCreated",
+        "InvalidRepostArticle": 2,
+        "InvalidPayload": 3,
+        "InvalidTags": 4,
+        "TemporarilyDisabled": 5,
+        "ArticleLimitReached": 6,
+        "ChannelNotFound": 7,
+        "ChannelNotOwned": 8,
+        "ChannelCreatorBanned": 9,
+        "ChannelBlocked": 10,
+        "ArticleNotFound": 11,
+        "ArticleDeleted": 12,
+        "BlogNotCreated": 13
+      },
+      "body": {
+        "type": "JSON",
+        "data": {
+          "is_signed": true,
+          "repost_article_id": 7,
+          "payload": {
+            "time": 7,
+            "version": "sample version",
+            "blocks": [],
+            "block_count": 7
+          }
+        }
+      }
+    },
+    "response": {
+      "code": 0,
+      "article": {
+        "@id": 7,
+        "id": 7,
+        "channel": {
+          "id": 7,
+          "title": "sample title",
+          "description": "sample description",
+          "cover": "sample cover",
+          "avatar": "sample avatar",
+          "permission": 7,
+          "article_count": 7,
+          "subscriber_count": 7,
+          "creation_date": 7,
+          "last_update_date": 7,
+          "is_blog": true,
+          "is_commenting_enabled": true,
+          "is_article_suggestion_enabled": true,
+          "is_episode_channel_widget_enabled": true,
+          "episode_channel_widget_sort": 0,
+          "episode_channel_widget_popularity_period": 0,
+          "episode_channel_widget_article_count": 7,
+          "is_linked_to_type": true,
+          "recent_article_count": 7,
+          "is_verified": true,
+          "is_deleted": true,
+          "blog_profile_id": 7,
+          "is_subscribed": true,
+          "is_muted": true,
+          "is_blocked": true,
+          "block_reason": "sample block_reason",
+          "block_expire_date": 7,
+          "is_perm_blocked": true,
+          "is_creator": true,
+          "is_administrator_or_higher": true
+        },
+        "author": {
+          "id": 7,
+          "login": "sample login",
+          "avatar": "sample avatar"
+        },
+        "repost_article": {
+          "@id": 7,
+          "id": 7,
+          "channel": {
+            "id": 7
+          },
+          "author": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "repost_article": {
+            "id": 7
+          },
+          "payload": {},
+          "creation_date": 7,
+          "last_update_date": 7,
+          "comment_count": 7,
+          "repost_count": 7,
+          "vote_count": 7,
+          "vote": 7,
+          "contains_repost_article": true,
+          "is_signed": true,
+          "is_pinned": true,
+          "is_muted": true,
+          "is_deleted": true,
+          "has_delete_enforcement": true,
+          "popular_comment": {
+            "id": 7
+          }
+        },
+        "payload": {
+          "time": 7,
+          "version": "sample version",
+          "blocks": [],
+          "block_count": 7
+        },
+        "creation_date": 7,
+        "last_update_date": 7,
+        "comment_count": 7,
+        "repost_count": 7,
+        "vote_count": 7,
+        "vote": 7,
+        "contains_repost_article": true,
+        "is_signed": true,
+        "is_pinned": true,
+        "is_muted": true,
+        "is_deleted": true,
+        "has_delete_enforcement": true,
+        "popular_comment": {
+          "id": 7,
+          "profile": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "message": "sample message",
+          "vote_count": 7,
+          "timestamp": 7
+        }
+      }
+    }
+  },
+  "Article.create.explicit": {
+    "expected": {
+      "path": "/article/create/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "InvalidRepostArticle",
+        "3": "InvalidPayload",
+        "4": "InvalidTags",
+        "5": "TemporarilyDisabled",
+        "6": "ArticleLimitReached",
+        "7": "ChannelNotFound",
+        "8": "ChannelNotOwned",
+        "9": "ChannelCreatorBanned",
+        "10": "ChannelBlocked",
+        "11": "ArticleNotFound",
+        "12": "ArticleDeleted",
+        "13": "BlogNotCreated",
+        "InvalidRepostArticle": 2,
+        "InvalidPayload": 3,
+        "InvalidTags": 4,
+        "TemporarilyDisabled": 5,
+        "ArticleLimitReached": 6,
+        "ChannelNotFound": 7,
+        "ChannelNotOwned": 8,
+        "ChannelCreatorBanned": 9,
+        "ChannelBlocked": 10,
+        "ArticleNotFound": 11,
+        "ArticleDeleted": 12,
+        "BlogNotCreated": 13
+      },
+      "body": {
+        "type": "JSON",
+        "data": {
+          "is_signed": true,
+          "repost_article_id": 7,
+          "payload": {
+            "time": 7,
+            "version": "sample version",
+            "blocks": [],
+            "block_count": 7
+          }
+        }
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "article": {
+        "@id": 7,
+        "id": 7,
+        "channel": {
+          "id": 7,
+          "title": "sample title",
+          "description": "sample description",
+          "cover": "sample cover",
+          "avatar": "sample avatar",
+          "permission": 7,
+          "article_count": 7,
+          "subscriber_count": 7,
+          "creation_date": 7,
+          "last_update_date": 7,
+          "is_blog": true,
+          "is_commenting_enabled": true,
+          "is_article_suggestion_enabled": true,
+          "is_episode_channel_widget_enabled": true,
+          "episode_channel_widget_sort": 0,
+          "episode_channel_widget_popularity_period": 0,
+          "episode_channel_widget_article_count": 7,
+          "is_linked_to_type": true,
+          "recent_article_count": 7,
+          "is_verified": true,
+          "is_deleted": true,
+          "blog_profile_id": 7,
+          "is_subscribed": true,
+          "is_muted": true,
+          "is_blocked": true,
+          "block_reason": "sample block_reason",
+          "block_expire_date": 7,
+          "is_perm_blocked": true,
+          "is_creator": true,
+          "is_administrator_or_higher": true
+        },
+        "author": {
+          "id": 7,
+          "login": "sample login",
+          "avatar": "sample avatar"
+        },
+        "repost_article": {
+          "@id": 7,
+          "id": 7,
+          "channel": {
+            "id": 7
+          },
+          "author": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "repost_article": {
+            "id": 7
+          },
+          "payload": {},
+          "creation_date": 7,
+          "last_update_date": 7,
+          "comment_count": 7,
+          "repost_count": 7,
+          "vote_count": 7,
+          "vote": 7,
+          "contains_repost_article": true,
+          "is_signed": true,
+          "is_pinned": true,
+          "is_muted": true,
+          "is_deleted": true,
+          "has_delete_enforcement": true,
+          "popular_comment": {
+            "id": 7
+          }
+        },
+        "payload": {
+          "time": 7,
+          "version": "sample version",
+          "blocks": [],
+          "block_count": 7
+        },
+        "creation_date": 7,
+        "last_update_date": 7,
+        "comment_count": 7,
+        "repost_count": 7,
+        "vote_count": 7,
+        "vote": 7,
+        "contains_repost_article": true,
+        "is_signed": true,
+        "is_pinned": true,
+        "is_muted": true,
+        "is_deleted": true,
+        "has_delete_enforcement": true,
+        "popular_comment": {
+          "id": 7,
+          "profile": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "message": "sample message",
+          "vote_count": 7,
+          "timestamp": 7
+        }
+      }
+    }
+  },
+  "Article.delete.defaults": {
+    "expected": {
+      "path": "/article/delete/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "ArticleNotFound",
+        "3": "ArticleNotOwned",
+        "4": "ArticleDeleted",
+        "ArticleNotFound": 2,
+        "ArticleNotOwned": 3,
+        "ArticleDeleted": 4
+      }
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "Article.delete.explicit": {
+    "expected": {
+      "path": "/article/delete/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "ArticleNotFound",
+        "3": "ArticleNotOwned",
+        "4": "ArticleDeleted",
+        "ArticleNotFound": 2,
+        "ArticleNotOwned": 3,
+        "ArticleDeleted": 4
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "Article.edit.defaults": {
+    "expected": {
+      "path": "/article/edit/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "InvalidRepostArticle",
+        "3": "InvalidPayload",
+        "4": "InvalidTags",
+        "5": "TemporarilyDisabled",
+        "6": "ArticleLimitReached",
+        "7": "ChannelNotFound",
+        "8": "ChannelNotOwned",
+        "9": "ChannelCreatorBanned",
+        "10": "ChannelBlocked",
+        "11": "ArticleNotFound",
+        "12": "ArticleDeleted",
+        "13": "BlogNotCreated",
+        "InvalidRepostArticle": 2,
+        "InvalidPayload": 3,
+        "InvalidTags": 4,
+        "TemporarilyDisabled": 5,
+        "ArticleLimitReached": 6,
+        "ChannelNotFound": 7,
+        "ChannelNotOwned": 8,
+        "ChannelCreatorBanned": 9,
+        "ChannelBlocked": 10,
+        "ArticleNotFound": 11,
+        "ArticleDeleted": 12,
+        "BlogNotCreated": 13
+      },
+      "body": {
+        "type": "JSON",
+        "data": {
+          "is_signed": true,
+          "repost_article_id": 7,
+          "payload": {
+            "time": 7,
+            "version": "sample version",
+            "blocks": [],
+            "block_count": 7
+          }
+        }
+      }
+    },
+    "response": {
+      "code": 0,
+      "article": {
+        "@id": 7,
+        "id": 7,
+        "channel": {
+          "id": 7,
+          "title": "sample title",
+          "description": "sample description",
+          "cover": "sample cover",
+          "avatar": "sample avatar",
+          "permission": 7,
+          "article_count": 7,
+          "subscriber_count": 7,
+          "creation_date": 7,
+          "last_update_date": 7,
+          "is_blog": true,
+          "is_commenting_enabled": true,
+          "is_article_suggestion_enabled": true,
+          "is_episode_channel_widget_enabled": true,
+          "episode_channel_widget_sort": 0,
+          "episode_channel_widget_popularity_period": 0,
+          "episode_channel_widget_article_count": 7,
+          "is_linked_to_type": true,
+          "recent_article_count": 7,
+          "is_verified": true,
+          "is_deleted": true,
+          "blog_profile_id": 7,
+          "is_subscribed": true,
+          "is_muted": true,
+          "is_blocked": true,
+          "block_reason": "sample block_reason",
+          "block_expire_date": 7,
+          "is_perm_blocked": true,
+          "is_creator": true,
+          "is_administrator_or_higher": true
+        },
+        "author": {
+          "id": 7,
+          "login": "sample login",
+          "avatar": "sample avatar"
+        },
+        "repost_article": {
+          "@id": 7,
+          "id": 7,
+          "channel": {
+            "id": 7
+          },
+          "author": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "repost_article": {
+            "id": 7
+          },
+          "payload": {},
+          "creation_date": 7,
+          "last_update_date": 7,
+          "comment_count": 7,
+          "repost_count": 7,
+          "vote_count": 7,
+          "vote": 7,
+          "contains_repost_article": true,
+          "is_signed": true,
+          "is_pinned": true,
+          "is_muted": true,
+          "is_deleted": true,
+          "has_delete_enforcement": true,
+          "popular_comment": {
+            "id": 7
+          }
+        },
+        "payload": {
+          "time": 7,
+          "version": "sample version",
+          "blocks": [],
+          "block_count": 7
+        },
+        "creation_date": 7,
+        "last_update_date": 7,
+        "comment_count": 7,
+        "repost_count": 7,
+        "vote_count": 7,
+        "vote": 7,
+        "contains_repost_article": true,
+        "is_signed": true,
+        "is_pinned": true,
+        "is_muted": true,
+        "is_deleted": true,
+        "has_delete_enforcement": true,
+        "popular_comment": {
+          "id": 7,
+          "profile": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "message": "sample message",
+          "vote_count": 7,
+          "timestamp": 7
+        }
+      }
+    }
+  },
+  "Article.edit.explicit": {
+    "expected": {
+      "path": "/article/edit/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "InvalidRepostArticle",
+        "3": "InvalidPayload",
+        "4": "InvalidTags",
+        "5": "TemporarilyDisabled",
+        "6": "ArticleLimitReached",
+        "7": "ChannelNotFound",
+        "8": "ChannelNotOwned",
+        "9": "ChannelCreatorBanned",
+        "10": "ChannelBlocked",
+        "11": "ArticleNotFound",
+        "12": "ArticleDeleted",
+        "13": "BlogNotCreated",
+        "InvalidRepostArticle": 2,
+        "InvalidPayload": 3,
+        "InvalidTags": 4,
+        "TemporarilyDisabled": 5,
+        "ArticleLimitReached": 6,
+        "ChannelNotFound": 7,
+        "ChannelNotOwned": 8,
+        "ChannelCreatorBanned": 9,
+        "ChannelBlocked": 10,
+        "ArticleNotFound": 11,
+        "ArticleDeleted": 12,
+        "BlogNotCreated": 13
+      },
+      "body": {
+        "type": "JSON",
+        "data": {
+          "is_signed": true,
+          "repost_article_id": 7,
+          "payload": {
+            "time": 7,
+            "version": "sample version",
+            "blocks": [],
+            "block_count": 7
+          }
+        }
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "article": {
+        "@id": 7,
+        "id": 7,
+        "channel": {
+          "id": 7,
+          "title": "sample title",
+          "description": "sample description",
+          "cover": "sample cover",
+          "avatar": "sample avatar",
+          "permission": 7,
+          "article_count": 7,
+          "subscriber_count": 7,
+          "creation_date": 7,
+          "last_update_date": 7,
+          "is_blog": true,
+          "is_commenting_enabled": true,
+          "is_article_suggestion_enabled": true,
+          "is_episode_channel_widget_enabled": true,
+          "episode_channel_widget_sort": 0,
+          "episode_channel_widget_popularity_period": 0,
+          "episode_channel_widget_article_count": 7,
+          "is_linked_to_type": true,
+          "recent_article_count": 7,
+          "is_verified": true,
+          "is_deleted": true,
+          "blog_profile_id": 7,
+          "is_subscribed": true,
+          "is_muted": true,
+          "is_blocked": true,
+          "block_reason": "sample block_reason",
+          "block_expire_date": 7,
+          "is_perm_blocked": true,
+          "is_creator": true,
+          "is_administrator_or_higher": true
+        },
+        "author": {
+          "id": 7,
+          "login": "sample login",
+          "avatar": "sample avatar"
+        },
+        "repost_article": {
+          "@id": 7,
+          "id": 7,
+          "channel": {
+            "id": 7
+          },
+          "author": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "repost_article": {
+            "id": 7
+          },
+          "payload": {},
+          "creation_date": 7,
+          "last_update_date": 7,
+          "comment_count": 7,
+          "repost_count": 7,
+          "vote_count": 7,
+          "vote": 7,
+          "contains_repost_article": true,
+          "is_signed": true,
+          "is_pinned": true,
+          "is_muted": true,
+          "is_deleted": true,
+          "has_delete_enforcement": true,
+          "popular_comment": {
+            "id": 7
+          }
+        },
+        "payload": {
+          "time": 7,
+          "version": "sample version",
+          "blocks": [],
+          "block_count": 7
+        },
+        "creation_date": 7,
+        "last_update_date": 7,
+        "comment_count": 7,
+        "repost_count": 7,
+        "vote_count": 7,
+        "vote": 7,
+        "contains_repost_article": true,
+        "is_signed": true,
+        "is_pinned": true,
+        "is_muted": true,
+        "is_deleted": true,
+        "has_delete_enforcement": true,
+        "popular_comment": {
+          "id": 7,
+          "profile": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "message": "sample message",
+          "vote_count": 7,
+          "timestamp": 7
+        }
+      }
+    }
+  },
+  "Article.editIsPinned.defaults": {
+    "expected": {
+      "path": "/article/edit/pinned/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "ChannelNotFound",
+        "3": "ChannelNotOwned",
+        "4": "ArticleNotFound",
+        "5": "ArticleDeleted",
+        "ChannelNotFound": 2,
+        "ChannelNotOwned": 3,
+        "ArticleNotFound": 4,
+        "ArticleDeleted": 5
+      },
+      "query": {
+        "is_pinned": true
+      }
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "Article.editIsPinned.explicit": {
+    "expected": {
+      "path": "/article/edit/pinned/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "ChannelNotFound",
+        "3": "ChannelNotOwned",
+        "4": "ArticleNotFound",
+        "5": "ArticleDeleted",
+        "ChannelNotFound": 2,
+        "ChannelNotOwned": 3,
+        "ArticleNotFound": 4,
+        "ArticleDeleted": 5
+      },
+      "query": {
+        "is_pinned": true
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "Article.event.defaults": {
+    "expected": {
+      "path": "/article/event",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "body": {
+        "type": "JSON",
+        "data": {
+          "type": "view",
+          "entry_point": "unknown",
+          "articles": [
+            7
+          ]
+        }
+      }
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "Article.event.explicit": {
+    "expected": {
+      "path": "/article/event",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "body": {
+        "type": "JSON",
+        "data": {
+          "type": "view",
+          "entry_point": "unknown",
+          "articles": [
+            7
+          ]
+        }
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "Article.mute.defaults": {
+    "expected": {
+      "path": "/article/mute/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "ArticleNotFound",
+        "3": "ChannelNotFound",
+        "4": "ChannelOwned",
+        "ArticleNotFound": 2,
+        "ChannelNotFound": 3,
+        "ChannelOwned": 4
+      }
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "Article.mute.explicit": {
+    "expected": {
+      "path": "/article/mute/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "ArticleNotFound",
+        "3": "ChannelNotFound",
+        "4": "ChannelOwned",
+        "ArticleNotFound": 2,
+        "ChannelNotFound": 3,
+        "ChannelOwned": 4
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "Article.reposts.defaults": {
+    "expected": {
+      "path": "/article/reposts/7/0",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "query": {
+        "sort": 7
+      }
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "@id": 7,
+          "id": 7,
+          "channel": {
+            "id": 7
+          },
+          "author": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "repost_article": {
+            "id": 7
+          },
+          "payload": {},
+          "creation_date": 7,
+          "last_update_date": 7,
+          "comment_count": 7,
+          "repost_count": 7,
+          "vote_count": 7,
+          "vote": 7,
+          "contains_repost_article": true,
+          "is_signed": true,
+          "is_pinned": true,
+          "is_muted": true,
+          "is_deleted": true,
+          "has_delete_enforcement": true,
+          "popular_comment": {
+            "id": 7
+          }
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "Article.reposts.explicit": {
+    "expected": {
+      "path": "/article/reposts/7/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "query": {
+        "sort": 7
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "@id": 7,
+          "id": 7,
+          "channel": {
+            "id": 7
+          },
+          "author": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "repost_article": {
+            "id": 7
+          },
+          "payload": {},
+          "creation_date": 7,
+          "last_update_date": 7,
+          "comment_count": 7,
+          "repost_count": 7,
+          "vote_count": 7,
+          "vote": 7,
+          "contains_repost_article": true,
+          "is_signed": true,
+          "is_pinned": true,
+          "is_muted": true,
+          "is_deleted": true,
+          "has_delete_enforcement": true,
+          "popular_comment": {
+            "id": 7
+          }
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "Article.unmute.defaults": {
+    "expected": {
+      "path": "/article/unmute/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "ArticleNotFound",
+        "3": "ChannelNotFound",
+        "4": "ChannelOwned",
+        "ArticleNotFound": 2,
+        "ChannelNotFound": 3,
+        "ChannelOwned": 4
+      }
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "Article.unmute.explicit": {
+    "expected": {
+      "path": "/article/unmute/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "ArticleNotFound",
+        "3": "ChannelNotFound",
+        "4": "ChannelOwned",
+        "ArticleNotFound": 2,
+        "ChannelNotFound": 3,
+        "ChannelOwned": 4
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "Article.vote.defaults": {
+    "expected": {
+      "path": "/article/vote/7/2",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      }
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "Article.vote.explicit": {
+    "expected": {
+      "path": "/article/vote/7/2",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "Article.votes.defaults": {
+    "expected": {
+      "path": "/article/votes/7/0",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "query": {
+        "sort": 0
+      }
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "id": 7,
+          "login": "sample login",
+          "avatar": "sample avatar",
+          "status": "sample status",
+          "badge": {
+            "id": 7,
+            "name": "sample name",
+            "type": 7
+          },
+          "history": [],
+          "votes": [],
+          "roles": [],
+          "last_activity_time": 7,
+          "register_date": 7,
+          "vk_page": "sample vk_page",
+          "tg_page": "sample tg_page",
+          "inst_page": "sample inst_page",
+          "tt_page": "sample tt_page",
+          "discord_page": "sample discord_page",
+          "ban_expires": 7,
+          "ban_reason": "sample ban_reason",
+          "privilege_level": 0,
+          "watching_count": 7,
+          "plan_count": 7,
+          "completed_count": 7,
+          "hold_on_count": 7,
+          "dropped_count": 7,
+          "favorite_count": 7,
+          "comment_count": 7,
+          "collection_count": 7,
+          "video_count": 7,
+          "friend_count": 7,
+          "subscription_count": 7,
+          "watched_episode_count": 7,
+          "watched_time": 7,
+          "pinned_section_id": 7,
+          "is_private": true,
+          "is_sponsor": true,
+          "is_banned": true,
+          "is_perm_banned": true,
+          "is_deleted": true,
+          "is_deletion_requested": true,
+          "is_bookmarks_transferred": true,
+          "is_sponsor_transferred": true,
+          "is_vk_bound": true,
+          "is_google_bound": true,
+          "is_telegram_bound": true,
+          "is_yandex_bound": true,
+          "is_incognito": true,
+          "episode_channel_widgets_hidden": true,
+          "is_release_type_notifications_enabled": true,
+          "is_episode_notifications_enabled": true,
+          "is_first_episode_notification_enabled": true,
+          "is_related_release_notifications_enabled": true,
+          "is_report_process_notifications_enabled": true,
+          "is_comment_notifications_enabled": true,
+          "is_my_collection_comment_notifications_enabled": true,
+          "is_article_notifications_enabled": true,
+          "is_my_article_comment_notifications_enabled": true,
+          "is_verified": true,
+          "friends_preview": [],
+          "collections_preview": [],
+          "comments_preview": [],
+          "release_videos_preview": [],
+          "watch_dynamics": [],
+          "friend_status": 0,
+          "rating_score": 7,
+          "preferred_genres": [],
+          "preferred_audiences": [],
+          "preferred_themes": [],
+          "theme_enabled": true,
+          "theme_gradient_start_color": "sample theme_gradient_start_color",
+          "theme_gradient_end_color": "sample theme_gradient_end_color",
+          "theme_gradient_angle": "sample theme_gradient_angle",
+          "theme_icon_res_name": "sample theme_icon_res_name",
+          "theme_icon_url": "sample theme_icon_url",
+          "theme_icon_color": "sample theme_icon_color",
+          "theme_icon_alpha": 2.5,
+          "theme_icon_density": "sample theme_icon_density",
+          "theme_icon_size": "sample theme_icon_size",
+          "theme_animation_enabled": true,
+          "theme_animation_speed": "sample theme_animation_speed",
+          "theme_background_url": "sample theme_background_url",
+          "theme_background_mode": "sample theme_background_mode",
+          "theme_background_alpha": 2.5,
+          "deletion_requested_at": 7,
+          "deletion_delete_at": 7,
+          "is_blocked": true,
+          "is_me_blocked": true,
+          "is_stats_hidden": true,
+          "is_counts_hidden": true,
+          "is_social_hidden": true,
+          "is_friend_requests_disallowed": true,
+          "is_online": true
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "Article.votes.explicit": {
+    "expected": {
+      "path": "/article/votes/7/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "query": {
+        "sort": 7
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "id": 7,
+          "login": "sample login",
+          "avatar": "sample avatar",
+          "status": "sample status",
+          "badge": {
+            "id": 7,
+            "name": "sample name",
+            "type": 7
+          },
+          "history": [],
+          "votes": [],
+          "roles": [],
+          "last_activity_time": 7,
+          "register_date": 7,
+          "vk_page": "sample vk_page",
+          "tg_page": "sample tg_page",
+          "inst_page": "sample inst_page",
+          "tt_page": "sample tt_page",
+          "discord_page": "sample discord_page",
+          "ban_expires": 7,
+          "ban_reason": "sample ban_reason",
+          "privilege_level": 0,
+          "watching_count": 7,
+          "plan_count": 7,
+          "completed_count": 7,
+          "hold_on_count": 7,
+          "dropped_count": 7,
+          "favorite_count": 7,
+          "comment_count": 7,
+          "collection_count": 7,
+          "video_count": 7,
+          "friend_count": 7,
+          "subscription_count": 7,
+          "watched_episode_count": 7,
+          "watched_time": 7,
+          "pinned_section_id": 7,
+          "is_private": true,
+          "is_sponsor": true,
+          "is_banned": true,
+          "is_perm_banned": true,
+          "is_deleted": true,
+          "is_deletion_requested": true,
+          "is_bookmarks_transferred": true,
+          "is_sponsor_transferred": true,
+          "is_vk_bound": true,
+          "is_google_bound": true,
+          "is_telegram_bound": true,
+          "is_yandex_bound": true,
+          "is_incognito": true,
+          "episode_channel_widgets_hidden": true,
+          "is_release_type_notifications_enabled": true,
+          "is_episode_notifications_enabled": true,
+          "is_first_episode_notification_enabled": true,
+          "is_related_release_notifications_enabled": true,
+          "is_report_process_notifications_enabled": true,
+          "is_comment_notifications_enabled": true,
+          "is_my_collection_comment_notifications_enabled": true,
+          "is_article_notifications_enabled": true,
+          "is_my_article_comment_notifications_enabled": true,
+          "is_verified": true,
+          "friends_preview": [],
+          "collections_preview": [],
+          "comments_preview": [],
+          "release_videos_preview": [],
+          "watch_dynamics": [],
+          "friend_status": 0,
+          "rating_score": 7,
+          "preferred_genres": [],
+          "preferred_audiences": [],
+          "preferred_themes": [],
+          "theme_enabled": true,
+          "theme_gradient_start_color": "sample theme_gradient_start_color",
+          "theme_gradient_end_color": "sample theme_gradient_end_color",
+          "theme_gradient_angle": "sample theme_gradient_angle",
+          "theme_icon_res_name": "sample theme_icon_res_name",
+          "theme_icon_url": "sample theme_icon_url",
+          "theme_icon_color": "sample theme_icon_color",
+          "theme_icon_alpha": 2.5,
+          "theme_icon_density": "sample theme_icon_density",
+          "theme_icon_size": "sample theme_icon_size",
+          "theme_animation_enabled": true,
+          "theme_animation_speed": "sample theme_animation_speed",
+          "theme_background_url": "sample theme_background_url",
+          "theme_background_mode": "sample theme_background_mode",
+          "theme_background_alpha": 2.5,
+          "deletion_requested_at": 7,
+          "deletion_delete_at": 7,
+          "is_blocked": true,
+          "is_me_blocked": true,
+          "is_stats_hidden": true,
+          "is_counts_hidden": true,
+          "is_social_hidden": true,
+          "is_friend_requests_disallowed": true,
+          "is_online": true
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "Article.uploadArticleImage.defaults": {
+    "expected": {
+      "path": "/content/upload",
+      "method": "POST",
+      "body": {
+        "type": "Image",
+        "data": {
+          "name": "<temporary-file-name>",
+          "file": [
+            65,
+            66,
+            67
+          ],
+          "type": "file"
+        }
+      },
+      "auth": {
+        "type": "Bearer",
+        "token": "sample mediaToken"
+      },
+      "customBaseUrl": "https://editor.anixsekai.com"
+    },
+    "response": {
+      "file": {
+        "id": "sample id",
+        "url": "sample url",
+        "hash": "sample hash",
+        "width": 7,
+        "height": 7
+      },
+      "success": 7
+    }
+  },
+  "Article.uploadArticleImage.explicit": {
+    "expected": {
+      "path": "/content/upload",
+      "method": "POST",
+      "body": {
+        "type": "Image",
+        "data": {
+          "name": "<temporary-file-name>",
+          "file": [
+            65,
+            66,
+            67
+          ],
+          "type": "file"
+        }
+      },
+      "auth": {
+        "type": "Bearer",
+        "token": "sample mediaToken"
+      },
+      "customBaseUrl": "https://editor.anixsekai.com",
+      "apiVersion": 3
+    },
+    "response": {
+      "file": {
+        "id": "sample id",
+        "url": "sample url",
+        "hash": "sample hash",
+        "width": 7,
+        "height": 7
+      },
+      "success": 7
+    }
+  },
+  "Article.generateEmbedData.defaults": {
+    "expected": {
+      "path": "/embed/youtube",
+      "method": "GET",
+      "query": {
+        "url": "sample link"
+      },
+      "auth": {
+        "type": "Bearer",
+        "token": "sample mediaToken"
+      },
+      "customBaseUrl": "https://editor.anixsekai.com"
+    },
+    "response": {
+      "url": "sample link",
+      "hash": "sample hash",
+      "embed": "sample embed",
+      "width": 7,
+      "height": 7,
+      "image": "sample image",
+      "title": "sample title",
+      "service": "sample service",
+      "site_name": "sample site_name",
+      "description": "sample description",
+      "success": 7
+    }
+  },
+  "Article.generateEmbedData.explicit": {
+    "expected": {
+      "path": "/embed/youtube",
+      "method": "GET",
+      "query": {
+        "url": "sample link"
+      },
+      "auth": {
+        "type": "Bearer",
+        "token": "sample mediaToken"
+      },
+      "customBaseUrl": "https://editor.anixsekai.com",
+      "apiVersion": 3
+    },
+    "response": {
+      "url": "sample link",
+      "hash": "sample hash",
+      "embed": "sample embed",
+      "width": 7,
+      "height": 7,
+      "image": "sample image",
+      "title": "sample title",
+      "service": "sample service",
+      "site_name": "sample site_name",
+      "description": "sample description",
+      "success": 7
+    }
+  },
+  "ArticleComment.add.defaults": {
+    "expected": {
+      "path": "/article/comment/add/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "EmbeddableNotFound",
+        "3": "CommentNotFound",
+        "4": "ProfileNotFound",
+        "5": "CommentIsTooShort",
+        "6": "CommentIsTooLong",
+        "7": "CommentLimitReached",
+        "8": "InBlocklist",
+        "EmbeddableNotFound": 2,
+        "CommentNotFound": 3,
+        "ProfileNotFound": 4,
+        "CommentIsTooShort": 5,
+        "CommentIsTooLong": 6,
+        "CommentLimitReached": 7,
+        "InBlocklist": 8
+      },
+      "body": {
+        "type": "JSON",
+        "data": {
+          "parentCommentId": 7,
+          "replyToProfileId": 7,
+          "message": "sample message",
+          "spoiler": true
+        }
+      }
+    },
+    "response": {
+      "code": 0,
+      "comment": {
+        "id": 7,
+        "message": "sample message",
+        "timestamp": 7,
+        "type": 7,
+        "vote": 7,
+        "profile": {
+          "badge_id": 7,
+          "badge_name": "sample badge_name",
+          "badge_type": 7,
+          "badge_url": "sample badge_url",
+          "ban_expires": 7,
+          "ban_reason": "sample ban_reason",
+          "id": 7,
+          "is_banned": true,
+          "is_sponsor": true,
+          "is_verified": true,
+          "privilege_level": 7,
+          "login": "sample login",
+          "avatar": "sample avatar",
+          "channel_id": 7,
+          "permission": 0,
+          "permission_creation_date": 7,
+          "is_blocked": true,
+          "is_perm_blocked": true,
+          "block_reason": "sample block_reason",
+          "block_expire_date": 7
+        },
+        "parent_comment_id": 7,
+        "vote_count": 7,
+        "likes_count": 7,
+        "is_spoiler": true,
+        "is_edited": true,
+        "is_deleted": true,
+        "is_reply": true,
+        "reply_count": 7,
+        "can_like": true,
+        "article": {
+          "@id": 7,
+          "id": 7,
+          "channel": {
+            "id": 7
+          },
+          "author": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "repost_article": {
+            "id": 7
+          },
+          "payload": {},
+          "creation_date": 7,
+          "last_update_date": 7,
+          "comment_count": 7,
+          "repost_count": 7,
+          "vote_count": 7,
+          "vote": 7,
+          "contains_repost_article": true,
+          "is_signed": true,
+          "is_pinned": true,
+          "is_muted": true,
+          "is_deleted": true,
+          "has_delete_enforcement": true,
+          "popular_comment": {
+            "id": 7
+          }
+        }
+      }
+    }
+  },
+  "ArticleComment.add.explicit": {
+    "expected": {
+      "path": "/article/comment/add/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "EmbeddableNotFound",
+        "3": "CommentNotFound",
+        "4": "ProfileNotFound",
+        "5": "CommentIsTooShort",
+        "6": "CommentIsTooLong",
+        "7": "CommentLimitReached",
+        "8": "InBlocklist",
+        "EmbeddableNotFound": 2,
+        "CommentNotFound": 3,
+        "ProfileNotFound": 4,
+        "CommentIsTooShort": 5,
+        "CommentIsTooLong": 6,
+        "CommentLimitReached": 7,
+        "InBlocklist": 8
+      },
+      "body": {
+        "type": "JSON",
+        "data": {
+          "parentCommentId": 7,
+          "replyToProfileId": 7,
+          "message": "sample message",
+          "spoiler": true
+        }
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "comment": {
+        "id": 7,
+        "message": "sample message",
+        "timestamp": 7,
+        "type": 7,
+        "vote": 7,
+        "profile": {
+          "badge_id": 7,
+          "badge_name": "sample badge_name",
+          "badge_type": 7,
+          "badge_url": "sample badge_url",
+          "ban_expires": 7,
+          "ban_reason": "sample ban_reason",
+          "id": 7,
+          "is_banned": true,
+          "is_sponsor": true,
+          "is_verified": true,
+          "privilege_level": 7,
+          "login": "sample login",
+          "avatar": "sample avatar",
+          "channel_id": 7,
+          "permission": 0,
+          "permission_creation_date": 7,
+          "is_blocked": true,
+          "is_perm_blocked": true,
+          "block_reason": "sample block_reason",
+          "block_expire_date": 7
+        },
+        "parent_comment_id": 7,
+        "vote_count": 7,
+        "likes_count": 7,
+        "is_spoiler": true,
+        "is_edited": true,
+        "is_deleted": true,
+        "is_reply": true,
+        "reply_count": 7,
+        "can_like": true,
+        "article": {
+          "@id": 7,
+          "id": 7,
+          "channel": {
+            "id": 7
+          },
+          "author": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "repost_article": {
+            "id": 7
+          },
+          "payload": {},
+          "creation_date": 7,
+          "last_update_date": 7,
+          "comment_count": 7,
+          "repost_count": 7,
+          "vote_count": 7,
+          "vote": 7,
+          "contains_repost_article": true,
+          "is_signed": true,
+          "is_pinned": true,
+          "is_muted": true,
+          "is_deleted": true,
+          "has_delete_enforcement": true,
+          "popular_comment": {
+            "id": 7
+          }
+        }
+      }
+    }
+  },
+  "ArticleComment.get.defaults": {
+    "expected": {
+      "path": "/article/comment/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      }
+    },
+    "response": {
+      "id": 7,
+      "message": "sample message",
+      "timestamp": 7,
+      "type": 7,
+      "vote": 7,
+      "profile": {
+        "badge_id": 7,
+        "badge_name": "sample badge_name",
+        "badge_type": 7,
+        "badge_url": "sample badge_url",
+        "ban_expires": 7,
+        "ban_reason": "sample ban_reason",
+        "id": 7,
+        "is_banned": true,
+        "is_sponsor": true,
+        "is_verified": true,
+        "privilege_level": 7,
+        "login": "sample login",
+        "avatar": "sample avatar",
+        "channel_id": 7,
+        "permission": 0,
+        "permission_creation_date": 7,
+        "is_blocked": true,
+        "is_perm_blocked": true,
+        "block_reason": "sample block_reason",
+        "block_expire_date": 7
+      },
+      "parent_comment_id": 7,
+      "vote_count": 7,
+      "likes_count": 7,
+      "is_spoiler": true,
+      "is_edited": true,
+      "is_deleted": true,
+      "is_reply": true,
+      "reply_count": 7,
+      "can_like": true,
+      "article": {
+        "@id": 7,
+        "id": 7,
+        "channel": {
+          "id": 7,
+          "title": "sample title",
+          "description": "sample description",
+          "cover": "sample cover",
+          "avatar": "sample avatar",
+          "permission": 7,
+          "article_count": 7,
+          "subscriber_count": 7,
+          "creation_date": 7,
+          "last_update_date": 7,
+          "is_blog": true,
+          "is_commenting_enabled": true,
+          "is_article_suggestion_enabled": true,
+          "is_episode_channel_widget_enabled": true,
+          "episode_channel_widget_sort": 0,
+          "episode_channel_widget_popularity_period": 0,
+          "episode_channel_widget_article_count": 7,
+          "is_linked_to_type": true,
+          "recent_article_count": 7,
+          "is_verified": true,
+          "is_deleted": true,
+          "blog_profile_id": 7,
+          "is_subscribed": true,
+          "is_muted": true,
+          "is_blocked": true,
+          "block_reason": "sample block_reason",
+          "block_expire_date": 7,
+          "is_perm_blocked": true,
+          "is_creator": true,
+          "is_administrator_or_higher": true
+        },
+        "author": {
+          "id": 7,
+          "login": "sample login",
+          "avatar": "sample avatar"
+        },
+        "repost_article": {
+          "@id": 7,
+          "id": 7,
+          "channel": {
+            "id": 7
+          },
+          "author": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "repost_article": {
+            "id": 7
+          },
+          "payload": {},
+          "creation_date": 7,
+          "last_update_date": 7,
+          "comment_count": 7,
+          "repost_count": 7,
+          "vote_count": 7,
+          "vote": 7,
+          "contains_repost_article": true,
+          "is_signed": true,
+          "is_pinned": true,
+          "is_muted": true,
+          "is_deleted": true,
+          "has_delete_enforcement": true,
+          "popular_comment": {
+            "id": 7
+          }
+        },
+        "payload": {
+          "time": 7,
+          "version": "sample version",
+          "blocks": [],
+          "block_count": 7
+        },
+        "creation_date": 7,
+        "last_update_date": 7,
+        "comment_count": 7,
+        "repost_count": 7,
+        "vote_count": 7,
+        "vote": 7,
+        "contains_repost_article": true,
+        "is_signed": true,
+        "is_pinned": true,
+        "is_muted": true,
+        "is_deleted": true,
+        "has_delete_enforcement": true,
+        "popular_comment": {
+          "id": 7,
+          "profile": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "message": "sample message",
+          "vote_count": 7,
+          "timestamp": 7
+        }
+      }
+    }
+  },
+  "ArticleComment.get.explicit": {
+    "expected": {
+      "path": "/article/comment/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "id": 7,
+      "message": "sample message",
+      "timestamp": 7,
+      "type": 7,
+      "vote": 7,
+      "profile": {
+        "badge_id": 7,
+        "badge_name": "sample badge_name",
+        "badge_type": 7,
+        "badge_url": "sample badge_url",
+        "ban_expires": 7,
+        "ban_reason": "sample ban_reason",
+        "id": 7,
+        "is_banned": true,
+        "is_sponsor": true,
+        "is_verified": true,
+        "privilege_level": 7,
+        "login": "sample login",
+        "avatar": "sample avatar",
+        "channel_id": 7,
+        "permission": 0,
+        "permission_creation_date": 7,
+        "is_blocked": true,
+        "is_perm_blocked": true,
+        "block_reason": "sample block_reason",
+        "block_expire_date": 7
+      },
+      "parent_comment_id": 7,
+      "vote_count": 7,
+      "likes_count": 7,
+      "is_spoiler": true,
+      "is_edited": true,
+      "is_deleted": true,
+      "is_reply": true,
+      "reply_count": 7,
+      "can_like": true,
+      "article": {
+        "@id": 7,
+        "id": 7,
+        "channel": {
+          "id": 7,
+          "title": "sample title",
+          "description": "sample description",
+          "cover": "sample cover",
+          "avatar": "sample avatar",
+          "permission": 7,
+          "article_count": 7,
+          "subscriber_count": 7,
+          "creation_date": 7,
+          "last_update_date": 7,
+          "is_blog": true,
+          "is_commenting_enabled": true,
+          "is_article_suggestion_enabled": true,
+          "is_episode_channel_widget_enabled": true,
+          "episode_channel_widget_sort": 0,
+          "episode_channel_widget_popularity_period": 0,
+          "episode_channel_widget_article_count": 7,
+          "is_linked_to_type": true,
+          "recent_article_count": 7,
+          "is_verified": true,
+          "is_deleted": true,
+          "blog_profile_id": 7,
+          "is_subscribed": true,
+          "is_muted": true,
+          "is_blocked": true,
+          "block_reason": "sample block_reason",
+          "block_expire_date": 7,
+          "is_perm_blocked": true,
+          "is_creator": true,
+          "is_administrator_or_higher": true
+        },
+        "author": {
+          "id": 7,
+          "login": "sample login",
+          "avatar": "sample avatar"
+        },
+        "repost_article": {
+          "@id": 7,
+          "id": 7,
+          "channel": {
+            "id": 7
+          },
+          "author": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "repost_article": {
+            "id": 7
+          },
+          "payload": {},
+          "creation_date": 7,
+          "last_update_date": 7,
+          "comment_count": 7,
+          "repost_count": 7,
+          "vote_count": 7,
+          "vote": 7,
+          "contains_repost_article": true,
+          "is_signed": true,
+          "is_pinned": true,
+          "is_muted": true,
+          "is_deleted": true,
+          "has_delete_enforcement": true,
+          "popular_comment": {
+            "id": 7
+          }
+        },
+        "payload": {
+          "time": 7,
+          "version": "sample version",
+          "blocks": [],
+          "block_count": 7
+        },
+        "creation_date": 7,
+        "last_update_date": 7,
+        "comment_count": 7,
+        "repost_count": 7,
+        "vote_count": 7,
+        "vote": 7,
+        "contains_repost_article": true,
+        "is_signed": true,
+        "is_pinned": true,
+        "is_muted": true,
+        "is_deleted": true,
+        "has_delete_enforcement": true,
+        "popular_comment": {
+          "id": 7,
+          "profile": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "message": "sample message",
+          "vote_count": 7,
+          "timestamp": 7
+        }
+      }
+    }
+  },
+  "ArticleComment.all.defaults": {
+    "expected": {
+      "path": "/article/comment/all/7/0",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "query": {
+        "sort": 7
+      }
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "id": 7,
+          "message": "sample message",
+          "timestamp": 7,
+          "type": 7,
+          "vote": 7,
+          "profile": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "parent_comment_id": 7,
+          "vote_count": 7,
+          "likes_count": 7,
+          "is_spoiler": true,
+          "is_edited": true,
+          "is_deleted": true,
+          "is_reply": true,
+          "reply_count": 7,
+          "can_like": true,
+          "article": {
+            "id": 7
+          }
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "ArticleComment.all.explicit": {
+    "expected": {
+      "path": "/article/comment/all/7/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "query": {
+        "sort": 7
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "id": 7,
+          "message": "sample message",
+          "timestamp": 7,
+          "type": 7,
+          "vote": 7,
+          "profile": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "parent_comment_id": 7,
+          "vote_count": 7,
+          "likes_count": 7,
+          "is_spoiler": true,
+          "is_edited": true,
+          "is_deleted": true,
+          "is_reply": true,
+          "reply_count": 7,
+          "can_like": true,
+          "article": {
+            "id": 7
+          }
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "ArticleComment.popular.defaults": {
+    "expected": {
+      "path": "/article/comment/all/7/popular",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      }
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "id": 7,
+          "message": "sample message",
+          "timestamp": 7,
+          "type": 7,
+          "vote": 7,
+          "profile": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "parent_comment_id": 7,
+          "vote_count": 7,
+          "likes_count": 7,
+          "is_spoiler": true,
+          "is_edited": true,
+          "is_deleted": true,
+          "is_reply": true,
+          "reply_count": 7,
+          "can_like": true,
+          "article": {
+            "id": 7
+          }
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "ArticleComment.popular.explicit": {
+    "expected": {
+      "path": "/article/comment/all/7/popular",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "id": 7,
+          "message": "sample message",
+          "timestamp": 7,
+          "type": 7,
+          "vote": 7,
+          "profile": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "parent_comment_id": 7,
+          "vote_count": 7,
+          "likes_count": 7,
+          "is_spoiler": true,
+          "is_edited": true,
+          "is_deleted": true,
+          "is_reply": true,
+          "reply_count": 7,
+          "can_like": true,
+          "article": {
+            "id": 7
+          }
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "ArticleComment.delete.defaults": {
+    "expected": {
+      "path": "/article/comment/delete/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "CommentNotFound",
+        "3": "CommentNotOwned",
+        "CommentNotFound": 2,
+        "CommentNotOwned": 3
+      }
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "ArticleComment.delete.explicit": {
+    "expected": {
+      "path": "/article/comment/delete/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "CommentNotFound",
+        "3": "CommentNotOwned",
+        "CommentNotFound": 2,
+        "CommentNotOwned": 3
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "ArticleComment.edit.defaults": {
+    "expected": {
+      "path": "/article/comment/edit/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "CommentNotFound",
+        "3": "CommentIsTooShort",
+        "4": "CommentIsTooLong",
+        "5": "CommentNotOwned",
+        "6": "CommentWasDeleted",
+        "7": "EmbeddableNotFound",
+        "CommentNotFound": 2,
+        "CommentIsTooShort": 3,
+        "CommentIsTooLong": 4,
+        "CommentNotOwned": 5,
+        "CommentWasDeleted": 6,
+        "EmbeddableNotFound": 7
+      },
+      "body": {
+        "type": "JSON",
+        "data": {
+          "message": "sample message",
+          "spoiler": true
+        }
+      }
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "ArticleComment.edit.explicit": {
+    "expected": {
+      "path": "/article/comment/edit/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "CommentNotFound",
+        "3": "CommentIsTooShort",
+        "4": "CommentIsTooLong",
+        "5": "CommentNotOwned",
+        "6": "CommentWasDeleted",
+        "7": "EmbeddableNotFound",
+        "CommentNotFound": 2,
+        "CommentIsTooShort": 3,
+        "CommentIsTooLong": 4,
+        "CommentNotOwned": 5,
+        "CommentWasDeleted": 6,
+        "EmbeddableNotFound": 7
+      },
+      "body": {
+        "type": "JSON",
+        "data": {
+          "message": "sample message",
+          "spoiler": true
+        }
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "ArticleComment.profileComments.defaults": {
+    "expected": {
+      "path": "/article/comment/all/profile/7/0",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "query": {
+        "sort": 7
+      }
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "id": 7,
+          "message": "sample message",
+          "timestamp": 7,
+          "type": 7,
+          "vote": 7,
+          "profile": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "parent_comment_id": 7,
+          "vote_count": 7,
+          "likes_count": 7,
+          "is_spoiler": true,
+          "is_edited": true,
+          "is_deleted": true,
+          "is_reply": true,
+          "reply_count": 7,
+          "can_like": true,
+          "article": {
+            "id": 7
+          }
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "ArticleComment.profileComments.explicit": {
+    "expected": {
+      "path": "/article/comment/all/profile/7/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "query": {
+        "sort": 7
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "id": 7,
+          "message": "sample message",
+          "timestamp": 7,
+          "type": 7,
+          "vote": 7,
+          "profile": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "parent_comment_id": 7,
+          "vote_count": 7,
+          "likes_count": 7,
+          "is_spoiler": true,
+          "is_edited": true,
+          "is_deleted": true,
+          "is_reply": true,
+          "reply_count": 7,
+          "can_like": true,
+          "article": {
+            "id": 7
+          }
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "ArticleComment.replies.defaults": {
+    "expected": {
+      "path": "/article/comment/replies/7/0",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "query": {
+        "sort": 7
+      }
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "id": 7,
+          "message": "sample message",
+          "timestamp": 7,
+          "type": 7,
+          "vote": 7,
+          "profile": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "parent_comment_id": 7,
+          "vote_count": 7,
+          "likes_count": 7,
+          "is_spoiler": true,
+          "is_edited": true,
+          "is_deleted": true,
+          "is_reply": true,
+          "reply_count": 7,
+          "can_like": true,
+          "article": {
+            "id": 7
+          }
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "ArticleComment.replies.explicit": {
+    "expected": {
+      "path": "/article/comment/replies/7/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "query": {
+        "sort": 7
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "id": 7,
+          "message": "sample message",
+          "timestamp": 7,
+          "type": 7,
+          "vote": 7,
+          "profile": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "parent_comment_id": 7,
+          "vote_count": 7,
+          "likes_count": 7,
+          "is_spoiler": true,
+          "is_edited": true,
+          "is_deleted": true,
+          "is_reply": true,
+          "reply_count": 7,
+          "can_like": true,
+          "article": {
+            "id": 7
+          }
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "ArticleComment.vote.defaults": {
+    "expected": {
+      "path": "/article/comment/vote/7/2",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      }
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "ArticleComment.vote.explicit": {
+    "expected": {
+      "path": "/article/comment/vote/7/2",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "ArticleComment.votes.defaults": {
+    "expected": {
+      "path": "/article/comment/votes/7/0",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "query": {
+        "sort": 0
+      }
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "id": 7,
+          "login": "sample login",
+          "avatar": "sample avatar",
+          "status": "sample status",
+          "badge": {
+            "id": 7,
+            "name": "sample name",
+            "type": 7
+          },
+          "history": [],
+          "votes": [],
+          "roles": [],
+          "last_activity_time": 7,
+          "register_date": 7,
+          "vk_page": "sample vk_page",
+          "tg_page": "sample tg_page",
+          "inst_page": "sample inst_page",
+          "tt_page": "sample tt_page",
+          "discord_page": "sample discord_page",
+          "ban_expires": 7,
+          "ban_reason": "sample ban_reason",
+          "privilege_level": 0,
+          "watching_count": 7,
+          "plan_count": 7,
+          "completed_count": 7,
+          "hold_on_count": 7,
+          "dropped_count": 7,
+          "favorite_count": 7,
+          "comment_count": 7,
+          "collection_count": 7,
+          "video_count": 7,
+          "friend_count": 7,
+          "subscription_count": 7,
+          "watched_episode_count": 7,
+          "watched_time": 7,
+          "pinned_section_id": 7,
+          "is_private": true,
+          "is_sponsor": true,
+          "is_banned": true,
+          "is_perm_banned": true,
+          "is_deleted": true,
+          "is_deletion_requested": true,
+          "is_bookmarks_transferred": true,
+          "is_sponsor_transferred": true,
+          "is_vk_bound": true,
+          "is_google_bound": true,
+          "is_telegram_bound": true,
+          "is_yandex_bound": true,
+          "is_incognito": true,
+          "episode_channel_widgets_hidden": true,
+          "is_release_type_notifications_enabled": true,
+          "is_episode_notifications_enabled": true,
+          "is_first_episode_notification_enabled": true,
+          "is_related_release_notifications_enabled": true,
+          "is_report_process_notifications_enabled": true,
+          "is_comment_notifications_enabled": true,
+          "is_my_collection_comment_notifications_enabled": true,
+          "is_article_notifications_enabled": true,
+          "is_my_article_comment_notifications_enabled": true,
+          "is_verified": true,
+          "friends_preview": [],
+          "collections_preview": [],
+          "comments_preview": [],
+          "release_videos_preview": [],
+          "watch_dynamics": [],
+          "friend_status": 0,
+          "rating_score": 7,
+          "preferred_genres": [],
+          "preferred_audiences": [],
+          "preferred_themes": [],
+          "theme_enabled": true,
+          "theme_gradient_start_color": "sample theme_gradient_start_color",
+          "theme_gradient_end_color": "sample theme_gradient_end_color",
+          "theme_gradient_angle": "sample theme_gradient_angle",
+          "theme_icon_res_name": "sample theme_icon_res_name",
+          "theme_icon_url": "sample theme_icon_url",
+          "theme_icon_color": "sample theme_icon_color",
+          "theme_icon_alpha": 2.5,
+          "theme_icon_density": "sample theme_icon_density",
+          "theme_icon_size": "sample theme_icon_size",
+          "theme_animation_enabled": true,
+          "theme_animation_speed": "sample theme_animation_speed",
+          "theme_background_url": "sample theme_background_url",
+          "theme_background_mode": "sample theme_background_mode",
+          "theme_background_alpha": 2.5,
+          "deletion_requested_at": 7,
+          "deletion_delete_at": 7,
+          "is_blocked": true,
+          "is_me_blocked": true,
+          "is_stats_hidden": true,
+          "is_counts_hidden": true,
+          "is_social_hidden": true,
+          "is_friend_requests_disallowed": true,
+          "is_online": true
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "ArticleComment.votes.explicit": {
+    "expected": {
+      "path": "/article/comment/votes/7/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "query": {
+        "sort": 7
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "id": 7,
+          "login": "sample login",
+          "avatar": "sample avatar",
+          "status": "sample status",
+          "badge": {
+            "id": 7,
+            "name": "sample name",
+            "type": 7
+          },
+          "history": [],
+          "votes": [],
+          "roles": [],
+          "last_activity_time": 7,
+          "register_date": 7,
+          "vk_page": "sample vk_page",
+          "tg_page": "sample tg_page",
+          "inst_page": "sample inst_page",
+          "tt_page": "sample tt_page",
+          "discord_page": "sample discord_page",
+          "ban_expires": 7,
+          "ban_reason": "sample ban_reason",
+          "privilege_level": 0,
+          "watching_count": 7,
+          "plan_count": 7,
+          "completed_count": 7,
+          "hold_on_count": 7,
+          "dropped_count": 7,
+          "favorite_count": 7,
+          "comment_count": 7,
+          "collection_count": 7,
+          "video_count": 7,
+          "friend_count": 7,
+          "subscription_count": 7,
+          "watched_episode_count": 7,
+          "watched_time": 7,
+          "pinned_section_id": 7,
+          "is_private": true,
+          "is_sponsor": true,
+          "is_banned": true,
+          "is_perm_banned": true,
+          "is_deleted": true,
+          "is_deletion_requested": true,
+          "is_bookmarks_transferred": true,
+          "is_sponsor_transferred": true,
+          "is_vk_bound": true,
+          "is_google_bound": true,
+          "is_telegram_bound": true,
+          "is_yandex_bound": true,
+          "is_incognito": true,
+          "episode_channel_widgets_hidden": true,
+          "is_release_type_notifications_enabled": true,
+          "is_episode_notifications_enabled": true,
+          "is_first_episode_notification_enabled": true,
+          "is_related_release_notifications_enabled": true,
+          "is_report_process_notifications_enabled": true,
+          "is_comment_notifications_enabled": true,
+          "is_my_collection_comment_notifications_enabled": true,
+          "is_article_notifications_enabled": true,
+          "is_my_article_comment_notifications_enabled": true,
+          "is_verified": true,
+          "friends_preview": [],
+          "collections_preview": [],
+          "comments_preview": [],
+          "release_videos_preview": [],
+          "watch_dynamics": [],
+          "friend_status": 0,
+          "rating_score": 7,
+          "preferred_genres": [],
+          "preferred_audiences": [],
+          "preferred_themes": [],
+          "theme_enabled": true,
+          "theme_gradient_start_color": "sample theme_gradient_start_color",
+          "theme_gradient_end_color": "sample theme_gradient_end_color",
+          "theme_gradient_angle": "sample theme_gradient_angle",
+          "theme_icon_res_name": "sample theme_icon_res_name",
+          "theme_icon_url": "sample theme_icon_url",
+          "theme_icon_color": "sample theme_icon_color",
+          "theme_icon_alpha": 2.5,
+          "theme_icon_density": "sample theme_icon_density",
+          "theme_icon_size": "sample theme_icon_size",
+          "theme_animation_enabled": true,
+          "theme_animation_speed": "sample theme_animation_speed",
+          "theme_background_url": "sample theme_background_url",
+          "theme_background_mode": "sample theme_background_mode",
+          "theme_background_alpha": 2.5,
+          "deletion_requested_at": 7,
+          "deletion_delete_at": 7,
+          "is_blocked": true,
+          "is_me_blocked": true,
+          "is_stats_hidden": true,
+          "is_counts_hidden": true,
+          "is_social_hidden": true,
+          "is_friend_requests_disallowed": true,
+          "is_online": true
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "ArticleSuggestion.get.defaults": {
+    "expected": {
+      "path": "/article/suggestion/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "ArticleDeleted",
+        "ArticleDeleted": 2
+      }
+    },
+    "response": {
+      "code": 0,
+      "article": {
+        "@id": 7,
+        "id": 7,
+        "channel": {
+          "id": 7,
+          "title": "sample title",
+          "description": "sample description",
+          "cover": "sample cover",
+          "avatar": "sample avatar",
+          "permission": 7,
+          "article_count": 7,
+          "subscriber_count": 7,
+          "creation_date": 7,
+          "last_update_date": 7,
+          "is_blog": true,
+          "is_commenting_enabled": true,
+          "is_article_suggestion_enabled": true,
+          "is_episode_channel_widget_enabled": true,
+          "episode_channel_widget_sort": 0,
+          "episode_channel_widget_popularity_period": 0,
+          "episode_channel_widget_article_count": 7,
+          "is_linked_to_type": true,
+          "recent_article_count": 7,
+          "is_verified": true,
+          "is_deleted": true,
+          "blog_profile_id": 7,
+          "is_subscribed": true,
+          "is_muted": true,
+          "is_blocked": true,
+          "block_reason": "sample block_reason",
+          "block_expire_date": 7,
+          "is_perm_blocked": true,
+          "is_creator": true,
+          "is_administrator_or_higher": true
+        },
+        "author": {
+          "id": 7,
+          "login": "sample login",
+          "avatar": "sample avatar"
+        },
+        "repost_article": {
+          "@id": 7,
+          "id": 7,
+          "channel": {
+            "id": 7
+          },
+          "author": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "repost_article": {
+            "id": 7
+          },
+          "payload": {},
+          "creation_date": 7,
+          "last_update_date": 7,
+          "comment_count": 7,
+          "repost_count": 7,
+          "vote_count": 7,
+          "vote": 7,
+          "contains_repost_article": true,
+          "is_signed": true,
+          "is_pinned": true,
+          "is_muted": true,
+          "is_deleted": true,
+          "has_delete_enforcement": true,
+          "popular_comment": {
+            "id": 7
+          }
+        },
+        "payload": {
+          "time": 7,
+          "version": "sample version",
+          "blocks": [],
+          "block_count": 7
+        },
+        "creation_date": 7,
+        "last_update_date": 7,
+        "comment_count": 7,
+        "repost_count": 7,
+        "vote_count": 7,
+        "vote": 7,
+        "contains_repost_article": true,
+        "is_signed": true,
+        "is_pinned": true,
+        "is_muted": true,
+        "is_deleted": true,
+        "has_delete_enforcement": true,
+        "popular_comment": {
+          "id": 7,
+          "profile": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "message": "sample message",
+          "vote_count": 7,
+          "timestamp": 7
+        }
+      }
+    }
+  },
+  "ArticleSuggestion.get.explicit": {
+    "expected": {
+      "path": "/article/suggestion/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "ArticleDeleted",
+        "ArticleDeleted": 2
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "article": {
+        "@id": 7,
+        "id": 7,
+        "channel": {
+          "id": 7,
+          "title": "sample title",
+          "description": "sample description",
+          "cover": "sample cover",
+          "avatar": "sample avatar",
+          "permission": 7,
+          "article_count": 7,
+          "subscriber_count": 7,
+          "creation_date": 7,
+          "last_update_date": 7,
+          "is_blog": true,
+          "is_commenting_enabled": true,
+          "is_article_suggestion_enabled": true,
+          "is_episode_channel_widget_enabled": true,
+          "episode_channel_widget_sort": 0,
+          "episode_channel_widget_popularity_period": 0,
+          "episode_channel_widget_article_count": 7,
+          "is_linked_to_type": true,
+          "recent_article_count": 7,
+          "is_verified": true,
+          "is_deleted": true,
+          "blog_profile_id": 7,
+          "is_subscribed": true,
+          "is_muted": true,
+          "is_blocked": true,
+          "block_reason": "sample block_reason",
+          "block_expire_date": 7,
+          "is_perm_blocked": true,
+          "is_creator": true,
+          "is_administrator_or_higher": true
+        },
+        "author": {
+          "id": 7,
+          "login": "sample login",
+          "avatar": "sample avatar"
+        },
+        "repost_article": {
+          "@id": 7,
+          "id": 7,
+          "channel": {
+            "id": 7
+          },
+          "author": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "repost_article": {
+            "id": 7
+          },
+          "payload": {},
+          "creation_date": 7,
+          "last_update_date": 7,
+          "comment_count": 7,
+          "repost_count": 7,
+          "vote_count": 7,
+          "vote": 7,
+          "contains_repost_article": true,
+          "is_signed": true,
+          "is_pinned": true,
+          "is_muted": true,
+          "is_deleted": true,
+          "has_delete_enforcement": true,
+          "popular_comment": {
+            "id": 7
+          }
+        },
+        "payload": {
+          "time": 7,
+          "version": "sample version",
+          "blocks": [],
+          "block_count": 7
+        },
+        "creation_date": 7,
+        "last_update_date": 7,
+        "comment_count": 7,
+        "repost_count": 7,
+        "vote_count": 7,
+        "vote": 7,
+        "contains_repost_article": true,
+        "is_signed": true,
+        "is_pinned": true,
+        "is_muted": true,
+        "is_deleted": true,
+        "has_delete_enforcement": true,
+        "popular_comment": {
+          "id": 7,
+          "profile": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "message": "sample message",
+          "vote_count": 7,
+          "timestamp": 7
+        }
+      }
+    }
+  },
+  "ArticleSuggestion.all.defaults": {
+    "expected": {
+      "path": "/article/suggestion/all/0",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "body": {
+        "type": "JSON",
+        "data": {
+          "channel_id": 7
+        }
+      }
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "@id": 7,
+          "id": 7,
+          "channel": {
+            "id": 7
+          },
+          "author": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "repost_article": {
+            "id": 7
+          },
+          "payload": {},
+          "creation_date": 7,
+          "last_update_date": 7,
+          "comment_count": 7,
+          "repost_count": 7,
+          "vote_count": 7,
+          "vote": 7,
+          "contains_repost_article": true,
+          "is_signed": true,
+          "is_pinned": true,
+          "is_muted": true,
+          "is_deleted": true,
+          "has_delete_enforcement": true,
+          "popular_comment": {
+            "id": 7
+          }
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "ArticleSuggestion.all.explicit": {
+    "expected": {
+      "path": "/article/suggestion/all/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "body": {
+        "type": "JSON",
+        "data": {
+          "channel_id": 7
+        }
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "@id": 7,
+          "id": 7,
+          "channel": {
+            "id": 7
+          },
+          "author": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "repost_article": {
+            "id": 7
+          },
+          "payload": {},
+          "creation_date": 7,
+          "last_update_date": 7,
+          "comment_count": 7,
+          "repost_count": 7,
+          "vote_count": 7,
+          "vote": 7,
+          "contains_repost_article": true,
+          "is_signed": true,
+          "is_pinned": true,
+          "is_muted": true,
+          "is_deleted": true,
+          "has_delete_enforcement": true,
+          "popular_comment": {
+            "id": 7
+          }
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "ArticleSuggestion.create.defaults": {
+    "expected": {
+      "path": "/article/suggestion/create/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "InvalidRepostArticle",
+        "3": "InvalidPayload",
+        "4": "InvalidTags",
+        "5": "TemporarilyDisabled",
+        "6": "ArticleLimitReached",
+        "7": "ChannelNotFound",
+        "8": "ChannelNotOwned",
+        "9": "ChannelCreatorBanned",
+        "10": "ChannelBlocked",
+        "11": "ArticleNotFound",
+        "12": "ArticleDeleted",
+        "13": "BlogNotCreated",
+        "InvalidRepostArticle": 2,
+        "InvalidPayload": 3,
+        "InvalidTags": 4,
+        "TemporarilyDisabled": 5,
+        "ArticleLimitReached": 6,
+        "ChannelNotFound": 7,
+        "ChannelNotOwned": 8,
+        "ChannelCreatorBanned": 9,
+        "ChannelBlocked": 10,
+        "ArticleNotFound": 11,
+        "ArticleDeleted": 12,
+        "BlogNotCreated": 13
+      },
+      "body": {
+        "type": "JSON",
+        "data": {
+          "is_signed": true,
+          "payload": {
+            "time": 7,
+            "version": "sample version",
+            "blocks": [],
+            "block_count": 7
+          }
+        }
+      }
+    },
+    "response": {
+      "code": 0,
+      "article": {
+        "@id": 7,
+        "id": 7,
+        "channel": {
+          "id": 7,
+          "title": "sample title",
+          "description": "sample description",
+          "cover": "sample cover",
+          "avatar": "sample avatar",
+          "permission": 7,
+          "article_count": 7,
+          "subscriber_count": 7,
+          "creation_date": 7,
+          "last_update_date": 7,
+          "is_blog": true,
+          "is_commenting_enabled": true,
+          "is_article_suggestion_enabled": true,
+          "is_episode_channel_widget_enabled": true,
+          "episode_channel_widget_sort": 0,
+          "episode_channel_widget_popularity_period": 0,
+          "episode_channel_widget_article_count": 7,
+          "is_linked_to_type": true,
+          "recent_article_count": 7,
+          "is_verified": true,
+          "is_deleted": true,
+          "blog_profile_id": 7,
+          "is_subscribed": true,
+          "is_muted": true,
+          "is_blocked": true,
+          "block_reason": "sample block_reason",
+          "block_expire_date": 7,
+          "is_perm_blocked": true,
+          "is_creator": true,
+          "is_administrator_or_higher": true
+        },
+        "author": {
+          "id": 7,
+          "login": "sample login",
+          "avatar": "sample avatar"
+        },
+        "repost_article": {
+          "@id": 7,
+          "id": 7,
+          "channel": {
+            "id": 7
+          },
+          "author": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "repost_article": {
+            "id": 7
+          },
+          "payload": {},
+          "creation_date": 7,
+          "last_update_date": 7,
+          "comment_count": 7,
+          "repost_count": 7,
+          "vote_count": 7,
+          "vote": 7,
+          "contains_repost_article": true,
+          "is_signed": true,
+          "is_pinned": true,
+          "is_muted": true,
+          "is_deleted": true,
+          "has_delete_enforcement": true,
+          "popular_comment": {
+            "id": 7
+          }
+        },
+        "payload": {
+          "time": 7,
+          "version": "sample version",
+          "blocks": [],
+          "block_count": 7
+        },
+        "creation_date": 7,
+        "last_update_date": 7,
+        "comment_count": 7,
+        "repost_count": 7,
+        "vote_count": 7,
+        "vote": 7,
+        "contains_repost_article": true,
+        "is_signed": true,
+        "is_pinned": true,
+        "is_muted": true,
+        "is_deleted": true,
+        "has_delete_enforcement": true,
+        "popular_comment": {
+          "id": 7,
+          "profile": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "message": "sample message",
+          "vote_count": 7,
+          "timestamp": 7
+        }
+      }
+    }
+  },
+  "ArticleSuggestion.create.explicit": {
+    "expected": {
+      "path": "/article/suggestion/create/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "InvalidRepostArticle",
+        "3": "InvalidPayload",
+        "4": "InvalidTags",
+        "5": "TemporarilyDisabled",
+        "6": "ArticleLimitReached",
+        "7": "ChannelNotFound",
+        "8": "ChannelNotOwned",
+        "9": "ChannelCreatorBanned",
+        "10": "ChannelBlocked",
+        "11": "ArticleNotFound",
+        "12": "ArticleDeleted",
+        "13": "BlogNotCreated",
+        "InvalidRepostArticle": 2,
+        "InvalidPayload": 3,
+        "InvalidTags": 4,
+        "TemporarilyDisabled": 5,
+        "ArticleLimitReached": 6,
+        "ChannelNotFound": 7,
+        "ChannelNotOwned": 8,
+        "ChannelCreatorBanned": 9,
+        "ChannelBlocked": 10,
+        "ArticleNotFound": 11,
+        "ArticleDeleted": 12,
+        "BlogNotCreated": 13
+      },
+      "body": {
+        "type": "JSON",
+        "data": {
+          "is_signed": true,
+          "payload": {
+            "time": 7,
+            "version": "sample version",
+            "blocks": [],
+            "block_count": 7
+          }
+        }
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "article": {
+        "@id": 7,
+        "id": 7,
+        "channel": {
+          "id": 7,
+          "title": "sample title",
+          "description": "sample description",
+          "cover": "sample cover",
+          "avatar": "sample avatar",
+          "permission": 7,
+          "article_count": 7,
+          "subscriber_count": 7,
+          "creation_date": 7,
+          "last_update_date": 7,
+          "is_blog": true,
+          "is_commenting_enabled": true,
+          "is_article_suggestion_enabled": true,
+          "is_episode_channel_widget_enabled": true,
+          "episode_channel_widget_sort": 0,
+          "episode_channel_widget_popularity_period": 0,
+          "episode_channel_widget_article_count": 7,
+          "is_linked_to_type": true,
+          "recent_article_count": 7,
+          "is_verified": true,
+          "is_deleted": true,
+          "blog_profile_id": 7,
+          "is_subscribed": true,
+          "is_muted": true,
+          "is_blocked": true,
+          "block_reason": "sample block_reason",
+          "block_expire_date": 7,
+          "is_perm_blocked": true,
+          "is_creator": true,
+          "is_administrator_or_higher": true
+        },
+        "author": {
+          "id": 7,
+          "login": "sample login",
+          "avatar": "sample avatar"
+        },
+        "repost_article": {
+          "@id": 7,
+          "id": 7,
+          "channel": {
+            "id": 7
+          },
+          "author": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "repost_article": {
+            "id": 7
+          },
+          "payload": {},
+          "creation_date": 7,
+          "last_update_date": 7,
+          "comment_count": 7,
+          "repost_count": 7,
+          "vote_count": 7,
+          "vote": 7,
+          "contains_repost_article": true,
+          "is_signed": true,
+          "is_pinned": true,
+          "is_muted": true,
+          "is_deleted": true,
+          "has_delete_enforcement": true,
+          "popular_comment": {
+            "id": 7
+          }
+        },
+        "payload": {
+          "time": 7,
+          "version": "sample version",
+          "blocks": [],
+          "block_count": 7
+        },
+        "creation_date": 7,
+        "last_update_date": 7,
+        "comment_count": 7,
+        "repost_count": 7,
+        "vote_count": 7,
+        "vote": 7,
+        "contains_repost_article": true,
+        "is_signed": true,
+        "is_pinned": true,
+        "is_muted": true,
+        "is_deleted": true,
+        "has_delete_enforcement": true,
+        "popular_comment": {
+          "id": 7,
+          "profile": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "message": "sample message",
+          "vote_count": 7,
+          "timestamp": 7
+        }
+      }
+    }
+  },
+  "ArticleSuggestion.delete.defaults": {
+    "expected": {
+      "path": "/article/suggestion/delete/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "ArticleSuggestionNotFound",
+        "3": "ArticleSuggestionNotOwned",
+        "ArticleSuggestionNotFound": 2,
+        "ArticleSuggestionNotOwned": 3
+      }
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "ArticleSuggestion.delete.explicit": {
+    "expected": {
+      "path": "/article/suggestion/delete/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "ArticleSuggestionNotFound",
+        "3": "ArticleSuggestionNotOwned",
+        "ArticleSuggestionNotFound": 2,
+        "ArticleSuggestionNotOwned": 3
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "ArticleSuggestion.edit.defaults": {
+    "expected": {
+      "path": "/article/suggestion/edit/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "InvalidRepostArticle",
+        "3": "InvalidPayload",
+        "4": "InvalidTags",
+        "5": "TemporarilyDisabled",
+        "6": "ArticleLimitReached",
+        "7": "ChannelNotFound",
+        "8": "ChannelNotOwned",
+        "9": "ChannelCreatorBanned",
+        "10": "ChannelBlocked",
+        "11": "ArticleNotFound",
+        "12": "ArticleDeleted",
+        "13": "BlogNotCreated",
+        "InvalidRepostArticle": 2,
+        "InvalidPayload": 3,
+        "InvalidTags": 4,
+        "TemporarilyDisabled": 5,
+        "ArticleLimitReached": 6,
+        "ChannelNotFound": 7,
+        "ChannelNotOwned": 8,
+        "ChannelCreatorBanned": 9,
+        "ChannelBlocked": 10,
+        "ArticleNotFound": 11,
+        "ArticleDeleted": 12,
+        "BlogNotCreated": 13
+      },
+      "body": {
+        "type": "JSON",
+        "data": {
+          "is_signed": true,
+          "payload": {
+            "time": 7,
+            "version": "sample version",
+            "blocks": [],
+            "block_count": 7
+          }
+        }
+      }
+    },
+    "response": {
+      "code": 0,
+      "article": {
+        "@id": 7,
+        "id": 7,
+        "channel": {
+          "id": 7,
+          "title": "sample title",
+          "description": "sample description",
+          "cover": "sample cover",
+          "avatar": "sample avatar",
+          "permission": 7,
+          "article_count": 7,
+          "subscriber_count": 7,
+          "creation_date": 7,
+          "last_update_date": 7,
+          "is_blog": true,
+          "is_commenting_enabled": true,
+          "is_article_suggestion_enabled": true,
+          "is_episode_channel_widget_enabled": true,
+          "episode_channel_widget_sort": 0,
+          "episode_channel_widget_popularity_period": 0,
+          "episode_channel_widget_article_count": 7,
+          "is_linked_to_type": true,
+          "recent_article_count": 7,
+          "is_verified": true,
+          "is_deleted": true,
+          "blog_profile_id": 7,
+          "is_subscribed": true,
+          "is_muted": true,
+          "is_blocked": true,
+          "block_reason": "sample block_reason",
+          "block_expire_date": 7,
+          "is_perm_blocked": true,
+          "is_creator": true,
+          "is_administrator_or_higher": true
+        },
+        "author": {
+          "id": 7,
+          "login": "sample login",
+          "avatar": "sample avatar"
+        },
+        "repost_article": {
+          "@id": 7,
+          "id": 7,
+          "channel": {
+            "id": 7
+          },
+          "author": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "repost_article": {
+            "id": 7
+          },
+          "payload": {},
+          "creation_date": 7,
+          "last_update_date": 7,
+          "comment_count": 7,
+          "repost_count": 7,
+          "vote_count": 7,
+          "vote": 7,
+          "contains_repost_article": true,
+          "is_signed": true,
+          "is_pinned": true,
+          "is_muted": true,
+          "is_deleted": true,
+          "has_delete_enforcement": true,
+          "popular_comment": {
+            "id": 7
+          }
+        },
+        "payload": {
+          "time": 7,
+          "version": "sample version",
+          "blocks": [],
+          "block_count": 7
+        },
+        "creation_date": 7,
+        "last_update_date": 7,
+        "comment_count": 7,
+        "repost_count": 7,
+        "vote_count": 7,
+        "vote": 7,
+        "contains_repost_article": true,
+        "is_signed": true,
+        "is_pinned": true,
+        "is_muted": true,
+        "is_deleted": true,
+        "has_delete_enforcement": true,
+        "popular_comment": {
+          "id": 7,
+          "profile": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "message": "sample message",
+          "vote_count": 7,
+          "timestamp": 7
+        }
+      }
+    }
+  },
+  "ArticleSuggestion.edit.explicit": {
+    "expected": {
+      "path": "/article/suggestion/edit/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "InvalidRepostArticle",
+        "3": "InvalidPayload",
+        "4": "InvalidTags",
+        "5": "TemporarilyDisabled",
+        "6": "ArticleLimitReached",
+        "7": "ChannelNotFound",
+        "8": "ChannelNotOwned",
+        "9": "ChannelCreatorBanned",
+        "10": "ChannelBlocked",
+        "11": "ArticleNotFound",
+        "12": "ArticleDeleted",
+        "13": "BlogNotCreated",
+        "InvalidRepostArticle": 2,
+        "InvalidPayload": 3,
+        "InvalidTags": 4,
+        "TemporarilyDisabled": 5,
+        "ArticleLimitReached": 6,
+        "ChannelNotFound": 7,
+        "ChannelNotOwned": 8,
+        "ChannelCreatorBanned": 9,
+        "ChannelBlocked": 10,
+        "ArticleNotFound": 11,
+        "ArticleDeleted": 12,
+        "BlogNotCreated": 13
+      },
+      "body": {
+        "type": "JSON",
+        "data": {
+          "is_signed": true,
+          "payload": {
+            "time": 7,
+            "version": "sample version",
+            "blocks": [],
+            "block_count": 7
+          }
+        }
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "article": {
+        "@id": 7,
+        "id": 7,
+        "channel": {
+          "id": 7,
+          "title": "sample title",
+          "description": "sample description",
+          "cover": "sample cover",
+          "avatar": "sample avatar",
+          "permission": 7,
+          "article_count": 7,
+          "subscriber_count": 7,
+          "creation_date": 7,
+          "last_update_date": 7,
+          "is_blog": true,
+          "is_commenting_enabled": true,
+          "is_article_suggestion_enabled": true,
+          "is_episode_channel_widget_enabled": true,
+          "episode_channel_widget_sort": 0,
+          "episode_channel_widget_popularity_period": 0,
+          "episode_channel_widget_article_count": 7,
+          "is_linked_to_type": true,
+          "recent_article_count": 7,
+          "is_verified": true,
+          "is_deleted": true,
+          "blog_profile_id": 7,
+          "is_subscribed": true,
+          "is_muted": true,
+          "is_blocked": true,
+          "block_reason": "sample block_reason",
+          "block_expire_date": 7,
+          "is_perm_blocked": true,
+          "is_creator": true,
+          "is_administrator_or_higher": true
+        },
+        "author": {
+          "id": 7,
+          "login": "sample login",
+          "avatar": "sample avatar"
+        },
+        "repost_article": {
+          "@id": 7,
+          "id": 7,
+          "channel": {
+            "id": 7
+          },
+          "author": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "repost_article": {
+            "id": 7
+          },
+          "payload": {},
+          "creation_date": 7,
+          "last_update_date": 7,
+          "comment_count": 7,
+          "repost_count": 7,
+          "vote_count": 7,
+          "vote": 7,
+          "contains_repost_article": true,
+          "is_signed": true,
+          "is_pinned": true,
+          "is_muted": true,
+          "is_deleted": true,
+          "has_delete_enforcement": true,
+          "popular_comment": {
+            "id": 7
+          }
+        },
+        "payload": {
+          "time": 7,
+          "version": "sample version",
+          "blocks": [],
+          "block_count": 7
+        },
+        "creation_date": 7,
+        "last_update_date": 7,
+        "comment_count": 7,
+        "repost_count": 7,
+        "vote_count": 7,
+        "vote": 7,
+        "contains_repost_article": true,
+        "is_signed": true,
+        "is_pinned": true,
+        "is_muted": true,
+        "is_deleted": true,
+        "has_delete_enforcement": true,
+        "popular_comment": {
+          "id": 7,
+          "profile": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "message": "sample message",
+          "vote_count": 7,
+          "timestamp": 7
+        }
+      }
+    }
+  },
+  "ArticleSuggestion.publish.defaults": {
+    "expected": {
+      "path": "/article/suggestion/publish/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "InvalidRepostArticle",
+        "3": "InvalidPayload",
+        "4": "InvalidTags",
+        "5": "TemporarilyDisabled",
+        "6": "ArticleLimitReached",
+        "7": "ChannelNotFound",
+        "8": "ChannelNotOwned",
+        "9": "ChannelCreatorBanned",
+        "10": "ChannelBlocked",
+        "11": "ArticleNotFound",
+        "12": "ArticleDeleted",
+        "13": "BlogNotCreated",
+        "InvalidRepostArticle": 2,
+        "InvalidPayload": 3,
+        "InvalidTags": 4,
+        "TemporarilyDisabled": 5,
+        "ArticleLimitReached": 6,
+        "ChannelNotFound": 7,
+        "ChannelNotOwned": 8,
+        "ChannelCreatorBanned": 9,
+        "ChannelBlocked": 10,
+        "ArticleNotFound": 11,
+        "ArticleDeleted": 12,
+        "BlogNotCreated": 13
+      },
+      "query": {
+        "is_signed": true
+      }
+    },
+    "response": {
+      "code": 0,
+      "article": {
+        "@id": 7,
+        "id": 7,
+        "channel": {
+          "id": 7,
+          "title": "sample title",
+          "description": "sample description",
+          "cover": "sample cover",
+          "avatar": "sample avatar",
+          "permission": 7,
+          "article_count": 7,
+          "subscriber_count": 7,
+          "creation_date": 7,
+          "last_update_date": 7,
+          "is_blog": true,
+          "is_commenting_enabled": true,
+          "is_article_suggestion_enabled": true,
+          "is_episode_channel_widget_enabled": true,
+          "episode_channel_widget_sort": 0,
+          "episode_channel_widget_popularity_period": 0,
+          "episode_channel_widget_article_count": 7,
+          "is_linked_to_type": true,
+          "recent_article_count": 7,
+          "is_verified": true,
+          "is_deleted": true,
+          "blog_profile_id": 7,
+          "is_subscribed": true,
+          "is_muted": true,
+          "is_blocked": true,
+          "block_reason": "sample block_reason",
+          "block_expire_date": 7,
+          "is_perm_blocked": true,
+          "is_creator": true,
+          "is_administrator_or_higher": true
+        },
+        "author": {
+          "id": 7,
+          "login": "sample login",
+          "avatar": "sample avatar"
+        },
+        "repost_article": {
+          "@id": 7,
+          "id": 7,
+          "channel": {
+            "id": 7
+          },
+          "author": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "repost_article": {
+            "id": 7
+          },
+          "payload": {},
+          "creation_date": 7,
+          "last_update_date": 7,
+          "comment_count": 7,
+          "repost_count": 7,
+          "vote_count": 7,
+          "vote": 7,
+          "contains_repost_article": true,
+          "is_signed": true,
+          "is_pinned": true,
+          "is_muted": true,
+          "is_deleted": true,
+          "has_delete_enforcement": true,
+          "popular_comment": {
+            "id": 7
+          }
+        },
+        "payload": {
+          "time": 7,
+          "version": "sample version",
+          "blocks": [],
+          "block_count": 7
+        },
+        "creation_date": 7,
+        "last_update_date": 7,
+        "comment_count": 7,
+        "repost_count": 7,
+        "vote_count": 7,
+        "vote": 7,
+        "contains_repost_article": true,
+        "is_signed": true,
+        "is_pinned": true,
+        "is_muted": true,
+        "is_deleted": true,
+        "has_delete_enforcement": true,
+        "popular_comment": {
+          "id": 7,
+          "profile": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "message": "sample message",
+          "vote_count": 7,
+          "timestamp": 7
+        }
+      }
+    }
+  },
+  "ArticleSuggestion.publish.explicit": {
+    "expected": {
+      "path": "/article/suggestion/publish/7",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "InvalidRepostArticle",
+        "3": "InvalidPayload",
+        "4": "InvalidTags",
+        "5": "TemporarilyDisabled",
+        "6": "ArticleLimitReached",
+        "7": "ChannelNotFound",
+        "8": "ChannelNotOwned",
+        "9": "ChannelCreatorBanned",
+        "10": "ChannelBlocked",
+        "11": "ArticleNotFound",
+        "12": "ArticleDeleted",
+        "13": "BlogNotCreated",
+        "InvalidRepostArticle": 2,
+        "InvalidPayload": 3,
+        "InvalidTags": 4,
+        "TemporarilyDisabled": 5,
+        "ArticleLimitReached": 6,
+        "ChannelNotFound": 7,
+        "ChannelNotOwned": 8,
+        "ChannelCreatorBanned": 9,
+        "ChannelBlocked": 10,
+        "ArticleNotFound": 11,
+        "ArticleDeleted": 12,
+        "BlogNotCreated": 13
+      },
+      "query": {
+        "is_signed": true
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "article": {
+        "@id": 7,
+        "id": 7,
+        "channel": {
+          "id": 7,
+          "title": "sample title",
+          "description": "sample description",
+          "cover": "sample cover",
+          "avatar": "sample avatar",
+          "permission": 7,
+          "article_count": 7,
+          "subscriber_count": 7,
+          "creation_date": 7,
+          "last_update_date": 7,
+          "is_blog": true,
+          "is_commenting_enabled": true,
+          "is_article_suggestion_enabled": true,
+          "is_episode_channel_widget_enabled": true,
+          "episode_channel_widget_sort": 0,
+          "episode_channel_widget_popularity_period": 0,
+          "episode_channel_widget_article_count": 7,
+          "is_linked_to_type": true,
+          "recent_article_count": 7,
+          "is_verified": true,
+          "is_deleted": true,
+          "blog_profile_id": 7,
+          "is_subscribed": true,
+          "is_muted": true,
+          "is_blocked": true,
+          "block_reason": "sample block_reason",
+          "block_expire_date": 7,
+          "is_perm_blocked": true,
+          "is_creator": true,
+          "is_administrator_or_higher": true
+        },
+        "author": {
+          "id": 7,
+          "login": "sample login",
+          "avatar": "sample avatar"
+        },
+        "repost_article": {
+          "@id": 7,
+          "id": 7,
+          "channel": {
+            "id": 7
+          },
+          "author": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "repost_article": {
+            "id": 7
+          },
+          "payload": {},
+          "creation_date": 7,
+          "last_update_date": 7,
+          "comment_count": 7,
+          "repost_count": 7,
+          "vote_count": 7,
+          "vote": 7,
+          "contains_repost_article": true,
+          "is_signed": true,
+          "is_pinned": true,
+          "is_muted": true,
+          "is_deleted": true,
+          "has_delete_enforcement": true,
+          "popular_comment": {
+            "id": 7
+          }
+        },
+        "payload": {
+          "time": 7,
+          "version": "sample version",
+          "blocks": [],
+          "block_count": 7
+        },
+        "creation_date": 7,
+        "last_update_date": 7,
+        "comment_count": 7,
+        "repost_count": 7,
+        "vote_count": 7,
+        "vote": 7,
+        "contains_repost_article": true,
+        "is_signed": true,
+        "is_pinned": true,
+        "is_muted": true,
+        "is_deleted": true,
+        "has_delete_enforcement": true,
+        "popular_comment": {
+          "id": 7,
+          "profile": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "message": "sample message",
+          "vote_count": 7,
+          "timestamp": 7
+        }
+      }
+    }
+  }
+}

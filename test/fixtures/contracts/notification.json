@@ -1,0 +1,1047 @@
+{
+  "Notification.all.defaults": {
+    "expected": {
+      "path": "/notification/all/0",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      }
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "type": "friend",
+          "id": 7,
+          "timestamp": 7,
+          "is_new": true,
+          "is_pushed": true
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "Notification.all.explicit": {
+    "expected": {
+      "path": "/notification/all/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "type": "friend",
+          "id": 7,
+          "timestamp": 7,
+          "is_new": true,
+          "is_pushed": true
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "Notification.articleComments.defaults": {
+    "expected": {
+      "path": "/notification/article/comments/0",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      }
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "type": "friend",
+          "id": 7,
+          "timestamp": 7,
+          "is_new": true,
+          "is_pushed": true,
+          "comment": {
+            "id": 7
+          },
+          "parent_comment": {
+            "id": 7
+          }
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "Notification.articleComments.explicit": {
+    "expected": {
+      "path": "/notification/article/comments/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "type": "friend",
+          "id": 7,
+          "timestamp": 7,
+          "is_new": true,
+          "is_pushed": true,
+          "comment": {
+            "id": 7
+          },
+          "parent_comment": {
+            "id": 7
+          }
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "Notification.articles.defaults": {
+    "expected": {
+      "path": "/notification/articles/0",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      }
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "type": "friend",
+          "id": 7,
+          "timestamp": 7,
+          "is_new": true,
+          "is_pushed": true,
+          "@id": 7,
+          "article": 7,
+          "profile": {
+            "id": 7,
+            "login": "sample login"
+          }
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "Notification.articles.explicit": {
+    "expected": {
+      "path": "/notification/articles/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "type": "friend",
+          "id": 7,
+          "timestamp": 7,
+          "is_new": true,
+          "is_pushed": true,
+          "@id": 7,
+          "article": 7,
+          "profile": {
+            "id": 7,
+            "login": "sample login"
+          }
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "Notification.collectionComments.defaults": {
+    "expected": {
+      "path": "/notification/collectionComments/0",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      }
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "type": "friend",
+          "id": 7,
+          "timestamp": 7,
+          "is_new": true,
+          "is_pushed": true,
+          "comment": {
+            "id": 7
+          },
+          "parent_comment": {
+            "id": 7
+          }
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "Notification.collectionComments.explicit": {
+    "expected": {
+      "path": "/notification/collectionComments/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "type": "friend",
+          "id": 7,
+          "timestamp": 7,
+          "is_new": true,
+          "is_pushed": true,
+          "comment": {
+            "id": 7
+          },
+          "parent_comment": {
+            "id": 7
+          }
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "Notification.count.defaults": {
+    "expected": {
+      "path": "/notification/count",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      }
+    },
+    "response": {
+      "code": 0,
+      "count": 7
+    }
+  },
+  "Notification.count.explicit": {
+    "expected": {
+      "path": "/notification/count",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "count": 7
+    }
+  },
+  "Notification.deleteAll.defaults": {
+    "expected": {
+      "path": "/notification/delete/all",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      }
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "Notification.deleteAll.explicit": {
+    "expected": {
+      "path": "/notification/delete/all",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "Notification.delete.defaults": {
+    "expected": {
+      "path": "/notification/article/comment/delete/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      }
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "Notification.delete.explicit": {
+    "expected": {
+      "path": "/notification/article/comment/delete/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "Notification.episodes.defaults": {
+    "expected": {
+      "path": "/notification/episodes/0",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      }
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "type": "friend",
+          "id": 7,
+          "timestamp": 7,
+          "is_new": true,
+          "is_pushed": true,
+          "episode": {
+            "name": "sample name"
+          }
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "Notification.episodes.explicit": {
+    "expected": {
+      "path": "/notification/episodes/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "type": "friend",
+          "id": 7,
+          "timestamp": 7,
+          "is_new": true,
+          "is_pushed": true,
+          "episode": {
+            "name": "sample name"
+          }
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "Notification.friends.defaults": {
+    "expected": {
+      "path": "/notification/friends/0",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      }
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "type": "friend",
+          "id": 7,
+          "timestamp": 7,
+          "is_new": true,
+          "is_pushed": true,
+          "profile": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "status": "REQUEST",
+          "by_profile": {
+            "id": 7,
+            "login": "sample login"
+          }
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "Notification.friends.explicit": {
+    "expected": {
+      "path": "/notification/friends/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "type": "friend",
+          "id": 7,
+          "timestamp": 7,
+          "is_new": true,
+          "is_pushed": true,
+          "profile": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "status": "REQUEST",
+          "by_profile": {
+            "id": 7,
+            "login": "sample login"
+          }
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "Notification.read.defaults": {
+    "expected": {
+      "path": "/notification/read",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      }
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "Notification.read.explicit": {
+    "expected": {
+      "path": "/notification/read",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "Notification.relatedReleases.defaults": {
+    "expected": {
+      "path": "/notification/related/release/0",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      }
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "type": "friend",
+          "id": 7,
+          "timestamp": 7,
+          "is_new": true,
+          "is_pushed": true,
+          "@id": 7,
+          "release": {
+            "id": 7,
+            "title_ru": "sample title_ru"
+          }
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "Notification.relatedReleases.explicit": {
+    "expected": {
+      "path": "/notification/related/release/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "type": "friend",
+          "id": 7,
+          "timestamp": 7,
+          "is_new": true,
+          "is_pushed": true,
+          "@id": 7,
+          "release": {
+            "id": 7,
+            "title_ru": "sample title_ru"
+          }
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "Notification.releaseComments.defaults": {
+    "expected": {
+      "path": "/notification/releaseComments/0",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      }
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "type": "friend",
+          "id": 7,
+          "timestamp": 7,
+          "is_new": true,
+          "is_pushed": true,
+          "comment": {
+            "id": 7
+          },
+          "parent_comment": {
+            "id": 7
+          }
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "Notification.releaseComments.explicit": {
+    "expected": {
+      "path": "/notification/releaseComments/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "type": "friend",
+          "id": 7,
+          "timestamp": 7,
+          "is_new": true,
+          "is_pushed": true,
+          "comment": {
+            "id": 7
+          },
+          "parent_comment": {
+            "id": 7
+          }
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "NotificationPreference.edit.defaults": {
+    "expected": {
+      "path": "/profile/preference/notification/article/edit",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      }
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "NotificationPreference.edit.explicit": {
+    "expected": {
+      "path": "/profile/preference/notification/article/edit",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "NotificationPreference.my.defaults": {
+    "expected": {
+      "path": "/profile/preference/notification/my",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      }
+    },
+    "response": {
+      "code": 0,
+      "profileStatusNotificationPreferences": [
+        {
+          "status": "FAVORITE_STATUS"
+        }
+      ],
+      "profileTypeNotificationPreferences": [
+        {
+          "type": {
+            "id": 7,
+            "name": "sample name"
+          }
+        }
+      ],
+      "is_release_type_notifications_enabled": true,
+      "is_episode_notifications_enabled": true,
+      "is_first_episode_notification_enabled": true,
+      "is_related_release_notifications_enabled": true,
+      "is_report_process_notifications_enabled": true,
+      "is_comment_notifications_enabled": true,
+      "is_my_collection_comment_notifications_enabled": true,
+      "is_article_notifications_enabled": true,
+      "is_my_article_comment_notifications_enabled": true
+    }
+  },
+  "NotificationPreference.my.explicit": {
+    "expected": {
+      "path": "/profile/preference/notification/my",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "profileStatusNotificationPreferences": [
+        {
+          "status": "FAVORITE_STATUS"
+        }
+      ],
+      "profileTypeNotificationPreferences": [
+        {
+          "type": {
+            "id": 7,
+            "name": "sample name"
+          }
+        }
+      ],
+      "is_release_type_notifications_enabled": true,
+      "is_episode_notifications_enabled": true,
+      "is_first_episode_notification_enabled": true,
+      "is_related_release_notifications_enabled": true,
+      "is_report_process_notifications_enabled": true,
+      "is_comment_notifications_enabled": true,
+      "is_my_collection_comment_notifications_enabled": true,
+      "is_article_notifications_enabled": true,
+      "is_my_article_comment_notifications_enabled": true
+    }
+  },
+  "NotificationPreference.editReleaseTypes.defaults": {
+    "expected": {
+      "path": "/profile/preference/notification/release/type/edit",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "body": {
+        "type": "JSON",
+        "data": {
+          "release_id": 7,
+          "profile_release_type_notification_preferences": [
+            7
+          ]
+        }
+      }
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "NotificationPreference.editReleaseTypes.explicit": {
+    "expected": {
+      "path": "/profile/preference/notification/release/type/edit",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "body": {
+        "type": "JSON",
+        "data": {
+          "release_id": 7,
+          "profile_release_type_notification_preferences": [
+            7
+          ]
+        }
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "NotificationPreference.editStatus.defaults": {
+    "expected": {
+      "path": "/profile/preference/notification/status/edit",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "body": {
+        "type": "JSON",
+        "data": {
+          "profileStatusNotificationPreferences": [
+            7
+          ]
+        }
+      }
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "NotificationPreference.editStatus.explicit": {
+    "expected": {
+      "path": "/profile/preference/notification/status/edit",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "body": {
+        "type": "JSON",
+        "data": {
+          "profileStatusNotificationPreferences": [
+            7
+          ]
+        }
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "NotificationPreference.editType.defaults": {
+    "expected": {
+      "path": "/profile/preference/notification/type/edit",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "body": {
+        "type": "JSON",
+        "data": {
+          "profileTypeNotificationPreferences": [
+            7
+          ]
+        }
+      }
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "NotificationPreference.editType.explicit": {
+    "expected": {
+      "path": "/profile/preference/notification/type/edit",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "body": {
+        "type": "JSON",
+        "data": {
+          "profileTypeNotificationPreferences": [
+            7
+          ]
+        }
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "NotificationPreference.releases.defaults": {
+    "expected": {
+      "path": "/profile/preference/notification/release/all/0",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      }
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "id": 7,
+          "age_rating": 7,
+          "aired_on_date": 7,
+          "author": "sample author",
+          "broadcast": 7,
+          "can_torlook_search": true,
+          "can_video_appeal": true,
+          "category": 0,
+          "collection_count": 7,
+          "comment_count": 7,
+          "comment_per_day_count": 7,
+          "comments": [],
+          "completed_count": 7,
+          "country": "sample country",
+          "description": "sample description",
+          "director": "sample director",
+          "dropped_count": 7,
+          "duration": 7,
+          "episode_last_update": {},
+          "episodes_total": 7,
+          "episodes_released": 7,
+          "favorite_count": 7,
+          "genres": "sample genres",
+          "grade": 2.5,
+          "hold_on_count": 7,
+          "image": "sample image",
+          "is_adult": true,
+          "is_deleted": true,
+          "is_favorite": true,
+          "is_play_disabled": true,
+          "is_release_type_notifications_enabled": true,
+          "is_ru_blocked": true,
+          "is_tpp_disabled": true,
+          "is_view_blocked": true,
+          "is_viewed": true,
+          "last_view_episode": {
+            "id": 7,
+            "name": "sample name"
+          },
+          "last_view_timestamp": 7,
+          "note": "sample note",
+          "note_background_color_dark": "sample note_background_color_dark",
+          "note_background_color_light": "sample note_background_color_light",
+          "note_text_color_dark": "sample note_text_color_dark",
+          "note_text_color_light": "sample note_text_color_light",
+          "plan_count": 7,
+          "profile_list_status": 7,
+          "profile_release_type_notification_preference_count": 7,
+          "profile_release_type_notification_preferences": [],
+          "rating": 2.5,
+          "recommended_releases": [],
+          "related": {
+            "id": 7,
+            "name": "sample name"
+          },
+          "related_count": 7,
+          "related_releases": [],
+          "release_date": "sample release_date",
+          "screenshot_images": [],
+          "season": 7,
+          "source": "sample source",
+          "status": {
+            "id": 0,
+            "name": "sample name"
+          },
+          "status_id": 7,
+          "studio": "sample studio",
+          "title_original": "sample title_original",
+          "title_ru": "sample title_ru",
+          "title_alt": "sample title_alt",
+          "translators": "sample translators",
+          "video_banners": [],
+          "vote_1_count": 7,
+          "vote_2_count": 7,
+          "vote_3_count": 7,
+          "vote_4_count": 7,
+          "vote_5_count": 7,
+          "vote_count": 7,
+          "voted_at": 7,
+          "watching_count": 7,
+          "year": "sample year",
+          "creation_date": 7,
+          "last_update_date": 7,
+          "your_vote": 7,
+          "my_vote": 7
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "NotificationPreference.releases.explicit": {
+    "expected": {
+      "path": "/profile/preference/notification/release/all/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "id": 7,
+          "age_rating": 7,
+          "aired_on_date": 7,
+          "author": "sample author",
+          "broadcast": 7,
+          "can_torlook_search": true,
+          "can_video_appeal": true,
+          "category": 0,
+          "collection_count": 7,
+          "comment_count": 7,
+          "comment_per_day_count": 7,
+          "comments": [],
+          "completed_count": 7,
+          "country": "sample country",
+          "description": "sample description",
+          "director": "sample director",
+          "dropped_count": 7,
+          "duration": 7,
+          "episode_last_update": {},
+          "episodes_total": 7,
+          "episodes_released": 7,
+          "favorite_count": 7,
+          "genres": "sample genres",
+          "grade": 2.5,
+          "hold_on_count": 7,
+          "image": "sample image",
+          "is_adult": true,
+          "is_deleted": true,
+          "is_favorite": true,
+          "is_play_disabled": true,
+          "is_release_type_notifications_enabled": true,
+          "is_ru_blocked": true,
+          "is_tpp_disabled": true,
+          "is_view_blocked": true,
+          "is_viewed": true,
+          "last_view_episode": {
+            "id": 7,
+            "name": "sample name"
+          },
+          "last_view_timestamp": 7,
+          "note": "sample note",
+          "note_background_color_dark": "sample note_background_color_dark",
+          "note_background_color_light": "sample note_background_color_light",
+          "note_text_color_dark": "sample note_text_color_dark",
+          "note_text_color_light": "sample note_text_color_light",
+          "plan_count": 7,
+          "profile_list_status": 7,
+          "profile_release_type_notification_preference_count": 7,
+          "profile_release_type_notification_preferences": [],
+          "rating": 2.5,
+          "recommended_releases": [],
+          "related": {
+            "id": 7,
+            "name": "sample name"
+          },
+          "related_count": 7,
+          "related_releases": [],
+          "release_date": "sample release_date",
+          "screenshot_images": [],
+          "season": 7,
+          "source": "sample source",
+          "status": {
+            "id": 0,
+            "name": "sample name"
+          },
+          "status_id": 7,
+          "studio": "sample studio",
+          "title_original": "sample title_original",
+          "title_ru": "sample title_ru",
+          "title_alt": "sample title_alt",
+          "translators": "sample translators",
+          "video_banners": [],
+          "vote_1_count": 7,
+          "vote_2_count": 7,
+          "vote_3_count": 7,
+          "vote_4_count": 7,
+          "vote_5_count": 7,
+          "vote_count": 7,
+          "voted_at": 7,
+          "watching_count": 7,
+          "year": "sample year",
+          "creation_date": 7,
+          "last_update_date": 7,
+          "your_vote": 7,
+          "my_vote": 7
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "NotificationPreference.releaseTypes.defaults": {
+    "expected": {
+      "path": "/profile/preference/notification/release/type/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      }
+    },
+    "response": {
+      "code": 0,
+      "profile_release_type_notification_preferences": [
+        {
+          "type": {
+            "id": 7,
+            "name": "sample name"
+          }
+        }
+      ]
+    }
+  },
+  "NotificationPreference.releaseTypes.explicit": {
+    "expected": {
+      "path": "/profile/preference/notification/release/type/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "profile_release_type_notification_preferences": [
+        {
+          "type": {
+            "id": 7,
+            "name": "sample name"
+          }
+        }
+      ]
+    }
+  }
+}

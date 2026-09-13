@@ -1,0 +1,318 @@
+{
+  "Type.channel.defaults": {
+    "expected": {
+      "path": "/type/7/channel",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      }
+    },
+    "response": {
+      "code": 0,
+      "channel": {
+        "id": 7,
+        "title": "sample title",
+        "description": "sample description",
+        "cover": "sample cover",
+        "avatar": "sample avatar",
+        "permission": 7,
+        "article_count": 7,
+        "subscriber_count": 7,
+        "creation_date": 7,
+        "last_update_date": 7,
+        "is_blog": true,
+        "is_commenting_enabled": true,
+        "is_article_suggestion_enabled": true,
+        "is_episode_channel_widget_enabled": true,
+        "episode_channel_widget_sort": 0,
+        "episode_channel_widget_popularity_period": 0,
+        "episode_channel_widget_article_count": 7,
+        "is_linked_to_type": true,
+        "recent_article_count": 7,
+        "is_verified": true,
+        "is_deleted": true,
+        "blog_profile_id": 7,
+        "is_subscribed": true,
+        "is_muted": true,
+        "is_blocked": true,
+        "block_reason": "sample block_reason",
+        "block_expire_date": 7,
+        "is_perm_blocked": true,
+        "is_creator": true,
+        "is_administrator_or_higher": true
+      },
+      "articles": [
+        {
+          "@id": 7,
+          "id": 7,
+          "channel": {
+            "id": 7
+          },
+          "author": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "repost_article": {
+            "id": 7
+          },
+          "payload": {},
+          "creation_date": 7,
+          "last_update_date": 7,
+          "comment_count": 7,
+          "repost_count": 7,
+          "vote_count": 7,
+          "vote": 7,
+          "contains_repost_article": true,
+          "is_signed": true,
+          "is_pinned": true,
+          "is_muted": true,
+          "is_deleted": true,
+          "has_delete_enforcement": true,
+          "popular_comment": {
+            "id": 7
+          }
+        }
+      ],
+      "are_widgets_hidden_globally": true,
+      "is_hidden_by_user": true,
+      "is_widget_eligible": true
+    }
+  },
+  "Type.channel.explicit": {
+    "expected": {
+      "path": "/type/7/channel",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "channel": {
+        "id": 7,
+        "title": "sample title",
+        "description": "sample description",
+        "cover": "sample cover",
+        "avatar": "sample avatar",
+        "permission": 7,
+        "article_count": 7,
+        "subscriber_count": 7,
+        "creation_date": 7,
+        "last_update_date": 7,
+        "is_blog": true,
+        "is_commenting_enabled": true,
+        "is_article_suggestion_enabled": true,
+        "is_episode_channel_widget_enabled": true,
+        "episode_channel_widget_sort": 0,
+        "episode_channel_widget_popularity_period": 0,
+        "episode_channel_widget_article_count": 7,
+        "is_linked_to_type": true,
+        "recent_article_count": 7,
+        "is_verified": true,
+        "is_deleted": true,
+        "blog_profile_id": 7,
+        "is_subscribed": true,
+        "is_muted": true,
+        "is_blocked": true,
+        "block_reason": "sample block_reason",
+        "block_expire_date": 7,
+        "is_perm_blocked": true,
+        "is_creator": true,
+        "is_administrator_or_higher": true
+      },
+      "articles": [
+        {
+          "@id": 7,
+          "id": 7,
+          "channel": {
+            "id": 7
+          },
+          "author": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "repost_article": {
+            "id": 7
+          },
+          "payload": {},
+          "creation_date": 7,
+          "last_update_date": 7,
+          "comment_count": 7,
+          "repost_count": 7,
+          "vote_count": 7,
+          "vote": 7,
+          "contains_repost_article": true,
+          "is_signed": true,
+          "is_pinned": true,
+          "is_muted": true,
+          "is_deleted": true,
+          "has_delete_enforcement": true,
+          "popular_comment": {
+            "id": 7
+          }
+        }
+      ],
+      "are_widgets_hidden_globally": true,
+      "is_hidden_by_user": true,
+      "is_widget_eligible": true
+    }
+  },
+  "Type.hideWidget.defaults": {
+    "expected": {
+      "path": "/type/widget/hide/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "query": {
+        "permanent": false
+      }
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "Type.hideWidget.explicit": {
+    "expected": {
+      "path": "/type/widget/hide/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "query": {
+        "permanent": true
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "Type.pin.defaults": {
+    "expected": {
+      "path": "/type/pin/7/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      }
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "Type.pin.explicit": {
+    "expected": {
+      "path": "/type/pin/7/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "Type.all.defaults": {
+    "expected": {
+      "path": "/type/all",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      }
+    },
+    "response": {
+      "code": 0,
+      "types": [
+        {
+          "id": 7,
+          "name": "sample name",
+          "icon": "sample icon",
+          "workers": "sample workers",
+          "is_sub": true,
+          "pinned": true,
+          "episodes_count": 7,
+          "quality": 7,
+          "view_count": 7
+        }
+      ]
+    }
+  },
+  "Type.all.explicit": {
+    "expected": {
+      "path": "/type/all",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "types": [
+        {
+          "id": 7,
+          "name": "sample name",
+          "icon": "sample icon",
+          "workers": "sample workers",
+          "is_sub": true,
+          "pinned": true,
+          "episodes_count": 7,
+          "quality": 7,
+          "view_count": 7
+        }
+      ]
+    }
+  },
+  "Type.unhideWidget.defaults": {
+    "expected": {
+      "path": "/type/widget/unhide/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      }
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "Type.unhideWidget.explicit": {
+    "expected": {
+      "path": "/type/widget/unhide/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "Type.unpin.defaults": {
+    "expected": {
+      "path": "/type/unpin/7/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      }
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "Type.unpin.explicit": {
+    "expected": {
+      "path": "/type/unpin/7/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0
+    }
+  }
+}

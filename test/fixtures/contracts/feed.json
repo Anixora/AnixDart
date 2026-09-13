@@ -1,0 +1,226 @@
+{
+  "Feed.get.defaults": {
+    "expected": {
+      "path": "/feed/all/0",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "query": {
+        "date": 0
+      }
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "@id": 7,
+          "id": 7,
+          "channel": {
+            "id": 7
+          },
+          "author": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "repost_article": {
+            "id": 7
+          },
+          "payload": {},
+          "creation_date": 7,
+          "last_update_date": 7,
+          "comment_count": 7,
+          "repost_count": 7,
+          "vote_count": 7,
+          "vote": 7,
+          "contains_repost_article": true,
+          "is_signed": true,
+          "is_pinned": true,
+          "is_muted": true,
+          "is_deleted": true,
+          "has_delete_enforcement": true,
+          "popular_comment": {
+            "id": 7
+          }
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "Feed.get.explicit": {
+    "expected": {
+      "path": "/feed/all/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "query": {
+        "channel_id": 7,
+        "date": 7
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "@id": 7,
+          "id": 7,
+          "channel": {
+            "id": 7
+          },
+          "author": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "repost_article": {
+            "id": 7
+          },
+          "payload": {},
+          "creation_date": 7,
+          "last_update_date": 7,
+          "comment_count": 7,
+          "repost_count": 7,
+          "vote_count": 7,
+          "vote": 7,
+          "contains_repost_article": true,
+          "is_signed": true,
+          "is_pinned": true,
+          "is_muted": true,
+          "is_deleted": true,
+          "has_delete_enforcement": true,
+          "popular_comment": {
+            "id": 7
+          }
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "Feed.latestArticle.defaults": {
+    "expected": {
+      "path": "/feed/latest",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      }
+    },
+    "response": {
+      "code": 0,
+      "articleId": 7
+    }
+  },
+  "Feed.latestArticle.explicit": {
+    "expected": {
+      "path": "/feed/latest",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "articleId": 7
+    }
+  },
+  "Feed.latestArticles.defaults": {
+    "expected": {
+      "path": "/feed/latest/all/0",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      }
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "@id": 7,
+          "id": 7,
+          "channel": {
+            "id": 7
+          },
+          "author": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "repost_article": {
+            "id": 7
+          },
+          "payload": {},
+          "creation_date": 7,
+          "last_update_date": 7,
+          "comment_count": 7,
+          "repost_count": 7,
+          "vote_count": 7,
+          "vote": 7,
+          "contains_repost_article": true,
+          "is_signed": true,
+          "is_pinned": true,
+          "is_muted": true,
+          "is_deleted": true,
+          "has_delete_enforcement": true,
+          "popular_comment": {
+            "id": 7
+          }
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  },
+  "Feed.latestArticles.explicit": {
+    "expected": {
+      "path": "/feed/latest/all/7",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0,
+      "content": [
+        {
+          "@id": 7,
+          "id": 7,
+          "channel": {
+            "id": 7
+          },
+          "author": {
+            "id": 7,
+            "login": "sample login"
+          },
+          "repost_article": {
+            "id": 7
+          },
+          "payload": {},
+          "creation_date": 7,
+          "last_update_date": 7,
+          "comment_count": 7,
+          "repost_count": 7,
+          "vote_count": 7,
+          "vote": 7,
+          "contains_repost_article": true,
+          "is_signed": true,
+          "is_pinned": true,
+          "is_muted": true,
+          "is_deleted": true,
+          "has_delete_enforcement": true,
+          "popular_comment": {
+            "id": 7
+          }
+        }
+      ],
+      "total_count": 7,
+      "total_page_count": 7,
+      "current_page": 7
+    }
+  }
+}

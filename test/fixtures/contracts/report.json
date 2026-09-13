@@ -1,0 +1,90 @@
+{
+  "Report.reasons.defaults": {
+    "expected": {
+      "path": "/report/release/reasons",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      }
+    },
+    "response": [
+      {
+        "id": 7,
+        "name": "sample name"
+      }
+    ]
+  },
+  "Report.reasons.explicit": {
+    "expected": {
+      "path": "/report/release/reasons",
+      "method": "GET",
+      "auth": {
+        "type": "Anixart"
+      },
+      "apiVersion": 3
+    },
+    "response": [
+      {
+        "id": 7,
+        "name": "sample name"
+      }
+    ]
+  },
+  "Report.send.defaults": {
+    "expected": {
+      "path": "/report/release",
+      "method": "POST",
+      "body": {
+        "type": "JSON",
+        "data": {
+          "entity_id": 7,
+          "message": "sample message",
+          "reason": 7
+        }
+      },
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "EntityNotFound",
+        "3": "InvalidMessage",
+        "4": "ReasonNotFound",
+        "EntityNotFound": 2,
+        "InvalidMessage": 3,
+        "ReasonNotFound": 4
+      }
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "Report.send.explicit": {
+    "expected": {
+      "path": "/report/release",
+      "method": "POST",
+      "body": {
+        "type": "JSON",
+        "data": {
+          "entity_id": 7,
+          "message": "sample message",
+          "reason": 7
+        }
+      },
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "EntityNotFound",
+        "3": "InvalidMessage",
+        "4": "ReasonNotFound",
+        "EntityNotFound": 2,
+        "InvalidMessage": 3,
+        "ReasonNotFound": 4
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0
+    }
+  }
+}

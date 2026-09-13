@@ -1,0 +1,110 @@
+{
+  "Import.bookmarks.defaults": {
+    "expected": {
+      "path": "/import/bookmarks",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "ImportLimitReached",
+        "ImportLimitReached": 2
+      },
+      "body": {
+        "type": "JSON",
+        "data": {
+          "selected_importer_name": "sample selected_importer_name",
+          "watching": [
+            7
+          ],
+          "plans": [
+            7
+          ],
+          "completed": [
+            7
+          ],
+          "dropped": [
+            7
+          ],
+          "holdOn": [
+            7
+          ]
+        }
+      }
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "Import.bookmarks.explicit": {
+    "expected": {
+      "path": "/import/bookmarks",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "ImportLimitReached",
+        "ImportLimitReached": 2
+      },
+      "body": {
+        "type": "JSON",
+        "data": {
+          "selected_importer_name": "sample selected_importer_name",
+          "watching": [
+            7
+          ],
+          "plans": [
+            7
+          ],
+          "completed": [
+            7
+          ],
+          "dropped": [
+            7
+          ],
+          "holdOn": [
+            7
+          ]
+        }
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "Import.status.defaults": {
+    "expected": {
+      "path": "/import/status",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "ImportLimitReached",
+        "ImportLimitReached": 2
+      }
+    },
+    "response": {
+      "code": 0
+    }
+  },
+  "Import.status.explicit": {
+    "expected": {
+      "path": "/import/status",
+      "method": "POST",
+      "auth": {
+        "type": "Anixart"
+      },
+      "resultEnum": {
+        "2": "ImportLimitReached",
+        "ImportLimitReached": 2
+      },
+      "apiVersion": 3
+    },
+    "response": {
+      "code": 0
+    }
+  }
+}

@@ -6,137 +6,137 @@ part 'release.g.dart';
 final class Release {
   const Release({
     required this.id,
-    this.ageRating,
-    this.airedOnDate,
+    required this.ageRating,
+    required this.airedOnDate,
     this.author,
-    this.broadcast,
-    this.canTorlookSearch,
-    this.canVideoAppeal,
-    this.category,
-    this.collectionCount,
-    this.commentCount,
-    this.commentPerDayCount,
-    this.comments,
-    this.completedCount,
-    this.country,
-    this.description,
+    required this.broadcast,
+    required this.canTorlookSearch,
+    required this.canVideoAppeal,
+    required this.category,
+    required this.collectionCount,
+    required this.commentCount,
+    required this.commentPerDayCount,
+    required this.comments,
+    required this.completedCount,
+    required this.country,
+    required this.description,
     this.director,
-    this.droppedCount,
-    this.duration,
+    required this.droppedCount,
+    required this.duration,
     this.episodeLastUpdate,
     this.episodesTotal,
     this.episodesReleased,
     this.favoriteCount,
-    this.genres,
-    this.grade,
-    this.holdOnCount,
-    this.image,
-    this.isAdult,
-    this.isDeleted,
-    this.isFavorite,
-    this.isPlayDisabled,
-    this.isReleaseTypeNotificationsEnabled,
+    required this.genres,
+    required this.grade,
+    required this.holdOnCount,
+    required this.image,
+    required this.isAdult,
+    required this.isDeleted,
+    required this.isFavorite,
+    required this.isPlayDisabled,
+    required this.isReleaseTypeNotificationsEnabled,
     this.isRuBlocked,
-    this.isTppDisabled,
-    this.isViewBlocked,
-    this.isViewed,
+    required this.isTppDisabled,
+    required this.isViewBlocked,
+    required this.isViewed,
     this.lastViewEpisode,
-    this.lastViewTimestamp,
+    required this.lastViewTimestamp,
     this.note,
     this.noteBackgroundColorDark,
     this.noteBackgroundColorLight,
     this.noteTextColorDark,
     this.noteTextColorLight,
-    this.planCount,
+    required this.planCount,
     this.profileListStatus,
-    this.profileReleaseTypeNotificationPreferenceCount,
+    required this.profileReleaseTypeNotificationPreferenceCount,
     this.profileReleaseTypeNotificationPreferences,
-    this.rating,
-    this.recommendedReleases,
+    required this.rating,
+    required this.recommendedReleases,
     this.related,
-    this.relatedCount,
-    this.relatedReleases,
+    required this.relatedCount,
+    required this.relatedReleases,
     this.releaseDate,
-    this.screenshotImages,
-    this.season,
+    required this.screenshotImages,
+    required this.season,
     this.source,
-    this.status,
-    this.statusId,
+    required this.status,
+    required this.statusId,
     this.studio,
-    this.titleOriginal,
+    required this.titleOriginal,
     required this.titleRu,
     this.titleAlt,
     this.translators,
-    this.videoBanners,
-    this.vote1Count,
-    this.vote2Count,
-    this.vote3Count,
-    this.vote4Count,
-    this.vote5Count,
-    this.voteCount,
+    required this.videoBanners,
+    required this.vote1Count,
+    required this.vote2Count,
+    required this.vote3Count,
+    required this.vote4Count,
+    required this.vote5Count,
+    required this.voteCount,
     this.votedAt,
-    this.watchingCount,
-    this.year,
+    required this.watchingCount,
+    required this.year,
     this.creationDate,
     this.lastUpdateDate,
     this.yourVote,
     this.myVote,
-    this.favoritesCount,
+    required this.favoritesCount,
   });
 
   @JsonKey(name: 'id')
   final int id;
 
   @JsonKey(name: 'age_rating')
-  final int? ageRating;
+  final int ageRating;
 
   @JsonKey(name: 'aired_on_date')
-  final int? airedOnDate;
+  final int airedOnDate;
 
   @JsonKey(name: 'author')
   final String? author;
 
   @JsonKey(name: 'broadcast')
-  final int? broadcast;
+  final int broadcast;
 
   @JsonKey(name: 'can_torlook_search')
-  final bool? canTorlookSearch;
+  final bool canTorlookSearch;
 
   @JsonKey(name: 'can_video_appeal')
-  final bool? canVideoAppeal;
+  final bool canVideoAppeal;
 
   @JsonKey(name: 'category')
-  final Category? category;
+  final Category category;
 
   @JsonKey(name: 'collection_count')
-  final int? collectionCount;
+  final int collectionCount;
 
   @JsonKey(name: 'comment_count')
-  final int? commentCount;
+  final int commentCount;
 
   @JsonKey(name: 'comment_per_day_count')
-  final int? commentPerDayCount;
+  final int commentPerDayCount;
 
   @JsonKey(name: 'comments')
-  final List<ReleaseComment>? comments;
+  final List<ReleaseComment> comments;
 
   @JsonKey(name: 'completed_count')
-  final int? completedCount;
+  final int completedCount;
 
   @JsonKey(name: 'country')
-  final String? country;
+  final String country;
 
   @JsonKey(name: 'description')
-  final String? description;
+  final String description;
 
   @JsonKey(name: 'director')
   final String? director;
 
   @JsonKey(name: 'dropped_count')
-  final int? droppedCount;
+  final int droppedCount;
 
   @JsonKey(name: 'duration')
-  final int? duration;
+  final int duration;
 
   @JsonKey(name: 'episode_last_update')
   final EpisodeUpdate? episodeLastUpdate;
@@ -151,49 +151,49 @@ final class Release {
   final int? favoriteCount;
 
   @JsonKey(name: 'genres')
-  final String? genres;
+  final String genres;
 
   @JsonKey(name: 'grade')
-  final double? grade;
+  final double grade;
 
   @JsonKey(name: 'hold_on_count')
-  final int? holdOnCount;
+  final int holdOnCount;
 
   @JsonKey(name: 'image')
-  final String? image;
+  final String image;
 
   @JsonKey(name: 'is_adult')
-  final bool? isAdult;
+  final bool isAdult;
 
   @JsonKey(name: 'is_deleted')
-  final bool? isDeleted;
+  final bool isDeleted;
 
   @JsonKey(name: 'is_favorite')
-  final bool? isFavorite;
+  final bool isFavorite;
 
   @JsonKey(name: 'is_play_disabled')
-  final bool? isPlayDisabled;
+  final bool isPlayDisabled;
 
   @JsonKey(name: 'is_release_type_notifications_enabled')
-  final bool? isReleaseTypeNotificationsEnabled;
+  final bool isReleaseTypeNotificationsEnabled;
 
   @JsonKey(name: 'is_ru_blocked')
   final bool? isRuBlocked;
 
   @JsonKey(name: 'is_tpp_disabled')
-  final bool? isTppDisabled;
+  final bool isTppDisabled;
 
   @JsonKey(name: 'is_view_blocked')
-  final bool? isViewBlocked;
+  final bool isViewBlocked;
 
   @JsonKey(name: 'is_viewed')
-  final bool? isViewed;
+  final bool isViewed;
 
   @JsonKey(name: 'last_view_episode')
   final Episode? lastViewEpisode;
 
   @JsonKey(name: 'last_view_timestamp')
-  final int? lastViewTimestamp;
+  final int lastViewTimestamp;
 
   @JsonKey(name: 'note')
   final String? note;
@@ -211,56 +211,56 @@ final class Release {
   final String? noteTextColorLight;
 
   @JsonKey(name: 'plan_count')
-  final int? planCount;
+  final int planCount;
 
   @JsonKey(name: 'profile_list_status')
   final int? profileListStatus;
 
   @JsonKey(name: 'profile_release_type_notification_preference_count')
-  final int? profileReleaseTypeNotificationPreferenceCount;
+  final int profileReleaseTypeNotificationPreferenceCount;
 
   @JsonKey(name: 'profile_release_type_notification_preferences')
   final List<ProfileReleaseTypeNotificationPreference>?
   profileReleaseTypeNotificationPreferences;
 
   @JsonKey(name: 'rating')
-  final double? rating;
+  final double rating;
 
   @JsonKey(name: 'recommended_releases')
-  final List<Release>? recommendedReleases;
+  final List<Release> recommendedReleases;
 
   @JsonKey(name: 'related')
   final Related? related;
 
   @JsonKey(name: 'related_count')
-  final int? relatedCount;
+  final int relatedCount;
 
   @JsonKey(name: 'related_releases')
-  final List<Release>? relatedReleases;
+  final List<Release> relatedReleases;
 
   @JsonKey(name: 'release_date')
   final String? releaseDate;
 
   @JsonKey(name: 'screenshot_images')
-  final List<String>? screenshotImages;
+  final List<String> screenshotImages;
 
   @JsonKey(name: 'season')
-  final int? season;
+  final int season;
 
   @JsonKey(name: 'source')
   final String? source;
 
   @JsonKey(name: 'status')
-  final ReleaseStatusInfo? status;
+  final ReleaseStatusInfo status;
 
   @JsonKey(name: 'status_id')
-  final int? statusId;
+  final int statusId;
 
   @JsonKey(name: 'studio')
   final String? studio;
 
   @JsonKey(name: 'title_original')
-  final String? titleOriginal;
+  final String titleOriginal;
 
   @JsonKey(name: 'title_ru')
   final String titleRu;
@@ -272,34 +272,34 @@ final class Release {
   final String? translators;
 
   @JsonKey(name: 'video_banners')
-  final List<ReleaseVideoBanner>? videoBanners;
+  final List<ReleaseVideoBanner> videoBanners;
 
   @JsonKey(name: 'vote_1_count')
-  final int? vote1Count;
+  final int vote1Count;
 
   @JsonKey(name: 'vote_2_count')
-  final int? vote2Count;
+  final int vote2Count;
 
   @JsonKey(name: 'vote_3_count')
-  final int? vote3Count;
+  final int vote3Count;
 
   @JsonKey(name: 'vote_4_count')
-  final int? vote4Count;
+  final int vote4Count;
 
   @JsonKey(name: 'vote_5_count')
-  final int? vote5Count;
+  final int vote5Count;
 
   @JsonKey(name: 'vote_count')
-  final int? voteCount;
+  final int voteCount;
 
   @JsonKey(name: 'voted_at')
   final int? votedAt;
 
   @JsonKey(name: 'watching_count')
-  final int? watchingCount;
+  final int watchingCount;
 
   @JsonKey(name: 'year')
-  final String? year;
+  final String year;
 
   @JsonKey(name: 'creation_date')
   final int? creationDate;
@@ -314,7 +314,7 @@ final class Release {
   final int? myVote;
 
   @JsonKey(name: 'favorites_count')
-  final int? favoritesCount;
+  final int favoritesCount;
 
   factory Release.fromJson(Map<String, dynamic> json) =>
       _$ReleaseFromJson(json);
@@ -324,31 +324,31 @@ final class Release {
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class EpisodeUpdate {
   const EpisodeUpdate({
-    this.lastEpisodeTypeUpdateName,
-    this.lastEpisodeSourceUpdateId,
-    this.lastEpisodeSourceUpdateName,
-    this.lastEpisodeTypeUpdateId,
-    this.lastEpisodeUpdateDate,
-    this.lastEpisodeUpdateName,
+    required this.lastEpisodeTypeUpdateName,
+    required this.lastEpisodeSourceUpdateId,
+    required this.lastEpisodeSourceUpdateName,
+    required this.lastEpisodeTypeUpdateId,
+    required this.lastEpisodeUpdateDate,
+    required this.lastEpisodeUpdateName,
   });
 
   @JsonKey(name: 'lastEpisodeTypeUpdateName')
-  final String? lastEpisodeTypeUpdateName;
+  final String lastEpisodeTypeUpdateName;
 
   @JsonKey(name: 'last_episode_source_update_id')
-  final int? lastEpisodeSourceUpdateId;
+  final int lastEpisodeSourceUpdateId;
 
   @JsonKey(name: 'last_episode_source_update_name')
-  final String? lastEpisodeSourceUpdateName;
+  final String lastEpisodeSourceUpdateName;
 
   @JsonKey(name: 'last_episode_type_update_id')
-  final int? lastEpisodeTypeUpdateId;
+  final int lastEpisodeTypeUpdateId;
 
   @JsonKey(name: 'last_episode_update_date')
-  final int? lastEpisodeUpdateDate;
+  final int lastEpisodeUpdateDate;
 
   @JsonKey(name: 'last_episode_update_name')
-  final String? lastEpisodeUpdateName;
+  final String lastEpisodeUpdateName;
 
   factory EpisodeUpdate.fromJson(Map<String, dynamic> json) =>
       _$EpisodeUpdateFromJson(json);
@@ -357,13 +357,13 @@ final class EpisodeUpdate {
 
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class ReleaseStatusInfo {
-  const ReleaseStatusInfo({required this.id, this.name});
+  const ReleaseStatusInfo({required this.id, required this.name});
 
   @JsonKey(name: 'id')
   final ReleaseStatus id;
 
   @JsonKey(name: 'name')
-  final String? name;
+  final String name;
 
   factory ReleaseStatusInfo.fromJson(Map<String, dynamic> json) =>
       _$ReleaseStatusInfoFromJson(json);
@@ -374,21 +374,21 @@ final class ReleaseStatusInfo {
 final class ReleaseComment {
   const ReleaseComment({
     required this.id,
-    this.message,
-    this.timestamp,
-    this.type,
-    this.vote,
-    this.profile,
+    required this.message,
+    required this.timestamp,
+    required this.type,
+    required this.vote,
+    required this.profile,
     this.parentCommentId,
-    this.voteCount,
-    this.likesCount,
-    this.isSpoiler,
-    this.isEdited,
-    this.isDeleted,
-    this.isReply,
-    this.replyCount,
-    this.canLike,
-    this.release,
+    required this.voteCount,
+    required this.likesCount,
+    required this.isSpoiler,
+    required this.isEdited,
+    required this.isDeleted,
+    required this.isReply,
+    required this.replyCount,
+    required this.canLike,
+    required this.release,
     this.postedAtEpisode,
   });
 
@@ -396,49 +396,49 @@ final class ReleaseComment {
   final int id;
 
   @JsonKey(name: 'message')
-  final String? message;
+  final String message;
 
   @JsonKey(name: 'timestamp')
-  final int? timestamp;
+  final int timestamp;
 
   @JsonKey(name: 'type')
-  final int? type;
+  final int type;
 
   @JsonKey(name: 'vote')
-  final int? vote;
+  final int vote;
 
   @JsonKey(name: 'profile')
-  final ProfileCompact? profile;
+  final ProfileCompact profile;
 
   @JsonKey(name: 'parent_comment_id')
   final int? parentCommentId;
 
   @JsonKey(name: 'vote_count')
-  final int? voteCount;
+  final int voteCount;
 
   @JsonKey(name: 'likes_count')
-  final int? likesCount;
+  final int likesCount;
 
   @JsonKey(name: 'is_spoiler')
-  final bool? isSpoiler;
+  final bool isSpoiler;
 
   @JsonKey(name: 'is_edited')
-  final bool? isEdited;
+  final bool isEdited;
 
   @JsonKey(name: 'is_deleted')
-  final bool? isDeleted;
+  final bool isDeleted;
 
   @JsonKey(name: 'is_reply')
-  final bool? isReply;
+  final bool isReply;
 
   @JsonKey(name: 'reply_count')
-  final int? replyCount;
+  final int replyCount;
 
   @JsonKey(name: 'can_like')
-  final bool? canLike;
+  final bool canLike;
 
   @JsonKey(name: 'release')
-  final Release? release;
+  final Release release;
 
   @JsonKey(name: 'posted_at_episode')
   final int? postedAtEpisode;
@@ -452,62 +452,62 @@ final class ReleaseComment {
 final class Episode {
   const Episode({
     required this.id,
-    this.addedDate,
-    this.position,
-    this.quality,
-    this.playbackPosition,
-    this.release,
-    this.releaseId,
-    this.source,
-    this.sourceId,
-    this.name,
-    this.url,
-    this.iframe,
-    this.isFiller,
-    this.isWatched,
+    required this.addedDate,
+    required this.position,
+    required this.quality,
+    required this.playbackPosition,
+    required this.release,
+    required this.releaseId,
+    required this.source,
+    required this.sourceId,
+    required this.name,
+    required this.url,
+    required this.iframe,
+    required this.isFiller,
+    required this.isWatched,
   });
 
   @JsonKey(name: 'id')
   final int id;
 
   @JsonKey(name: 'added_date')
-  final int? addedDate;
+  final int addedDate;
 
   @JsonKey(name: 'position')
-  final int? position;
+  final int position;
 
   @JsonKey(name: 'quality')
-  final int? quality;
+  final int quality;
 
   @JsonKey(name: 'playback_position')
-  final int? playbackPosition;
+  final int playbackPosition;
 
   @JsonKey(name: 'release')
-  final Release? release;
+  final Release release;
 
   @JsonKey(name: 'release_id')
-  final int? releaseId;
+  final int releaseId;
 
   @JsonKey(name: 'source')
-  final Source? source;
+  final Source source;
 
   @JsonKey(name: 'source_id')
-  final int? sourceId;
+  final int sourceId;
 
   @JsonKey(name: 'name')
-  final String? name;
+  final String name;
 
   @JsonKey(name: 'url')
-  final String? url;
+  final String url;
 
   @JsonKey(name: 'iframe')
-  final bool? iframe;
+  final bool iframe;
 
   @JsonKey(name: 'is_filler')
-  final bool? isFiller;
+  final bool isFiller;
 
   @JsonKey(name: 'is_watched')
-  final bool? isWatched;
+  final bool isWatched;
 
   factory Episode.fromJson(Map<String, dynamic> json) =>
       _$EpisodeFromJson(json);
@@ -517,27 +517,27 @@ final class Episode {
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class Source {
   const Source({
-    this.episodesCount,
+    required this.episodesCount,
     required this.id,
-    this.name,
-    this.quality,
-    this.type,
+    required this.name,
+    required this.quality,
+    required this.type,
   });
 
   @JsonKey(name: 'episodes_count')
-  final int? episodesCount;
+  final int episodesCount;
 
   @JsonKey(name: 'id')
   final int id;
 
   @JsonKey(name: 'name')
-  final String? name;
+  final String name;
 
   @JsonKey(name: 'quality')
-  final int? quality;
+  final int quality;
 
   @JsonKey(name: 'type')
-  final Dubber? type;
+  final Dubber type;
 
   factory Source.fromJson(Map<String, dynamic> json) => _$SourceFromJson(json);
   Map<String, dynamic> toJson() => _$SourceToJson(this);
@@ -545,10 +545,10 @@ final class Source {
 
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class ProfileReleaseTypeNotificationPreference {
-  const ProfileReleaseTypeNotificationPreference({this.type});
+  const ProfileReleaseTypeNotificationPreference({required this.type});
 
   @JsonKey(name: 'type')
-  final Dubber? type;
+  final Dubber type;
 
   factory ProfileReleaseTypeNotificationPreference.fromJson(
     Map<String, dynamic> json,
@@ -561,42 +561,42 @@ final class ProfileReleaseTypeNotificationPreference {
 final class Dubber {
   const Dubber({
     required this.id,
-    this.name,
-    this.icon,
-    this.workers,
-    this.isSub,
-    this.pinned,
-    this.episodesCount,
-    this.quality,
-    this.viewCount,
+    required this.name,
+    required this.icon,
+    required this.workers,
+    required this.isSub,
+    required this.pinned,
+    required this.episodesCount,
+    required this.quality,
+    required this.viewCount,
   });
 
   @JsonKey(name: 'id')
   final int id;
 
   @JsonKey(name: 'name')
-  final String? name;
+  final String name;
 
   @JsonKey(name: 'icon')
-  final String? icon;
+  final String icon;
 
   @JsonKey(name: 'workers')
-  final String? workers;
+  final String workers;
 
   @JsonKey(name: 'is_sub')
-  final bool? isSub;
+  final bool isSub;
 
   @JsonKey(name: 'pinned')
-  final bool? pinned;
+  final bool pinned;
 
   @JsonKey(name: 'episodes_count')
-  final int? episodesCount;
+  final int episodesCount;
 
   @JsonKey(name: 'quality')
-  final int? quality;
+  final int quality;
 
   @JsonKey(name: 'view_count')
-  final int? viewCount;
+  final int viewCount;
 
   factory Dubber.fromJson(Map<String, dynamic> json) => _$DubberFromJson(json);
   Map<String, dynamic> toJson() => _$DubberToJson(this);
@@ -605,27 +605,27 @@ final class Dubber {
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class ReleaseVideoBanner {
   const ReleaseVideoBanner({
-    this.name,
-    this.image,
-    this.value,
-    this.actionId,
-    this.isNew,
+    required this.name,
+    required this.image,
+    required this.value,
+    required this.actionId,
+    required this.isNew,
   });
 
   @JsonKey(name: 'name')
-  final String? name;
+  final String name;
 
   @JsonKey(name: 'image')
-  final String? image;
+  final String image;
 
   @JsonKey(name: 'value')
-  final String? value;
+  final String value;
 
   @JsonKey(name: 'action_id')
-  final int? actionId;
+  final int actionId;
 
   @JsonKey(name: 'is_new')
-  final bool? isNew;
+  final bool isNew;
 
   factory ReleaseVideoBanner.fromJson(Map<String, dynamic> json) =>
       _$ReleaseVideoBannerFromJson(json);
@@ -637,11 +637,11 @@ final class Related {
   const Related({
     this.description,
     required this.id,
-    this.image,
+    required this.image,
     this.images,
-    this.name,
-    this.nameRu,
-    this.releaseCount,
+    required this.name,
+    required this.nameRu,
+    required this.releaseCount,
   });
 
   @JsonKey(name: 'description')
@@ -651,19 +651,19 @@ final class Related {
   final int id;
 
   @JsonKey(name: 'image')
-  final String? image;
+  final String image;
 
   @JsonKey(name: 'images')
   final List<String>? images;
 
   @JsonKey(name: 'name')
-  final String? name;
+  final String name;
 
   @JsonKey(name: 'name_ru')
-  final String? nameRu;
+  final String nameRu;
 
   @JsonKey(name: 'release_count')
-  final int? releaseCount;
+  final int releaseCount;
 
   factory Related.fromJson(Map<String, dynamic> json) =>
       _$RelatedFromJson(json);
@@ -677,15 +677,15 @@ final class ProfileCompact {
     this.badgeName,
     this.badgeType,
     this.badgeUrl,
-    this.banExpires,
+    required this.banExpires,
     this.banReason,
     required this.id,
-    this.isBanned,
-    this.isSponsor,
-    this.isVerified,
-    this.privilegeLevel,
+    required this.isBanned,
+    required this.isSponsor,
+    required this.isVerified,
+    required this.privilegeLevel,
     required this.login,
-    this.avatar,
+    required this.avatar,
   });
 
   @JsonKey(name: 'badge_id')
@@ -701,7 +701,7 @@ final class ProfileCompact {
   final String? badgeUrl;
 
   @JsonKey(name: 'ban_expires')
-  final int? banExpires;
+  final int banExpires;
 
   @JsonKey(name: 'ban_reason')
   final String? banReason;
@@ -710,22 +710,22 @@ final class ProfileCompact {
   final int id;
 
   @JsonKey(name: 'is_banned')
-  final bool? isBanned;
+  final bool isBanned;
 
   @JsonKey(name: 'is_sponsor')
-  final bool? isSponsor;
+  final bool isSponsor;
 
   @JsonKey(name: 'is_verified')
-  final bool? isVerified;
+  final bool isVerified;
 
   @JsonKey(name: 'privilege_level')
-  final int? privilegeLevel;
+  final int privilegeLevel;
 
   @JsonKey(name: 'login')
   final String login;
 
   @JsonKey(name: 'avatar')
-  final String? avatar;
+  final String avatar;
 
   factory ProfileCompact.fromJson(Map<String, dynamic> json) =>
       _$ProfileCompactFromJson(json);

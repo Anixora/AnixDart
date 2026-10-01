@@ -17,8 +17,8 @@ void main() {
     expect(result.code, 0);
     expect(result.release.id, 101);
     expect(result.release.titleRu, isNotEmpty);
-    expect(result.release.category!.id, ReleaseCategory.series);
-    expect(result.release.status!.id, ReleaseStatus.finished);
+    expect(result.release.category.id, ReleaseCategory.series);
+    expect(result.release.status.id, ReleaseStatus.finished);
     expect(result.release.grade, isA<double>());
     expect(result.release.comments, isNotEmpty);
     expect(result.release.recommendedReleases, isNotEmpty);
@@ -124,9 +124,7 @@ void main() {
       expect(jsonDecode(bodies.last), {'title': 'Пример', 'number': 5});
       expect(received.last.headers.contentType!.mimeType, 'application/json');
 
-      await send(
-        body: const UrlEncodedBody({'name': 'a & b', 'flag': true}),
-      );
+      await send(body: const UrlEncodedBody({'name': 'a & b', 'flag': true}));
       expect(Uri.splitQueryString(bodies.last), {
         'name': 'a & b',
         'flag': 'true',
@@ -158,7 +156,9 @@ void main() {
         await request.response.close();
       };
       await expectLater(
-        send(options: const RequestOptions(timeout: Duration(milliseconds: 30))),
+        send(
+          options: const RequestOptions(timeout: Duration(milliseconds: 30)),
+        ),
         throwsA(isA<TimeoutException>()),
       );
 

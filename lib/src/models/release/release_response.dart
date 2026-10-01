@@ -10,7 +10,7 @@ final class ReleaseResponse {
 
   final int code;
 
-  /// В ответе с ошибкой релиз может отсутствовать, если выбрасывание ошибок отключено.
+  /// Может отсутствовать в ответе с ошибкой API.
   @JsonKey(name: 'release')
   final Release? releaseOrNull;
 

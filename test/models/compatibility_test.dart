@@ -1,6 +1,7 @@
 import 'package:anixdart/anixdart.dart';
 import 'package:test/test.dart';
 import '../support/contract_client.dart';
+import '../support/model_fixtures.dart';
 
 void main() {
   test('все типы блоков статьи выбирают правильные классы', () {
@@ -14,10 +15,9 @@ void main() {
       'embed': ArticleEmbedPayloadBlock,
     };
     for (final entry in types.entries) {
-      final block = ArticlePayloadBlock.fromJson({
-        'id': 'block',
-        'type': entry.key,
-      });
+      final block = ArticlePayloadBlock.fromJson(
+        modelFixture(entry.value.toString()),
+      );
       expect(block.runtimeType, entry.value);
       expect(block.toJson()['type'], entry.key);
     }
@@ -44,12 +44,14 @@ void main() {
     final current = ReleaseSearchResult.fromJson({
       'code': 0,
       'releases': [],
-      'related': {'id': 7, 'name': 'series'},
+      'related': modelFixture('Related'),
     });
     final legacy = ReleaseSearchResult.fromJson({
       'code': 0,
       'content': [],
       'total_page_count': 1,
+      'total_count': 0,
+      'current_page': 0,
     });
     expect(current, isA<CurrentReleaseSearchResult>());
     expect(legacy, isA<LegacyReleaseSearchResult>());
@@ -77,7 +79,7 @@ void main() {
   );
 
   test('жалоба на эпизод отправляет типизированный объект эпизода', () async {
-    const episode = Episode(id: 7, releaseId: 11, sourceId: 12, position: 3);
+    final episode = Episode.fromJson(modelFixture('Episode'));
     final fixture = <String, dynamic>{
       'expected': {
         'path': '/report/episode',
@@ -102,13 +104,13 @@ void main() {
     addTearDown(client.close);
     await client.endpoints.report.send(
       ReportType.episode,
-      const ReportRequest(entityId: episode, message: 'broken', reason: 2),
+      ReportRequest(entityId: episode, message: 'broken', reason: 2),
     );
     expect(http.calls, 1);
     await expectLater(
       client.endpoints.report.send(
         ReportType.release,
-        const ReportRequest(entityId: episode, message: 'broken', reason: 2),
+        ReportRequest(entityId: episode, message: 'broken', reason: 2),
       ),
       throwsArgumentError,
     );

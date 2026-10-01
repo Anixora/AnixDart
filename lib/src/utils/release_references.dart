@@ -1,5 +1,5 @@
-/// Разворачивает ссылки Jackson `@id`, не путая их с идентификаторами релизов.
-/// Исходные данные не изменяются. Отсутствующие и циклические ссылки вызывают явную ошибку.
+/// Разворачивает ссылки Jackson `@id` в копии ответа.
+/// Неизвестная ссылка или цикл приводят к ошибке.
 Map<String, dynamic> resolveReleaseReferences(Map<String, dynamic> json) {
   final identities = <int, Map<String, dynamic>>{};
   void collect(Object? value) {

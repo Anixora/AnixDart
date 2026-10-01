@@ -22,26 +22,26 @@ final class ApiResponse {
 final class PageableResponse<T> {
   const PageableResponse({
     required this.code,
-    this.content,
-    this.totalCount,
-    this.totalPageCount,
-    this.currentPage,
+    required this.content,
+    required this.totalCount,
+    required this.totalPageCount,
+    required this.currentPage,
   });
 
   @JsonKey(name: 'code')
   final int code;
 
   @JsonKey(name: 'content')
-  final List<T>? content;
+  final List<T> content;
 
   @JsonKey(name: 'total_count')
-  final int? totalCount;
+  final int totalCount;
 
   @JsonKey(name: 'total_page_count')
-  final int? totalPageCount;
+  final int totalPageCount;
 
   @JsonKey(name: 'current_page')
-  final int? currentPage;
+  final int currentPage;
 
   factory PageableResponse.fromJson(
     Map<String, dynamic> json,
@@ -59,66 +59,66 @@ final class PageableResponse<T> {
 final class CommonComment<T> {
   const CommonComment({
     required this.id,
-    this.message,
-    this.timestamp,
-    this.type,
-    this.vote,
-    this.profile,
+    required this.message,
+    required this.timestamp,
+    required this.type,
+    required this.vote,
+    required this.profile,
     this.parentCommentId,
-    this.voteCount,
-    this.likesCount,
-    this.isSpoiler,
-    this.isEdited,
-    this.isDeleted,
-    this.isReply,
-    this.replyCount,
-    this.canLike,
+    required this.voteCount,
+    required this.likesCount,
+    required this.isSpoiler,
+    required this.isEdited,
+    required this.isDeleted,
+    required this.isReply,
+    required this.replyCount,
+    required this.canLike,
   });
 
   @JsonKey(name: 'id')
   final int id;
 
   @JsonKey(name: 'message')
-  final String? message;
+  final String message;
 
   @JsonKey(name: 'timestamp')
-  final int? timestamp;
+  final int timestamp;
 
   @JsonKey(name: 'type')
-  final int? type;
+  final int type;
 
   @JsonKey(name: 'vote')
-  final int? vote;
+  final int vote;
 
   @JsonKey(name: 'profile')
-  final T? profile;
+  final T profile;
 
   @JsonKey(name: 'parent_comment_id')
   final int? parentCommentId;
 
   @JsonKey(name: 'vote_count')
-  final int? voteCount;
+  final int voteCount;
 
   @JsonKey(name: 'likes_count')
-  final int? likesCount;
+  final int likesCount;
 
   @JsonKey(name: 'is_spoiler')
-  final bool? isSpoiler;
+  final bool isSpoiler;
 
   @JsonKey(name: 'is_edited')
-  final bool? isEdited;
+  final bool isEdited;
 
   @JsonKey(name: 'is_deleted')
-  final bool? isDeleted;
+  final bool isDeleted;
 
   @JsonKey(name: 'is_reply')
-  final bool? isReply;
+  final bool isReply;
 
   @JsonKey(name: 'reply_count')
-  final int? replyCount;
+  final int replyCount;
 
   @JsonKey(name: 'can_like')
-  final bool? canLike;
+  final bool canLike;
 
   factory CommonComment.fromJson(
     Map<String, dynamic> json,
@@ -132,22 +132,22 @@ final class CommonComment<T> {
 final class CommonCommentCompact {
   const CommonCommentCompact({
     required this.id,
-    this.profile,
-    this.message,
-    this.isSpoiler,
+    required this.profile,
+    required this.message,
+    required this.isSpoiler,
   });
 
   @JsonKey(name: 'id')
   final int id;
 
   @JsonKey(name: 'profile')
-  final ProfileSlim? profile;
+  final ProfileSlim profile;
 
   @JsonKey(name: 'message')
-  final String? message;
+  final String message;
 
   @JsonKey(name: 'is_spoiler')
-  final bool? isSpoiler;
+  final bool isSpoiler;
 
   factory CommonCommentCompact.fromJson(Map<String, dynamic> json) =>
       _$CommonCommentCompactFromJson(json);
@@ -157,27 +157,27 @@ final class CommonCommentCompact {
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class CommonProfileNotification {
   const CommonProfileNotification({
-    this.type,
+    required this.type,
     required this.id,
-    this.timestamp,
-    this.isNew,
-    this.isPushed,
+    required this.timestamp,
+    required this.isNew,
+    required this.isPushed,
   });
 
   @JsonKey(name: 'type')
-  final ProfileNotificationType? type;
+  final ProfileNotificationType type;
 
   @JsonKey(name: 'id')
   final int id;
 
   @JsonKey(name: 'timestamp')
-  final int? timestamp;
+  final int timestamp;
 
   @JsonKey(name: 'is_new')
-  final bool? isNew;
+  final bool isNew;
 
   @JsonKey(name: 'is_pushed')
-  final bool? isPushed;
+  final bool isPushed;
 
   factory CommonProfileNotification.fromJson(Map<String, dynamic> json) =>
       _$CommonProfileNotificationFromJson(json);
@@ -234,13 +234,13 @@ final class CommonCommentAddRequest {
   genericArgumentFactories: true,
 )
 final class CommonCommentAddResponse<T> {
-  const CommonCommentAddResponse({required this.code, this.comment});
+  const CommonCommentAddResponse({required this.code, required this.comment});
 
   @JsonKey(name: 'code')
   final int code;
 
   @JsonKey(name: 'comment')
-  final T? comment;
+  final T comment;
 
   factory CommonCommentAddResponse.fromJson(
     Map<String, dynamic> json,

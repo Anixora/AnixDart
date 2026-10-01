@@ -1,9 +1,9 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
+// СГЕНЕРИРОВАННЫЙ КОД — НЕ РЕДАКТИРОВАТЬ ВРУЧНУЮ
 
 part of 'types.dart';
 
 // **************************************************************************
-// JsonSerializableGenerator
+// Генератор: JsonSerializableGenerator
 // **************************************************************************
 
 ChangeEmailRequest _$ChangeEmailRequestFromJson(Map<String, dynamic> json) =>
@@ -89,8 +89,8 @@ Map<String, dynamic> _$SocialRequestToJson(SocialRequest instance) =>
 ChangeEmailResponse _$ChangeEmailResponseFromJson(Map<String, dynamic> json) =>
     ChangeEmailResponse(
       code: (json['code'] as num).toInt(),
-      hash: json['hash'] as String?,
-      timestampExpires: (json['timestamp_expires'] as num?)?.toInt(),
+      hash: json['hash'] as String,
+      timestampExpires: (json['timestamp_expires'] as num).toInt(),
     );
 
 Map<String, dynamic> _$ChangeEmailResponseToJson(
@@ -105,7 +105,7 @@ ChangeEmailResendResponse _$ChangeEmailResendResponseFromJson(
   Map<String, dynamic> json,
 ) => ChangeEmailResendResponse(
   code: (json['code'] as num).toInt(),
-  timestampExpires: (json['timestamp_expires'] as num?)?.toInt(),
+  timestampExpires: (json['timestamp_expires'] as num).toInt(),
 );
 
 Map<String, dynamic> _$ChangeEmailResendResponseToJson(
@@ -118,8 +118,8 @@ Map<String, dynamic> _$ChangeEmailResendResponseToJson(
 ChangeLoginResponse _$ChangeLoginResponseFromJson(Map<String, dynamic> json) =>
     ChangeLoginResponse(
       code: (json['code'] as num).toInt(),
-      suggestedLogins: (json['suggested_logins'] as List<dynamic>?)
-          ?.map((e) => e as String)
+      suggestedLogins: (json['suggested_logins'] as List<dynamic>)
+          .map((e) => e as String)
           .toList(),
     );
 
@@ -133,12 +133,11 @@ Map<String, dynamic> _$ChangeLoginResponseToJson(
 LoginInfoResponse _$LoginInfoResponseFromJson(Map<String, dynamic> json) =>
     LoginInfoResponse(
       code: (json['code'] as num).toInt(),
-      login: json['login'] as String?,
-      avatar: json['avatar'] as String?,
-      isChangeAvaliable: json['is_change_avaliable'] as bool?,
-      lastChangeAt: (json['last_change_at'] as num?)?.toInt(),
-      nextChangeAvaliableAt: (json['next_change_avaliable_at'] as num?)
-          ?.toInt(),
+      login: json['login'] as String,
+      avatar: json['avatar'] as String,
+      isChangeAvaliable: json['is_change_avaliable'] as bool,
+      lastChangeAt: (json['last_change_at'] as num).toInt(),
+      nextChangeAvaliableAt: (json['next_change_avaliable_at'] as num).toInt(),
     );
 
 Map<String, dynamic> _$LoginInfoResponseToJson(LoginInfoResponse instance) =>
@@ -155,7 +154,7 @@ ChangePasswordResponse _$ChangePasswordResponseFromJson(
   Map<String, dynamic> json,
 ) => ChangePasswordResponse(
   code: (json['code'] as num).toInt(),
-  token: json['token'] as String?,
+  token: json['token'] as String,
 );
 
 Map<String, dynamic> _$ChangePasswordResponseToJson(
@@ -166,27 +165,22 @@ ProfileSelectThemeResponse _$ProfileSelectThemeResponseFromJson(
   Map<String, dynamic> json,
 ) => ProfileSelectThemeResponse(
   code: (json['code'] as num).toInt(),
-  theme: json['theme'] == null
-      ? null
-      : Theme.fromJson(json['theme'] as Map<String, dynamic>),
+  theme: Theme.fromJson(json['theme'] as Map<String, dynamic>),
 );
 
 Map<String, dynamic> _$ProfileSelectThemeResponseToJson(
   ProfileSelectThemeResponse instance,
-) => <String, dynamic>{
-  'code': instance.code,
-  'theme': instance.theme?.toJson(),
-};
+) => <String, dynamic>{'code': instance.code, 'theme': instance.theme.toJson()};
 
 ProfileSocialResponse _$ProfileSocialResponseFromJson(
   Map<String, dynamic> json,
 ) => ProfileSocialResponse(
   code: (json['code'] as num).toInt(),
-  discordPage: json['discord_page'] as String?,
-  instPage: json['inst_page'] as String?,
-  tgPage: json['tg_page'] as String?,
-  ttPage: json['tt_page'] as String?,
-  vkPage: json['vk_page'] as String?,
+  discordPage: json['discord_page'] as String,
+  instPage: json['inst_page'] as String,
+  tgPage: json['tg_page'] as String,
+  ttPage: json['tt_page'] as String,
+  vkPage: json['vk_page'] as String,
 );
 
 Map<String, dynamic> _$ProfileSocialResponseToJson(

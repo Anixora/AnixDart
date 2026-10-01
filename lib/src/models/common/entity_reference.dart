@@ -1,5 +1,5 @@
-/// JSON-объект или числовая ссылка на сущность, полученная от API.
-/// Числовые ссылки сохраняются как есть и не трактуются автоматически как ID сущности.
+/// Объект или числовая ссылка из ответа API.
+/// Значение ссылки сохраняется как есть: оно не обязательно совпадает с ID.
 final class EntityReference<T> {
   const EntityReference.object(T object) : value = object, reference = null;
   const EntityReference.reference(int identity)

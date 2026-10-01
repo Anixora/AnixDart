@@ -1,16 +1,16 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
+// СГЕНЕРИРОВАННЫЙ КОД — НЕ РЕДАКТИРОВАТЬ ВРУЧНУЮ
 
 part of 'types.dart';
 
 // **************************************************************************
-// JsonSerializableGenerator
+// Генератор: JsonSerializableGenerator
 // **************************************************************************
 
 ReleaseCompact _$ReleaseCompactFromJson(Map<String, dynamic> json) =>
     ReleaseCompact(
       id: (json['id'] as num).toInt(),
-      titleRu: json['title_ru'] as String?,
-      image: json['image'] as String?,
+      titleRu: json['title_ru'] as String,
+      image: json['image'] as String,
     );
 
 Map<String, dynamic> _$ReleaseCompactToJson(ReleaseCompact instance) =>
@@ -24,98 +24,84 @@ ReleaseCommentCompact _$ReleaseCommentCompactFromJson(
   Map<String, dynamic> json,
 ) => ReleaseCommentCompact(
   id: (json['id'] as num).toInt(),
-  profile: json['profile'] == null
-      ? null
-      : ProfileSlim.fromJson(json['profile'] as Map<String, dynamic>),
-  message: json['message'] as String?,
-  isSpoiler: json['is_spoiler'] as bool?,
-  release: json['release'] == null
-      ? null
-      : ReleaseCompact.fromJson(json['release'] as Map<String, dynamic>),
-  embeddableId: (json['embeddableId'] as num?)?.toInt(),
-  embeddableTitle: json['embeddableTitle'] as String?,
+  profile: ProfileSlim.fromJson(json['profile'] as Map<String, dynamic>),
+  message: json['message'] as String,
+  isSpoiler: json['is_spoiler'] as bool,
+  release: ReleaseCompact.fromJson(json['release'] as Map<String, dynamic>),
+  embeddableId: (json['embeddableId'] as num).toInt(),
+  embeddableTitle: json['embeddableTitle'] as String,
 );
 
 Map<String, dynamic> _$ReleaseCommentCompactToJson(
   ReleaseCommentCompact instance,
 ) => <String, dynamic>{
   'id': instance.id,
-  'profile': instance.profile?.toJson(),
+  'profile': instance.profile.toJson(),
   'message': instance.message,
   'is_spoiler': instance.isSpoiler,
-  'release': instance.release?.toJson(),
+  'release': instance.release.toJson(),
   'embeddableId': instance.embeddableId,
   'embeddableTitle': instance.embeddableTitle,
 };
 
 EpisodeCompact _$EpisodeCompactFromJson(Map<String, dynamic> json) =>
     EpisodeCompact(
-      name: json['name'] as String?,
-      release: json['release'] == null
-          ? null
-          : ReleaseCompact.fromJson(json['release'] as Map<String, dynamic>),
-      source: json['source'] == null
-          ? null
-          : SourceCompact.fromJson(json['source'] as Map<String, dynamic>),
+      name: json['name'] as String,
+      release: ReleaseCompact.fromJson(json['release'] as Map<String, dynamic>),
+      source: SourceCompact.fromJson(json['source'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$EpisodeCompactToJson(EpisodeCompact instance) =>
     <String, dynamic>{
       'name': instance.name,
-      'release': instance.release?.toJson(),
-      'source': instance.source?.toJson(),
+      'release': instance.release.toJson(),
+      'source': instance.source.toJson(),
     };
 
 SourceCompact _$SourceCompactFromJson(Map<String, dynamic> json) =>
     SourceCompact(
-      name: json['name'] as String?,
-      type: json['type'] == null
-          ? null
-          : DubberCompact.fromJson(json['type'] as Map<String, dynamic>),
+      name: json['name'] as String,
+      type: DubberCompact.fromJson(json['type'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$SourceCompactToJson(SourceCompact instance) =>
-    <String, dynamic>{'name': instance.name, 'type': instance.type?.toJson()};
+    <String, dynamic>{'name': instance.name, 'type': instance.type.toJson()};
 
 DubberCompact _$DubberCompactFromJson(Map<String, dynamic> json) =>
-    DubberCompact(name: json['name'] as String?);
+    DubberCompact(name: json['name'] as String);
 
 Map<String, dynamic> _$DubberCompactToJson(DubberCompact instance) =>
     <String, dynamic>{'name': instance.name};
 
 ReleaseVideo _$ReleaseVideoFromJson(Map<String, dynamic> json) => ReleaseVideo(
   id: (json['id'] as num).toInt(),
-  release: json['release'] == null
-      ? null
-      : EntityReference<Release>.fromJson(
-          json['release'] as Object,
-          (value) => Release.fromJson(value as Map<String, dynamic>),
-        ),
-  profile: json['profile'] == null
-      ? null
-      : Profile.fromJson(json['profile'] as Map<String, dynamic>),
-  category: json['category'] == null
-      ? null
-      : ReleaseVideoCategory.fromJson(json['category'] as Map<String, dynamic>),
-  hosting: json['hosting'] == null
-      ? null
-      : ReleaseVideoHosting.fromJson(json['hosting'] as Map<String, dynamic>),
-  title: json['title'] as String?,
-  image: json['image'] as String?,
-  url: json['url'] as String?,
-  timestamp: (json['timestamp'] as num?)?.toInt(),
-  playerUrl: json['player_url'] as String?,
-  isFavorite: json['is_favorite'] as bool?,
-  favoritesCount: (json['favorites_count'] as num?)?.toInt(),
+  release: EntityReference<Release>.fromJson(
+    json['release'] as Object,
+    (value) => Release.fromJson(value as Map<String, dynamic>),
+  ),
+  profile: Profile.fromJson(json['profile'] as Map<String, dynamic>),
+  category: ReleaseVideoCategory.fromJson(
+    json['category'] as Map<String, dynamic>,
+  ),
+  hosting: ReleaseVideoHosting.fromJson(
+    json['hosting'] as Map<String, dynamic>,
+  ),
+  title: json['title'] as String,
+  image: json['image'] as String,
+  url: json['url'] as String,
+  timestamp: (json['timestamp'] as num).toInt(),
+  playerUrl: json['player_url'] as String,
+  isFavorite: json['is_favorite'] as bool,
+  favoritesCount: (json['favorites_count'] as num).toInt(),
 );
 
 Map<String, dynamic> _$ReleaseVideoToJson(ReleaseVideo instance) =>
     <String, dynamic>{
       'id': instance.id,
-      'release': instance.release?.toJson((value) => value.toJson()),
-      'profile': instance.profile?.toJson(),
-      'category': instance.category?.toJson(),
-      'hosting': instance.hosting?.toJson(),
+      'release': instance.release.toJson((value) => value.toJson()),
+      'profile': instance.profile.toJson(),
+      'category': instance.category.toJson(),
+      'hosting': instance.hosting.toJson(),
       'title': instance.title,
       'image': instance.image,
       'url': instance.url,
@@ -129,19 +115,17 @@ ReleaseStreamingPlatform _$ReleaseStreamingPlatformFromJson(
   Map<String, dynamic> json,
 ) => ReleaseStreamingPlatform(
   id: (json['id'] as num).toInt(),
-  release: json['release'] == null
-      ? null
-      : Release.fromJson(json['release'] as Map<String, dynamic>),
-  name: json['name'] as String?,
-  icon: json['icon'] as String?,
-  url: json['url'] as String?,
+  release: Release.fromJson(json['release'] as Map<String, dynamic>),
+  name: json['name'] as String,
+  icon: json['icon'] as String,
+  url: json['url'] as String,
 );
 
 Map<String, dynamic> _$ReleaseStreamingPlatformToJson(
   ReleaseStreamingPlatform instance,
 ) => <String, dynamic>{
   'id': instance.id,
-  'release': instance.release?.toJson(),
+  'release': instance.release.toJson(),
   'name': instance.name,
   'icon': instance.icon,
   'url': instance.url,
@@ -151,7 +135,7 @@ ReleaseVideoCategory _$ReleaseVideoCategoryFromJson(
   Map<String, dynamic> json,
 ) => ReleaseVideoCategory(
   id: (json['id'] as num).toInt(),
-  name: json['name'] as String?,
+  name: json['name'] as String,
 );
 
 Map<String, dynamic> _$ReleaseVideoCategoryToJson(
@@ -160,30 +144,28 @@ Map<String, dynamic> _$ReleaseVideoCategoryToJson(
 
 ReleaseVideoBlock _$ReleaseVideoBlockFromJson(Map<String, dynamic> json) =>
     ReleaseVideoBlock(
-      videos: (json['videos'] as List<dynamic>?)
-          ?.map((e) => ReleaseVideo.fromJson(e as Map<String, dynamic>))
+      videos: (json['videos'] as List<dynamic>)
+          .map((e) => ReleaseVideo.fromJson(e as Map<String, dynamic>))
           .toList(),
-      category: json['category'] == null
-          ? null
-          : ReleaseVideoCategory.fromJson(
-              json['category'] as Map<String, dynamic>,
-            ),
+      category: ReleaseVideoCategory.fromJson(
+        json['category'] as Map<String, dynamic>,
+      ),
     );
 
 Map<String, dynamic> _$ReleaseVideoBlockToJson(ReleaseVideoBlock instance) =>
     <String, dynamic>{
-      'videos': instance.videos?.map((e) => e.toJson()).toList(),
-      'category': instance.category?.toJson(),
+      'videos': instance.videos.map((e) => e.toJson()).toList(),
+      'category': instance.category.toJson(),
     };
 
 Interesting _$InterestingFromJson(Map<String, dynamic> json) => Interesting(
   id: (json['id'] as num).toInt(),
-  title: json['title'] as String?,
-  description: json['description'] as String?,
-  image: json['image'] as String?,
-  type: (json['type'] as num?)?.toInt(),
-  action: json['action'] as String?,
-  isHidden: json['isHidden'] as bool?,
+  title: json['title'] as String,
+  description: json['description'] as String,
+  image: json['image'] as String,
+  type: (json['type'] as num).toInt(),
+  action: json['action'] as String,
+  isHidden: json['isHidden'] as bool,
 );
 
 Map<String, dynamic> _$InterestingToJson(Interesting instance) =>
@@ -292,136 +274,130 @@ EpisodeTargetResponse _$EpisodeTargetResponseFromJson(
   Map<String, dynamic> json,
 ) => EpisodeTargetResponse(
   code: (json['code'] as num).toInt(),
-  episode: json['episode'] == null
-      ? null
-      : Episode.fromJson(json['episode'] as Map<String, dynamic>),
+  episode: Episode.fromJson(json['episode'] as Map<String, dynamic>),
 );
 
 Map<String, dynamic> _$EpisodeTargetResponseToJson(
   EpisodeTargetResponse instance,
 ) => <String, dynamic>{
   'code': instance.code,
-  'episode': instance.episode?.toJson(),
+  'episode': instance.episode.toJson(),
 };
 
 EpisodeResponse _$EpisodeResponseFromJson(Map<String, dynamic> json) =>
     EpisodeResponse(
       code: (json['code'] as num).toInt(),
-      episodes: (json['episodes'] as List<dynamic>?)
-          ?.map((e) => Episode.fromJson(e as Map<String, dynamic>))
+      episodes: (json['episodes'] as List<dynamic>)
+          .map((e) => Episode.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 
 Map<String, dynamic> _$EpisodeResponseToJson(EpisodeResponse instance) =>
     <String, dynamic>{
       'code': instance.code,
-      'episodes': instance.episodes?.map((e) => e.toJson()).toList(),
+      'episodes': instance.episodes.map((e) => e.toJson()).toList(),
     };
 
 DubbersResponse _$DubbersResponseFromJson(Map<String, dynamic> json) =>
     DubbersResponse(
       code: (json['code'] as num).toInt(),
-      types: (json['types'] as List<dynamic>?)
-          ?.map((e) => Dubber.fromJson(e as Map<String, dynamic>))
+      types: (json['types'] as List<dynamic>)
+          .map((e) => Dubber.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 
 Map<String, dynamic> _$DubbersResponseToJson(DubbersResponse instance) =>
     <String, dynamic>{
       'code': instance.code,
-      'types': instance.types?.map((e) => e.toJson()).toList(),
+      'types': instance.types.map((e) => e.toJson()).toList(),
     };
 
 SourcesResponse _$SourcesResponseFromJson(Map<String, dynamic> json) =>
     SourcesResponse(
       code: (json['code'] as num).toInt(),
-      sources: (json['sources'] as List<dynamic>?)
-          ?.map((e) => Source.fromJson(e as Map<String, dynamic>))
+      sources: (json['sources'] as List<dynamic>)
+          .map((e) => Source.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 
 Map<String, dynamic> _$SourcesResponseToJson(SourcesResponse instance) =>
     <String, dynamic>{
       'code': instance.code,
-      'sources': instance.sources?.map((e) => e.toJson()).toList(),
+      'sources': instance.sources.map((e) => e.toJson()).toList(),
     };
 
 ScheduleResponse _$ScheduleResponseFromJson(Map<String, dynamic> json) =>
     ScheduleResponse(
       code: (json['code'] as num).toInt(),
-      monday: (json['monday'] as List<dynamic>?)
-          ?.map((e) => Release.fromJson(e as Map<String, dynamic>))
+      monday: (json['monday'] as List<dynamic>)
+          .map((e) => Release.fromJson(e as Map<String, dynamic>))
           .toList(),
-      tuesday: (json['tuesday'] as List<dynamic>?)
-          ?.map((e) => Release.fromJson(e as Map<String, dynamic>))
+      tuesday: (json['tuesday'] as List<dynamic>)
+          .map((e) => Release.fromJson(e as Map<String, dynamic>))
           .toList(),
-      wednesday: (json['wednesday'] as List<dynamic>?)
-          ?.map((e) => Release.fromJson(e as Map<String, dynamic>))
+      wednesday: (json['wednesday'] as List<dynamic>)
+          .map((e) => Release.fromJson(e as Map<String, dynamic>))
           .toList(),
-      thursday: (json['thursday'] as List<dynamic>?)
-          ?.map((e) => Release.fromJson(e as Map<String, dynamic>))
+      thursday: (json['thursday'] as List<dynamic>)
+          .map((e) => Release.fromJson(e as Map<String, dynamic>))
           .toList(),
-      friday: (json['friday'] as List<dynamic>?)
-          ?.map((e) => Release.fromJson(e as Map<String, dynamic>))
+      friday: (json['friday'] as List<dynamic>)
+          .map((e) => Release.fromJson(e as Map<String, dynamic>))
           .toList(),
-      saturday: (json['saturday'] as List<dynamic>?)
-          ?.map((e) => Release.fromJson(e as Map<String, dynamic>))
+      saturday: (json['saturday'] as List<dynamic>)
+          .map((e) => Release.fromJson(e as Map<String, dynamic>))
           .toList(),
-      sunday: (json['sunday'] as List<dynamic>?)
-          ?.map((e) => Release.fromJson(e as Map<String, dynamic>))
+      sunday: (json['sunday'] as List<dynamic>)
+          .map((e) => Release.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 
 Map<String, dynamic> _$ScheduleResponseToJson(ScheduleResponse instance) =>
     <String, dynamic>{
       'code': instance.code,
-      'monday': instance.monday?.map((e) => e.toJson()).toList(),
-      'tuesday': instance.tuesday?.map((e) => e.toJson()).toList(),
-      'wednesday': instance.wednesday?.map((e) => e.toJson()).toList(),
-      'thursday': instance.thursday?.map((e) => e.toJson()).toList(),
-      'friday': instance.friday?.map((e) => e.toJson()).toList(),
-      'saturday': instance.saturday?.map((e) => e.toJson()).toList(),
-      'sunday': instance.sunday?.map((e) => e.toJson()).toList(),
+      'monday': instance.monday.map((e) => e.toJson()).toList(),
+      'tuesday': instance.tuesday.map((e) => e.toJson()).toList(),
+      'wednesday': instance.wednesday.map((e) => e.toJson()).toList(),
+      'thursday': instance.thursday.map((e) => e.toJson()).toList(),
+      'friday': instance.friday.map((e) => e.toJson()).toList(),
+      'saturday': instance.saturday.map((e) => e.toJson()).toList(),
+      'sunday': instance.sunday.map((e) => e.toJson()).toList(),
     };
 
 ReleaseVideoResponse _$ReleaseVideoResponseFromJson(
   Map<String, dynamic> json,
 ) => ReleaseVideoResponse(
   code: (json['code'] as num).toInt(),
-  blocks: (json['blocks'] as List<dynamic>?)
-      ?.map((e) => ReleaseVideoBlock.fromJson(e as Map<String, dynamic>))
+  blocks: (json['blocks'] as List<dynamic>)
+      .map((e) => ReleaseVideoBlock.fromJson(e as Map<String, dynamic>))
       .toList(),
-  canAppeal: json['can_appeal'] as bool?,
-  lastVideos: (json['last_videos'] as List<dynamic>?)
-      ?.map((e) => ReleaseVideo.fromJson(e as Map<String, dynamic>))
+  canAppeal: json['can_appeal'] as bool,
+  lastVideos: (json['last_videos'] as List<dynamic>)
+      .map((e) => ReleaseVideo.fromJson(e as Map<String, dynamic>))
       .toList(),
-  release: json['release'] == null
-      ? null
-      : Release.fromJson(json['release'] as Map<String, dynamic>),
-  streamingPlatforms: json['streaming_platforms'] == null
-      ? null
-      : ReleaseStreamingPlatform.fromJson(
-          json['streaming_platforms'] as Map<String, dynamic>,
-        ),
+  release: Release.fromJson(json['release'] as Map<String, dynamic>),
+  streamingPlatforms: ReleaseStreamingPlatform.fromJson(
+    json['streaming_platforms'] as Map<String, dynamic>,
+  ),
 );
 
 Map<String, dynamic> _$ReleaseVideoResponseToJson(
   ReleaseVideoResponse instance,
 ) => <String, dynamic>{
   'code': instance.code,
-  'blocks': instance.blocks?.map((e) => e.toJson()).toList(),
+  'blocks': instance.blocks.map((e) => e.toJson()).toList(),
   'can_appeal': instance.canAppeal,
-  'last_videos': instance.lastVideos?.map((e) => e.toJson()).toList(),
-  'release': instance.release?.toJson(),
-  'streaming_platforms': instance.streamingPlatforms?.toJson(),
+  'last_videos': instance.lastVideos.map((e) => e.toJson()).toList(),
+  'release': instance.release.toJson(),
+  'streaming_platforms': instance.streamingPlatforms.toJson(),
 };
 
 ReleaseVideoCategoriesResponse _$ReleaseVideoCategoriesResponseFromJson(
   Map<String, dynamic> json,
 ) => ReleaseVideoCategoriesResponse(
   code: (json['code'] as num).toInt(),
-  categories: (json['categories'] as List<dynamic>?)
-      ?.map((e) => ReleaseVideoCategory.fromJson(e as Map<String, dynamic>))
+  categories: (json['categories'] as List<dynamic>)
+      .map((e) => ReleaseVideoCategory.fromJson(e as Map<String, dynamic>))
       .toList(),
 );
 
@@ -429,27 +405,27 @@ Map<String, dynamic> _$ReleaseVideoCategoriesResponseToJson(
   ReleaseVideoCategoriesResponse instance,
 ) => <String, dynamic>{
   'code': instance.code,
-  'categories': instance.categories?.map((e) => e.toJson()).toList(),
+  'categories': instance.categories.map((e) => e.toJson()).toList(),
 };
 
 TypeResponse _$TypeResponseFromJson(Map<String, dynamic> json) => TypeResponse(
   code: (json['code'] as num).toInt(),
-  types: (json['types'] as List<dynamic>?)
-      ?.map((e) => Dubber.fromJson(e as Map<String, dynamic>))
+  types: (json['types'] as List<dynamic>)
+      .map((e) => Dubber.fromJson(e as Map<String, dynamic>))
       .toList(),
 );
 
 Map<String, dynamic> _$TypeResponseToJson(TypeResponse instance) =>
     <String, dynamic>{
       'code': instance.code,
-      'types': instance.types?.map((e) => e.toJson()).toList(),
+      'types': instance.types.map((e) => e.toJson()).toList(),
     };
 
 ReleaseVideoHosting _$ReleaseVideoHostingFromJson(Map<String, dynamic> json) =>
     ReleaseVideoHosting(
       id: (json['id'] as num).toInt(),
-      name: json['name'] as String?,
-      icon: json['icon'] as String?,
+      name: json['name'] as String,
+      icon: json['icon'] as String,
     );
 
 Map<String, dynamic> _$ReleaseVideoHostingToJson(

@@ -1,9 +1,9 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
+// СГЕНЕРИРОВАННЫЙ КОД — НЕ РЕДАКТИРОВАТЬ ВРУЧНУЮ
 
 part of 'types.dart';
 
 // **************************************************************************
-// JsonSerializableGenerator
+// Генератор: JsonSerializableGenerator
 // **************************************************************************
 
 ArticlesSearchRequest _$ArticlesSearchRequestFromJson(
@@ -54,8 +54,8 @@ ReleaseSearchResponse _$ReleaseSearchResponseFromJson(
   related: json['related'] == null
       ? null
       : Related.fromJson(json['related'] as Map<String, dynamic>),
-  releases: (json['releases'] as List<dynamic>?)
-      ?.map((e) => Release.fromJson(e as Map<String, dynamic>))
+  releases: (json['releases'] as List<dynamic>)
+      .map((e) => Release.fromJson(e as Map<String, dynamic>))
       .toList(),
 );
 
@@ -64,7 +64,7 @@ Map<String, dynamic> _$ReleaseSearchResponseToJson(
 ) => <String, dynamic>{
   'code': instance.code,
   'related': instance.related?.toJson(),
-  'releases': instance.releases?.map((e) => e.toJson()).toList(),
+  'releases': instance.releases.map((e) => e.toJson()).toList(),
 };
 
 FeedSearchResponse _$FeedSearchResponseFromJson(Map<String, dynamic> json) =>

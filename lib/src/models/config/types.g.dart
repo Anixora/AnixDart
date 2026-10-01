@@ -1,19 +1,17 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
+// СГЕНЕРИРОВАННЫЙ КОД — НЕ РЕДАКТИРОВАТЬ ВРУЧНУЮ
 
 part of 'types.dart';
 
 // **************************************************************************
-// JsonSerializableGenerator
+// Генератор: JsonSerializableGenerator
 // **************************************************************************
 
 AnixPlayerConfigResponse _$AnixPlayerConfigResponseFromJson(
   Map<String, dynamic> json,
 ) => AnixPlayerConfigResponse(
-  downloadLinks: (json['download_links'] as Map<String, dynamic>?)?.map(
-    (k, e) => MapEntry(k, e as String),
-  ),
-  lastVersionCode: (json['last_version_code'] as num?)?.toInt(),
-  whatsNew: json['whats_new'] as String?,
+  downloadLinks: Map<String, String>.from(json['download_links'] as Map),
+  lastVersionCode: (json['last_version_code'] as num).toInt(),
+  whatsNew: json['whats_new'] as String,
 );
 
 Map<String, dynamic> _$AnixPlayerConfigResponseToJson(
@@ -24,58 +22,57 @@ Map<String, dynamic> _$AnixPlayerConfigResponseToJson(
   'whats_new': instance.whatsNew,
 };
 
-ToggleResponse _$ToggleResponseFromJson(Map<String, dynamic> json) =>
-    ToggleResponse(
-      adBannerDelay: (json['adBannerDelay'] as num?)?.toInt(),
-      adBannerSizeType: (json['adBannerSizeType'] as num?)?.toInt(),
-      adInterstitialDelay: (json['adInterstitialDelay'] as num?)?.toInt(),
-      codecProfile: json['codecProfile'] as String?,
-      impMessageEnabled: json['impMessageEnabled'] as bool?,
-      inAppUpdates: json['inAppUpdates'] as bool?,
-      inAppUpdatesFlexibleDelay: (json['inAppUpdatesFlexibleDelay'] as num?)
-          ?.toInt(),
-      inAppUpdatesImmediate: json['inAppUpdatesImmediate'] as bool?,
-      kodikIframeAd: json['kodikIframeAd'] as bool?,
-      lastGPVersionCode: (json['lastGPVersionCode'] as num?)?.toInt(),
-      lastVersionCode: (json['lastVersionCode'] as num?)?.toInt(),
-      minBlogCreateRatingScore: (json['minBlogCreateRatingScore'] as num?)
-          ?.toInt(),
-      minGPVersionCode: (json['minGPVersionCode'] as num?)?.toInt(),
-      minVersionCode: (json['minVersionCode'] as num?)?.toInt(),
-      overrideGPVersion: json['overrideGPVersion'] as bool?,
-      sibnetRandUserAgent: json['sibnetRandUserAgent'] as bool?,
-      snowfall: json['snowfall'] as bool?,
-      sponsorshipAvailable: json['sponsorshipAvailable'] as bool?,
-      sponsorshipPromotion: json['sponsorshipPromotion'] as bool?,
-      whatsNew: json['whatsNew'] as String?,
-      downloadLink: json['downloadLink'] as String?,
-      gpWhatsNew: json['gpWhatsNew'] as String?,
-      gpDownloadLink: json['gpDownloadLink'] as String?,
-      impMessageText: json['impMessageText'] as String?,
-      impMessageBackgroundColor: json['impMessageBackgroundColor'] as String?,
-      impMessageTextColor: json['impMessageTextColor'] as String?,
-      impMessageLink: json['impMessageLink'] as String?,
-      adBannerBlockId: json['adBannerBlockId'] as String?,
-      adInterstitialBlockId: json['adInterstitialBlockId'] as String?,
-      kodikVideoLinksUrl: json['kodikVideoLinksUrl'] as String?,
-      sibnetUserAgent: json['sibnetUserAgent'] as String?,
-      torlookUrl: json['torlookUrl'] as String?,
-      baseUrl: json['baseUrl'] as String?,
-      iframeEmbedUrl: json['iframeEmbedUrl'] as String?,
-      kodikAdIframeUrl: json['kodikAdIframeUrl'] as String?,
-      editorUrl: json['editorUrl'] as String?,
-      staticDomain: json['staticDomain'] as String?,
-      sponsorshipText: json['sponsorshipText'] as String?,
-      pageNoConnectionUrl: json['pageNoConnectionUrl'] as String?,
-      searchBarIconUrl: json['searchBarIconUrl'] as String?,
-      searchBarIconTint: json['searchBarIconTint'] as String?,
-      searchBarIconAction: json['searchBarIconAction'] as String?,
-      searchBarIconValue: json['searchBarIconValue'] as String?,
-      googleAuthAvailable: json['googleAuthAvailable'] as bool?,
-      telegramAuthAvailable: json['telegramAuthAvailable'] as bool?,
-      vkAuthAvailable: json['vkAuthAvailable'] as bool?,
-      consentRequired: json['consentRequired'] as bool?,
-    );
+ToggleResponse _$ToggleResponseFromJson(
+  Map<String, dynamic> json,
+) => ToggleResponse(
+  adBannerDelay: (json['adBannerDelay'] as num).toInt(),
+  adBannerSizeType: (json['adBannerSizeType'] as num).toInt(),
+  adInterstitialDelay: (json['adInterstitialDelay'] as num).toInt(),
+  codecProfile: json['codecProfile'] as String,
+  impMessageEnabled: json['impMessageEnabled'] as bool,
+  inAppUpdates: json['inAppUpdates'] as bool,
+  inAppUpdatesFlexibleDelay: (json['inAppUpdatesFlexibleDelay'] as num).toInt(),
+  inAppUpdatesImmediate: json['inAppUpdatesImmediate'] as bool,
+  kodikIframeAd: json['kodikIframeAd'] as bool,
+  lastGPVersionCode: (json['lastGPVersionCode'] as num).toInt(),
+  lastVersionCode: (json['lastVersionCode'] as num).toInt(),
+  minBlogCreateRatingScore: (json['minBlogCreateRatingScore'] as num).toInt(),
+  minGPVersionCode: (json['minGPVersionCode'] as num).toInt(),
+  minVersionCode: (json['minVersionCode'] as num).toInt(),
+  overrideGPVersion: json['overrideGPVersion'] as bool,
+  sibnetRandUserAgent: json['sibnetRandUserAgent'] as bool,
+  snowfall: json['snowfall'] as bool,
+  sponsorshipAvailable: json['sponsorshipAvailable'] as bool,
+  sponsorshipPromotion: json['sponsorshipPromotion'] as bool,
+  whatsNew: json['whatsNew'] as String,
+  downloadLink: json['downloadLink'] as String,
+  gpWhatsNew: json['gpWhatsNew'] as String,
+  gpDownloadLink: json['gpDownloadLink'] as String,
+  impMessageText: json['impMessageText'] as String,
+  impMessageBackgroundColor: json['impMessageBackgroundColor'] as String,
+  impMessageTextColor: json['impMessageTextColor'] as String,
+  impMessageLink: json['impMessageLink'] as String,
+  adBannerBlockId: json['adBannerBlockId'] as String,
+  adInterstitialBlockId: json['adInterstitialBlockId'] as String,
+  kodikVideoLinksUrl: json['kodikVideoLinksUrl'] as String,
+  sibnetUserAgent: json['sibnetUserAgent'] as String,
+  torlookUrl: json['torlookUrl'] as String,
+  baseUrl: json['baseUrl'] as String,
+  iframeEmbedUrl: json['iframeEmbedUrl'] as String,
+  kodikAdIframeUrl: json['kodikAdIframeUrl'] as String,
+  editorUrl: json['editorUrl'] as String,
+  staticDomain: json['staticDomain'] as String,
+  sponsorshipText: json['sponsorshipText'] as String,
+  pageNoConnectionUrl: json['pageNoConnectionUrl'] as String,
+  searchBarIconUrl: json['searchBarIconUrl'] as String,
+  searchBarIconTint: json['searchBarIconTint'] as String,
+  searchBarIconAction: json['searchBarIconAction'] as String,
+  searchBarIconValue: json['searchBarIconValue'] as String,
+  googleAuthAvailable: json['googleAuthAvailable'] as bool,
+  telegramAuthAvailable: json['telegramAuthAvailable'] as bool,
+  vkAuthAvailable: json['vkAuthAvailable'] as bool,
+  consentRequired: json['consentRequired'] as bool,
+);
 
 Map<String, dynamic> _$ToggleResponseToJson(ToggleResponse instance) =>
     <String, dynamic>{
@@ -130,17 +127,17 @@ Map<String, dynamic> _$ToggleResponseToJson(ToggleResponse instance) =>
 
 ConfigUrlsResponse _$ConfigUrlsResponseFromJson(Map<String, dynamic> json) =>
     ConfigUrlsResponse(
-      apiUrls: (json['api_urls'] as List<dynamic>?)
-          ?.map((e) => e as String)
+      apiUrls: (json['api_urls'] as List<dynamic>)
+          .map((e) => e as String)
           .toList(),
       editorUrl: json['editor_url'] as String?,
       staticDomain: json['static_domain'] as String?,
-      shouldUseMirrorUrls: json['should_use_mirror_urls'] as bool?,
-      googleAuthAvailable: json['google_auth_available'] as bool?,
-      telegramAuthAvailable: json['telegram_auth_available'] as bool?,
-      vkAuthAvailable: json['vk_auth_available'] as bool?,
-      yandexAuthAvailable: json['yandex_auth_available'] as bool?,
-      consentRequired: json['consent_required'] as bool?,
+      shouldUseMirrorUrls: json['should_use_mirror_urls'] as bool,
+      googleAuthAvailable: json['google_auth_available'] as bool,
+      telegramAuthAvailable: json['telegram_auth_available'] as bool,
+      vkAuthAvailable: json['vk_auth_available'] as bool,
+      yandexAuthAvailable: json['yandex_auth_available'] as bool,
+      consentRequired: json['consent_required'] as bool,
     );
 
 Map<String, dynamic> _$ConfigUrlsResponseToJson(ConfigUrlsResponse instance) =>

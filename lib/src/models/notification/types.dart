@@ -4,13 +4,13 @@ part 'types.g.dart';
 
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class NotificationCountResponse {
-  const NotificationCountResponse({required this.code, this.count});
+  const NotificationCountResponse({required this.code, required this.count});
 
   @JsonKey(name: 'code')
   final int code;
 
   @JsonKey(name: 'count')
-  final int? count;
+  final int count;
 
   factory NotificationCountResponse.fromJson(Map<String, dynamic> json) =>
       _$NotificationCountResponseFromJson(json);
@@ -24,35 +24,35 @@ final class NotificationCountResponse {
 )
 final class ProfileCommentNotification<T> {
   const ProfileCommentNotification({
-    this.type,
+    required this.type,
     required this.id,
-    this.timestamp,
-    this.isNew,
-    this.isPushed,
-    this.comment,
-    this.parentComment,
+    required this.timestamp,
+    required this.isNew,
+    required this.isPushed,
+    required this.comment,
+    required this.parentComment,
   });
 
   @JsonKey(name: 'type')
-  final ProfileNotificationType? type;
+  final ProfileNotificationType type;
 
   @JsonKey(name: 'id')
   final int id;
 
   @JsonKey(name: 'timestamp')
-  final int? timestamp;
+  final int timestamp;
 
   @JsonKey(name: 'is_new')
-  final bool? isNew;
+  final bool isNew;
 
   @JsonKey(name: 'is_pushed')
-  final bool? isPushed;
+  final bool isPushed;
 
   @JsonKey(name: 'comment')
-  final T? comment;
+  final T comment;
 
   @JsonKey(name: 'parent_comment')
-  final T? parentComment;
+  final T parentComment;
 
   factory ProfileCommentNotification.fromJson(
     Map<String, dynamic> json,
@@ -65,39 +65,39 @@ final class ProfileCommentNotification<T> {
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class ProfileFriendNotification {
   const ProfileFriendNotification({
-    this.type,
+    required this.type,
     required this.id,
-    this.timestamp,
-    this.isNew,
-    this.isPushed,
-    this.profile,
-    this.status,
-    this.byProfile,
+    required this.timestamp,
+    required this.isNew,
+    required this.isPushed,
+    required this.profile,
+    required this.status,
+    required this.byProfile,
   });
 
   @JsonKey(name: 'type')
-  final ProfileNotificationType? type;
+  final ProfileNotificationType type;
 
   @JsonKey(name: 'id')
   final int id;
 
   @JsonKey(name: 'timestamp')
-  final int? timestamp;
+  final int timestamp;
 
   @JsonKey(name: 'is_new')
-  final bool? isNew;
+  final bool isNew;
 
   @JsonKey(name: 'is_pushed')
-  final bool? isPushed;
+  final bool isPushed;
 
   @JsonKey(name: 'profile')
-  final Profile? profile;
+  final Profile profile;
 
   @JsonKey(name: 'status')
-  final ProfileFriendNotificationStatus? status;
+  final ProfileFriendNotificationStatus status;
 
   @JsonKey(name: 'by_profile')
-  final ProfileSlim? byProfile;
+  final ProfileSlim byProfile;
 
   factory ProfileFriendNotification.fromJson(Map<String, dynamic> json) =>
       _$ProfileFriendNotificationFromJson(json);
@@ -107,39 +107,39 @@ final class ProfileFriendNotification {
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class ProfileArticleNotification {
   const ProfileArticleNotification({
-    this.type,
+    required this.type,
     required this.id,
-    this.timestamp,
-    this.isNew,
-    this.isPushed,
-    this.jsonId,
-    this.article,
-    this.profile,
+    required this.timestamp,
+    required this.isNew,
+    required this.isPushed,
+    required this.jsonId,
+    required this.article,
+    required this.profile,
   });
 
   @JsonKey(name: 'type')
-  final ProfileNotificationType? type;
+  final ProfileNotificationType type;
 
   @JsonKey(name: 'id')
   final int id;
 
   @JsonKey(name: 'timestamp')
-  final int? timestamp;
+  final int timestamp;
 
   @JsonKey(name: 'is_new')
-  final bool? isNew;
+  final bool isNew;
 
   @JsonKey(name: 'is_pushed')
-  final bool? isPushed;
+  final bool isPushed;
 
   @JsonKey(name: '@id')
-  final int? jsonId;
+  final int jsonId;
 
   @JsonKey(name: 'article')
-  final int? article;
+  final int article;
 
   @JsonKey(name: 'profile')
-  final Profile? profile;
+  final Profile profile;
 
   factory ProfileArticleNotification.fromJson(Map<String, dynamic> json) =>
       _$ProfileArticleNotificationFromJson(json);
@@ -149,35 +149,35 @@ final class ProfileArticleNotification {
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class ProfileRelatedReleaseNotification {
   const ProfileRelatedReleaseNotification({
-    this.type,
+    required this.type,
     required this.id,
-    this.timestamp,
-    this.isNew,
-    this.isPushed,
-    this.jsonId,
-    this.release,
+    required this.timestamp,
+    required this.isNew,
+    required this.isPushed,
+    required this.jsonId,
+    required this.release,
   });
 
   @JsonKey(name: 'type')
-  final ProfileNotificationType? type;
+  final ProfileNotificationType type;
 
   @JsonKey(name: 'id')
   final int id;
 
   @JsonKey(name: 'timestamp')
-  final int? timestamp;
+  final int timestamp;
 
   @JsonKey(name: 'is_new')
-  final bool? isNew;
+  final bool isNew;
 
   @JsonKey(name: 'is_pushed')
-  final bool? isPushed;
+  final bool isPushed;
 
   @JsonKey(name: '@id')
-  final int? jsonId;
+  final int jsonId;
 
   @JsonKey(name: 'release')
-  final EntityReference<Release>? release;
+  final EntityReference<Release> release;
 
   factory ProfileRelatedReleaseNotification.fromJson(
     Map<String, dynamic> json,
@@ -189,31 +189,31 @@ final class ProfileRelatedReleaseNotification {
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class ProfileEpisodeNotification {
   const ProfileEpisodeNotification({
-    this.type,
+    required this.type,
     required this.id,
-    this.timestamp,
-    this.isNew,
-    this.isPushed,
-    this.episode,
+    required this.timestamp,
+    required this.isNew,
+    required this.isPushed,
+    required this.episode,
   });
 
   @JsonKey(name: 'type')
-  final ProfileNotificationType? type;
+  final ProfileNotificationType type;
 
   @JsonKey(name: 'id')
   final int id;
 
   @JsonKey(name: 'timestamp')
-  final int? timestamp;
+  final int timestamp;
 
   @JsonKey(name: 'is_new')
-  final bool? isNew;
+  final bool isNew;
 
   @JsonKey(name: 'is_pushed')
-  final bool? isPushed;
+  final bool isPushed;
 
   @JsonKey(name: 'episode')
-  final EpisodeCompact? episode;
+  final EpisodeCompact episode;
 
   factory ProfileEpisodeNotification.fromJson(Map<String, dynamic> json) =>
       _$ProfileEpisodeNotificationFromJson(json);
@@ -222,10 +222,10 @@ final class ProfileEpisodeNotification {
 
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class ProfileTypeNotificationPreference {
-  const ProfileTypeNotificationPreference({this.type});
+  const ProfileTypeNotificationPreference({required this.type});
 
   @JsonKey(name: 'type')
-  final Dubber? type;
+  final Dubber type;
 
   factory ProfileTypeNotificationPreference.fromJson(
     Map<String, dynamic> json,
@@ -236,10 +236,10 @@ final class ProfileTypeNotificationPreference {
 
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class ProfileStatusNotificationPreference {
-  const ProfileStatusNotificationPreference({this.status});
+  const ProfileStatusNotificationPreference({required this.status});
 
   @JsonKey(name: 'status')
-  final ProfileStatusNotificationPreferenceStatus? status;
+  final ProfileStatusNotificationPreferenceStatus status;
 
   factory ProfileStatusNotificationPreference.fromJson(
     Map<String, dynamic> json,
@@ -302,56 +302,56 @@ final class ProfileTypeNotificationEditRequest {
 final class NotificationPreferenceResponse {
   const NotificationPreferenceResponse({
     required this.code,
-    this.profileStatusNotificationPreferences,
-    this.profileTypeNotificationPreferences,
-    this.isReleaseTypeNotificationsEnabled,
-    this.isEpisodeNotificationsEnabled,
-    this.isFirstEpisodeNotificationEnabled,
-    this.isRelatedReleaseNotificationsEnabled,
-    this.isReportProcessNotificationsEnabled,
-    this.isCommentNotificationsEnabled,
-    this.isMyCollectionCommentNotificationsEnabled,
-    this.isArticleNotificationsEnabled,
-    this.isMyArticleCommentNotificationsEnabled,
+    required this.profileStatusNotificationPreferences,
+    required this.profileTypeNotificationPreferences,
+    required this.isReleaseTypeNotificationsEnabled,
+    required this.isEpisodeNotificationsEnabled,
+    required this.isFirstEpisodeNotificationEnabled,
+    required this.isRelatedReleaseNotificationsEnabled,
+    required this.isReportProcessNotificationsEnabled,
+    required this.isCommentNotificationsEnabled,
+    required this.isMyCollectionCommentNotificationsEnabled,
+    required this.isArticleNotificationsEnabled,
+    required this.isMyArticleCommentNotificationsEnabled,
   });
 
   @JsonKey(name: 'code')
   final int code;
 
   @JsonKey(name: 'profileStatusNotificationPreferences')
-  final List<ProfileStatusNotificationPreference>?
+  final List<ProfileStatusNotificationPreference>
   profileStatusNotificationPreferences;
 
   @JsonKey(name: 'profileTypeNotificationPreferences')
-  final List<ProfileTypeNotificationPreference>?
+  final List<ProfileTypeNotificationPreference>
   profileTypeNotificationPreferences;
 
   @JsonKey(name: 'is_release_type_notifications_enabled')
-  final bool? isReleaseTypeNotificationsEnabled;
+  final bool isReleaseTypeNotificationsEnabled;
 
   @JsonKey(name: 'is_episode_notifications_enabled')
-  final bool? isEpisodeNotificationsEnabled;
+  final bool isEpisodeNotificationsEnabled;
 
   @JsonKey(name: 'is_first_episode_notification_enabled')
-  final bool? isFirstEpisodeNotificationEnabled;
+  final bool isFirstEpisodeNotificationEnabled;
 
   @JsonKey(name: 'is_related_release_notifications_enabled')
-  final bool? isRelatedReleaseNotificationsEnabled;
+  final bool isRelatedReleaseNotificationsEnabled;
 
   @JsonKey(name: 'is_report_process_notifications_enabled')
-  final bool? isReportProcessNotificationsEnabled;
+  final bool isReportProcessNotificationsEnabled;
 
   @JsonKey(name: 'is_comment_notifications_enabled')
-  final bool? isCommentNotificationsEnabled;
+  final bool isCommentNotificationsEnabled;
 
   @JsonKey(name: 'is_my_collection_comment_notifications_enabled')
-  final bool? isMyCollectionCommentNotificationsEnabled;
+  final bool isMyCollectionCommentNotificationsEnabled;
 
   @JsonKey(name: 'is_article_notifications_enabled')
-  final bool? isArticleNotificationsEnabled;
+  final bool isArticleNotificationsEnabled;
 
   @JsonKey(name: 'is_my_article_comment_notifications_enabled')
-  final bool? isMyArticleCommentNotificationsEnabled;
+  final bool isMyArticleCommentNotificationsEnabled;
 
   factory NotificationPreferenceResponse.fromJson(Map<String, dynamic> json) =>
       _$NotificationPreferenceResponseFromJson(json);

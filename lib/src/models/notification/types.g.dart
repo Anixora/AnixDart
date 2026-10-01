@@ -1,16 +1,16 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
+// СГЕНЕРИРОВАННЫЙ КОД — НЕ РЕДАКТИРОВАТЬ ВРУЧНУЮ
 
 part of 'types.dart';
 
 // **************************************************************************
-// JsonSerializableGenerator
+// Генератор: JsonSerializableGenerator
 // **************************************************************************
 
 NotificationCountResponse _$NotificationCountResponseFromJson(
   Map<String, dynamic> json,
 ) => NotificationCountResponse(
   code: (json['code'] as num).toInt(),
-  count: (json['count'] as num?)?.toInt(),
+  count: (json['count'] as num).toInt(),
 );
 
 Map<String, dynamic> _$NotificationCountResponseToJson(
@@ -21,26 +21,26 @@ ProfileCommentNotification<T> _$ProfileCommentNotificationFromJson<T>(
   Map<String, dynamic> json,
   T Function(Object? json) fromJsonT,
 ) => ProfileCommentNotification<T>(
-  type: $enumDecodeNullable(_$ProfileNotificationTypeEnumMap, json['type']),
+  type: $enumDecode(_$ProfileNotificationTypeEnumMap, json['type']),
   id: (json['id'] as num).toInt(),
-  timestamp: (json['timestamp'] as num?)?.toInt(),
-  isNew: json['is_new'] as bool?,
-  isPushed: json['is_pushed'] as bool?,
-  comment: _$nullableGenericFromJson(json['comment'], fromJsonT),
-  parentComment: _$nullableGenericFromJson(json['parent_comment'], fromJsonT),
+  timestamp: (json['timestamp'] as num).toInt(),
+  isNew: json['is_new'] as bool,
+  isPushed: json['is_pushed'] as bool,
+  comment: fromJsonT(json['comment']),
+  parentComment: fromJsonT(json['parent_comment']),
 );
 
 Map<String, dynamic> _$ProfileCommentNotificationToJson<T>(
   ProfileCommentNotification<T> instance,
   Object? Function(T value) toJsonT,
 ) => <String, dynamic>{
-  'type': _$ProfileNotificationTypeEnumMap[instance.type],
+  'type': _$ProfileNotificationTypeEnumMap[instance.type]!,
   'id': instance.id,
   'timestamp': instance.timestamp,
   'is_new': instance.isNew,
   'is_pushed': instance.isPushed,
-  'comment': _$nullableGenericToJson(instance.comment, toJsonT),
-  'parent_comment': _$nullableGenericToJson(instance.parentComment, toJsonT),
+  'comment': toJsonT(instance.comment),
+  'parent_comment': toJsonT(instance.parentComment),
 };
 
 const _$ProfileNotificationTypeEnumMap = {
@@ -55,47 +55,30 @@ const _$ProfileNotificationTypeEnumMap = {
   ProfileNotificationType.relatedRelease: 'relatedRelease',
 };
 
-T? _$nullableGenericFromJson<T>(
-  Object? input,
-  T Function(Object? json) fromJson,
-) => input == null ? null : fromJson(input);
-
-Object? _$nullableGenericToJson<T>(
-  T? input,
-  Object? Function(T value) toJson,
-) => input == null ? null : toJson(input);
-
 ProfileFriendNotification _$ProfileFriendNotificationFromJson(
   Map<String, dynamic> json,
 ) => ProfileFriendNotification(
-  type: $enumDecodeNullable(_$ProfileNotificationTypeEnumMap, json['type']),
+  type: $enumDecode(_$ProfileNotificationTypeEnumMap, json['type']),
   id: (json['id'] as num).toInt(),
-  timestamp: (json['timestamp'] as num?)?.toInt(),
-  isNew: json['is_new'] as bool?,
-  isPushed: json['is_pushed'] as bool?,
-  profile: json['profile'] == null
-      ? null
-      : Profile.fromJson(json['profile'] as Map<String, dynamic>),
-  status: $enumDecodeNullable(
-    _$ProfileFriendNotificationStatusEnumMap,
-    json['status'],
-  ),
-  byProfile: json['by_profile'] == null
-      ? null
-      : ProfileSlim.fromJson(json['by_profile'] as Map<String, dynamic>),
+  timestamp: (json['timestamp'] as num).toInt(),
+  isNew: json['is_new'] as bool,
+  isPushed: json['is_pushed'] as bool,
+  profile: Profile.fromJson(json['profile'] as Map<String, dynamic>),
+  status: $enumDecode(_$ProfileFriendNotificationStatusEnumMap, json['status']),
+  byProfile: ProfileSlim.fromJson(json['by_profile'] as Map<String, dynamic>),
 );
 
 Map<String, dynamic> _$ProfileFriendNotificationToJson(
   ProfileFriendNotification instance,
 ) => <String, dynamic>{
-  'type': _$ProfileNotificationTypeEnumMap[instance.type],
+  'type': _$ProfileNotificationTypeEnumMap[instance.type]!,
   'id': instance.id,
   'timestamp': instance.timestamp,
   'is_new': instance.isNew,
   'is_pushed': instance.isPushed,
-  'profile': instance.profile?.toJson(),
-  'status': _$ProfileFriendNotificationStatusEnumMap[instance.status],
-  'by_profile': instance.byProfile?.toJson(),
+  'profile': instance.profile.toJson(),
+  'status': _$ProfileFriendNotificationStatusEnumMap[instance.status]!,
+  'by_profile': instance.byProfile.toJson(),
 };
 
 const _$ProfileFriendNotificationStatusEnumMap = {
@@ -106,100 +89,92 @@ const _$ProfileFriendNotificationStatusEnumMap = {
 ProfileArticleNotification _$ProfileArticleNotificationFromJson(
   Map<String, dynamic> json,
 ) => ProfileArticleNotification(
-  type: $enumDecodeNullable(_$ProfileNotificationTypeEnumMap, json['type']),
+  type: $enumDecode(_$ProfileNotificationTypeEnumMap, json['type']),
   id: (json['id'] as num).toInt(),
-  timestamp: (json['timestamp'] as num?)?.toInt(),
-  isNew: json['is_new'] as bool?,
-  isPushed: json['is_pushed'] as bool?,
-  jsonId: (json['@id'] as num?)?.toInt(),
-  article: (json['article'] as num?)?.toInt(),
-  profile: json['profile'] == null
-      ? null
-      : Profile.fromJson(json['profile'] as Map<String, dynamic>),
+  timestamp: (json['timestamp'] as num).toInt(),
+  isNew: json['is_new'] as bool,
+  isPushed: json['is_pushed'] as bool,
+  jsonId: (json['@id'] as num).toInt(),
+  article: (json['article'] as num).toInt(),
+  profile: Profile.fromJson(json['profile'] as Map<String, dynamic>),
 );
 
 Map<String, dynamic> _$ProfileArticleNotificationToJson(
   ProfileArticleNotification instance,
 ) => <String, dynamic>{
-  'type': _$ProfileNotificationTypeEnumMap[instance.type],
+  'type': _$ProfileNotificationTypeEnumMap[instance.type]!,
   'id': instance.id,
   'timestamp': instance.timestamp,
   'is_new': instance.isNew,
   'is_pushed': instance.isPushed,
   '@id': instance.jsonId,
   'article': instance.article,
-  'profile': instance.profile?.toJson(),
+  'profile': instance.profile.toJson(),
 };
 
 ProfileRelatedReleaseNotification _$ProfileRelatedReleaseNotificationFromJson(
   Map<String, dynamic> json,
 ) => ProfileRelatedReleaseNotification(
-  type: $enumDecodeNullable(_$ProfileNotificationTypeEnumMap, json['type']),
+  type: $enumDecode(_$ProfileNotificationTypeEnumMap, json['type']),
   id: (json['id'] as num).toInt(),
-  timestamp: (json['timestamp'] as num?)?.toInt(),
-  isNew: json['is_new'] as bool?,
-  isPushed: json['is_pushed'] as bool?,
-  jsonId: (json['@id'] as num?)?.toInt(),
-  release: json['release'] == null
-      ? null
-      : EntityReference<Release>.fromJson(
-          json['release'] as Object,
-          (value) => Release.fromJson(value as Map<String, dynamic>),
-        ),
+  timestamp: (json['timestamp'] as num).toInt(),
+  isNew: json['is_new'] as bool,
+  isPushed: json['is_pushed'] as bool,
+  jsonId: (json['@id'] as num).toInt(),
+  release: EntityReference<Release>.fromJson(
+    json['release'] as Object,
+    (value) => Release.fromJson(value as Map<String, dynamic>),
+  ),
 );
 
 Map<String, dynamic> _$ProfileRelatedReleaseNotificationToJson(
   ProfileRelatedReleaseNotification instance,
 ) => <String, dynamic>{
-  'type': _$ProfileNotificationTypeEnumMap[instance.type],
+  'type': _$ProfileNotificationTypeEnumMap[instance.type]!,
   'id': instance.id,
   'timestamp': instance.timestamp,
   'is_new': instance.isNew,
   'is_pushed': instance.isPushed,
   '@id': instance.jsonId,
-  'release': instance.release?.toJson((value) => value.toJson()),
+  'release': instance.release.toJson((value) => value.toJson()),
 };
 
 ProfileEpisodeNotification _$ProfileEpisodeNotificationFromJson(
   Map<String, dynamic> json,
 ) => ProfileEpisodeNotification(
-  type: $enumDecodeNullable(_$ProfileNotificationTypeEnumMap, json['type']),
+  type: $enumDecode(_$ProfileNotificationTypeEnumMap, json['type']),
   id: (json['id'] as num).toInt(),
-  timestamp: (json['timestamp'] as num?)?.toInt(),
-  isNew: json['is_new'] as bool?,
-  isPushed: json['is_pushed'] as bool?,
-  episode: json['episode'] == null
-      ? null
-      : EpisodeCompact.fromJson(json['episode'] as Map<String, dynamic>),
+  timestamp: (json['timestamp'] as num).toInt(),
+  isNew: json['is_new'] as bool,
+  isPushed: json['is_pushed'] as bool,
+  episode: EpisodeCompact.fromJson(json['episode'] as Map<String, dynamic>),
 );
 
 Map<String, dynamic> _$ProfileEpisodeNotificationToJson(
   ProfileEpisodeNotification instance,
 ) => <String, dynamic>{
-  'type': _$ProfileNotificationTypeEnumMap[instance.type],
+  'type': _$ProfileNotificationTypeEnumMap[instance.type]!,
   'id': instance.id,
   'timestamp': instance.timestamp,
   'is_new': instance.isNew,
   'is_pushed': instance.isPushed,
-  'episode': instance.episode?.toJson(),
+  'episode': instance.episode.toJson(),
 };
 
 ProfileTypeNotificationPreference _$ProfileTypeNotificationPreferenceFromJson(
   Map<String, dynamic> json,
 ) => ProfileTypeNotificationPreference(
-  type: json['type'] == null
-      ? null
-      : Dubber.fromJson(json['type'] as Map<String, dynamic>),
+  type: Dubber.fromJson(json['type'] as Map<String, dynamic>),
 );
 
 Map<String, dynamic> _$ProfileTypeNotificationPreferenceToJson(
   ProfileTypeNotificationPreference instance,
-) => <String, dynamic>{'type': instance.type?.toJson()};
+) => <String, dynamic>{'type': instance.type.toJson()};
 
 ProfileStatusNotificationPreference
 _$ProfileStatusNotificationPreferenceFromJson(Map<String, dynamic> json) =>
     ProfileStatusNotificationPreference(
-      status: $enumDecodeNullable(
+      status: $enumDecode(
         _$ProfileStatusNotificationPreferenceStatusEnumMap,
         json['status'],
       ),
@@ -208,7 +183,8 @@ _$ProfileStatusNotificationPreferenceFromJson(Map<String, dynamic> json) =>
 Map<String, dynamic> _$ProfileStatusNotificationPreferenceToJson(
   ProfileStatusNotificationPreference instance,
 ) => <String, dynamic>{
-  'status': _$ProfileStatusNotificationPreferenceStatusEnumMap[instance.status],
+  'status':
+      _$ProfileStatusNotificationPreferenceStatusEnumMap[instance.status]!,
 };
 
 const _$ProfileStatusNotificationPreferenceStatusEnumMap = {
@@ -275,39 +251,39 @@ NotificationPreferenceResponse _$NotificationPreferenceResponseFromJson(
 ) => NotificationPreferenceResponse(
   code: (json['code'] as num).toInt(),
   profileStatusNotificationPreferences:
-      (json['profileStatusNotificationPreferences'] as List<dynamic>?)
-          ?.map(
+      (json['profileStatusNotificationPreferences'] as List<dynamic>)
+          .map(
             (e) => ProfileStatusNotificationPreference.fromJson(
               e as Map<String, dynamic>,
             ),
           )
           .toList(),
   profileTypeNotificationPreferences:
-      (json['profileTypeNotificationPreferences'] as List<dynamic>?)
-          ?.map(
+      (json['profileTypeNotificationPreferences'] as List<dynamic>)
+          .map(
             (e) => ProfileTypeNotificationPreference.fromJson(
               e as Map<String, dynamic>,
             ),
           )
           .toList(),
   isReleaseTypeNotificationsEnabled:
-      json['is_release_type_notifications_enabled'] as bool?,
+      json['is_release_type_notifications_enabled'] as bool,
   isEpisodeNotificationsEnabled:
-      json['is_episode_notifications_enabled'] as bool?,
+      json['is_episode_notifications_enabled'] as bool,
   isFirstEpisodeNotificationEnabled:
-      json['is_first_episode_notification_enabled'] as bool?,
+      json['is_first_episode_notification_enabled'] as bool,
   isRelatedReleaseNotificationsEnabled:
-      json['is_related_release_notifications_enabled'] as bool?,
+      json['is_related_release_notifications_enabled'] as bool,
   isReportProcessNotificationsEnabled:
-      json['is_report_process_notifications_enabled'] as bool?,
+      json['is_report_process_notifications_enabled'] as bool,
   isCommentNotificationsEnabled:
-      json['is_comment_notifications_enabled'] as bool?,
+      json['is_comment_notifications_enabled'] as bool,
   isMyCollectionCommentNotificationsEnabled:
-      json['is_my_collection_comment_notifications_enabled'] as bool?,
+      json['is_my_collection_comment_notifications_enabled'] as bool,
   isArticleNotificationsEnabled:
-      json['is_article_notifications_enabled'] as bool?,
+      json['is_article_notifications_enabled'] as bool,
   isMyArticleCommentNotificationsEnabled:
-      json['is_my_article_comment_notifications_enabled'] as bool?,
+      json['is_my_article_comment_notifications_enabled'] as bool,
 );
 
 Map<String, dynamic> _$NotificationPreferenceResponseToJson(
@@ -316,11 +292,11 @@ Map<String, dynamic> _$NotificationPreferenceResponseToJson(
   'code': instance.code,
   'profileStatusNotificationPreferences': instance
       .profileStatusNotificationPreferences
-      ?.map((e) => e.toJson())
+      .map((e) => e.toJson())
       .toList(),
   'profileTypeNotificationPreferences': instance
       .profileTypeNotificationPreferences
-      ?.map((e) => e.toJson())
+      .map((e) => e.toJson())
       .toList(),
   'is_release_type_notifications_enabled':
       instance.isReleaseTypeNotificationsEnabled,

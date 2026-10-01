@@ -63,7 +63,7 @@ final class ReleaseSearchResponse {
   const ReleaseSearchResponse({
     required this.code,
     this.related,
-    this.releases,
+    required this.releases,
   });
 
   @JsonKey(name: 'code')
@@ -73,7 +73,7 @@ final class ReleaseSearchResponse {
   final Related? related;
 
   @JsonKey(name: 'releases')
-  final List<Release>? releases;
+  final List<Release> releases;
 
   factory ReleaseSearchResponse.fromJson(Map<String, dynamic> json) =>
       _$ReleaseSearchResponseFromJson(json);

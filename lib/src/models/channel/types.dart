@@ -6,45 +6,45 @@ part 'types.g.dart';
 final class Channel {
   const Channel({
     required this.id,
-    this.title,
-    this.description,
+    required this.title,
+    required this.description,
     this.cover,
     this.avatar,
-    this.permission,
-    this.articleCount,
-    this.subscriberCount,
-    this.creationDate,
-    this.lastUpdateDate,
-    this.isBlog,
-    this.isCommentingEnabled,
-    this.isArticleSuggestionEnabled,
-    this.isEpisodeChannelWidgetEnabled,
-    this.episodeChannelWidgetSort,
-    this.episodeChannelWidgetPopularityPeriod,
-    this.episodeChannelWidgetArticleCount,
-    this.isLinkedToType,
-    this.recentArticleCount,
-    this.isVerified,
-    this.isDeleted,
+    required this.permission,
+    required this.articleCount,
+    required this.subscriberCount,
+    required this.creationDate,
+    required this.lastUpdateDate,
+    required this.isBlog,
+    required this.isCommentingEnabled,
+    required this.isArticleSuggestionEnabled,
+    required this.isEpisodeChannelWidgetEnabled,
+    required this.episodeChannelWidgetSort,
+    required this.episodeChannelWidgetPopularityPeriod,
+    required this.episodeChannelWidgetArticleCount,
+    required this.isLinkedToType,
+    required this.recentArticleCount,
+    required this.isVerified,
+    required this.isDeleted,
     this.blogProfileId,
-    this.isSubscribed,
-    this.isMuted,
-    this.isBlocked,
+    required this.isSubscribed,
+    required this.isMuted,
+    required this.isBlocked,
     this.blockReason,
     this.blockExpireDate,
-    this.isPermBlocked,
-    this.isCreator,
-    this.isAdministratorOrHigher,
+    required this.isPermBlocked,
+    required this.isCreator,
+    required this.isAdministratorOrHigher,
   });
 
   @JsonKey(name: 'id')
   final int id;
 
   @JsonKey(name: 'title')
-  final String? title;
+  final String title;
 
   @JsonKey(name: 'description')
-  final String? description;
+  final String description;
 
   @JsonKey(name: 'cover')
   final String? cover;
@@ -53,64 +53,64 @@ final class Channel {
   final String? avatar;
 
   @JsonKey(name: 'permission')
-  final int? permission;
+  final int permission;
 
   @JsonKey(name: 'article_count')
-  final int? articleCount;
+  final int articleCount;
 
   @JsonKey(name: 'subscriber_count')
-  final int? subscriberCount;
+  final int subscriberCount;
 
   @JsonKey(name: 'creation_date')
-  final int? creationDate;
+  final int creationDate;
 
   @JsonKey(name: 'last_update_date')
-  final int? lastUpdateDate;
+  final int lastUpdateDate;
 
   @JsonKey(name: 'is_blog')
-  final bool? isBlog;
+  final bool isBlog;
 
   @JsonKey(name: 'is_commenting_enabled')
-  final bool? isCommentingEnabled;
+  final bool isCommentingEnabled;
 
   @JsonKey(name: 'is_article_suggestion_enabled')
-  final bool? isArticleSuggestionEnabled;
+  final bool isArticleSuggestionEnabled;
 
   @JsonKey(name: 'is_episode_channel_widget_enabled')
-  final bool? isEpisodeChannelWidgetEnabled;
+  final bool isEpisodeChannelWidgetEnabled;
 
   @JsonKey(name: 'episode_channel_widget_sort')
-  final ChannelWidgetSort? episodeChannelWidgetSort;
+  final ChannelWidgetSort episodeChannelWidgetSort;
 
   @JsonKey(name: 'episode_channel_widget_popularity_period')
-  final ChannelWidgetPopularityPeriod? episodeChannelWidgetPopularityPeriod;
+  final ChannelWidgetPopularityPeriod episodeChannelWidgetPopularityPeriod;
 
   @JsonKey(name: 'episode_channel_widget_article_count')
-  final int? episodeChannelWidgetArticleCount;
+  final int episodeChannelWidgetArticleCount;
 
   @JsonKey(name: 'is_linked_to_type')
-  final bool? isLinkedToType;
+  final bool isLinkedToType;
 
   @JsonKey(name: 'recent_article_count')
-  final int? recentArticleCount;
+  final int recentArticleCount;
 
   @JsonKey(name: 'is_verified')
-  final bool? isVerified;
+  final bool isVerified;
 
   @JsonKey(name: 'is_deleted')
-  final bool? isDeleted;
+  final bool isDeleted;
 
   @JsonKey(name: 'blog_profile_id')
   final int? blogProfileId;
 
   @JsonKey(name: 'is_subscribed')
-  final bool? isSubscribed;
+  final bool isSubscribed;
 
   @JsonKey(name: 'is_muted')
-  final bool? isMuted;
+  final bool isMuted;
 
   @JsonKey(name: 'is_blocked')
-  final bool? isBlocked;
+  final bool isBlocked;
 
   @JsonKey(name: 'block_reason')
   final String? blockReason;
@@ -119,13 +119,13 @@ final class Channel {
   final int? blockExpireDate;
 
   @JsonKey(name: 'is_perm_blocked')
-  final bool? isPermBlocked;
+  final bool isPermBlocked;
 
   @JsonKey(name: 'is_creator')
-  final bool? isCreator;
+  final bool isCreator;
 
   @JsonKey(name: 'is_administrator_or_higher')
-  final bool? isAdministratorOrHigher;
+  final bool isAdministratorOrHigher;
 
   factory Channel.fromJson(Map<String, dynamic> json) =>
       _$ChannelFromJson(json);
@@ -136,25 +136,25 @@ final class Channel {
 final class ChannelCompact {
   const ChannelCompact({
     required this.id,
-    this.title,
-    this.description,
+    required this.title,
+    required this.description,
     this.cover,
     this.avatar,
-    this.isBlog,
-    this.isCommentingEnabled,
-    this.isDeleted,
+    required this.isBlog,
+    required this.isCommentingEnabled,
+    required this.isDeleted,
     this.blogProfileId,
-    this.permission,
+    required this.permission,
   });
 
   @JsonKey(name: 'id')
   final int id;
 
   @JsonKey(name: 'title')
-  final String? title;
+  final String title;
 
   @JsonKey(name: 'description')
-  final String? description;
+  final String description;
 
   @JsonKey(name: 'cover')
   final String? cover;
@@ -163,19 +163,19 @@ final class ChannelCompact {
   final String? avatar;
 
   @JsonKey(name: 'is_blog')
-  final bool? isBlog;
+  final bool isBlog;
 
   @JsonKey(name: 'is_commenting_enabled')
-  final bool? isCommentingEnabled;
+  final bool isCommentingEnabled;
 
   @JsonKey(name: 'is_deleted')
-  final bool? isDeleted;
+  final bool isDeleted;
 
   @JsonKey(name: 'blog_profile_id')
   final int? blogProfileId;
 
   @JsonKey(name: 'permission')
-  final int? permission;
+  final int permission;
 
   factory ChannelCompact.fromJson(Map<String, dynamic> json) =>
       _$ChannelCompactFromJson(json);
@@ -189,20 +189,20 @@ final class ChannelProfile {
     this.badgeName,
     this.badgeType,
     this.badgeUrl,
-    this.banExpires,
-    this.banReason,
+    required this.banExpires,
+    required this.banReason,
     required this.id,
-    this.isBanned,
-    this.isSponsor,
-    this.isVerified,
-    this.privilegeLevel,
-    this.login,
-    this.avatar,
-    this.channelId,
-    this.permission,
-    this.permissionCreationDate,
-    this.isBlocked,
-    this.isPermBlocked,
+    required this.isBanned,
+    required this.isSponsor,
+    required this.isVerified,
+    required this.privilegeLevel,
+    required this.login,
+    required this.avatar,
+    required this.channelId,
+    required this.permission,
+    required this.permissionCreationDate,
+    required this.isBlocked,
+    required this.isPermBlocked,
     this.blockReason,
     this.blockExpireDate,
   });
@@ -220,46 +220,46 @@ final class ChannelProfile {
   final String? badgeUrl;
 
   @JsonKey(name: 'ban_expires')
-  final int? banExpires;
+  final int banExpires;
 
   @JsonKey(name: 'ban_reason')
-  final String? banReason;
+  final String banReason;
 
   @JsonKey(name: 'id')
   final int id;
 
   @JsonKey(name: 'is_banned')
-  final bool? isBanned;
+  final bool isBanned;
 
   @JsonKey(name: 'is_sponsor')
-  final bool? isSponsor;
+  final bool isSponsor;
 
   @JsonKey(name: 'is_verified')
-  final bool? isVerified;
+  final bool isVerified;
 
   @JsonKey(name: 'privilege_level')
-  final int? privilegeLevel;
+  final int privilegeLevel;
 
   @JsonKey(name: 'login')
-  final String? login;
+  final String login;
 
   @JsonKey(name: 'avatar')
-  final String? avatar;
+  final String avatar;
 
   @JsonKey(name: 'channel_id')
-  final int? channelId;
+  final int channelId;
 
   @JsonKey(name: 'permission')
-  final ChannelProfilePermission? permission;
+  final ChannelProfilePermission permission;
 
   @JsonKey(name: 'permission_creation_date')
-  final int? permissionCreationDate;
+  final int permissionCreationDate;
 
   @JsonKey(name: 'is_blocked')
-  final bool? isBlocked;
+  final bool isBlocked;
 
   @JsonKey(name: 'is_perm_blocked')
-  final bool? isPermBlocked;
+  final bool isPermBlocked;
 
   @JsonKey(name: 'block_reason')
   final String? blockReason;
@@ -275,27 +275,27 @@ final class ChannelProfile {
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class ChannelBlock {
   const ChannelBlock({
-    this.addedDate,
-    this.expireDate,
+    required this.addedDate,
+    required this.expireDate,
     this.reason,
-    this.isPermBlocked,
-    this.isReasonShowingEnabled,
+    required this.isPermBlocked,
+    required this.isReasonShowingEnabled,
   });
 
   @JsonKey(name: 'added_date')
-  final int? addedDate;
+  final int addedDate;
 
   @JsonKey(name: 'expire_date')
-  final int? expireDate;
+  final int expireDate;
 
   @JsonKey(name: 'reason')
   final String? reason;
 
   @JsonKey(name: 'is_perm_blocked')
-  final bool? isPermBlocked;
+  final bool isPermBlocked;
 
   @JsonKey(name: 'is_reason_showing_enabled')
-  final bool? isReasonShowingEnabled;
+  final bool isReasonShowingEnabled;
 
   factory ChannelBlock.fromJson(Map<String, dynamic> json) =>
       _$ChannelBlockFromJson(json);
@@ -306,26 +306,26 @@ final class ChannelBlock {
 final class EditorChannel {
   const EditorChannel({
     required this.id,
-    this.title,
+    required this.title,
     this.avatar,
-    this.subscriberCount,
-    this.isBlog,
+    required this.subscriberCount,
+    required this.isBlog,
   });
 
   @JsonKey(name: 'id')
   final int id;
 
   @JsonKey(name: 'title')
-  final String? title;
+  final String title;
 
   @JsonKey(name: 'avatar')
   final String? avatar;
 
   @JsonKey(name: 'subscriber_count')
-  final int? subscriberCount;
+  final int subscriberCount;
 
   @JsonKey(name: 'is_blog')
-  final bool? isBlog;
+  final bool isBlog;
 
   factory EditorChannel.fromJson(Map<String, dynamic> json) =>
       _$EditorChannelFromJson(json);
@@ -457,10 +457,10 @@ final class TypeChannelResponse {
   const TypeChannelResponse({
     required this.code,
     this.channel,
-    this.articles,
-    this.areWidgetsHiddenGlobally,
-    this.isHiddenByUser,
-    this.isWidgetEligible,
+    required this.articles,
+    required this.areWidgetsHiddenGlobally,
+    required this.isHiddenByUser,
+    required this.isWidgetEligible,
   });
 
   @JsonKey(name: 'code')
@@ -470,16 +470,16 @@ final class TypeChannelResponse {
   final Channel? channel;
 
   @JsonKey(name: 'articles')
-  final List<Article>? articles;
+  final List<Article> articles;
 
   @JsonKey(name: 'are_widgets_hidden_globally')
-  final bool? areWidgetsHiddenGlobally;
+  final bool areWidgetsHiddenGlobally;
 
   @JsonKey(name: 'is_hidden_by_user')
-  final bool? isHiddenByUser;
+  final bool isHiddenByUser;
 
   @JsonKey(name: 'is_widget_eligible')
-  final bool? isWidgetEligible;
+  final bool isWidgetEligible;
 
   factory TypeChannelResponse.fromJson(Map<String, dynamic> json) =>
       _$TypeChannelResponseFromJson(json);
@@ -523,7 +523,7 @@ final class ChannelResponse {
   const ChannelResponse({
     required this.code,
     this.channel,
-    this.suggestionCount,
+    required this.suggestionCount,
   });
 
   @JsonKey(name: 'code')
@@ -533,7 +533,7 @@ final class ChannelResponse {
   final Channel? channel;
 
   @JsonKey(name: 'suggestion_count')
-  final int? suggestionCount;
+  final int suggestionCount;
 
   factory ChannelResponse.fromJson(Map<String, dynamic> json) =>
       _$ChannelResponseFromJson(json);
@@ -587,13 +587,13 @@ final class EditorAvailableResponse {
 
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class EditorChannelsResponse {
-  const EditorChannelsResponse({required this.code, this.channels});
+  const EditorChannelsResponse({required this.code, required this.channels});
 
   @JsonKey(name: 'code')
   final int code;
 
   @JsonKey(name: 'channels')
-  final List<EditorChannel>? channels;
+  final List<EditorChannel> channels;
 
   factory EditorChannelsResponse.fromJson(Map<String, dynamic> json) =>
       _$EditorChannelsResponseFromJson(json);
@@ -602,13 +602,16 @@ final class EditorChannelsResponse {
 
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class SubscriptionCountResponse {
-  const SubscriptionCountResponse({required this.code, this.subscriptionCount});
+  const SubscriptionCountResponse({
+    required this.code,
+    required this.subscriptionCount,
+  });
 
   @JsonKey(name: 'code')
   final int code;
 
   @JsonKey(name: 'subscription_count')
-  final int? subscriptionCount;
+  final int subscriptionCount;
 
   factory SubscriptionCountResponse.fromJson(Map<String, dynamic> json) =>
       _$SubscriptionCountResponseFromJson(json);

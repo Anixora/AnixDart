@@ -124,18 +124,18 @@ final class SocialRequest {
 final class ChangeEmailResponse {
   const ChangeEmailResponse({
     required this.code,
-    this.hash,
-    this.timestampExpires,
+    required this.hash,
+    required this.timestampExpires,
   });
 
   @JsonKey(name: 'code')
   final int code;
 
   @JsonKey(name: 'hash')
-  final String? hash;
+  final String hash;
 
   @JsonKey(name: 'timestamp_expires')
-  final int? timestampExpires;
+  final int timestampExpires;
 
   factory ChangeEmailResponse.fromJson(Map<String, dynamic> json) =>
       _$ChangeEmailResponseFromJson(json);
@@ -144,13 +144,16 @@ final class ChangeEmailResponse {
 
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class ChangeEmailResendResponse {
-  const ChangeEmailResendResponse({required this.code, this.timestampExpires});
+  const ChangeEmailResendResponse({
+    required this.code,
+    required this.timestampExpires,
+  });
 
   @JsonKey(name: 'code')
   final int code;
 
   @JsonKey(name: 'timestamp_expires')
-  final int? timestampExpires;
+  final int timestampExpires;
 
   factory ChangeEmailResendResponse.fromJson(Map<String, dynamic> json) =>
       _$ChangeEmailResendResponseFromJson(json);
@@ -159,13 +162,16 @@ final class ChangeEmailResendResponse {
 
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class ChangeLoginResponse {
-  const ChangeLoginResponse({required this.code, this.suggestedLogins});
+  const ChangeLoginResponse({
+    required this.code,
+    required this.suggestedLogins,
+  });
 
   @JsonKey(name: 'code')
   final int code;
 
   @JsonKey(name: 'suggested_logins')
-  final List<String>? suggestedLogins;
+  final List<String> suggestedLogins;
 
   factory ChangeLoginResponse.fromJson(Map<String, dynamic> json) =>
       _$ChangeLoginResponseFromJson(json);
@@ -176,30 +182,30 @@ final class ChangeLoginResponse {
 final class LoginInfoResponse {
   const LoginInfoResponse({
     required this.code,
-    this.login,
-    this.avatar,
-    this.isChangeAvaliable,
-    this.lastChangeAt,
-    this.nextChangeAvaliableAt,
+    required this.login,
+    required this.avatar,
+    required this.isChangeAvaliable,
+    required this.lastChangeAt,
+    required this.nextChangeAvaliableAt,
   });
 
   @JsonKey(name: 'code')
   final int code;
 
   @JsonKey(name: 'login')
-  final String? login;
+  final String login;
 
   @JsonKey(name: 'avatar')
-  final String? avatar;
+  final String avatar;
 
   @JsonKey(name: 'is_change_avaliable')
-  final bool? isChangeAvaliable;
+  final bool isChangeAvaliable;
 
   @JsonKey(name: 'last_change_at')
-  final int? lastChangeAt;
+  final int lastChangeAt;
 
   @JsonKey(name: 'next_change_avaliable_at')
-  final int? nextChangeAvaliableAt;
+  final int nextChangeAvaliableAt;
 
   factory LoginInfoResponse.fromJson(Map<String, dynamic> json) =>
       _$LoginInfoResponseFromJson(json);
@@ -208,13 +214,13 @@ final class LoginInfoResponse {
 
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class ChangePasswordResponse {
-  const ChangePasswordResponse({required this.code, this.token});
+  const ChangePasswordResponse({required this.code, required this.token});
 
   @JsonKey(name: 'code')
   final int code;
 
   @JsonKey(name: 'token')
-  final String? token;
+  final String token;
 
   factory ChangePasswordResponse.fromJson(Map<String, dynamic> json) =>
       _$ChangePasswordResponseFromJson(json);
@@ -223,13 +229,13 @@ final class ChangePasswordResponse {
 
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class ProfileSelectThemeResponse {
-  const ProfileSelectThemeResponse({required this.code, this.theme});
+  const ProfileSelectThemeResponse({required this.code, required this.theme});
 
   @JsonKey(name: 'code')
   final int code;
 
   @JsonKey(name: 'theme')
-  final Theme? theme;
+  final Theme theme;
 
   factory ProfileSelectThemeResponse.fromJson(Map<String, dynamic> json) =>
       _$ProfileSelectThemeResponseFromJson(json);
@@ -240,30 +246,30 @@ final class ProfileSelectThemeResponse {
 final class ProfileSocialResponse {
   const ProfileSocialResponse({
     required this.code,
-    this.discordPage,
-    this.instPage,
-    this.tgPage,
-    this.ttPage,
-    this.vkPage,
+    required this.discordPage,
+    required this.instPage,
+    required this.tgPage,
+    required this.ttPage,
+    required this.vkPage,
   });
 
   @JsonKey(name: 'code')
   final int code;
 
   @JsonKey(name: 'discord_page')
-  final String? discordPage;
+  final String discordPage;
 
   @JsonKey(name: 'inst_page')
-  final String? instPage;
+  final String instPage;
 
   @JsonKey(name: 'tg_page')
-  final String? tgPage;
+  final String tgPage;
 
   @JsonKey(name: 'tt_page')
-  final String? ttPage;
+  final String ttPage;
 
   @JsonKey(name: 'vk_page')
-  final String? vkPage;
+  final String vkPage;
 
   factory ProfileSocialResponse.fromJson(Map<String, dynamic> json) =>
       _$ProfileSocialResponseFromJson(json);

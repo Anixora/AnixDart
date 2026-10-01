@@ -1,50 +1,50 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
+// СГЕНЕРИРОВАННЫЙ КОД — НЕ РЕДАКТИРОВАТЬ ВРУЧНУЮ
 
 part of 'types.dart';
 
 // **************************************************************************
-// JsonSerializableGenerator
+// Генератор: JsonSerializableGenerator
 // **************************************************************************
 
 Channel _$ChannelFromJson(Map<String, dynamic> json) => Channel(
   id: (json['id'] as num).toInt(),
-  title: json['title'] as String?,
-  description: json['description'] as String?,
+  title: json['title'] as String,
+  description: json['description'] as String,
   cover: json['cover'] as String?,
   avatar: json['avatar'] as String?,
-  permission: (json['permission'] as num?)?.toInt(),
-  articleCount: (json['article_count'] as num?)?.toInt(),
-  subscriberCount: (json['subscriber_count'] as num?)?.toInt(),
-  creationDate: (json['creation_date'] as num?)?.toInt(),
-  lastUpdateDate: (json['last_update_date'] as num?)?.toInt(),
-  isBlog: json['is_blog'] as bool?,
-  isCommentingEnabled: json['is_commenting_enabled'] as bool?,
-  isArticleSuggestionEnabled: json['is_article_suggestion_enabled'] as bool?,
+  permission: (json['permission'] as num).toInt(),
+  articleCount: (json['article_count'] as num).toInt(),
+  subscriberCount: (json['subscriber_count'] as num).toInt(),
+  creationDate: (json['creation_date'] as num).toInt(),
+  lastUpdateDate: (json['last_update_date'] as num).toInt(),
+  isBlog: json['is_blog'] as bool,
+  isCommentingEnabled: json['is_commenting_enabled'] as bool,
+  isArticleSuggestionEnabled: json['is_article_suggestion_enabled'] as bool,
   isEpisodeChannelWidgetEnabled:
-      json['is_episode_channel_widget_enabled'] as bool?,
-  episodeChannelWidgetSort: $enumDecodeNullable(
+      json['is_episode_channel_widget_enabled'] as bool,
+  episodeChannelWidgetSort: $enumDecode(
     _$ChannelWidgetSortEnumMap,
     json['episode_channel_widget_sort'],
   ),
-  episodeChannelWidgetPopularityPeriod: $enumDecodeNullable(
+  episodeChannelWidgetPopularityPeriod: $enumDecode(
     _$ChannelWidgetPopularityPeriodEnumMap,
     json['episode_channel_widget_popularity_period'],
   ),
   episodeChannelWidgetArticleCount:
-      (json['episode_channel_widget_article_count'] as num?)?.toInt(),
-  isLinkedToType: json['is_linked_to_type'] as bool?,
-  recentArticleCount: (json['recent_article_count'] as num?)?.toInt(),
-  isVerified: json['is_verified'] as bool?,
-  isDeleted: json['is_deleted'] as bool?,
+      (json['episode_channel_widget_article_count'] as num).toInt(),
+  isLinkedToType: json['is_linked_to_type'] as bool,
+  recentArticleCount: (json['recent_article_count'] as num).toInt(),
+  isVerified: json['is_verified'] as bool,
+  isDeleted: json['is_deleted'] as bool,
   blogProfileId: (json['blog_profile_id'] as num?)?.toInt(),
-  isSubscribed: json['is_subscribed'] as bool?,
-  isMuted: json['is_muted'] as bool?,
-  isBlocked: json['is_blocked'] as bool?,
+  isSubscribed: json['is_subscribed'] as bool,
+  isMuted: json['is_muted'] as bool,
+  isBlocked: json['is_blocked'] as bool,
   blockReason: json['block_reason'] as String?,
   blockExpireDate: (json['block_expire_date'] as num?)?.toInt(),
-  isPermBlocked: json['is_perm_blocked'] as bool?,
-  isCreator: json['is_creator'] as bool?,
-  isAdministratorOrHigher: json['is_administrator_or_higher'] as bool?,
+  isPermBlocked: json['is_perm_blocked'] as bool,
+  isCreator: json['is_creator'] as bool,
+  isAdministratorOrHigher: json['is_administrator_or_higher'] as bool,
 );
 
 Map<String, dynamic> _$ChannelToJson(Channel instance) => <String, dynamic>{
@@ -63,10 +63,10 @@ Map<String, dynamic> _$ChannelToJson(Channel instance) => <String, dynamic>{
   'is_article_suggestion_enabled': instance.isArticleSuggestionEnabled,
   'is_episode_channel_widget_enabled': instance.isEpisodeChannelWidgetEnabled,
   'episode_channel_widget_sort':
-      _$ChannelWidgetSortEnumMap[instance.episodeChannelWidgetSort],
+      _$ChannelWidgetSortEnumMap[instance.episodeChannelWidgetSort]!,
   'episode_channel_widget_popularity_period':
       _$ChannelWidgetPopularityPeriodEnumMap[instance
-          .episodeChannelWidgetPopularityPeriod],
+          .episodeChannelWidgetPopularityPeriod]!,
   'episode_channel_widget_article_count':
       instance.episodeChannelWidgetArticleCount,
   'is_linked_to_type': instance.isLinkedToType,
@@ -98,15 +98,15 @@ const _$ChannelWidgetPopularityPeriodEnumMap = {
 ChannelCompact _$ChannelCompactFromJson(Map<String, dynamic> json) =>
     ChannelCompact(
       id: (json['id'] as num).toInt(),
-      title: json['title'] as String?,
-      description: json['description'] as String?,
+      title: json['title'] as String,
+      description: json['description'] as String,
       cover: json['cover'] as String?,
       avatar: json['avatar'] as String?,
-      isBlog: json['is_blog'] as bool?,
-      isCommentingEnabled: json['is_commenting_enabled'] as bool?,
-      isDeleted: json['is_deleted'] as bool?,
+      isBlog: json['is_blog'] as bool,
+      isCommentingEnabled: json['is_commenting_enabled'] as bool,
+      isDeleted: json['is_deleted'] as bool,
       blogProfileId: (json['blog_profile_id'] as num?)?.toInt(),
-      permission: (json['permission'] as num?)?.toInt(),
+      permission: (json['permission'] as num).toInt(),
     );
 
 Map<String, dynamic> _$ChannelCompactToJson(ChannelCompact instance) =>
@@ -129,24 +129,23 @@ ChannelProfile _$ChannelProfileFromJson(Map<String, dynamic> json) =>
       badgeName: json['badge_name'] as String?,
       badgeType: (json['badge_type'] as num?)?.toInt(),
       badgeUrl: json['badge_url'] as String?,
-      banExpires: (json['ban_expires'] as num?)?.toInt(),
-      banReason: json['ban_reason'] as String?,
+      banExpires: (json['ban_expires'] as num).toInt(),
+      banReason: json['ban_reason'] as String,
       id: (json['id'] as num).toInt(),
-      isBanned: json['is_banned'] as bool?,
-      isSponsor: json['is_sponsor'] as bool?,
-      isVerified: json['is_verified'] as bool?,
-      privilegeLevel: (json['privilege_level'] as num?)?.toInt(),
-      login: json['login'] as String?,
-      avatar: json['avatar'] as String?,
-      channelId: (json['channel_id'] as num?)?.toInt(),
-      permission: $enumDecodeNullable(
+      isBanned: json['is_banned'] as bool,
+      isSponsor: json['is_sponsor'] as bool,
+      isVerified: json['is_verified'] as bool,
+      privilegeLevel: (json['privilege_level'] as num).toInt(),
+      login: json['login'] as String,
+      avatar: json['avatar'] as String,
+      channelId: (json['channel_id'] as num).toInt(),
+      permission: $enumDecode(
         _$ChannelProfilePermissionEnumMap,
         json['permission'],
       ),
-      permissionCreationDate: (json['permission_creation_date'] as num?)
-          ?.toInt(),
-      isBlocked: json['is_blocked'] as bool?,
-      isPermBlocked: json['is_perm_blocked'] as bool?,
+      permissionCreationDate: (json['permission_creation_date'] as num).toInt(),
+      isBlocked: json['is_blocked'] as bool,
+      isPermBlocked: json['is_perm_blocked'] as bool,
       blockReason: json['block_reason'] as String?,
       blockExpireDate: (json['block_expire_date'] as num?)?.toInt(),
     );
@@ -167,7 +166,7 @@ Map<String, dynamic> _$ChannelProfileToJson(ChannelProfile instance) =>
       'login': instance.login,
       'avatar': instance.avatar,
       'channel_id': instance.channelId,
-      'permission': _$ChannelProfilePermissionEnumMap[instance.permission],
+      'permission': _$ChannelProfilePermissionEnumMap[instance.permission]!,
       'permission_creation_date': instance.permissionCreationDate,
       'is_blocked': instance.isBlocked,
       'is_perm_blocked': instance.isPermBlocked,
@@ -182,11 +181,11 @@ const _$ChannelProfilePermissionEnumMap = {
 };
 
 ChannelBlock _$ChannelBlockFromJson(Map<String, dynamic> json) => ChannelBlock(
-  addedDate: (json['added_date'] as num?)?.toInt(),
-  expireDate: (json['expire_date'] as num?)?.toInt(),
+  addedDate: (json['added_date'] as num).toInt(),
+  expireDate: (json['expire_date'] as num).toInt(),
   reason: json['reason'] as String?,
-  isPermBlocked: json['is_perm_blocked'] as bool?,
-  isReasonShowingEnabled: json['is_reason_showing_enabled'] as bool?,
+  isPermBlocked: json['is_perm_blocked'] as bool,
+  isReasonShowingEnabled: json['is_reason_showing_enabled'] as bool,
 );
 
 Map<String, dynamic> _$ChannelBlockToJson(ChannelBlock instance) =>
@@ -201,10 +200,10 @@ Map<String, dynamic> _$ChannelBlockToJson(ChannelBlock instance) =>
 EditorChannel _$EditorChannelFromJson(Map<String, dynamic> json) =>
     EditorChannel(
       id: (json['id'] as num).toInt(),
-      title: json['title'] as String?,
+      title: json['title'] as String,
       avatar: json['avatar'] as String?,
-      subscriberCount: (json['subscriber_count'] as num?)?.toInt(),
-      isBlog: json['is_blog'] as bool?,
+      subscriberCount: (json['subscriber_count'] as num).toInt(),
+      isBlog: json['is_blog'] as bool,
     );
 
 Map<String, dynamic> _$EditorChannelToJson(EditorChannel instance) =>
@@ -319,12 +318,12 @@ TypeChannelResponse _$TypeChannelResponseFromJson(Map<String, dynamic> json) =>
       channel: json['channel'] == null
           ? null
           : Channel.fromJson(json['channel'] as Map<String, dynamic>),
-      articles: (json['articles'] as List<dynamic>?)
-          ?.map((e) => Article.fromJson(e as Map<String, dynamic>))
+      articles: (json['articles'] as List<dynamic>)
+          .map((e) => Article.fromJson(e as Map<String, dynamic>))
           .toList(),
-      areWidgetsHiddenGlobally: json['are_widgets_hidden_globally'] as bool?,
-      isHiddenByUser: json['is_hidden_by_user'] as bool?,
-      isWidgetEligible: json['is_widget_eligible'] as bool?,
+      areWidgetsHiddenGlobally: json['are_widgets_hidden_globally'] as bool,
+      isHiddenByUser: json['is_hidden_by_user'] as bool,
+      isWidgetEligible: json['is_widget_eligible'] as bool,
     );
 
 Map<String, dynamic> _$TypeChannelResponseToJson(
@@ -332,7 +331,7 @@ Map<String, dynamic> _$TypeChannelResponseToJson(
 ) => <String, dynamic>{
   'code': instance.code,
   'channel': instance.channel?.toJson(),
-  'articles': instance.articles?.map((e) => e.toJson()).toList(),
+  'articles': instance.articles.map((e) => e.toJson()).toList(),
   'are_widgets_hidden_globally': instance.areWidgetsHiddenGlobally,
   'is_hidden_by_user': instance.isHiddenByUser,
   'is_widget_eligible': instance.isWidgetEligible,
@@ -371,7 +370,7 @@ ChannelResponse _$ChannelResponseFromJson(Map<String, dynamic> json) =>
       channel: json['channel'] == null
           ? null
           : Channel.fromJson(json['channel'] as Map<String, dynamic>),
-      suggestionCount: (json['suggestion_count'] as num?)?.toInt(),
+      suggestionCount: (json['suggestion_count'] as num).toInt(),
     );
 
 Map<String, dynamic> _$ChannelResponseToJson(ChannelResponse instance) =>
@@ -429,8 +428,8 @@ EditorChannelsResponse _$EditorChannelsResponseFromJson(
   Map<String, dynamic> json,
 ) => EditorChannelsResponse(
   code: (json['code'] as num).toInt(),
-  channels: (json['channels'] as List<dynamic>?)
-      ?.map((e) => EditorChannel.fromJson(e as Map<String, dynamic>))
+  channels: (json['channels'] as List<dynamic>)
+      .map((e) => EditorChannel.fromJson(e as Map<String, dynamic>))
       .toList(),
 );
 
@@ -438,14 +437,14 @@ Map<String, dynamic> _$EditorChannelsResponseToJson(
   EditorChannelsResponse instance,
 ) => <String, dynamic>{
   'code': instance.code,
-  'channels': instance.channels?.map((e) => e.toJson()).toList(),
+  'channels': instance.channels.map((e) => e.toJson()).toList(),
 };
 
 SubscriptionCountResponse _$SubscriptionCountResponseFromJson(
   Map<String, dynamic> json,
 ) => SubscriptionCountResponse(
   code: (json['code'] as num).toInt(),
-  subscriptionCount: (json['subscription_count'] as num?)?.toInt(),
+  subscriptionCount: (json['subscription_count'] as num).toInt(),
 );
 
 Map<String, dynamic> _$SubscriptionCountResponseToJson(

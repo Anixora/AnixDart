@@ -1,15 +1,13 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
+// СГЕНЕРИРОВАННЫЙ КОД — НЕ РЕДАКТИРОВАТЬ ВРУЧНУЮ
 
 part of 'types.dart';
 
 // **************************************************************************
-// JsonSerializableGenerator
+// Генератор: JsonSerializableGenerator
 // **************************************************************************
 
-ReportReason _$ReportReasonFromJson(Map<String, dynamic> json) => ReportReason(
-  id: (json['id'] as num).toInt(),
-  name: json['name'] as String?,
-);
+ReportReason _$ReportReasonFromJson(Map<String, dynamic> json) =>
+    ReportReason(id: (json['id'] as num).toInt(), name: json['name'] as String);
 
 Map<String, dynamic> _$ReportReasonToJson(ReportReason instance) =>
     <String, dynamic>{'id': instance.id, 'name': instance.name};

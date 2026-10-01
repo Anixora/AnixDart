@@ -1,17 +1,17 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
+// СГЕНЕРИРОВАННЫЙ КОД — НЕ РЕДАКТИРОВАТЬ ВРУЧНУЮ
 
 part of 'types.dart';
 
 // **************************************************************************
-// JsonSerializableGenerator
+// Генератор: JsonSerializableGenerator
 // **************************************************************************
 
 CheckLoginResponse _$CheckLoginResponseFromJson(Map<String, dynamic> json) =>
     CheckLoginResponse(
       code: (json['code'] as num).toInt(),
-      available: json['available'] as bool?,
-      suggestedLogins: (json['suggested_logins'] as List<dynamic>?)
-          ?.map((e) => e as String)
+      available: json['available'] as bool,
+      suggestedLogins: (json['suggested_logins'] as List<dynamic>)
+          .map((e) => e as String)
           .toList(),
     );
 
@@ -25,7 +25,7 @@ Map<String, dynamic> _$CheckLoginResponseToJson(CheckLoginResponse instance) =>
 FirebaseResponse _$FirebaseResponseFromJson(Map<String, dynamic> json) =>
     FirebaseResponse(
       code: (json['code'] as num).toInt(),
-      topicName: json['topicName'] as String?,
+      topicName: json['topicName'] as String,
     );
 
 Map<String, dynamic> _$FirebaseResponseToJson(FirebaseResponse instance) =>
@@ -141,10 +141,10 @@ Map<String, dynamic> _$VerifyRequestToJson(VerifyRequest instance) =>
 SignUpResponse _$SignUpResponseFromJson(Map<String, dynamic> json) =>
     SignUpResponse(
       code: (json['code'] as num).toInt(),
-      codeTimestampExpires: (json['codeTimestampExpires'] as num?)?.toInt(),
-      hash: json['hash'] as String?,
-      suggestedLogins: (json['suggested_logins'] as List<dynamic>?)
-          ?.map((e) => e as String)
+      codeTimestampExpires: (json['codeTimestampExpires'] as num).toInt(),
+      hash: json['hash'] as String,
+      suggestedLogins: (json['suggested_logins'] as List<dynamic>)
+          .map((e) => e as String)
           .toList(),
     );
 
@@ -159,29 +159,27 @@ Map<String, dynamic> _$SignUpResponseToJson(SignUpResponse instance) =>
 VerifyResponse _$VerifyResponseFromJson(Map<String, dynamic> json) =>
     VerifyResponse(
       code: (json['code'] as num).toInt(),
-      profile: json['profile'] == null
-          ? null
-          : Profile.fromJson(json['profile'] as Map<String, dynamic>),
-      profileToken: json['profileToken'] == null
-          ? null
-          : ProfileToken.fromJson(json['profileToken'] as Map<String, dynamic>),
-      suggestedLogins: (json['suggested_logins'] as List<dynamic>?)
-          ?.map((e) => e as String)
+      profile: Profile.fromJson(json['profile'] as Map<String, dynamic>),
+      profileToken: ProfileToken.fromJson(
+        json['profileToken'] as Map<String, dynamic>,
+      ),
+      suggestedLogins: (json['suggested_logins'] as List<dynamic>)
+          .map((e) => e as String)
           .toList(),
     );
 
 Map<String, dynamic> _$VerifyResponseToJson(VerifyResponse instance) =>
     <String, dynamic>{
       'code': instance.code,
-      'profile': instance.profile?.toJson(),
-      'profileToken': instance.profileToken?.toJson(),
+      'profile': instance.profile.toJson(),
+      'profileToken': instance.profileToken.toJson(),
       'suggested_logins': instance.suggestedLogins,
     };
 
 TimestampResponse _$TimestampResponseFromJson(Map<String, dynamic> json) =>
     TimestampResponse(
       code: (json['code'] as num).toInt(),
-      timestampExpires: (json['timestampExpires'] as num?)?.toInt(),
+      timestampExpires: (json['timestampExpires'] as num).toInt(),
     );
 
 Map<String, dynamic> _$TimestampResponseToJson(TimestampResponse instance) =>
@@ -193,44 +191,40 @@ Map<String, dynamic> _$TimestampResponseToJson(TimestampResponse instance) =>
 AuthProfileResponse _$AuthProfileResponseFromJson(Map<String, dynamic> json) =>
     AuthProfileResponse(
       code: (json['code'] as num).toInt(),
-      profile: json['profile'] == null
-          ? null
-          : Profile.fromJson(json['profile'] as Map<String, dynamic>),
-      profileToken: json['profileToken'] == null
-          ? null
-          : ProfileToken.fromJson(json['profileToken'] as Map<String, dynamic>),
+      profile: Profile.fromJson(json['profile'] as Map<String, dynamic>),
+      profileToken: ProfileToken.fromJson(
+        json['profileToken'] as Map<String, dynamic>,
+      ),
     );
 
 Map<String, dynamic> _$AuthProfileResponseToJson(
   AuthProfileResponse instance,
 ) => <String, dynamic>{
   'code': instance.code,
-  'profile': instance.profile?.toJson(),
-  'profileToken': instance.profileToken?.toJson(),
+  'profile': instance.profile.toJson(),
+  'profileToken': instance.profileToken.toJson(),
 };
 
 OAuthSignInResponse _$OAuthSignInResponseFromJson(Map<String, dynamic> json) =>
     OAuthSignInResponse(
       code: (json['code'] as num).toInt(),
-      profile: json['profile'] == null
-          ? null
-          : Profile.fromJson(json['profile'] as Map<String, dynamic>),
-      profileToken: json['profileToken'] == null
-          ? null
-          : ProfileToken.fromJson(json['profileToken'] as Map<String, dynamic>),
-      codeTimestampExpires: (json['codeTimestampExpires'] as num?)?.toInt(),
-      suggestedLogins: (json['suggested_logins'] as List<dynamic>?)
-          ?.map((e) => e as String)
+      profile: Profile.fromJson(json['profile'] as Map<String, dynamic>),
+      profileToken: ProfileToken.fromJson(
+        json['profileToken'] as Map<String, dynamic>,
+      ),
+      codeTimestampExpires: (json['codeTimestampExpires'] as num).toInt(),
+      suggestedLogins: (json['suggested_logins'] as List<dynamic>)
+          .map((e) => e as String)
           .toList(),
-      hash: json['hash'] as String?,
+      hash: json['hash'] as String,
     );
 
 Map<String, dynamic> _$OAuthSignInResponseToJson(
   OAuthSignInResponse instance,
 ) => <String, dynamic>{
   'code': instance.code,
-  'profile': instance.profile?.toJson(),
-  'profileToken': instance.profileToken?.toJson(),
+  'profile': instance.profile.toJson(),
+  'profileToken': instance.profileToken.toJson(),
   'codeTimestampExpires': instance.codeTimestampExpires,
   'suggested_logins': instance.suggestedLogins,
   'hash': instance.hash,
@@ -239,7 +233,7 @@ Map<String, dynamic> _$OAuthSignInResponseToJson(
 ResendResponse _$ResendResponseFromJson(Map<String, dynamic> json) =>
     ResendResponse(
       code: (json['code'] as num).toInt(),
-      timestampExpires: (json['timestampExpires'] as num?)?.toInt(),
+      timestampExpires: (json['timestampExpires'] as num).toInt(),
     );
 
 Map<String, dynamic> _$ResendResponseToJson(ResendResponse instance) =>
@@ -251,8 +245,8 @@ Map<String, dynamic> _$ResendResponseToJson(ResendResponse instance) =>
 RestoreResponse _$RestoreResponseFromJson(Map<String, dynamic> json) =>
     RestoreResponse(
       code: (json['code'] as num).toInt(),
-      hash: json['hash'] as String?,
-      codeTimestampExpires: (json['codeTimestampExpires'] as num?)?.toInt(),
+      hash: json['hash'] as String,
+      codeTimestampExpires: (json['codeTimestampExpires'] as num).toInt(),
     );
 
 Map<String, dynamic> _$RestoreResponseToJson(RestoreResponse instance) =>
@@ -266,7 +260,7 @@ RestoreResendResponse _$RestoreResendResponseFromJson(
   Map<String, dynamic> json,
 ) => RestoreResendResponse(
   code: (json['code'] as num).toInt(),
-  timestampExpires: (json['timestampExpires'] as num?)?.toInt(),
+  timestampExpires: (json['timestampExpires'] as num).toInt(),
 );
 
 Map<String, dynamic> _$RestoreResendResponseToJson(
@@ -280,61 +274,55 @@ RestoreVerifyResponse _$RestoreVerifyResponseFromJson(
   Map<String, dynamic> json,
 ) => RestoreVerifyResponse(
   code: (json['code'] as num).toInt(),
-  profile: json['profile'] == null
-      ? null
-      : Profile.fromJson(json['profile'] as Map<String, dynamic>),
-  profileToken: json['profileToken'] == null
-      ? null
-      : ProfileToken.fromJson(json['profileToken'] as Map<String, dynamic>),
+  profile: Profile.fromJson(json['profile'] as Map<String, dynamic>),
+  profileToken: ProfileToken.fromJson(
+    json['profileToken'] as Map<String, dynamic>,
+  ),
 );
 
 Map<String, dynamic> _$RestoreVerifyResponseToJson(
   RestoreVerifyResponse instance,
 ) => <String, dynamic>{
   'code': instance.code,
-  'profile': instance.profile?.toJson(),
-  'profileToken': instance.profileToken?.toJson(),
+  'profile': instance.profile.toJson(),
+  'profileToken': instance.profileToken.toJson(),
 };
 
 SignInResponse _$SignInResponseFromJson(Map<String, dynamic> json) =>
     SignInResponse(
       code: (json['code'] as num).toInt(),
-      profile: json['profile'] == null
-          ? null
-          : Profile.fromJson(json['profile'] as Map<String, dynamic>),
-      profileToken: json['profileToken'] == null
-          ? null
-          : ProfileToken.fromJson(json['profileToken'] as Map<String, dynamic>),
+      profile: Profile.fromJson(json['profile'] as Map<String, dynamic>),
+      profileToken: ProfileToken.fromJson(
+        json['profileToken'] as Map<String, dynamic>,
+      ),
     );
 
 Map<String, dynamic> _$SignInResponseToJson(SignInResponse instance) =>
     <String, dynamic>{
       'code': instance.code,
-      'profile': instance.profile?.toJson(),
-      'profileToken': instance.profileToken?.toJson(),
+      'profile': instance.profile.toJson(),
+      'profileToken': instance.profileToken.toJson(),
     };
 
 GoogleResponse _$GoogleResponseFromJson(Map<String, dynamic> json) =>
     GoogleResponse(
       code: (json['code'] as num).toInt(),
-      profile: json['profile'] == null
-          ? null
-          : Profile.fromJson(json['profile'] as Map<String, dynamic>),
-      profileToken: json['profileToken'] == null
-          ? null
-          : ProfileToken.fromJson(json['profileToken'] as Map<String, dynamic>),
-      codeTimestampExpires: (json['codeTimestampExpires'] as num?)?.toInt(),
-      suggestedLogins: (json['suggested_logins'] as List<dynamic>?)
-          ?.map((e) => e as String)
+      profile: Profile.fromJson(json['profile'] as Map<String, dynamic>),
+      profileToken: ProfileToken.fromJson(
+        json['profileToken'] as Map<String, dynamic>,
+      ),
+      codeTimestampExpires: (json['codeTimestampExpires'] as num).toInt(),
+      suggestedLogins: (json['suggested_logins'] as List<dynamic>)
+          .map((e) => e as String)
           .toList(),
-      hash: json['hash'] as String?,
+      hash: json['hash'] as String,
     );
 
 Map<String, dynamic> _$GoogleResponseToJson(GoogleResponse instance) =>
     <String, dynamic>{
       'code': instance.code,
-      'profile': instance.profile?.toJson(),
-      'profileToken': instance.profileToken?.toJson(),
+      'profile': instance.profile.toJson(),
+      'profileToken': instance.profileToken.toJson(),
       'codeTimestampExpires': instance.codeTimestampExpires,
       'suggested_logins': instance.suggestedLogins,
       'hash': instance.hash,
@@ -343,24 +331,22 @@ Map<String, dynamic> _$GoogleResponseToJson(GoogleResponse instance) =>
 TelegramResponse _$TelegramResponseFromJson(Map<String, dynamic> json) =>
     TelegramResponse(
       code: (json['code'] as num).toInt(),
-      profile: json['profile'] == null
-          ? null
-          : Profile.fromJson(json['profile'] as Map<String, dynamic>),
-      profileToken: json['profileToken'] == null
-          ? null
-          : ProfileToken.fromJson(json['profileToken'] as Map<String, dynamic>),
-      codeTimestampExpires: (json['codeTimestampExpires'] as num?)?.toInt(),
-      suggestedLogins: (json['suggested_logins'] as List<dynamic>?)
-          ?.map((e) => e as String)
+      profile: Profile.fromJson(json['profile'] as Map<String, dynamic>),
+      profileToken: ProfileToken.fromJson(
+        json['profileToken'] as Map<String, dynamic>,
+      ),
+      codeTimestampExpires: (json['codeTimestampExpires'] as num).toInt(),
+      suggestedLogins: (json['suggested_logins'] as List<dynamic>)
+          .map((e) => e as String)
           .toList(),
-      hash: json['hash'] as String?,
+      hash: json['hash'] as String,
     );
 
 Map<String, dynamic> _$TelegramResponseToJson(TelegramResponse instance) =>
     <String, dynamic>{
       'code': instance.code,
-      'profile': instance.profile?.toJson(),
-      'profileToken': instance.profileToken?.toJson(),
+      'profile': instance.profile.toJson(),
+      'profileToken': instance.profileToken.toJson(),
       'codeTimestampExpires': instance.codeTimestampExpires,
       'suggested_logins': instance.suggestedLogins,
       'hash': instance.hash,
@@ -368,24 +354,22 @@ Map<String, dynamic> _$TelegramResponseToJson(TelegramResponse instance) =>
 
 VkResponse _$VkResponseFromJson(Map<String, dynamic> json) => VkResponse(
   code: (json['code'] as num).toInt(),
-  profile: json['profile'] == null
-      ? null
-      : Profile.fromJson(json['profile'] as Map<String, dynamic>),
-  profileToken: json['profileToken'] == null
-      ? null
-      : ProfileToken.fromJson(json['profileToken'] as Map<String, dynamic>),
-  codeTimestampExpires: (json['codeTimestampExpires'] as num?)?.toInt(),
-  suggestedLogins: (json['suggested_logins'] as List<dynamic>?)
-      ?.map((e) => e as String)
+  profile: Profile.fromJson(json['profile'] as Map<String, dynamic>),
+  profileToken: ProfileToken.fromJson(
+    json['profileToken'] as Map<String, dynamic>,
+  ),
+  codeTimestampExpires: (json['codeTimestampExpires'] as num).toInt(),
+  suggestedLogins: (json['suggested_logins'] as List<dynamic>)
+      .map((e) => e as String)
       .toList(),
-  hash: json['hash'] as String?,
+  hash: json['hash'] as String,
 );
 
 Map<String, dynamic> _$VkResponseToJson(VkResponse instance) =>
     <String, dynamic>{
       'code': instance.code,
-      'profile': instance.profile?.toJson(),
-      'profileToken': instance.profileToken?.toJson(),
+      'profile': instance.profile.toJson(),
+      'profileToken': instance.profileToken.toJson(),
       'codeTimestampExpires': instance.codeTimestampExpires,
       'suggested_logins': instance.suggestedLogins,
       'hash': instance.hash,
@@ -394,25 +378,23 @@ Map<String, dynamic> _$VkResponseToJson(VkResponse instance) =>
 YandexResponse _$YandexResponseFromJson(Map<String, dynamic> json) =>
     YandexResponse(
       code: (json['code'] as num).toInt(),
-      profile: json['profile'] == null
-          ? null
-          : Profile.fromJson(json['profile'] as Map<String, dynamic>),
-      profileToken: json['profileToken'] == null
-          ? null
-          : ProfileToken.fromJson(json['profileToken'] as Map<String, dynamic>),
-      codeTimestampExpires: (json['codeTimestampExpires'] as num?)?.toInt(),
-      suggestedLogins: (json['suggested_logins'] as List<dynamic>?)
-          ?.map((e) => e as String)
+      profile: Profile.fromJson(json['profile'] as Map<String, dynamic>),
+      profileToken: ProfileToken.fromJson(
+        json['profileToken'] as Map<String, dynamic>,
+      ),
+      codeTimestampExpires: (json['codeTimestampExpires'] as num).toInt(),
+      suggestedLogins: (json['suggested_logins'] as List<dynamic>)
+          .map((e) => e as String)
           .toList(),
-      hash: json['hash'] as String?,
-      email: json['email'] as String?,
+      hash: json['hash'] as String,
+      email: json['email'] as String,
     );
 
 Map<String, dynamic> _$YandexResponseToJson(YandexResponse instance) =>
     <String, dynamic>{
       'code': instance.code,
-      'profile': instance.profile?.toJson(),
-      'profileToken': instance.profileToken?.toJson(),
+      'profile': instance.profile.toJson(),
+      'profileToken': instance.profileToken.toJson(),
       'codeTimestampExpires': instance.codeTimestampExpires,
       'suggested_logins': instance.suggestedLogins,
       'hash': instance.hash,

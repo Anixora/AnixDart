@@ -4,16 +4,20 @@ part 'types.g.dart';
 
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class ReleaseCompact {
-  const ReleaseCompact({required this.id, this.titleRu, this.image});
+  const ReleaseCompact({
+    required this.id,
+    required this.titleRu,
+    required this.image,
+  });
 
   @JsonKey(name: 'id')
   final int id;
 
   @JsonKey(name: 'title_ru')
-  final String? titleRu;
+  final String titleRu;
 
   @JsonKey(name: 'image')
-  final String? image;
+  final String image;
 
   factory ReleaseCompact.fromJson(Map<String, dynamic> json) =>
       _$ReleaseCompactFromJson(json);
@@ -24,34 +28,34 @@ final class ReleaseCompact {
 final class ReleaseCommentCompact {
   const ReleaseCommentCompact({
     required this.id,
-    this.profile,
-    this.message,
-    this.isSpoiler,
-    this.release,
-    this.embeddableId,
-    this.embeddableTitle,
+    required this.profile,
+    required this.message,
+    required this.isSpoiler,
+    required this.release,
+    required this.embeddableId,
+    required this.embeddableTitle,
   });
 
   @JsonKey(name: 'id')
   final int id;
 
   @JsonKey(name: 'profile')
-  final ProfileSlim? profile;
+  final ProfileSlim profile;
 
   @JsonKey(name: 'message')
-  final String? message;
+  final String message;
 
   @JsonKey(name: 'is_spoiler')
-  final bool? isSpoiler;
+  final bool isSpoiler;
 
   @JsonKey(name: 'release')
-  final ReleaseCompact? release;
+  final ReleaseCompact release;
 
   @JsonKey(name: 'embeddableId')
-  final int? embeddableId;
+  final int embeddableId;
 
   @JsonKey(name: 'embeddableTitle')
-  final String? embeddableTitle;
+  final String embeddableTitle;
 
   factory ReleaseCommentCompact.fromJson(Map<String, dynamic> json) =>
       _$ReleaseCommentCompactFromJson(json);
@@ -60,16 +64,20 @@ final class ReleaseCommentCompact {
 
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class EpisodeCompact {
-  const EpisodeCompact({this.name, this.release, this.source});
+  const EpisodeCompact({
+    required this.name,
+    required this.release,
+    required this.source,
+  });
 
   @JsonKey(name: 'name')
-  final String? name;
+  final String name;
 
   @JsonKey(name: 'release')
-  final ReleaseCompact? release;
+  final ReleaseCompact release;
 
   @JsonKey(name: 'source')
-  final SourceCompact? source;
+  final SourceCompact source;
 
   factory EpisodeCompact.fromJson(Map<String, dynamic> json) =>
       _$EpisodeCompactFromJson(json);
@@ -78,13 +86,13 @@ final class EpisodeCompact {
 
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class SourceCompact {
-  const SourceCompact({this.name, this.type});
+  const SourceCompact({required this.name, required this.type});
 
   @JsonKey(name: 'name')
-  final String? name;
+  final String name;
 
   @JsonKey(name: 'type')
-  final DubberCompact? type;
+  final DubberCompact type;
 
   factory SourceCompact.fromJson(Map<String, dynamic> json) =>
       _$SourceCompactFromJson(json);
@@ -93,10 +101,10 @@ final class SourceCompact {
 
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class DubberCompact {
-  const DubberCompact({this.name});
+  const DubberCompact({required this.name});
 
   @JsonKey(name: 'name')
-  final String? name;
+  final String name;
 
   factory DubberCompact.fromJson(Map<String, dynamic> json) =>
       _$DubberCompactFromJson(json);
@@ -107,54 +115,54 @@ final class DubberCompact {
 final class ReleaseVideo {
   const ReleaseVideo({
     required this.id,
-    this.release,
-    this.profile,
-    this.category,
-    this.hosting,
-    this.title,
-    this.image,
-    this.url,
-    this.timestamp,
-    this.playerUrl,
-    this.isFavorite,
-    this.favoritesCount,
+    required this.release,
+    required this.profile,
+    required this.category,
+    required this.hosting,
+    required this.title,
+    required this.image,
+    required this.url,
+    required this.timestamp,
+    required this.playerUrl,
+    required this.isFavorite,
+    required this.favoritesCount,
   });
 
   @JsonKey(name: 'id')
   final int id;
 
   @JsonKey(name: 'release')
-  final EntityReference<Release>? release;
+  final EntityReference<Release> release;
 
   @JsonKey(name: 'profile')
-  final Profile? profile;
+  final Profile profile;
 
   @JsonKey(name: 'category')
-  final ReleaseVideoCategory? category;
+  final ReleaseVideoCategory category;
 
   @JsonKey(name: 'hosting')
-  final ReleaseVideoHosting? hosting;
+  final ReleaseVideoHosting hosting;
 
   @JsonKey(name: 'title')
-  final String? title;
+  final String title;
 
   @JsonKey(name: 'image')
-  final String? image;
+  final String image;
 
   @JsonKey(name: 'url')
-  final String? url;
+  final String url;
 
   @JsonKey(name: 'timestamp')
-  final int? timestamp;
+  final int timestamp;
 
   @JsonKey(name: 'player_url')
-  final String? playerUrl;
+  final String playerUrl;
 
   @JsonKey(name: 'is_favorite')
-  final bool? isFavorite;
+  final bool isFavorite;
 
   @JsonKey(name: 'favorites_count')
-  final int? favoritesCount;
+  final int favoritesCount;
 
   factory ReleaseVideo.fromJson(Map<String, dynamic> json) =>
       _$ReleaseVideoFromJson(json);
@@ -165,26 +173,26 @@ final class ReleaseVideo {
 final class ReleaseStreamingPlatform {
   const ReleaseStreamingPlatform({
     required this.id,
-    this.release,
-    this.name,
-    this.icon,
-    this.url,
+    required this.release,
+    required this.name,
+    required this.icon,
+    required this.url,
   });
 
   @JsonKey(name: 'id')
   final int id;
 
   @JsonKey(name: 'release')
-  final Release? release;
+  final Release release;
 
   @JsonKey(name: 'name')
-  final String? name;
+  final String name;
 
   @JsonKey(name: 'icon')
-  final String? icon;
+  final String icon;
 
   @JsonKey(name: 'url')
-  final String? url;
+  final String url;
 
   factory ReleaseStreamingPlatform.fromJson(Map<String, dynamic> json) =>
       _$ReleaseStreamingPlatformFromJson(json);
@@ -193,13 +201,13 @@ final class ReleaseStreamingPlatform {
 
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class ReleaseVideoCategory {
-  const ReleaseVideoCategory({required this.id, this.name});
+  const ReleaseVideoCategory({required this.id, required this.name});
 
   @JsonKey(name: 'id')
   final int id;
 
   @JsonKey(name: 'name')
-  final String? name;
+  final String name;
 
   factory ReleaseVideoCategory.fromJson(Map<String, dynamic> json) =>
       _$ReleaseVideoCategoryFromJson(json);
@@ -208,13 +216,13 @@ final class ReleaseVideoCategory {
 
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class ReleaseVideoBlock {
-  const ReleaseVideoBlock({this.videos, this.category});
+  const ReleaseVideoBlock({required this.videos, required this.category});
 
   @JsonKey(name: 'videos')
-  final List<ReleaseVideo>? videos;
+  final List<ReleaseVideo> videos;
 
   @JsonKey(name: 'category')
-  final ReleaseVideoCategory? category;
+  final ReleaseVideoCategory category;
 
   factory ReleaseVideoBlock.fromJson(Map<String, dynamic> json) =>
       _$ReleaseVideoBlockFromJson(json);
@@ -225,34 +233,34 @@ final class ReleaseVideoBlock {
 final class Interesting {
   const Interesting({
     required this.id,
-    this.title,
-    this.description,
-    this.image,
-    this.type,
-    this.action,
-    this.isHidden,
+    required this.title,
+    required this.description,
+    required this.image,
+    required this.type,
+    required this.action,
+    required this.isHidden,
   });
 
   @JsonKey(name: 'id')
   final int id;
 
   @JsonKey(name: 'title')
-  final String? title;
+  final String title;
 
   @JsonKey(name: 'description')
-  final String? description;
+  final String description;
 
   @JsonKey(name: 'image')
-  final String? image;
+  final String image;
 
   @JsonKey(name: 'type')
-  final int? type;
+  final int type;
 
   @JsonKey(name: 'action')
-  final String? action;
+  final String action;
 
   @JsonKey(name: 'isHidden')
-  final bool? isHidden;
+  final bool isHidden;
 
   factory Interesting.fromJson(Map<String, dynamic> json) =>
       _$InterestingFromJson(json);
@@ -373,13 +381,13 @@ final class FilterRequest {
 
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class EpisodeTargetResponse {
-  const EpisodeTargetResponse({required this.code, this.episode});
+  const EpisodeTargetResponse({required this.code, required this.episode});
 
   @JsonKey(name: 'code')
   final int code;
 
   @JsonKey(name: 'episode')
-  final Episode? episode;
+  final Episode episode;
 
   factory EpisodeTargetResponse.fromJson(Map<String, dynamic> json) =>
       _$EpisodeTargetResponseFromJson(json);
@@ -388,13 +396,13 @@ final class EpisodeTargetResponse {
 
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class EpisodeResponse {
-  const EpisodeResponse({required this.code, this.episodes});
+  const EpisodeResponse({required this.code, required this.episodes});
 
   @JsonKey(name: 'code')
   final int code;
 
   @JsonKey(name: 'episodes')
-  final List<Episode>? episodes;
+  final List<Episode> episodes;
 
   factory EpisodeResponse.fromJson(Map<String, dynamic> json) =>
       _$EpisodeResponseFromJson(json);
@@ -403,13 +411,13 @@ final class EpisodeResponse {
 
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class DubbersResponse {
-  const DubbersResponse({required this.code, this.types});
+  const DubbersResponse({required this.code, required this.types});
 
   @JsonKey(name: 'code')
   final int code;
 
   @JsonKey(name: 'types')
-  final List<Dubber>? types;
+  final List<Dubber> types;
 
   factory DubbersResponse.fromJson(Map<String, dynamic> json) =>
       _$DubbersResponseFromJson(json);
@@ -418,13 +426,13 @@ final class DubbersResponse {
 
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class SourcesResponse {
-  const SourcesResponse({required this.code, this.sources});
+  const SourcesResponse({required this.code, required this.sources});
 
   @JsonKey(name: 'code')
   final int code;
 
   @JsonKey(name: 'sources')
-  final List<Source>? sources;
+  final List<Source> sources;
 
   factory SourcesResponse.fromJson(Map<String, dynamic> json) =>
       _$SourcesResponseFromJson(json);
@@ -435,38 +443,38 @@ final class SourcesResponse {
 final class ScheduleResponse {
   const ScheduleResponse({
     required this.code,
-    this.monday,
-    this.tuesday,
-    this.wednesday,
-    this.thursday,
-    this.friday,
-    this.saturday,
-    this.sunday,
+    required this.monday,
+    required this.tuesday,
+    required this.wednesday,
+    required this.thursday,
+    required this.friday,
+    required this.saturday,
+    required this.sunday,
   });
 
   @JsonKey(name: 'code')
   final int code;
 
   @JsonKey(name: 'monday')
-  final List<Release>? monday;
+  final List<Release> monday;
 
   @JsonKey(name: 'tuesday')
-  final List<Release>? tuesday;
+  final List<Release> tuesday;
 
   @JsonKey(name: 'wednesday')
-  final List<Release>? wednesday;
+  final List<Release> wednesday;
 
   @JsonKey(name: 'thursday')
-  final List<Release>? thursday;
+  final List<Release> thursday;
 
   @JsonKey(name: 'friday')
-  final List<Release>? friday;
+  final List<Release> friday;
 
   @JsonKey(name: 'saturday')
-  final List<Release>? saturday;
+  final List<Release> saturday;
 
   @JsonKey(name: 'sunday')
-  final List<Release>? sunday;
+  final List<Release> sunday;
 
   factory ScheduleResponse.fromJson(Map<String, dynamic> json) =>
       _$ScheduleResponseFromJson(json);
@@ -477,30 +485,30 @@ final class ScheduleResponse {
 final class ReleaseVideoResponse {
   const ReleaseVideoResponse({
     required this.code,
-    this.blocks,
-    this.canAppeal,
-    this.lastVideos,
-    this.release,
-    this.streamingPlatforms,
+    required this.blocks,
+    required this.canAppeal,
+    required this.lastVideos,
+    required this.release,
+    required this.streamingPlatforms,
   });
 
   @JsonKey(name: 'code')
   final int code;
 
   @JsonKey(name: 'blocks')
-  final List<ReleaseVideoBlock>? blocks;
+  final List<ReleaseVideoBlock> blocks;
 
   @JsonKey(name: 'can_appeal')
-  final bool? canAppeal;
+  final bool canAppeal;
 
   @JsonKey(name: 'last_videos')
-  final List<ReleaseVideo>? lastVideos;
+  final List<ReleaseVideo> lastVideos;
 
   @JsonKey(name: 'release')
-  final Release? release;
+  final Release release;
 
   @JsonKey(name: 'streaming_platforms')
-  final ReleaseStreamingPlatform? streamingPlatforms;
+  final ReleaseStreamingPlatform streamingPlatforms;
 
   factory ReleaseVideoResponse.fromJson(Map<String, dynamic> json) =>
       _$ReleaseVideoResponseFromJson(json);
@@ -509,13 +517,16 @@ final class ReleaseVideoResponse {
 
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class ReleaseVideoCategoriesResponse {
-  const ReleaseVideoCategoriesResponse({required this.code, this.categories});
+  const ReleaseVideoCategoriesResponse({
+    required this.code,
+    required this.categories,
+  });
 
   @JsonKey(name: 'code')
   final int code;
 
   @JsonKey(name: 'categories')
-  final List<ReleaseVideoCategory>? categories;
+  final List<ReleaseVideoCategory> categories;
 
   factory ReleaseVideoCategoriesResponse.fromJson(Map<String, dynamic> json) =>
       _$ReleaseVideoCategoriesResponseFromJson(json);
@@ -524,13 +535,13 @@ final class ReleaseVideoCategoriesResponse {
 
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class TypeResponse {
-  const TypeResponse({required this.code, this.types});
+  const TypeResponse({required this.code, required this.types});
 
   @JsonKey(name: 'code')
   final int code;
 
   @JsonKey(name: 'types')
-  final List<Dubber>? types;
+  final List<Dubber> types;
 
   factory TypeResponse.fromJson(Map<String, dynamic> json) =>
       _$TypeResponseFromJson(json);
@@ -539,16 +550,20 @@ final class TypeResponse {
 
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class ReleaseVideoHosting {
-  const ReleaseVideoHosting({required this.id, this.name, this.icon});
+  const ReleaseVideoHosting({
+    required this.id,
+    required this.name,
+    required this.icon,
+  });
 
   @JsonKey(name: 'id')
   final int id;
 
   @JsonKey(name: 'name')
-  final String? name;
+  final String name;
 
   @JsonKey(name: 'icon')
-  final String? icon;
+  final String icon;
 
   factory ReleaseVideoHosting.fromJson(Map<String, dynamic> json) =>
       _$ReleaseVideoHostingFromJson(json);

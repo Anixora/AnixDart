@@ -6,18 +6,18 @@ part 'types.g.dart';
 final class CheckLoginResponse {
   const CheckLoginResponse({
     required this.code,
-    this.available,
-    this.suggestedLogins,
+    required this.available,
+    required this.suggestedLogins,
   });
 
   @JsonKey(name: 'code')
   final int code;
 
   @JsonKey(name: 'available')
-  final bool? available;
+  final bool available;
 
   @JsonKey(name: 'suggested_logins')
-  final List<String>? suggestedLogins;
+  final List<String> suggestedLogins;
 
   factory CheckLoginResponse.fromJson(Map<String, dynamic> json) =>
       _$CheckLoginResponseFromJson(json);
@@ -26,13 +26,13 @@ final class CheckLoginResponse {
 
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class FirebaseResponse {
-  const FirebaseResponse({required this.code, this.topicName});
+  const FirebaseResponse({required this.code, required this.topicName});
 
   @JsonKey(name: 'code')
   final int code;
 
   @JsonKey(name: 'topicName')
-  final String? topicName;
+  final String topicName;
 
   factory FirebaseResponse.fromJson(Map<String, dynamic> json) =>
       _$FirebaseResponseFromJson(json);
@@ -216,22 +216,22 @@ final class VerifyRequest {
 final class SignUpResponse {
   const SignUpResponse({
     required this.code,
-    this.codeTimestampExpires,
-    this.hash,
-    this.suggestedLogins,
+    required this.codeTimestampExpires,
+    required this.hash,
+    required this.suggestedLogins,
   });
 
   @JsonKey(name: 'code')
   final int code;
 
   @JsonKey(name: 'codeTimestampExpires')
-  final int? codeTimestampExpires;
+  final int codeTimestampExpires;
 
   @JsonKey(name: 'hash')
-  final String? hash;
+  final String hash;
 
   @JsonKey(name: 'suggested_logins')
-  final List<String>? suggestedLogins;
+  final List<String> suggestedLogins;
 
   factory SignUpResponse.fromJson(Map<String, dynamic> json) =>
       _$SignUpResponseFromJson(json);
@@ -242,22 +242,22 @@ final class SignUpResponse {
 final class VerifyResponse {
   const VerifyResponse({
     required this.code,
-    this.profile,
-    this.profileToken,
-    this.suggestedLogins,
+    required this.profile,
+    required this.profileToken,
+    required this.suggestedLogins,
   });
 
   @JsonKey(name: 'code')
   final int code;
 
   @JsonKey(name: 'profile')
-  final Profile? profile;
+  final Profile profile;
 
   @JsonKey(name: 'profileToken')
-  final ProfileToken? profileToken;
+  final ProfileToken profileToken;
 
   @JsonKey(name: 'suggested_logins')
-  final List<String>? suggestedLogins;
+  final List<String> suggestedLogins;
 
   factory VerifyResponse.fromJson(Map<String, dynamic> json) =>
       _$VerifyResponseFromJson(json);
@@ -266,13 +266,13 @@ final class VerifyResponse {
 
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class TimestampResponse {
-  const TimestampResponse({required this.code, this.timestampExpires});
+  const TimestampResponse({required this.code, required this.timestampExpires});
 
   @JsonKey(name: 'code')
   final int code;
 
   @JsonKey(name: 'timestampExpires')
-  final int? timestampExpires;
+  final int timestampExpires;
 
   factory TimestampResponse.fromJson(Map<String, dynamic> json) =>
       _$TimestampResponseFromJson(json);
@@ -283,18 +283,18 @@ final class TimestampResponse {
 final class AuthProfileResponse {
   const AuthProfileResponse({
     required this.code,
-    this.profile,
-    this.profileToken,
+    required this.profile,
+    required this.profileToken,
   });
 
   @JsonKey(name: 'code')
   final int code;
 
   @JsonKey(name: 'profile')
-  final Profile? profile;
+  final Profile profile;
 
   @JsonKey(name: 'profileToken')
-  final ProfileToken? profileToken;
+  final ProfileToken profileToken;
 
   factory AuthProfileResponse.fromJson(Map<String, dynamic> json) =>
       _$AuthProfileResponseFromJson(json);
@@ -305,30 +305,30 @@ final class AuthProfileResponse {
 final class OAuthSignInResponse {
   const OAuthSignInResponse({
     required this.code,
-    this.profile,
-    this.profileToken,
-    this.codeTimestampExpires,
-    this.suggestedLogins,
-    this.hash,
+    required this.profile,
+    required this.profileToken,
+    required this.codeTimestampExpires,
+    required this.suggestedLogins,
+    required this.hash,
   });
 
   @JsonKey(name: 'code')
   final int code;
 
   @JsonKey(name: 'profile')
-  final Profile? profile;
+  final Profile profile;
 
   @JsonKey(name: 'profileToken')
-  final ProfileToken? profileToken;
+  final ProfileToken profileToken;
 
   @JsonKey(name: 'codeTimestampExpires')
-  final int? codeTimestampExpires;
+  final int codeTimestampExpires;
 
   @JsonKey(name: 'suggested_logins')
-  final List<String>? suggestedLogins;
+  final List<String> suggestedLogins;
 
   @JsonKey(name: 'hash')
-  final String? hash;
+  final String hash;
 
   factory OAuthSignInResponse.fromJson(Map<String, dynamic> json) =>
       _$OAuthSignInResponseFromJson(json);
@@ -337,13 +337,13 @@ final class OAuthSignInResponse {
 
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class ResendResponse {
-  const ResendResponse({required this.code, this.timestampExpires});
+  const ResendResponse({required this.code, required this.timestampExpires});
 
   @JsonKey(name: 'code')
   final int code;
 
   @JsonKey(name: 'timestampExpires')
-  final int? timestampExpires;
+  final int timestampExpires;
 
   factory ResendResponse.fromJson(Map<String, dynamic> json) =>
       _$ResendResponseFromJson(json);
@@ -354,18 +354,18 @@ final class ResendResponse {
 final class RestoreResponse {
   const RestoreResponse({
     required this.code,
-    this.hash,
-    this.codeTimestampExpires,
+    required this.hash,
+    required this.codeTimestampExpires,
   });
 
   @JsonKey(name: 'code')
   final int code;
 
   @JsonKey(name: 'hash')
-  final String? hash;
+  final String hash;
 
   @JsonKey(name: 'codeTimestampExpires')
-  final int? codeTimestampExpires;
+  final int codeTimestampExpires;
 
   factory RestoreResponse.fromJson(Map<String, dynamic> json) =>
       _$RestoreResponseFromJson(json);
@@ -374,13 +374,16 @@ final class RestoreResponse {
 
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class RestoreResendResponse {
-  const RestoreResendResponse({required this.code, this.timestampExpires});
+  const RestoreResendResponse({
+    required this.code,
+    required this.timestampExpires,
+  });
 
   @JsonKey(name: 'code')
   final int code;
 
   @JsonKey(name: 'timestampExpires')
-  final int? timestampExpires;
+  final int timestampExpires;
 
   factory RestoreResendResponse.fromJson(Map<String, dynamic> json) =>
       _$RestoreResendResponseFromJson(json);
@@ -391,18 +394,18 @@ final class RestoreResendResponse {
 final class RestoreVerifyResponse {
   const RestoreVerifyResponse({
     required this.code,
-    this.profile,
-    this.profileToken,
+    required this.profile,
+    required this.profileToken,
   });
 
   @JsonKey(name: 'code')
   final int code;
 
   @JsonKey(name: 'profile')
-  final Profile? profile;
+  final Profile profile;
 
   @JsonKey(name: 'profileToken')
-  final ProfileToken? profileToken;
+  final ProfileToken profileToken;
 
   factory RestoreVerifyResponse.fromJson(Map<String, dynamic> json) =>
       _$RestoreVerifyResponseFromJson(json);
@@ -411,16 +414,20 @@ final class RestoreVerifyResponse {
 
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class SignInResponse {
-  const SignInResponse({required this.code, this.profile, this.profileToken});
+  const SignInResponse({
+    required this.code,
+    required this.profile,
+    required this.profileToken,
+  });
 
   @JsonKey(name: 'code')
   final int code;
 
   @JsonKey(name: 'profile')
-  final Profile? profile;
+  final Profile profile;
 
   @JsonKey(name: 'profileToken')
-  final ProfileToken? profileToken;
+  final ProfileToken profileToken;
 
   factory SignInResponse.fromJson(Map<String, dynamic> json) =>
       _$SignInResponseFromJson(json);
@@ -431,30 +438,30 @@ final class SignInResponse {
 final class GoogleResponse {
   const GoogleResponse({
     required this.code,
-    this.profile,
-    this.profileToken,
-    this.codeTimestampExpires,
-    this.suggestedLogins,
-    this.hash,
+    required this.profile,
+    required this.profileToken,
+    required this.codeTimestampExpires,
+    required this.suggestedLogins,
+    required this.hash,
   });
 
   @JsonKey(name: 'code')
   final int code;
 
   @JsonKey(name: 'profile')
-  final Profile? profile;
+  final Profile profile;
 
   @JsonKey(name: 'profileToken')
-  final ProfileToken? profileToken;
+  final ProfileToken profileToken;
 
   @JsonKey(name: 'codeTimestampExpires')
-  final int? codeTimestampExpires;
+  final int codeTimestampExpires;
 
   @JsonKey(name: 'suggested_logins')
-  final List<String>? suggestedLogins;
+  final List<String> suggestedLogins;
 
   @JsonKey(name: 'hash')
-  final String? hash;
+  final String hash;
 
   factory GoogleResponse.fromJson(Map<String, dynamic> json) =>
       _$GoogleResponseFromJson(json);
@@ -465,30 +472,30 @@ final class GoogleResponse {
 final class TelegramResponse {
   const TelegramResponse({
     required this.code,
-    this.profile,
-    this.profileToken,
-    this.codeTimestampExpires,
-    this.suggestedLogins,
-    this.hash,
+    required this.profile,
+    required this.profileToken,
+    required this.codeTimestampExpires,
+    required this.suggestedLogins,
+    required this.hash,
   });
 
   @JsonKey(name: 'code')
   final int code;
 
   @JsonKey(name: 'profile')
-  final Profile? profile;
+  final Profile profile;
 
   @JsonKey(name: 'profileToken')
-  final ProfileToken? profileToken;
+  final ProfileToken profileToken;
 
   @JsonKey(name: 'codeTimestampExpires')
-  final int? codeTimestampExpires;
+  final int codeTimestampExpires;
 
   @JsonKey(name: 'suggested_logins')
-  final List<String>? suggestedLogins;
+  final List<String> suggestedLogins;
 
   @JsonKey(name: 'hash')
-  final String? hash;
+  final String hash;
 
   factory TelegramResponse.fromJson(Map<String, dynamic> json) =>
       _$TelegramResponseFromJson(json);
@@ -499,30 +506,30 @@ final class TelegramResponse {
 final class VkResponse {
   const VkResponse({
     required this.code,
-    this.profile,
-    this.profileToken,
-    this.codeTimestampExpires,
-    this.suggestedLogins,
-    this.hash,
+    required this.profile,
+    required this.profileToken,
+    required this.codeTimestampExpires,
+    required this.suggestedLogins,
+    required this.hash,
   });
 
   @JsonKey(name: 'code')
   final int code;
 
   @JsonKey(name: 'profile')
-  final Profile? profile;
+  final Profile profile;
 
   @JsonKey(name: 'profileToken')
-  final ProfileToken? profileToken;
+  final ProfileToken profileToken;
 
   @JsonKey(name: 'codeTimestampExpires')
-  final int? codeTimestampExpires;
+  final int codeTimestampExpires;
 
   @JsonKey(name: 'suggested_logins')
-  final List<String>? suggestedLogins;
+  final List<String> suggestedLogins;
 
   @JsonKey(name: 'hash')
-  final String? hash;
+  final String hash;
 
   factory VkResponse.fromJson(Map<String, dynamic> json) =>
       _$VkResponseFromJson(json);
@@ -533,34 +540,34 @@ final class VkResponse {
 final class YandexResponse {
   const YandexResponse({
     required this.code,
-    this.profile,
-    this.profileToken,
-    this.codeTimestampExpires,
-    this.suggestedLogins,
-    this.hash,
-    this.email,
+    required this.profile,
+    required this.profileToken,
+    required this.codeTimestampExpires,
+    required this.suggestedLogins,
+    required this.hash,
+    required this.email,
   });
 
   @JsonKey(name: 'code')
   final int code;
 
   @JsonKey(name: 'profile')
-  final Profile? profile;
+  final Profile profile;
 
   @JsonKey(name: 'profileToken')
-  final ProfileToken? profileToken;
+  final ProfileToken profileToken;
 
   @JsonKey(name: 'codeTimestampExpires')
-  final int? codeTimestampExpires;
+  final int codeTimestampExpires;
 
   @JsonKey(name: 'suggested_logins')
-  final List<String>? suggestedLogins;
+  final List<String> suggestedLogins;
 
   @JsonKey(name: 'hash')
-  final String? hash;
+  final String hash;
 
   @JsonKey(name: 'email')
-  final String? email;
+  final String email;
 
   factory YandexResponse.fromJson(Map<String, dynamic> json) =>
       _$YandexResponseFromJson(json);

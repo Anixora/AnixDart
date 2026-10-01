@@ -5,63 +5,63 @@ part 'types.g.dart';
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class Collection {
   const Collection({
-    this.jsonId,
+    required this.jsonId,
     required this.id,
-    this.creator,
-    this.title,
-    this.description,
-    this.image,
-    this.creationDate,
-    this.lastUpdateDate,
-    this.commentCount,
-    this.favoritesCount,
-    this.isPrivate,
-    this.isDeleted,
-    this.isFavorite,
-    this.releases,
+    required this.creator,
+    required this.title,
+    required this.description,
+    required this.image,
+    required this.creationDate,
+    required this.lastUpdateDate,
+    required this.commentCount,
+    required this.favoritesCount,
+    required this.isPrivate,
+    required this.isDeleted,
+    required this.isFavorite,
+    required this.releases,
   });
 
   @JsonKey(name: '@id')
-  final int? jsonId;
+  final int jsonId;
 
   @JsonKey(name: 'id')
   final int id;
 
   @JsonKey(name: 'creator')
-  final Profile? creator;
+  final Profile creator;
 
   @JsonKey(name: 'title')
-  final String? title;
+  final String title;
 
   @JsonKey(name: 'description')
-  final String? description;
+  final String description;
 
   @JsonKey(name: 'image')
-  final String? image;
+  final String image;
 
   @JsonKey(name: 'creation_date')
-  final int? creationDate;
+  final int creationDate;
 
   @JsonKey(name: 'last_update_date')
-  final int? lastUpdateDate;
+  final int lastUpdateDate;
 
   @JsonKey(name: 'comment_count')
-  final int? commentCount;
+  final int commentCount;
 
   @JsonKey(name: 'favorites_count')
-  final int? favoritesCount;
+  final int favoritesCount;
 
   @JsonKey(name: 'is_private')
-  final bool? isPrivate;
+  final bool isPrivate;
 
   @JsonKey(name: 'is_deleted')
-  final bool? isDeleted;
+  final bool isDeleted;
 
   @JsonKey(name: 'is_favorite')
-  final bool? isFavorite;
+  final bool isFavorite;
 
   @JsonKey(name: 'releases')
-  final List<Release>? releases;
+  final List<Release> releases;
 
   factory Collection.fromJson(Map<String, dynamic> json) =>
       _$CollectionFromJson(json);
@@ -73,11 +73,11 @@ final class CollectionResponse {
   const CollectionResponse({
     required this.code,
     this.collection,
-    this.watchingCount,
-    this.planCount,
-    this.completedCount,
-    this.holdOnCount,
-    this.droppedCount,
+    required this.watchingCount,
+    required this.planCount,
+    required this.completedCount,
+    required this.holdOnCount,
+    required this.droppedCount,
   });
 
   @JsonKey(name: 'code')
@@ -87,19 +87,19 @@ final class CollectionResponse {
   final Collection? collection;
 
   @JsonKey(name: 'watching_count')
-  final int? watchingCount;
+  final int watchingCount;
 
   @JsonKey(name: 'plan_count')
-  final int? planCount;
+  final int planCount;
 
   @JsonKey(name: 'completed_count')
-  final int? completedCount;
+  final int completedCount;
 
   @JsonKey(name: 'hold_on_count')
-  final int? holdOnCount;
+  final int holdOnCount;
 
   @JsonKey(name: 'dropped_count')
-  final int? droppedCount;
+  final int droppedCount;
 
   factory CollectionResponse.fromJson(Map<String, dynamic> json) =>
       _$CollectionResponseFromJson(json);
@@ -110,70 +110,70 @@ final class CollectionResponse {
 final class CollectionComment {
   const CollectionComment({
     required this.id,
-    this.message,
-    this.timestamp,
-    this.type,
-    this.vote,
-    this.profile,
+    required this.message,
+    required this.timestamp,
+    required this.type,
+    required this.vote,
+    required this.profile,
     this.parentCommentId,
-    this.voteCount,
-    this.likesCount,
-    this.isSpoiler,
-    this.isEdited,
-    this.isDeleted,
-    this.isReply,
-    this.replyCount,
-    this.canLike,
-    this.collection,
+    required this.voteCount,
+    required this.likesCount,
+    required this.isSpoiler,
+    required this.isEdited,
+    required this.isDeleted,
+    required this.isReply,
+    required this.replyCount,
+    required this.canLike,
+    required this.collection,
   });
 
   @JsonKey(name: 'id')
   final int id;
 
   @JsonKey(name: 'message')
-  final String? message;
+  final String message;
 
   @JsonKey(name: 'timestamp')
-  final int? timestamp;
+  final int timestamp;
 
   @JsonKey(name: 'type')
-  final int? type;
+  final int type;
 
   @JsonKey(name: 'vote')
-  final int? vote;
+  final int vote;
 
   @JsonKey(name: 'profile')
-  final ProfileCompact? profile;
+  final ProfileCompact profile;
 
   @JsonKey(name: 'parent_comment_id')
   final int? parentCommentId;
 
   @JsonKey(name: 'vote_count')
-  final int? voteCount;
+  final int voteCount;
 
   @JsonKey(name: 'likes_count')
-  final int? likesCount;
+  final int likesCount;
 
   @JsonKey(name: 'is_spoiler')
-  final bool? isSpoiler;
+  final bool isSpoiler;
 
   @JsonKey(name: 'is_edited')
-  final bool? isEdited;
+  final bool isEdited;
 
   @JsonKey(name: 'is_deleted')
-  final bool? isDeleted;
+  final bool isDeleted;
 
   @JsonKey(name: 'is_reply')
-  final bool? isReply;
+  final bool isReply;
 
   @JsonKey(name: 'reply_count')
-  final int? replyCount;
+  final int replyCount;
 
   @JsonKey(name: 'can_like')
-  final bool? canLike;
+  final bool canLike;
 
   @JsonKey(name: 'collection')
-  final EntityReference<Collection>? collection;
+  final EntityReference<Collection> collection;
 
   factory CollectionComment.fromJson(Map<String, dynamic> json) =>
       _$CollectionCommentFromJson(json);
@@ -184,34 +184,34 @@ final class CollectionComment {
 final class CollectionCommentCompact {
   const CollectionCommentCompact({
     required this.id,
-    this.profile,
-    this.message,
-    this.isSpoiler,
-    this.collection,
-    this.embeddableId,
-    this.embeddableTitle,
+    required this.profile,
+    required this.message,
+    required this.isSpoiler,
+    required this.collection,
+    required this.embeddableId,
+    required this.embeddableTitle,
   });
 
   @JsonKey(name: 'id')
   final int id;
 
   @JsonKey(name: 'profile')
-  final ProfileSlim? profile;
+  final ProfileSlim profile;
 
   @JsonKey(name: 'message')
-  final String? message;
+  final String message;
 
   @JsonKey(name: 'is_spoiler')
-  final bool? isSpoiler;
+  final bool isSpoiler;
 
   @JsonKey(name: 'collection')
-  final CollectionCompact? collection;
+  final CollectionCompact collection;
 
   @JsonKey(name: 'embeddableId')
-  final int? embeddableId;
+  final int embeddableId;
 
   @JsonKey(name: 'embeddableTitle')
-  final String? embeddableTitle;
+  final String embeddableTitle;
 
   factory CollectionCommentCompact.fromJson(Map<String, dynamic> json) =>
       _$CollectionCommentCompactFromJson(json);
@@ -220,16 +220,20 @@ final class CollectionCommentCompact {
 
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class CollectionCompact {
-  const CollectionCompact({required this.id, this.title, this.image});
+  const CollectionCompact({
+    required this.id,
+    required this.title,
+    required this.image,
+  });
 
   @JsonKey(name: 'id')
   final int id;
 
   @JsonKey(name: 'title')
-  final String? title;
+  final String title;
 
   @JsonKey(name: 'image')
-  final String? image;
+  final String image;
 
   factory CollectionCompact.fromJson(Map<String, dynamic> json) =>
       _$CollectionCompactFromJson(json);

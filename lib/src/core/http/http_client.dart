@@ -108,10 +108,6 @@ class AnixartHttpClient {
       headers['API-Version'] = 'v$apiVersion';
     }
 
-    //
-    // Авторизация
-    //
-
     switch (request.auth) {
       case AnixartAuth(:final required):
         if (required && (_token == null || _token!.isEmpty)) {
@@ -136,10 +132,6 @@ class AnixartHttpClient {
 
     url = url.replace(queryParameters: query.isEmpty ? null : query);
 
-    //
-    // Отмена запроса и таймаут
-    //
-
     final abortScope = _AbortScope(
       cancelToken: request.options.cancelToken,
       timeout: request.options.timeout,
@@ -162,12 +154,6 @@ class AnixartHttpClient {
         allowMalformed: true,
       );
 
-      //
-      // Аналог:
-      //
-      // if (String(responseData).trim() == "")
-      //
-
       if (responseData.trim().isEmpty) {
         throw HttpError(
           message: 'Endpoint does not exists',
@@ -175,10 +161,6 @@ class AnixartHttpClient {
           response: responseData,
         );
       }
-
-      //
-      // Аналог response.ok
-      //
 
       if (response.statusCode < 200 || response.statusCode >= 300) {
         final reason = response.reasonPhrase;
@@ -192,10 +174,6 @@ class AnixartHttpClient {
         );
       }
 
-      //
-      // Разбор JSON
-      //
-
       late final Object? json;
 
       try {
@@ -207,10 +185,6 @@ class AnixartHttpClient {
           response: responseData,
         );
       }
-
-      //
-      // Проверяем Anixart `code`
-      //
 
       final code = _getResultCode(json);
 
@@ -230,12 +204,6 @@ class AnixartHttpClient {
           data: json,
         );
       }
-
-      //
-      // TypeScript просто делает `as T`.
-      //
-      // В Dart лучше действительно декодировать модель.
-      //
 
       final T data;
 
@@ -278,10 +246,6 @@ class AnixartHttpClient {
   }) {
     final body = request.body;
 
-    //
-    // JSON
-    //
-
     if (body case JsonBody(:final data)) {
       headers['Content-Type'] = 'application/json';
 
@@ -298,10 +262,6 @@ class AnixartHttpClient {
 
       return httpRequest;
     }
-
-    //
-    // application/x-www-form-urlencoded
-    //
 
     if (body case UrlEncodedBody(:final data)) {
       headers['Content-Type'] = 'application/x-www-form-urlencoded';
@@ -333,15 +293,8 @@ class AnixartHttpClient {
       return httpRequest;
     }
 
-    //
-    // multipart/form-data
-    //
-
     if (body case ImageBody()) {
-      // package:http сам генерирует границу multipart.
-      //
-      // Если конкретному endpoint нужна ЯВНО
-      // заданная граница, используется вспомогательный метод ниже.
+      // Если граница задана вручную, собираем multipart без MultipartRequest.
 
       if (body.boundary != null) {
         headers['Content-Type'] =
@@ -388,10 +341,6 @@ class AnixartHttpClient {
       return httpRequest;
     }
 
-    //
-    // Запрос без тела
-    //
-
     _mergeHeaders(headers, request.headers);
 
     final httpRequest = http.AbortableRequest(
@@ -431,10 +380,6 @@ class AnixartHttpClient {
       bytes.add(utf8.encode(value));
     }
 
-    //
-    // Файл
-    //
-
     addString('--$boundary\r\n');
 
     addString(
@@ -449,10 +394,6 @@ class AnixartHttpClient {
 
     addString('\r\n');
 
-    //
-    // Поля
-    //
-
     for (final entry in body.fields.entries) {
       addString('--$boundary\r\n');
 
@@ -464,10 +405,6 @@ class AnixartHttpClient {
       addString(entry.value);
       addString('\r\n');
     }
-
-    //
-    // Завершение multipart
-    //
 
     addString('--$boundary--\r\n');
 

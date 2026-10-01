@@ -3,13 +3,13 @@ part 'types.g.dart';
 
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class ReportReason {
-  const ReportReason({required this.id, this.name});
+  const ReportReason({required this.id, required this.name});
 
   @JsonKey(name: 'id')
   final int id;
 
   @JsonKey(name: 'name')
-  final String? name;
+  final String name;
 
   factory ReportReason.fromJson(Map<String, dynamic> json) =>
       _$ReportReasonFromJson(json);

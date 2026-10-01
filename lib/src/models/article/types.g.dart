@@ -1,17 +1,15 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
+// СГЕНЕРИРОВАННЫЙ КОД — НЕ РЕДАКТИРОВАТЬ ВРУЧНУЮ
 
 part of 'types.dart';
 
 // **************************************************************************
-// JsonSerializableGenerator
+// Генератор: JsonSerializableGenerator
 // **************************************************************************
 
 Article _$ArticleFromJson(Map<String, dynamic> json) => Article(
-  jsonId: (json['@id'] as num?)?.toInt(),
+  jsonId: (json['@id'] as num).toInt(),
   id: (json['id'] as num).toInt(),
-  channel: json['channel'] == null
-      ? null
-      : Channel.fromJson(json['channel'] as Map<String, dynamic>),
+  channel: Channel.fromJson(json['channel'] as Map<String, dynamic>),
   author: json['author'] == null
       ? null
       : ProfileSlim.fromJson(json['author'] as Map<String, dynamic>),
@@ -21,21 +19,19 @@ Article _$ArticleFromJson(Map<String, dynamic> json) => Article(
           json['repost_article'] as Object,
           (value) => Article.fromJson(value as Map<String, dynamic>),
         ),
-  payload: json['payload'] == null
-      ? null
-      : ArticlePayload.fromJson(json['payload'] as Map<String, dynamic>),
-  creationDate: (json['creation_date'] as num?)?.toInt(),
-  lastUpdateDate: (json['last_update_date'] as num?)?.toInt(),
-  commentCount: (json['comment_count'] as num?)?.toInt(),
-  repostCount: (json['repost_count'] as num?)?.toInt(),
-  voteCount: (json['vote_count'] as num?)?.toInt(),
-  vote: (json['vote'] as num?)?.toInt(),
-  containsRepostArticle: json['contains_repost_article'] as bool?,
-  isSigned: json['is_signed'] as bool?,
-  isPinned: json['is_pinned'] as bool?,
-  isMuted: json['is_muted'] as bool?,
-  isDeleted: json['is_deleted'] as bool?,
-  hasDeleteEnforcement: json['has_delete_enforcement'] as bool?,
+  payload: ArticlePayload.fromJson(json['payload'] as Map<String, dynamic>),
+  creationDate: (json['creation_date'] as num).toInt(),
+  lastUpdateDate: (json['last_update_date'] as num).toInt(),
+  commentCount: (json['comment_count'] as num).toInt(),
+  repostCount: (json['repost_count'] as num).toInt(),
+  voteCount: (json['vote_count'] as num).toInt(),
+  vote: (json['vote'] as num).toInt(),
+  containsRepostArticle: json['contains_repost_article'] as bool,
+  isSigned: json['is_signed'] as bool,
+  isPinned: json['is_pinned'] as bool,
+  isMuted: json['is_muted'] as bool,
+  isDeleted: json['is_deleted'] as bool,
+  hasDeleteEnforcement: json['has_delete_enforcement'] as bool,
   popularComment: json['popular_comment'] == null
       ? null
       : PopularComment.fromJson(
@@ -46,10 +42,10 @@ Article _$ArticleFromJson(Map<String, dynamic> json) => Article(
 Map<String, dynamic> _$ArticleToJson(Article instance) => <String, dynamic>{
   '@id': instance.jsonId,
   'id': instance.id,
-  'channel': instance.channel?.toJson(),
+  'channel': instance.channel.toJson(),
   'author': instance.author?.toJson(),
   'repost_article': instance.repostArticle?.toJson((value) => value.toJson()),
-  'payload': instance.payload?.toJson(),
+  'payload': instance.payload.toJson(),
   'creation_date': instance.creationDate,
   'last_update_date': instance.lastUpdateDate,
   'comment_count': instance.commentCount,
@@ -68,21 +64,17 @@ Map<String, dynamic> _$ArticleToJson(Article instance) => <String, dynamic>{
 ArticleCompact _$ArticleCompactFromJson(Map<String, dynamic> json) =>
     ArticleCompact(
       id: (json['id'] as num).toInt(),
-      channel: json['channel'] == null
-          ? null
-          : ChannelCompact.fromJson(json['channel'] as Map<String, dynamic>),
-      payload: json['payload'] == null
-          ? null
-          : ArticlePayload.fromJson(json['payload'] as Map<String, dynamic>),
-      creationDate: (json['creation_date'] as num?)?.toInt(),
-      lastUpdateDate: (json['last_update_date'] as num?)?.toInt(),
+      channel: ChannelCompact.fromJson(json['channel'] as Map<String, dynamic>),
+      payload: ArticlePayload.fromJson(json['payload'] as Map<String, dynamic>),
+      creationDate: (json['creation_date'] as num).toInt(),
+      lastUpdateDate: (json['last_update_date'] as num).toInt(),
     );
 
 Map<String, dynamic> _$ArticleCompactToJson(ArticleCompact instance) =>
     <String, dynamic>{
       'id': instance.id,
-      'channel': instance.channel?.toJson(),
-      'payload': instance.payload?.toJson(),
+      'channel': instance.channel.toJson(),
+      'payload': instance.payload.toJson(),
       'creation_date': instance.creationDate,
       'last_update_date': instance.lastUpdateDate,
     };
@@ -91,16 +83,12 @@ ArticleCommentCompact _$ArticleCommentCompactFromJson(
   Map<String, dynamic> json,
 ) => ArticleCommentCompact(
   id: (json['id'] as num).toInt(),
-  profile: json['profile'] == null
-      ? null
-      : ProfileSlim.fromJson(json['profile'] as Map<String, dynamic>),
-  message: json['message'] as String?,
-  isSpoiler: json['is_spoiler'] as bool?,
-  article: json['article'] == null
-      ? null
-      : ArticleCompact.fromJson(json['article'] as Map<String, dynamic>),
-  embeddableId: (json['embeddableId'] as num?)?.toInt(),
-  embeddableTitle: json['embeddableTitle'] as String?,
+  profile: ProfileSlim.fromJson(json['profile'] as Map<String, dynamic>),
+  message: json['message'] as String,
+  isSpoiler: json['is_spoiler'] as bool,
+  article: ArticleCompact.fromJson(json['article'] as Map<String, dynamic>),
+  embeddableId: (json['embeddableId'] as num).toInt(),
+  embeddableTitle: json['embeddableTitle'] as String,
   embeddableDescription: json['embeddableDescription'] as String?,
 );
 
@@ -108,10 +96,10 @@ Map<String, dynamic> _$ArticleCommentCompactToJson(
   ArticleCommentCompact instance,
 ) => <String, dynamic>{
   'id': instance.id,
-  'profile': instance.profile?.toJson(),
+  'profile': instance.profile.toJson(),
   'message': instance.message,
   'is_spoiler': instance.isSpoiler,
-  'article': instance.article?.toJson(),
+  'article': instance.article.toJson(),
   'embeddableId': instance.embeddableId,
   'embeddableTitle': instance.embeddableTitle,
   'embeddableDescription': instance.embeddableDescription,
@@ -119,8 +107,8 @@ Map<String, dynamic> _$ArticleCommentCompactToJson(
 
 ArticleTextBlock _$ArticleTextBlockFromJson(Map<String, dynamic> json) =>
     ArticleTextBlock(
-      text: json['text'] as String?,
-      textLength: (json['text_length'] as num?)?.toInt(),
+      text: json['text'] as String,
+      textLength: (json['text_length'] as num).toInt(),
     );
 
 Map<String, dynamic> _$ArticleTextBlockToJson(ArticleTextBlock instance) =>
@@ -131,9 +119,9 @@ Map<String, dynamic> _$ArticleTextBlockToJson(ArticleTextBlock instance) =>
 
 ArticleHeaderBlock _$ArticleHeaderBlockFromJson(Map<String, dynamic> json) =>
     ArticleHeaderBlock(
-      text: json['text'] as String?,
-      textLength: (json['text_length'] as num?)?.toInt(),
-      level: (json['level'] as num?)?.toInt(),
+      text: json['text'] as String,
+      textLength: (json['text_length'] as num).toInt(),
+      level: (json['level'] as num).toInt(),
     );
 
 Map<String, dynamic> _$ArticleHeaderBlockToJson(ArticleHeaderBlock instance) =>
@@ -146,10 +134,10 @@ Map<String, dynamic> _$ArticleHeaderBlockToJson(ArticleHeaderBlock instance) =>
 ArticleImageItem _$ArticleImageItemFromJson(Map<String, dynamic> json) =>
     ArticleImageItem(
       id: json['id'] as String,
-      url: json['url'] as String?,
-      hash: json['hash'] as String?,
-      width: (json['width'] as num?)?.toInt(),
-      height: (json['height'] as num?)?.toInt(),
+      url: json['url'] as String,
+      hash: json['hash'] as String,
+      width: (json['width'] as num).toInt(),
+      height: (json['height'] as num).toInt(),
     );
 
 Map<String, dynamic> _$ArticleImageItemToJson(ArticleImageItem instance) =>
@@ -163,25 +151,25 @@ Map<String, dynamic> _$ArticleImageItemToJson(ArticleImageItem instance) =>
 
 ArticleImageBlock _$ArticleImageBlockFromJson(Map<String, dynamic> json) =>
     ArticleImageBlock(
-      items: (json['items'] as List<dynamic>?)
-          ?.map((e) => ArticleImageItem.fromJson(e as Map<String, dynamic>))
+      items: (json['items'] as List<dynamic>)
+          .map((e) => ArticleImageItem.fromJson(e as Map<String, dynamic>))
           .toList(),
-      itemCount: (json['item_count'] as num?)?.toInt(),
+      itemCount: (json['item_count'] as num).toInt(),
     );
 
 Map<String, dynamic> _$ArticleImageBlockToJson(ArticleImageBlock instance) =>
     <String, dynamic>{
-      'items': instance.items?.map((e) => e.toJson()).toList(),
+      'items': instance.items.map((e) => e.toJson()).toList(),
       'item_count': instance.itemCount,
     };
 
 ArticleQuoteBlock _$ArticleQuoteBlockFromJson(Map<String, dynamic> json) =>
     ArticleQuoteBlock(
-      text: json['text'] as String?,
-      caption: json['caption'] as String?,
-      alignment: json['alignment'] as String?,
-      textLength: (json['text_length'] as num?)?.toInt(),
-      captionLength: (json['caption_length'] as num?)?.toInt(),
+      text: json['text'] as String,
+      caption: json['caption'] as String,
+      alignment: json['alignment'] as String,
+      textLength: (json['text_length'] as num).toInt(),
+      captionLength: (json['caption_length'] as num).toInt(),
     );
 
 Map<String, dynamic> _$ArticleQuoteBlockToJson(ArticleQuoteBlock instance) =>
@@ -195,11 +183,9 @@ Map<String, dynamic> _$ArticleQuoteBlockToJson(ArticleQuoteBlock instance) =>
 
 ArticleListBlock _$ArticleListBlockFromJson(Map<String, dynamic> json) =>
     ArticleListBlock(
-      style: json['style'] as String?,
-      items: (json['items'] as List<dynamic>?)
-          ?.map((e) => e as String)
-          .toList(),
-      itemCount: (json['item_count'] as num?)?.toInt(),
+      style: json['style'] as String,
+      items: (json['items'] as List<dynamic>).map((e) => e as String).toList(),
+      itemCount: (json['item_count'] as num).toInt(),
     );
 
 Map<String, dynamic> _$ArticleListBlockToJson(ArticleListBlock instance) =>
@@ -211,16 +197,16 @@ Map<String, dynamic> _$ArticleListBlockToJson(ArticleListBlock instance) =>
 
 ArticleEmbedBlock _$ArticleEmbedBlockFromJson(Map<String, dynamic> json) =>
     ArticleEmbedBlock(
-      url: json['url'] as String?,
-      hash: json['hash'] as String?,
-      embed: json['embed'] as String?,
-      width: (json['width'] as num?)?.toInt(),
-      height: (json['height'] as num?)?.toInt(),
-      image: json['image'] as String?,
-      title: json['title'] as String?,
-      service: json['service'] as String?,
-      siteName: json['site_name'] as String?,
-      description: json['description'] as String?,
+      url: json['url'] as String,
+      hash: json['hash'] as String,
+      embed: json['embed'] as String,
+      width: (json['width'] as num).toInt(),
+      height: (json['height'] as num).toInt(),
+      image: json['image'] as String,
+      title: json['title'] as String,
+      service: json['service'] as String,
+      siteName: json['site_name'] as String,
+      description: json['description'] as String,
     );
 
 Map<String, dynamic> _$ArticleEmbedBlockToJson(ArticleEmbedBlock instance) =>
@@ -251,9 +237,7 @@ ArticleParagraphPayloadBlock _$ArticleParagraphPayloadBlockFromJson(
   id: json['id'] as String,
   type: json['type'] as String? ?? "paragraph",
   name: json['name'] as String? ?? "paragraph",
-  data: json['data'] == null
-      ? null
-      : ArticleTextBlock.fromJson(json['data'] as Map<String, dynamic>),
+  data: ArticleTextBlock.fromJson(json['data'] as Map<String, dynamic>),
 );
 
 Map<String, dynamic> _$ArticleParagraphPayloadBlockToJson(
@@ -262,7 +246,7 @@ Map<String, dynamic> _$ArticleParagraphPayloadBlockToJson(
   'id': instance.id,
   'type': instance.type,
   'name': instance.name,
-  'data': instance.data?.toJson(),
+  'data': instance.data.toJson(),
 };
 
 ArticleHeaderPayloadBlock _$ArticleHeaderPayloadBlockFromJson(
@@ -271,9 +255,7 @@ ArticleHeaderPayloadBlock _$ArticleHeaderPayloadBlockFromJson(
   id: json['id'] as String,
   type: json['type'] as String? ?? "header",
   name: json['name'] as String? ?? "header",
-  data: json['data'] == null
-      ? null
-      : ArticleHeaderBlock.fromJson(json['data'] as Map<String, dynamic>),
+  data: ArticleHeaderBlock.fromJson(json['data'] as Map<String, dynamic>),
 );
 
 Map<String, dynamic> _$ArticleHeaderPayloadBlockToJson(
@@ -282,7 +264,7 @@ Map<String, dynamic> _$ArticleHeaderPayloadBlockToJson(
   'id': instance.id,
   'type': instance.type,
   'name': instance.name,
-  'data': instance.data?.toJson(),
+  'data': instance.data.toJson(),
 };
 
 ArticleQuotePayloadBlock _$ArticleQuotePayloadBlockFromJson(
@@ -291,9 +273,7 @@ ArticleQuotePayloadBlock _$ArticleQuotePayloadBlockFromJson(
   id: json['id'] as String,
   type: json['type'] as String? ?? "quote",
   name: json['name'] as String? ?? "quote",
-  data: json['data'] == null
-      ? null
-      : ArticleQuoteBlock.fromJson(json['data'] as Map<String, dynamic>),
+  data: ArticleQuoteBlock.fromJson(json['data'] as Map<String, dynamic>),
 );
 
 Map<String, dynamic> _$ArticleQuotePayloadBlockToJson(
@@ -302,7 +282,7 @@ Map<String, dynamic> _$ArticleQuotePayloadBlockToJson(
   'id': instance.id,
   'type': instance.type,
   'name': instance.name,
-  'data': instance.data?.toJson(),
+  'data': instance.data.toJson(),
 };
 
 ArticleDelimiterPayloadBlock _$ArticleDelimiterPayloadBlockFromJson(
@@ -311,9 +291,7 @@ ArticleDelimiterPayloadBlock _$ArticleDelimiterPayloadBlockFromJson(
   id: json['id'] as String,
   type: json['type'] as String? ?? "delimiter",
   name: json['name'] as String? ?? "delimiter",
-  data: json['data'] == null
-      ? null
-      : ArticleDelimiterBlock.fromJson(json['data'] as Map<String, dynamic>),
+  data: ArticleDelimiterBlock.fromJson(json['data'] as Map<String, dynamic>),
 );
 
 Map<String, dynamic> _$ArticleDelimiterPayloadBlockToJson(
@@ -322,7 +300,7 @@ Map<String, dynamic> _$ArticleDelimiterPayloadBlockToJson(
   'id': instance.id,
   'type': instance.type,
   'name': instance.name,
-  'data': instance.data?.toJson(),
+  'data': instance.data.toJson(),
 };
 
 ArticleListPayloadBlock _$ArticleListPayloadBlockFromJson(
@@ -331,9 +309,7 @@ ArticleListPayloadBlock _$ArticleListPayloadBlockFromJson(
   id: json['id'] as String,
   type: json['type'] as String? ?? "list",
   name: json['name'] as String? ?? "list",
-  data: json['data'] == null
-      ? null
-      : ArticleListBlock.fromJson(json['data'] as Map<String, dynamic>),
+  data: ArticleListBlock.fromJson(json['data'] as Map<String, dynamic>),
 );
 
 Map<String, dynamic> _$ArticleListPayloadBlockToJson(
@@ -342,7 +318,7 @@ Map<String, dynamic> _$ArticleListPayloadBlockToJson(
   'id': instance.id,
   'type': instance.type,
   'name': instance.name,
-  'data': instance.data?.toJson(),
+  'data': instance.data.toJson(),
 };
 
 ArticleMediaPayloadBlock _$ArticleMediaPayloadBlockFromJson(
@@ -351,9 +327,7 @@ ArticleMediaPayloadBlock _$ArticleMediaPayloadBlockFromJson(
   id: json['id'] as String,
   type: json['type'] as String? ?? "media",
   name: json['name'] as String? ?? "media",
-  data: json['data'] == null
-      ? null
-      : ArticleImageBlock.fromJson(json['data'] as Map<String, dynamic>),
+  data: ArticleImageBlock.fromJson(json['data'] as Map<String, dynamic>),
 );
 
 Map<String, dynamic> _$ArticleMediaPayloadBlockToJson(
@@ -362,7 +336,7 @@ Map<String, dynamic> _$ArticleMediaPayloadBlockToJson(
   'id': instance.id,
   'type': instance.type,
   'name': instance.name,
-  'data': instance.data?.toJson(),
+  'data': instance.data.toJson(),
 };
 
 ArticleEmbedPayloadBlock _$ArticleEmbedPayloadBlockFromJson(
@@ -371,9 +345,7 @@ ArticleEmbedPayloadBlock _$ArticleEmbedPayloadBlockFromJson(
   id: json['id'] as String,
   type: json['type'] as String? ?? "embed",
   name: json['name'] as String? ?? "embed",
-  data: json['data'] == null
-      ? null
-      : ArticleEmbedBlock.fromJson(json['data'] as Map<String, dynamic>),
+  data: ArticleEmbedBlock.fromJson(json['data'] as Map<String, dynamic>),
 );
 
 Map<String, dynamic> _$ArticleEmbedPayloadBlockToJson(
@@ -382,24 +354,24 @@ Map<String, dynamic> _$ArticleEmbedPayloadBlockToJson(
   'id': instance.id,
   'type': instance.type,
   'name': instance.name,
-  'data': instance.data?.toJson(),
+  'data': instance.data.toJson(),
 };
 
 ArticlePayload _$ArticlePayloadFromJson(Map<String, dynamic> json) =>
     ArticlePayload(
-      time: (json['time'] as num?)?.toInt(),
-      version: json['version'] as String?,
-      blocks: (json['blocks'] as List<dynamic>?)
-          ?.map((e) => ArticlePayloadBlock.fromJson(e as Map<String, dynamic>))
+      time: (json['time'] as num).toInt(),
+      version: json['version'] as String,
+      blocks: (json['blocks'] as List<dynamic>)
+          .map((e) => ArticlePayloadBlock.fromJson(e as Map<String, dynamic>))
           .toList(),
-      blockCount: (json['block_count'] as num?)?.toInt(),
+      blockCount: (json['block_count'] as num).toInt(),
     );
 
 Map<String, dynamic> _$ArticlePayloadToJson(ArticlePayload instance) =>
     <String, dynamic>{
       'time': instance.time,
       'version': instance.version,
-      'blocks': instance.blocks?.map((e) => e.toJson()).toList(),
+      'blocks': instance.blocks.map((e) => e.toJson()).toList(),
       'block_count': instance.blockCount,
     };
 
@@ -440,8 +412,8 @@ PopularComment _$PopularCommentFromJson(Map<String, dynamic> json) =>
           ? null
           : ProfileSlim.fromJson(json['profile'] as Map<String, dynamic>),
       message: json['message'] as String?,
-      voteCount: (json['vote_count'] as num?)?.toInt(),
-      timestamp: (json['timestamp'] as num?)?.toInt(),
+      voteCount: (json['vote_count'] as num).toInt(),
+      timestamp: (json['timestamp'] as num).toInt(),
     );
 
 Map<String, dynamic> _$PopularCommentToJson(PopularComment instance) =>
@@ -456,28 +428,24 @@ Map<String, dynamic> _$PopularCommentToJson(PopularComment instance) =>
 ArticleComment _$ArticleCommentFromJson(Map<String, dynamic> json) =>
     ArticleComment(
       id: (json['id'] as num).toInt(),
-      message: json['message'] as String?,
-      timestamp: (json['timestamp'] as num?)?.toInt(),
-      type: (json['type'] as num?)?.toInt(),
-      vote: (json['vote'] as num?)?.toInt(),
-      profile: json['profile'] == null
-          ? null
-          : ChannelProfile.fromJson(json['profile'] as Map<String, dynamic>),
+      message: json['message'] as String,
+      timestamp: (json['timestamp'] as num).toInt(),
+      type: (json['type'] as num).toInt(),
+      vote: (json['vote'] as num).toInt(),
+      profile: ChannelProfile.fromJson(json['profile'] as Map<String, dynamic>),
       parentCommentId: (json['parent_comment_id'] as num?)?.toInt(),
-      voteCount: (json['vote_count'] as num?)?.toInt(),
-      likesCount: (json['likes_count'] as num?)?.toInt(),
-      isSpoiler: json['is_spoiler'] as bool?,
-      isEdited: json['is_edited'] as bool?,
-      isDeleted: json['is_deleted'] as bool?,
-      isReply: json['is_reply'] as bool?,
-      replyCount: (json['reply_count'] as num?)?.toInt(),
-      canLike: json['can_like'] as bool?,
-      article: json['article'] == null
-          ? null
-          : EntityReference<Article>.fromJson(
-              json['article'] as Object,
-              (value) => Article.fromJson(value as Map<String, dynamic>),
-            ),
+      voteCount: (json['vote_count'] as num).toInt(),
+      likesCount: (json['likes_count'] as num).toInt(),
+      isSpoiler: json['is_spoiler'] as bool,
+      isEdited: json['is_edited'] as bool,
+      isDeleted: json['is_deleted'] as bool,
+      isReply: json['is_reply'] as bool,
+      replyCount: (json['reply_count'] as num).toInt(),
+      canLike: json['can_like'] as bool,
+      article: EntityReference<Article>.fromJson(
+        json['article'] as Object,
+        (value) => Article.fromJson(value as Map<String, dynamic>),
+      ),
     );
 
 Map<String, dynamic> _$ArticleCommentToJson(ArticleComment instance) =>
@@ -487,7 +455,7 @@ Map<String, dynamic> _$ArticleCommentToJson(ArticleComment instance) =>
       'timestamp': instance.timestamp,
       'type': instance.type,
       'vote': instance.vote,
-      'profile': instance.profile?.toJson(),
+      'profile': instance.profile.toJson(),
       'parent_comment_id': instance.parentCommentId,
       'vote_count': instance.voteCount,
       'likes_count': instance.likesCount,
@@ -497,7 +465,7 @@ Map<String, dynamic> _$ArticleCommentToJson(ArticleComment instance) =>
       'is_reply': instance.isReply,
       'reply_count': instance.replyCount,
       'can_like': instance.canLike,
-      'article': instance.article?.toJson((value) => value.toJson()),
+      'article': instance.article.toJson((value) => value.toJson()),
     };
 
 ArticleEventRequest _$ArticleEventRequestFromJson(Map<String, dynamic> json) =>
@@ -538,31 +506,29 @@ const _$ArticleEventEntryPointEnumMap = {
 ArticleResponse _$ArticleResponseFromJson(Map<String, dynamic> json) =>
     ArticleResponse(
       code: (json['code'] as num).toInt(),
-      article: json['article'] == null
-          ? null
-          : Article.fromJson(json['article'] as Map<String, dynamic>),
+      article: Article.fromJson(json['article'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$ArticleResponseToJson(ArticleResponse instance) =>
     <String, dynamic>{
       'code': instance.code,
-      'article': instance.article?.toJson(),
+      'article': instance.article.toJson(),
     };
 
 ArticleEmbedResponse _$ArticleEmbedResponseFromJson(
   Map<String, dynamic> json,
 ) => ArticleEmbedResponse(
-  url: json['url'] as String?,
-  hash: json['hash'] as String?,
-  embed: json['embed'] as String?,
-  width: (json['width'] as num?)?.toInt(),
-  height: (json['height'] as num?)?.toInt(),
-  image: json['image'] as String?,
-  title: json['title'] as String?,
-  service: json['service'] as String?,
-  siteName: json['site_name'] as String?,
-  description: json['description'] as String?,
-  success: (json['success'] as num?)?.toInt(),
+  url: json['url'] as String,
+  hash: json['hash'] as String,
+  embed: json['embed'] as String,
+  width: (json['width'] as num).toInt(),
+  height: (json['height'] as num).toInt(),
+  image: json['image'] as String,
+  title: json['title'] as String,
+  service: json['service'] as String,
+  siteName: json['site_name'] as String,
+  description: json['description'] as String,
+  success: (json['success'] as num).toInt(),
 );
 
 Map<String, dynamic> _$ArticleEmbedResponseToJson(
@@ -584,16 +550,14 @@ Map<String, dynamic> _$ArticleEmbedResponseToJson(
 ArticleUploadFileResponse _$ArticleUploadFileResponseFromJson(
   Map<String, dynamic> json,
 ) => ArticleUploadFileResponse(
-  file: json['file'] == null
-      ? null
-      : ArticleImageItem.fromJson(json['file'] as Map<String, dynamic>),
-  success: (json['success'] as num?)?.toInt(),
+  file: ArticleImageItem.fromJson(json['file'] as Map<String, dynamic>),
+  success: (json['success'] as num).toInt(),
 );
 
 Map<String, dynamic> _$ArticleUploadFileResponseToJson(
   ArticleUploadFileResponse instance,
 ) => <String, dynamic>{
-  'file': instance.file?.toJson(),
+  'file': instance.file.toJson(),
   'success': instance.success,
 };
 

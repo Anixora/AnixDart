@@ -24,9 +24,18 @@ void main() {
         await request.drain<void>();
         final Object body;
         if (request.uri.path.contains('/friend/')) {
-          body = {'code': request.uri.path.contains('/send/') ? 2 : 3};
+          body = {
+            'code': request.uri.path.contains('/send/') ? 2 : 3,
+            'friend_status': 0,
+          };
         } else if (request.headers.value('API-Version') == 'v1') {
-          body = {'code': 0, 'content': [], 'total_page_count': 1};
+          body = {
+            'code': 0,
+            'content': [],
+            'total_page_count': 1,
+            'total_count': 0,
+            'current_page': 0,
+          };
         } else {
           body = {'code': 0, 'releases': [], 'related': null};
         }

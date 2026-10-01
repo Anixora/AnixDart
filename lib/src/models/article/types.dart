@@ -7,35 +7,35 @@ part 'payload_block.dart';
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class Article {
   const Article({
-    this.jsonId,
+    required this.jsonId,
     required this.id,
-    this.channel,
+    required this.channel,
     this.author,
     this.repostArticle,
-    this.payload,
-    this.creationDate,
-    this.lastUpdateDate,
-    this.commentCount,
-    this.repostCount,
-    this.voteCount,
-    this.vote,
-    this.containsRepostArticle,
-    this.isSigned,
-    this.isPinned,
-    this.isMuted,
-    this.isDeleted,
-    this.hasDeleteEnforcement,
+    required this.payload,
+    required this.creationDate,
+    required this.lastUpdateDate,
+    required this.commentCount,
+    required this.repostCount,
+    required this.voteCount,
+    required this.vote,
+    required this.containsRepostArticle,
+    required this.isSigned,
+    required this.isPinned,
+    required this.isMuted,
+    required this.isDeleted,
+    required this.hasDeleteEnforcement,
     this.popularComment,
   });
 
   @JsonKey(name: '@id')
-  final int? jsonId;
+  final int jsonId;
 
   @JsonKey(name: 'id')
   final int id;
 
   @JsonKey(name: 'channel')
-  final Channel? channel;
+  final Channel channel;
 
   @JsonKey(name: 'author')
   final ProfileSlim? author;
@@ -44,43 +44,43 @@ final class Article {
   final EntityReference<Article>? repostArticle;
 
   @JsonKey(name: 'payload')
-  final ArticlePayload? payload;
+  final ArticlePayload payload;
 
   @JsonKey(name: 'creation_date')
-  final int? creationDate;
+  final int creationDate;
 
   @JsonKey(name: 'last_update_date')
-  final int? lastUpdateDate;
+  final int lastUpdateDate;
 
   @JsonKey(name: 'comment_count')
-  final int? commentCount;
+  final int commentCount;
 
   @JsonKey(name: 'repost_count')
-  final int? repostCount;
+  final int repostCount;
 
   @JsonKey(name: 'vote_count')
-  final int? voteCount;
+  final int voteCount;
 
   @JsonKey(name: 'vote')
-  final int? vote;
+  final int vote;
 
   @JsonKey(name: 'contains_repost_article')
-  final bool? containsRepostArticle;
+  final bool containsRepostArticle;
 
   @JsonKey(name: 'is_signed')
-  final bool? isSigned;
+  final bool isSigned;
 
   @JsonKey(name: 'is_pinned')
-  final bool? isPinned;
+  final bool isPinned;
 
   @JsonKey(name: 'is_muted')
-  final bool? isMuted;
+  final bool isMuted;
 
   @JsonKey(name: 'is_deleted')
-  final bool? isDeleted;
+  final bool isDeleted;
 
   @JsonKey(name: 'has_delete_enforcement')
-  final bool? hasDeleteEnforcement;
+  final bool hasDeleteEnforcement;
 
   @JsonKey(name: 'popular_comment')
   final PopularComment? popularComment;
@@ -94,26 +94,26 @@ final class Article {
 final class ArticleCompact {
   const ArticleCompact({
     required this.id,
-    this.channel,
-    this.payload,
-    this.creationDate,
-    this.lastUpdateDate,
+    required this.channel,
+    required this.payload,
+    required this.creationDate,
+    required this.lastUpdateDate,
   });
 
   @JsonKey(name: 'id')
   final int id;
 
   @JsonKey(name: 'channel')
-  final ChannelCompact? channel;
+  final ChannelCompact channel;
 
   @JsonKey(name: 'payload')
-  final ArticlePayload? payload;
+  final ArticlePayload payload;
 
   @JsonKey(name: 'creation_date')
-  final int? creationDate;
+  final int creationDate;
 
   @JsonKey(name: 'last_update_date')
-  final int? lastUpdateDate;
+  final int lastUpdateDate;
 
   factory ArticleCompact.fromJson(Map<String, dynamic> json) =>
       _$ArticleCompactFromJson(json);
@@ -124,12 +124,12 @@ final class ArticleCompact {
 final class ArticleCommentCompact {
   const ArticleCommentCompact({
     required this.id,
-    this.profile,
-    this.message,
-    this.isSpoiler,
-    this.article,
-    this.embeddableId,
-    this.embeddableTitle,
+    required this.profile,
+    required this.message,
+    required this.isSpoiler,
+    required this.article,
+    required this.embeddableId,
+    required this.embeddableTitle,
     this.embeddableDescription,
   });
 
@@ -137,22 +137,22 @@ final class ArticleCommentCompact {
   final int id;
 
   @JsonKey(name: 'profile')
-  final ProfileSlim? profile;
+  final ProfileSlim profile;
 
   @JsonKey(name: 'message')
-  final String? message;
+  final String message;
 
   @JsonKey(name: 'is_spoiler')
-  final bool? isSpoiler;
+  final bool isSpoiler;
 
   @JsonKey(name: 'article')
-  final ArticleCompact? article;
+  final ArticleCompact article;
 
   @JsonKey(name: 'embeddableId')
-  final int? embeddableId;
+  final int embeddableId;
 
   @JsonKey(name: 'embeddableTitle')
-  final String? embeddableTitle;
+  final String embeddableTitle;
 
   @JsonKey(name: 'embeddableDescription')
   final String? embeddableDescription;
@@ -164,13 +164,13 @@ final class ArticleCommentCompact {
 
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class ArticleTextBlock {
-  const ArticleTextBlock({this.text, this.textLength});
+  const ArticleTextBlock({required this.text, required this.textLength});
 
   @JsonKey(name: 'text')
-  final String? text;
+  final String text;
 
   @JsonKey(name: 'text_length')
-  final int? textLength;
+  final int textLength;
 
   factory ArticleTextBlock.fromJson(Map<String, dynamic> json) =>
       _$ArticleTextBlockFromJson(json);
@@ -179,16 +179,20 @@ final class ArticleTextBlock {
 
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class ArticleHeaderBlock {
-  const ArticleHeaderBlock({this.text, this.textLength, this.level});
+  const ArticleHeaderBlock({
+    required this.text,
+    required this.textLength,
+    required this.level,
+  });
 
   @JsonKey(name: 'text')
-  final String? text;
+  final String text;
 
   @JsonKey(name: 'text_length')
-  final int? textLength;
+  final int textLength;
 
   @JsonKey(name: 'level')
-  final int? level;
+  final int level;
 
   factory ArticleHeaderBlock.fromJson(Map<String, dynamic> json) =>
       _$ArticleHeaderBlockFromJson(json);
@@ -199,26 +203,26 @@ final class ArticleHeaderBlock {
 final class ArticleImageItem {
   const ArticleImageItem({
     required this.id,
-    this.url,
-    this.hash,
-    this.width,
-    this.height,
+    required this.url,
+    required this.hash,
+    required this.width,
+    required this.height,
   });
 
   @JsonKey(name: 'id')
   final String id;
 
   @JsonKey(name: 'url')
-  final String? url;
+  final String url;
 
   @JsonKey(name: 'hash')
-  final String? hash;
+  final String hash;
 
   @JsonKey(name: 'width')
-  final int? width;
+  final int width;
 
   @JsonKey(name: 'height')
-  final int? height;
+  final int height;
 
   factory ArticleImageItem.fromJson(Map<String, dynamic> json) =>
       _$ArticleImageItemFromJson(json);
@@ -227,13 +231,13 @@ final class ArticleImageItem {
 
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class ArticleImageBlock {
-  const ArticleImageBlock({this.items, this.itemCount});
+  const ArticleImageBlock({required this.items, required this.itemCount});
 
   @JsonKey(name: 'items')
-  final List<ArticleImageItem>? items;
+  final List<ArticleImageItem> items;
 
   @JsonKey(name: 'item_count')
-  final int? itemCount;
+  final int itemCount;
 
   factory ArticleImageBlock.fromJson(Map<String, dynamic> json) =>
       _$ArticleImageBlockFromJson(json);
@@ -243,27 +247,27 @@ final class ArticleImageBlock {
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class ArticleQuoteBlock {
   const ArticleQuoteBlock({
-    this.text,
-    this.caption,
-    this.alignment,
-    this.textLength,
-    this.captionLength,
+    required this.text,
+    required this.caption,
+    required this.alignment,
+    required this.textLength,
+    required this.captionLength,
   });
 
   @JsonKey(name: 'text')
-  final String? text;
+  final String text;
 
   @JsonKey(name: 'caption')
-  final String? caption;
+  final String caption;
 
   @JsonKey(name: 'alignment')
-  final String? alignment;
+  final String alignment;
 
   @JsonKey(name: 'text_length')
-  final int? textLength;
+  final int textLength;
 
   @JsonKey(name: 'caption_length')
-  final int? captionLength;
+  final int captionLength;
 
   factory ArticleQuoteBlock.fromJson(Map<String, dynamic> json) =>
       _$ArticleQuoteBlockFromJson(json);
@@ -272,16 +276,20 @@ final class ArticleQuoteBlock {
 
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class ArticleListBlock {
-  const ArticleListBlock({this.style, this.items, this.itemCount});
+  const ArticleListBlock({
+    required this.style,
+    required this.items,
+    required this.itemCount,
+  });
 
   @JsonKey(name: 'style')
-  final String? style;
+  final String style;
 
   @JsonKey(name: 'items')
-  final List<String>? items;
+  final List<String> items;
 
   @JsonKey(name: 'item_count')
-  final int? itemCount;
+  final int itemCount;
 
   factory ArticleListBlock.fromJson(Map<String, dynamic> json) =>
       _$ArticleListBlockFromJson(json);
@@ -291,47 +299,47 @@ final class ArticleListBlock {
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class ArticleEmbedBlock {
   const ArticleEmbedBlock({
-    this.url,
-    this.hash,
-    this.embed,
-    this.width,
-    this.height,
-    this.image,
-    this.title,
-    this.service,
-    this.siteName,
-    this.description,
+    required this.url,
+    required this.hash,
+    required this.embed,
+    required this.width,
+    required this.height,
+    required this.image,
+    required this.title,
+    required this.service,
+    required this.siteName,
+    required this.description,
   });
 
   @JsonKey(name: 'url')
-  final String? url;
+  final String url;
 
   @JsonKey(name: 'hash')
-  final String? hash;
+  final String hash;
 
   @JsonKey(name: 'embed')
-  final String? embed;
+  final String embed;
 
   @JsonKey(name: 'width')
-  final int? width;
+  final int width;
 
   @JsonKey(name: 'height')
-  final int? height;
+  final int height;
 
   @JsonKey(name: 'image')
-  final String? image;
+  final String image;
 
   @JsonKey(name: 'title')
-  final String? title;
+  final String title;
 
   @JsonKey(name: 'service')
-  final String? service;
+  final String service;
 
   @JsonKey(name: 'site_name')
-  final String? siteName;
+  final String siteName;
 
   @JsonKey(name: 'description')
-  final String? description;
+  final String description;
 
   factory ArticleEmbedBlock.fromJson(Map<String, dynamic> json) =>
       _$ArticleEmbedBlockFromJson(json);
@@ -353,7 +361,7 @@ final class ArticleParagraphPayloadBlock extends ArticlePayloadBlock {
     required this.id,
     this.type = "paragraph",
     this.name = "paragraph",
-    this.data,
+    required this.data,
   });
 
   @JsonKey(name: 'id')
@@ -366,7 +374,7 @@ final class ArticleParagraphPayloadBlock extends ArticlePayloadBlock {
   final String name;
 
   @JsonKey(name: 'data')
-  final ArticleTextBlock? data;
+  final ArticleTextBlock data;
 
   factory ArticleParagraphPayloadBlock.fromJson(Map<String, dynamic> json) =>
       _$ArticleParagraphPayloadBlockFromJson(json);
@@ -379,7 +387,7 @@ final class ArticleHeaderPayloadBlock extends ArticlePayloadBlock {
     required this.id,
     this.type = "header",
     this.name = "header",
-    this.data,
+    required this.data,
   });
 
   @JsonKey(name: 'id')
@@ -392,7 +400,7 @@ final class ArticleHeaderPayloadBlock extends ArticlePayloadBlock {
   final String name;
 
   @JsonKey(name: 'data')
-  final ArticleHeaderBlock? data;
+  final ArticleHeaderBlock data;
 
   factory ArticleHeaderPayloadBlock.fromJson(Map<String, dynamic> json) =>
       _$ArticleHeaderPayloadBlockFromJson(json);
@@ -405,7 +413,7 @@ final class ArticleQuotePayloadBlock extends ArticlePayloadBlock {
     required this.id,
     this.type = "quote",
     this.name = "quote",
-    this.data,
+    required this.data,
   });
 
   @JsonKey(name: 'id')
@@ -418,7 +426,7 @@ final class ArticleQuotePayloadBlock extends ArticlePayloadBlock {
   final String name;
 
   @JsonKey(name: 'data')
-  final ArticleQuoteBlock? data;
+  final ArticleQuoteBlock data;
 
   factory ArticleQuotePayloadBlock.fromJson(Map<String, dynamic> json) =>
       _$ArticleQuotePayloadBlockFromJson(json);
@@ -431,7 +439,7 @@ final class ArticleDelimiterPayloadBlock extends ArticlePayloadBlock {
     required this.id,
     this.type = "delimiter",
     this.name = "delimiter",
-    this.data,
+    required this.data,
   });
 
   @JsonKey(name: 'id')
@@ -444,7 +452,7 @@ final class ArticleDelimiterPayloadBlock extends ArticlePayloadBlock {
   final String name;
 
   @JsonKey(name: 'data')
-  final ArticleDelimiterBlock? data;
+  final ArticleDelimiterBlock data;
 
   factory ArticleDelimiterPayloadBlock.fromJson(Map<String, dynamic> json) =>
       _$ArticleDelimiterPayloadBlockFromJson(json);
@@ -457,7 +465,7 @@ final class ArticleListPayloadBlock extends ArticlePayloadBlock {
     required this.id,
     this.type = "list",
     this.name = "list",
-    this.data,
+    required this.data,
   });
 
   @JsonKey(name: 'id')
@@ -470,7 +478,7 @@ final class ArticleListPayloadBlock extends ArticlePayloadBlock {
   final String name;
 
   @JsonKey(name: 'data')
-  final ArticleListBlock? data;
+  final ArticleListBlock data;
 
   factory ArticleListPayloadBlock.fromJson(Map<String, dynamic> json) =>
       _$ArticleListPayloadBlockFromJson(json);
@@ -483,7 +491,7 @@ final class ArticleMediaPayloadBlock extends ArticlePayloadBlock {
     required this.id,
     this.type = "media",
     this.name = "media",
-    this.data,
+    required this.data,
   });
 
   @JsonKey(name: 'id')
@@ -496,7 +504,7 @@ final class ArticleMediaPayloadBlock extends ArticlePayloadBlock {
   final String name;
 
   @JsonKey(name: 'data')
-  final ArticleImageBlock? data;
+  final ArticleImageBlock data;
 
   factory ArticleMediaPayloadBlock.fromJson(Map<String, dynamic> json) =>
       _$ArticleMediaPayloadBlockFromJson(json);
@@ -509,7 +517,7 @@ final class ArticleEmbedPayloadBlock extends ArticlePayloadBlock {
     required this.id,
     this.type = "embed",
     this.name = "embed",
-    this.data,
+    required this.data,
   });
 
   @JsonKey(name: 'id')
@@ -522,7 +530,7 @@ final class ArticleEmbedPayloadBlock extends ArticlePayloadBlock {
   final String name;
 
   @JsonKey(name: 'data')
-  final ArticleEmbedBlock? data;
+  final ArticleEmbedBlock data;
 
   factory ArticleEmbedPayloadBlock.fromJson(Map<String, dynamic> json) =>
       _$ArticleEmbedPayloadBlockFromJson(json);
@@ -531,19 +539,24 @@ final class ArticleEmbedPayloadBlock extends ArticlePayloadBlock {
 
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class ArticlePayload {
-  const ArticlePayload({this.time, this.version, this.blocks, this.blockCount});
+  const ArticlePayload({
+    required this.time,
+    required this.version,
+    required this.blocks,
+    required this.blockCount,
+  });
 
   @JsonKey(name: 'time')
-  final int? time;
+  final int time;
 
   @JsonKey(name: 'version')
-  final String? version;
+  final String version;
 
   @JsonKey(name: 'blocks')
-  final List<ArticlePayloadBlock>? blocks;
+  final List<ArticlePayloadBlock> blocks;
 
   @JsonKey(name: 'block_count')
-  final int? blockCount;
+  final int blockCount;
 
   factory ArticlePayload.fromJson(Map<String, dynamic> json) =>
       _$ArticlePayloadFromJson(json);
@@ -598,8 +611,8 @@ final class PopularComment {
     required this.id,
     this.profile,
     this.message,
-    this.voteCount,
-    this.timestamp,
+    required this.voteCount,
+    required this.timestamp,
   });
 
   @JsonKey(name: 'id')
@@ -612,10 +625,10 @@ final class PopularComment {
   final String? message;
 
   @JsonKey(name: 'vote_count')
-  final int? voteCount;
+  final int voteCount;
 
   @JsonKey(name: 'timestamp')
-  final int? timestamp;
+  final int timestamp;
 
   factory PopularComment.fromJson(Map<String, dynamic> json) =>
       _$PopularCommentFromJson(json);
@@ -626,70 +639,70 @@ final class PopularComment {
 final class ArticleComment {
   const ArticleComment({
     required this.id,
-    this.message,
-    this.timestamp,
-    this.type,
-    this.vote,
-    this.profile,
+    required this.message,
+    required this.timestamp,
+    required this.type,
+    required this.vote,
+    required this.profile,
     this.parentCommentId,
-    this.voteCount,
-    this.likesCount,
-    this.isSpoiler,
-    this.isEdited,
-    this.isDeleted,
-    this.isReply,
-    this.replyCount,
-    this.canLike,
-    this.article,
+    required this.voteCount,
+    required this.likesCount,
+    required this.isSpoiler,
+    required this.isEdited,
+    required this.isDeleted,
+    required this.isReply,
+    required this.replyCount,
+    required this.canLike,
+    required this.article,
   });
 
   @JsonKey(name: 'id')
   final int id;
 
   @JsonKey(name: 'message')
-  final String? message;
+  final String message;
 
   @JsonKey(name: 'timestamp')
-  final int? timestamp;
+  final int timestamp;
 
   @JsonKey(name: 'type')
-  final int? type;
+  final int type;
 
   @JsonKey(name: 'vote')
-  final int? vote;
+  final int vote;
 
   @JsonKey(name: 'profile')
-  final ChannelProfile? profile;
+  final ChannelProfile profile;
 
   @JsonKey(name: 'parent_comment_id')
   final int? parentCommentId;
 
   @JsonKey(name: 'vote_count')
-  final int? voteCount;
+  final int voteCount;
 
   @JsonKey(name: 'likes_count')
-  final int? likesCount;
+  final int likesCount;
 
   @JsonKey(name: 'is_spoiler')
-  final bool? isSpoiler;
+  final bool isSpoiler;
 
   @JsonKey(name: 'is_edited')
-  final bool? isEdited;
+  final bool isEdited;
 
   @JsonKey(name: 'is_deleted')
-  final bool? isDeleted;
+  final bool isDeleted;
 
   @JsonKey(name: 'is_reply')
-  final bool? isReply;
+  final bool isReply;
 
   @JsonKey(name: 'reply_count')
-  final int? replyCount;
+  final int replyCount;
 
   @JsonKey(name: 'can_like')
-  final bool? canLike;
+  final bool canLike;
 
   @JsonKey(name: 'article')
-  final EntityReference<Article>? article;
+  final EntityReference<Article> article;
 
   factory ArticleComment.fromJson(Map<String, dynamic> json) =>
       _$ArticleCommentFromJson(json);
@@ -720,13 +733,13 @@ final class ArticleEventRequest {
 
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class ArticleResponse {
-  const ArticleResponse({required this.code, this.article});
+  const ArticleResponse({required this.code, required this.article});
 
   @JsonKey(name: 'code')
   final int code;
 
   @JsonKey(name: 'article')
-  final Article? article;
+  final Article article;
 
   factory ArticleResponse.fromJson(Map<String, dynamic> json) =>
       _$ArticleResponseFromJson(json);
@@ -736,51 +749,51 @@ final class ArticleResponse {
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class ArticleEmbedResponse {
   const ArticleEmbedResponse({
-    this.url,
-    this.hash,
-    this.embed,
-    this.width,
-    this.height,
-    this.image,
-    this.title,
-    this.service,
-    this.siteName,
-    this.description,
-    this.success,
+    required this.url,
+    required this.hash,
+    required this.embed,
+    required this.width,
+    required this.height,
+    required this.image,
+    required this.title,
+    required this.service,
+    required this.siteName,
+    required this.description,
+    required this.success,
   });
 
   @JsonKey(name: 'url')
-  final String? url;
+  final String url;
 
   @JsonKey(name: 'hash')
-  final String? hash;
+  final String hash;
 
   @JsonKey(name: 'embed')
-  final String? embed;
+  final String embed;
 
   @JsonKey(name: 'width')
-  final int? width;
+  final int width;
 
   @JsonKey(name: 'height')
-  final int? height;
+  final int height;
 
   @JsonKey(name: 'image')
-  final String? image;
+  final String image;
 
   @JsonKey(name: 'title')
-  final String? title;
+  final String title;
 
   @JsonKey(name: 'service')
-  final String? service;
+  final String service;
 
   @JsonKey(name: 'site_name')
-  final String? siteName;
+  final String siteName;
 
   @JsonKey(name: 'description')
-  final String? description;
+  final String description;
 
   @JsonKey(name: 'success')
-  final int? success;
+  final int success;
 
   factory ArticleEmbedResponse.fromJson(Map<String, dynamic> json) =>
       _$ArticleEmbedResponseFromJson(json);
@@ -789,13 +802,13 @@ final class ArticleEmbedResponse {
 
 @JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
 final class ArticleUploadFileResponse {
-  const ArticleUploadFileResponse({this.file, this.success});
+  const ArticleUploadFileResponse({required this.file, required this.success});
 
   @JsonKey(name: 'file')
-  final ArticleImageItem? file;
+  final ArticleImageItem file;
 
   @JsonKey(name: 'success')
-  final int? success;
+  final int success;
 
   factory ArticleUploadFileResponse.fromJson(Map<String, dynamic> json) =>
       _$ArticleUploadFileResponseFromJson(json);

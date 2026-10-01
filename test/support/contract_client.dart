@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:anixdart/anixdart.dart';
 import 'package:test/test.dart';
 
-/// Контракт формируется по поведению соответствующего endpoint в AnixartJS.
+/// Сравнивает запрос с эталоном из AnixartJS и декодирует тестовый ответ.
 final class ContractClient extends AnixartHttpClient {
   ContractClient(this.fixture)
     : super(

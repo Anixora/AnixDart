@@ -1,20 +1,15 @@
 # AnixDart
 
-Неофициальная библиотека для работы с API Anixart на Dart, основанная на
-[AnixartJS](https://github.com/theDesConnet/AnixartJS). Подходит для Dart- и
-Flutter-проектов; сам пакет не зависит от Flutter.
+Неофициальный клиент API Anixart для Dart и Flutter. Основан на
+[AnixartJS](https://github.com/theDesConnet/AnixartJS).
 
-Библиотека предоставляет типизированные методы для работы с релизами, профилями,
-коллекциями, статьями и другими разделами Anixart. Для HTTP используется
-`package:http`, для преобразования JSON — `json_serializable`.
+Запросы выполняются через `package:http`, ответы разбираются в Dart-модели.
+Зависимости от Flutter нет.
 
 ## Установка
 
-Требуется **Dart 3.11.1 или новее в пределах 3.x**. Для Flutter-проекта нужна
-версия Flutter с подходящим Dart SDK.
-
-Установить пакет из [pub.dev](https://pub.dev/packages/anixdart) можно одной
-командой.
+Требуется Dart **>=3.11.1 <4.0.0**. Пакет доступен на
+[pub.dev](https://pub.dev/packages/anixdart).
 
 Для Dart-проекта:
 
@@ -28,27 +23,11 @@ dart pub add anixdart
 flutter pub add anixdart
 ```
 
-После этого импортируйте библиотеку:
-
-```dart
-import 'package:anixdart/anixdart.dart';
-```
-
-При необходимости зависимость можно добавить в `pubspec.yaml` вручную:
-
-```yaml
-dependencies:
-  anixdart: ^1.0.0
-```
-
-и затем выполнить `dart pub get` или `flutter pub get`.
-
-Сгенерированные сериализаторы уже включены в пакет — для использования
-библиотеки запускать `build_runner` не нужно.
+Сериализаторы включены в пакет. Запускать `build_runner` при установке не нужно.
 
 ### Локальная версия для разработки
 
-Если нужно подключить локальную копию репозитория, используйте path-зависимость:
+Для локальной копии репозитория:
 
 ```yaml
 dependencies:
@@ -78,12 +57,11 @@ Future<void> main() async {
 }
 ```
 
-Переиспользуйте клиент для нескольких запросов и вызывайте `close()`, когда он
-больше не нужен. В приложении это обычно момент освобождения сервиса, который
-владеет клиентом.
+Один клиент можно использовать для нескольких запросов. Когда он больше не
+нужен, вызовите `close()`.
 
-Все методы доступны через `client.endpoints`. Обязательные идентификаторы
-передаются позиционно, дополнительные параметры — по имени:
+Методы находятся в `client.endpoints`. ID передаётся первым аргументом,
+остальные параметры — по имени:
 
 ```dart
 final response = await client.endpoints.release.get(
@@ -93,10 +71,10 @@ final response = await client.endpoints.release.get(
 );
 
 final profile = await client.endpoints.profile.get(1);
-print(profile.profile?.login);
+print(profile.profile.login);
 ```
 
-Здесь и в следующих фрагментах `client` — уже созданный экземпляр `Anixart`.
+В примерах ниже используется тот же `client`.
 
 ## Авторизация
 
@@ -113,17 +91,13 @@ client.setToken('NEW_ANIXART_TOKEN');
 client.setToken(null);
 ```
 
-Клиент передаёт токен в запросах, для которых это предусмотрено соответствующим
-методом API. Методы входа, регистрации и восстановления доступа находятся в
-`client.endpoints.auth`.
+Токен отправляется только в методах с авторизацией. Вход, регистрация и
+восстановление доступа доступны через `client.endpoints.auth`.
 
-При необходимости конструктор также принимает `baseUrl`, `userAgent` и
-`throwOnAnixartError`. Адрес сервера можно изменить у существующего клиента
-через `setBaseUrl(...)`.
+В конструкторе можно задать `baseUrl`, `userAgent` и `throwOnAnixartError`.
+Для смены сервера у существующего клиента есть `setBaseUrl(...)`.
 
 ## Поиск релизов
-
-Для тела запроса используются отдельные модели:
 
 ```dart
 final result = await client.endpoints.search.releases(
@@ -136,13 +110,12 @@ final releases = switch (result) {
   LegacyReleaseSearchResult(:final response) => response.content,
 };
 
-for (final release in releases ?? <Release>[]) {
+for (final release in releases) {
   print(release.titleRu);
 }
 ```
 
-Поиск релизов использует API v2 по умолчанию. Ответы текущего и старого формата
-представлены разными типами. Для явного выбора версии передайте
+По умолчанию поиск использует API v2. Для старого формата ответа передайте
 `options: const RequestOptions(apiVersion: 1)`.
 
 ## Параметры запросов
@@ -151,10 +124,10 @@ for (final release in releases ?? <Release>[]) {
 
 | Параметр `RequestOptions` | Назначение |
 | --- | --- |
-| `timeout` | Ограничение времени выполнения запроса |
+| `timeout` | Таймаут запроса |
 | `cancelToken` | Отмена через `RequestCancelToken` |
 | `apiVersion` | Версия API в заголовке `API-Version`, например `2` → `v2` |
-| `throwOnAnixartError` | Управление исключениями при ошибках Anixart для конкретного запроса |
+| `throwOnAnixartError` | Выбрасывать ли `AnixartError` при ошибке API |
 
 Для отмены создайте токен, передайте его в `RequestOptions` и вызовите
 `cancel()` из обработчика отмены в приложении:
@@ -178,8 +151,8 @@ try {
 
 ## Обработка ошибок
 
-По умолчанию ошибки Anixart превращаются в `AnixartError`. Ошибки HTTP и
-транспорта представлены отдельно:
+При ошибке API клиент выбрасывает `AnixartError`, при ошибке HTTP или сети —
+`HttpError`:
 
 ```dart
 try {
@@ -213,10 +186,10 @@ print(response.code);
 print(response.releaseOrNull?.titleRu);
 ```
 
-В таком режиме полезная нагрузка может отсутствовать. Для `ReleaseResponse`
-используйте `releaseOrNull`: обращение к `release` при отсутствии релиза
-выбрасывает `StateError`. Отключение ошибок API не отключает сетевые ошибки,
-таймауты и отмену запроса.
+Ответ с ошибкой может не содержать релиз. В этом случае `releaseOrNull` вернёт
+`null`, а `release` выбросит `StateError`. Сетевые ошибки, таймауты и ошибки
+декодирования по-прежнему выбрасываются. Если в другом ответе нет обязательных
+полей, `throwOnAnixartError: false` не поможет его декодировать.
 
 ## Доступные разделы API
 
@@ -234,14 +207,14 @@ print(response.releaseOrNull?.titleRu);
 | Каналы и лента | `channel`, `feed` |
 | Остальные разделы | `config`, `discover`, `report`, `import`, `export`, `type` |
 
-
 ## Модели и совместимость
 
 - Запросы и ответы используют Dart-модели с `fromJson` и `toJson`.
-- Необязательные и допускающие `null` поля имеют nullable-типы.
+- Обязательные поля не допускают `null`. Например, `Release.titleRu` имеет
+  тип `String`, а `Release.titleAlt` — `String?`.
 - Значения enum соответствуют API и доступны через `.value`; `enum.index`
   не является значением для передачи серверу.
-- Блоки статей представлены типизированным объединением `ArticlePayloadBlock`.
+- У каждого вида блока статьи свой класс, общий тип — `ArticlePayloadBlock`.
 - Поля, в которых API возвращает объект или числовую ссылку, используют
   `EntityReference<T>`.
 
@@ -251,6 +224,7 @@ print(response.releaseOrNull?.titleRu);
 
 ```sh
 dart run build_runner build --delete-conflicting-outputs
+dart run tool/translate_generated_comments.dart
 dart format .
 dart analyze
 dart test

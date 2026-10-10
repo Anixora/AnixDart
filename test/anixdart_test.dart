@@ -112,6 +112,32 @@ void main() {
       expect(received.single.headers.value('User-Agent'), defaultUserAgent);
     });
 
+    test('фильтр декодирует релиз с неизвестным годом', () async {
+      final release = ReleaseResponse.fromJson(fixtureJson()).release.toJson();
+      for (final omitYear in [false, true]) {
+        if (omitYear) {
+          release.remove('year');
+        } else {
+          release['year'] = null;
+        }
+        respond(
+          jsonEncode({
+            'code': 0,
+            'content': [release],
+            'total_count': 1,
+            'total_page_count': 1,
+            'current_page': 0,
+          }),
+        );
+
+        final result = await client.endpoints.filter.get(const FilterRequest());
+
+        expect(result.content.single.id, 101);
+        expect(result.content.single.year, isNull);
+        expect(result.content.single.toJson()['year'], isNull);
+      }
+    });
+
     test('JSON, urlencoded и multipart отправляются корректно', () async {
       final bodies = <String>[];
       handler = (request) async {

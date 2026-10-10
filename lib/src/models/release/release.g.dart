@@ -106,7 +106,7 @@ Release _$ReleaseFromJson(Map<String, dynamic> json) => Release(
   voteCount: (json['vote_count'] as num).toInt(),
   votedAt: (json['voted_at'] as num?)?.toInt(),
   watchingCount: (json['watching_count'] as num).toInt(),
-  year: json['year'] as String,
+  year: json['year'] as String?,
   creationDate: (json['creation_date'] as num?)?.toInt(),
   lastUpdateDate: (json['last_update_date'] as num?)?.toInt(),
   yourVote: (json['your_vote'] as num?)?.toInt(),

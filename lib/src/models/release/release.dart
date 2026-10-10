@@ -76,7 +76,7 @@ final class Release {
     required this.voteCount,
     this.votedAt,
     required this.watchingCount,
-    required this.year,
+    this.year,
     this.creationDate,
     this.lastUpdateDate,
     this.yourVote,
@@ -299,7 +299,7 @@ final class Release {
   final int watchingCount;
 
   @JsonKey(name: 'year')
-  final String year;
+  final String? year;
 
   @JsonKey(name: 'creation_date')
   final int? creationDate;

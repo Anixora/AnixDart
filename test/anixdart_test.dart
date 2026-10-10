@@ -112,13 +112,15 @@ void main() {
       expect(received.single.headers.value('User-Agent'), defaultUserAgent);
     });
 
-    test('фильтр декодирует релиз с неизвестным годом', () async {
+    test('фильтр декодирует релиз с неизвестным годом и жанрами', () async {
       final release = ReleaseResponse.fromJson(fixtureJson()).release.toJson();
       for (final omitYear in [false, true]) {
         if (omitYear) {
           release.remove('year');
+          release.remove('genres');
         } else {
           release['year'] = null;
+          release['genres'] = null;
         }
         respond(
           jsonEncode({
@@ -135,7 +137,33 @@ void main() {
         expect(result.content.single.id, 101);
         expect(result.content.single.year, isNull);
         expect(result.content.single.toJson()['year'], isNull);
+        expect(result.content.single.genres, isNull);
+        expect(result.content.single.toJson()['genres'], isNull);
       }
+    });
+
+    test('фильтр декодирует реальный релиз с null в genres', () async {
+      final release = jsonDecode(
+        io.File('test/fixtures/filter_release_20977.json').readAsStringSync(),
+      );
+      respond(
+        jsonEncode({
+          'code': 0,
+          'content': [release],
+          'total_count': 1,
+          'total_page_count': 1,
+          'current_page': 1,
+        }),
+      );
+
+      final result = await client.endpoints.filter.get(
+        const FilterRequest(),
+        page: 1,
+      );
+
+      expect(result.content.single.id, 20977);
+      expect(result.content.single.genres, isNull);
+      expect(result.content.single.year, '2027');
     });
 
     test('JSON, urlencoded и multipart отправляются корректно', () async {

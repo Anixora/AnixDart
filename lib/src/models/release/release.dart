@@ -27,7 +27,7 @@ final class Release {
     this.episodesTotal,
     this.episodesReleased,
     this.favoriteCount,
-    required this.genres,
+    this.genres,
     required this.grade,
     required this.holdOnCount,
     required this.image,
@@ -151,7 +151,7 @@ final class Release {
   final int? favoriteCount;
 
   @JsonKey(name: 'genres')
-  final String genres;
+  final String? genres;
 
   @JsonKey(name: 'grade')
   final double grade;

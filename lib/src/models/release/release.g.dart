@@ -35,7 +35,7 @@ Release _$ReleaseFromJson(Map<String, dynamic> json) => Release(
   episodesTotal: (json['episodes_total'] as num?)?.toInt(),
   episodesReleased: (json['episodes_released'] as num?)?.toInt(),
   favoriteCount: (json['favorite_count'] as num?)?.toInt(),
-  genres: json['genres'] as String,
+  genres: json['genres'] as String?,
   grade: (json['grade'] as num).toDouble(),
   holdOnCount: (json['hold_on_count'] as num).toInt(),
   image: json['image'] as String,

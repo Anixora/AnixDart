@@ -132,4 +132,24 @@ final class ReleaseApi {
     );
     return response.data;
   }
+
+  Future<PageableResponse<Badge>> badges(
+    int releaseId, {
+    int page = 0,
+    RequestOptions options = const RequestOptions(),
+  }) async {
+    final response = await _http.request<PageableResponse<Badge>>(
+      HttpRequest(
+        method: HttpMethod.get,
+        path: '/release/$releaseId/badges/$page',
+        auth: const AnixartAuth(),
+        options: options,
+      ),
+      decoder: (value) => PageableResponse<Badge>.fromJson(
+        value as Map<String, dynamic>,
+        (item) => Badge.fromJson(item as Map<String, dynamic>),
+      ),
+    );
+    return response.data;
+  }
 }

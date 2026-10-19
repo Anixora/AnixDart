@@ -95,6 +95,8 @@ final class Profile {
     required this.isSocialHidden,
     required this.isFriendRequestsDisallowed,
     required this.isOnline,
+    this.badgeCount,
+    this.badgesPreview,
   });
 
   @JsonKey(name: 'id')
@@ -367,6 +369,12 @@ final class Profile {
   @JsonKey(name: 'is_online')
   final bool isOnline;
 
+  @JsonKey(includeIfNull: false)
+  final int? badgeCount;
+
+  @JsonKey(includeIfNull: false)
+  final List<Badge>? badgesPreview;
+
   factory Profile.fromJson(Map<String, dynamic> json) =>
       _$ProfileFromJson(json);
   Map<String, dynamic> toJson() => _$ProfileToJson(this);
@@ -530,24 +538,50 @@ final class Badge {
     required this.name,
     required this.timestamp,
     required this.type,
-    required this.imageUrl,
+    this.imageUrl,
+    this.badgeUrl,
+    this.imageSmallUrl,
+    this.imageMediumUrl,
+    this.description,
+    this.category,
+    this.rarity,
+    this.award,
+    this.isAvailable,
+    this.isOwned,
+    this.isSelected,
+    this.isShowcased,
+    this.ownershipPercentage,
   });
-
-  @JsonKey(name: 'id')
   final int id;
-
-  @JsonKey(name: 'name')
   final String name;
-
-  @JsonKey(name: 'timestamp')
   final int timestamp;
-
-  @JsonKey(name: 'type')
   final int type;
-
-  @JsonKey(name: 'image_url')
-  final String imageUrl;
-
+  @JsonKey(includeIfNull: false)
+  final String? imageUrl;
+  @JsonKey(includeIfNull: false)
+  final String? badgeUrl;
+  @JsonKey(includeIfNull: false)
+  final String? imageSmallUrl;
+  @JsonKey(includeIfNull: false)
+  final String? imageMediumUrl;
+  @JsonKey(includeIfNull: false)
+  final String? description;
+  @JsonKey(includeIfNull: false)
+  final BadgeCategory? category;
+  @JsonKey(includeIfNull: false)
+  final String? rarity;
+  @JsonKey(includeIfNull: false)
+  final BadgeAward? award;
+  @JsonKey(includeIfNull: false)
+  final bool? isAvailable;
+  @JsonKey(includeIfNull: false)
+  final bool? isOwned;
+  @JsonKey(includeIfNull: false)
+  final bool? isSelected;
+  @JsonKey(includeIfNull: false)
+  final bool? isShowcased;
+  @JsonKey(includeIfNull: false)
+  final double? ownershipPercentage;
   factory Badge.fromJson(Map<String, dynamic> json) => _$BadgeFromJson(json);
   Map<String, dynamic> toJson() => _$BadgeToJson(this);
 }
@@ -1146,4 +1180,145 @@ final class BookmarksExportResponse {
   factory BookmarksExportResponse.fromJson(Map<String, dynamic> json) =>
       _$BookmarksExportResponseFromJson(json);
   Map<String, dynamic> toJson() => _$BookmarksExportResponseToJson(this);
+}
+
+@JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
+final class BadgeCategory {
+  const BadgeCategory({required this.id, required this.title});
+  final int id;
+  final String title;
+  factory BadgeCategory.fromJson(Map<String, dynamic> json) =>
+      _$BadgeCategoryFromJson(json);
+  Map<String, dynamic> toJson() => _$BadgeCategoryToJson(this);
+}
+
+@JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
+final class BadgeAward {
+  const BadgeAward({
+    required this.trigger,
+    this.episodeName,
+    this.profileListStatus,
+    this.releaseId,
+    this.releaseImage,
+    this.releaseTitle,
+  });
+  final String trigger;
+  final String? episodeName;
+  final int? profileListStatus;
+  final int? releaseId;
+  final String? releaseImage;
+  final String? releaseTitle;
+  factory BadgeAward.fromJson(Map<String, dynamic> json) =>
+      _$BadgeAwardFromJson(json);
+  Map<String, dynamic> toJson() => _$BadgeAwardToJson(this);
+}
+
+@JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
+final class BadgeSection {
+  const BadgeSection({
+    required this.id,
+    required this.title,
+    required this.count,
+    required this.content,
+  });
+  final int id;
+  final String title;
+  final int count;
+  final List<Badge> content;
+  factory BadgeSection.fromJson(Map<String, dynamic> json) =>
+      _$BadgeSectionFromJson(json);
+  Map<String, dynamic> toJson() => _$BadgeSectionToJson(this);
+}
+
+@JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
+final class AchievementPreview {
+  const AchievementPreview({required this.name, required this.badge});
+  final String name;
+  final Badge badge;
+  factory AchievementPreview.fromJson(Map<String, dynamic> json) =>
+      _$AchievementPreviewFromJson(json);
+  Map<String, dynamic> toJson() => _$AchievementPreviewToJson(this);
+}
+
+@JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
+final class ProfileBadgeSectionsResponse {
+  const ProfileBadgeSectionsResponse({
+    required this.code,
+    required this.profile,
+    required this.recent,
+    required this.sections,
+    required this.showcased,
+    required this.totalCount,
+  });
+  final int code;
+  final Profile profile;
+  final List<Badge> recent;
+  final List<BadgeSection> sections;
+  final List<Badge> showcased;
+  final int totalCount;
+  factory ProfileBadgeSectionsResponse.fromJson(Map<String, dynamic> json) =>
+      _$ProfileBadgeSectionsResponseFromJson(json);
+  Map<String, dynamic> toJson() => _$ProfileBadgeSectionsResponseToJson(this);
+}
+
+@JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
+final class ProfileBadgePageableResponse {
+  const ProfileBadgePageableResponse({
+    required this.code,
+    required this.content,
+    required this.totalCount,
+    required this.totalPageCount,
+    required this.currentPage,
+    required this.profile,
+  });
+  final int code;
+  final List<Badge> content;
+  final int totalCount;
+  final int totalPageCount;
+  final int currentPage;
+  final Profile profile;
+  factory ProfileBadgePageableResponse.fromJson(Map<String, dynamic> json) =>
+      _$ProfileBadgePageableResponseFromJson(json);
+  Map<String, dynamic> toJson() => _$ProfileBadgePageableResponseToJson(this);
+}
+
+@JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
+final class ProfileBadgeResponse {
+  const ProfileBadgeResponse({required this.code, required this.badge});
+  final int code;
+  final Badge badge;
+  factory ProfileBadgeResponse.fromJson(Map<String, dynamic> json) =>
+      _$ProfileBadgeResponseFromJson(json);
+  Map<String, dynamic> toJson() => _$ProfileBadgeResponseToJson(this);
+}
+
+@JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
+final class ProfileBadgeShowcaseResponse {
+  const ProfileBadgeShowcaseResponse({required this.code});
+  final int code;
+  factory ProfileBadgeShowcaseResponse.fromJson(Map<String, dynamic> json) =>
+      _$ProfileBadgeShowcaseResponseFromJson(json);
+  Map<String, dynamic> toJson() => _$ProfileBadgeShowcaseResponseToJson(this);
+}
+
+@JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
+final class ReorderBadgeShowcaseRequest {
+  const ReorderBadgeShowcaseRequest({required this.ids});
+  final List<int> ids;
+  factory ReorderBadgeShowcaseRequest.fromJson(Map<String, dynamic> json) =>
+      _$ReorderBadgeShowcaseRequestFromJson(json);
+  Map<String, dynamic> toJson() => _$ReorderBadgeShowcaseRequestToJson(this);
+}
+
+@JsonSerializable(fieldRename: FieldRename.snake, explicitToJson: true)
+final class AchievementPreviewResponse {
+  const AchievementPreviewResponse({
+    required this.code,
+    required this.achievement,
+  });
+  final int code;
+  final AchievementPreview achievement;
+  factory AchievementPreviewResponse.fromJson(Map<String, dynamic> json) =>
+      _$AchievementPreviewResponseFromJson(json);
+  Map<String, dynamic> toJson() => _$AchievementPreviewResponseToJson(this);
 }

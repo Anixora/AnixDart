@@ -1,6 +1,8 @@
 import 'package:json_annotation/json_annotation.dart';
 
 enum DeleteNotificationType {
+  @JsonValue('article/delete')
+  article('article/delete', 'Article'),
   @JsonValue("article/comment")
   articleComment("article/comment", "ArticleComment"),
   @JsonValue("collectionComment")

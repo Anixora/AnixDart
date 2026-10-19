@@ -45,6 +45,11 @@ Channel _$ChannelFromJson(Map<String, dynamic> json) => Channel(
   isPermBlocked: json['is_perm_blocked'] as bool,
   isCreator: json['is_creator'] as bool,
   isAdministratorOrHigher: json['is_administrator_or_higher'] as bool,
+  badgeId: (json['badge_id'] as num?)?.toInt(),
+  badgeName: json['badge_name'] as String?,
+  badgeType: (json['badge_type'] as num?)?.toInt(),
+  badgeUrl: json['badge_url'] as String?,
+  lastArticleDate: (json['last_article_date'] as num?)?.toInt(),
 );
 
 Map<String, dynamic> _$ChannelToJson(Channel instance) => <String, dynamic>{
@@ -82,6 +87,11 @@ Map<String, dynamic> _$ChannelToJson(Channel instance) => <String, dynamic>{
   'is_perm_blocked': instance.isPermBlocked,
   'is_creator': instance.isCreator,
   'is_administrator_or_higher': instance.isAdministratorOrHigher,
+  'badge_id': ?instance.badgeId,
+  'badge_name': ?instance.badgeName,
+  'badge_type': ?instance.badgeType,
+  'badge_url': ?instance.badgeUrl,
+  'last_article_date': ?instance.lastArticleDate,
 };
 
 const _$ChannelWidgetSortEnumMap = {

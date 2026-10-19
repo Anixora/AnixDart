@@ -1,6 +1,6 @@
 name: anixdart
 description: "Unofficial Anixart API wrapper for Dart (based on AnixartJS)"
-version: 1.0.3
+version: 1.2.0
 homepage: "https://github.com/Anixora/AnixDart"
 
 environment:
@@ -9,7 +9,7 @@ environment:
 dependencies:
   freezed_annotation: ^3.1.0
   http: ^1.6.0
-  json_annotation: ^4.11.0
+  json_annotation: ^4.12.0
   logger: ^2.7.0
 dev_dependencies:
   build_runner: ^2.13.1

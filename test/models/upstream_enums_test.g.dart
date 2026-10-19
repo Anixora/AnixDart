@@ -572,6 +572,7 @@ const _$CommentEditResultEnumMap = {
 };
 
 const _$DeleteNotificationTypeEnumMap = {
+  DeleteNotificationType.article: 'article/delete',
   DeleteNotificationType.articleComment: 'article/comment',
   DeleteNotificationType.collectionComment: 'collectionComment',
   DeleteNotificationType.episode: 'episode',

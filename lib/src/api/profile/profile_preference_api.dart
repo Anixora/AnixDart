@@ -507,4 +507,19 @@ final class ProfilePreferenceApi {
     );
     return response.data;
   }
+
+  Future<ApiResponse> deleteLoginHistory({
+    RequestOptions options = const RequestOptions(),
+  }) async {
+    final response = await _http.request<ApiResponse>(
+      HttpRequest(
+        method: HttpMethod.post,
+        path: '/profile/preference/login/history/delete',
+        auth: const AnixartAuth(required: true),
+        options: options,
+      ),
+      decoder: (value) => ApiResponse.fromJson(value as Map<String, dynamic>),
+    );
+    return response.data;
+  }
 }

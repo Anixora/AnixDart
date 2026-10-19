@@ -95,7 +95,7 @@ ProfileArticleNotification _$ProfileArticleNotificationFromJson(
   isNew: json['is_new'] as bool,
   isPushed: json['is_pushed'] as bool,
   jsonId: (json['@id'] as num).toInt(),
-  article: (json['article'] as num).toInt(),
+  article: ArticleCompact.fromJson(json['article'] as Map<String, dynamic>),
   profile: Profile.fromJson(json['profile'] as Map<String, dynamic>),
 );
 
@@ -108,7 +108,7 @@ Map<String, dynamic> _$ProfileArticleNotificationToJson(
   'is_new': instance.isNew,
   'is_pushed': instance.isPushed,
   '@id': instance.jsonId,
-  'article': instance.article,
+  'article': instance.article.toJson(),
   'profile': instance.profile.toJson(),
 };
 

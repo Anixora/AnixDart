@@ -1,5 +1,22 @@
 # История изменений
 
+## 1.2.0
+
+- Перенесены изменения AnixartJS 1.1.0 для API Anixart 10.5: достижения
+  (`achievement.get`, `achievement.preview`), разделы значков профиля,
+  витрина и изменение порядка значков, значки релиза, удаление канала
+  и истории логинов.
+- Добавлены модели категорий, условий получения и разделов значков,
+  новые коды результата и метаданные значков профиля, релиза и канала.
+  Неизвестные триггеры получения сохраняются как строки.
+- `profileBadge.edit()` теперь возвращает `ProfileBadgeResponse` со значком.
+  `profileBadge.all()` помечен устаревшим: используйте `list()` и `section()`.
+- `Badge.imageUrl` стал необязательным: новые ответы используют `badgeUrl`,
+  `imageSmallUrl` и `imageMediumUrl`. `ProfileArticleNotification.article`
+  теперь имеет тип `ArticleCompact`. Добавлен `DeleteNotificationType.article`.
+- Новые поля канала необязательны для совместимости со старыми ответами.
+  Исправления nullable-полей `Release.year` и `Release.genres` сохранены.
+
 ## 1.0.3
 
 - Исправлена ошибка `Null is not a subtype of String` на следующих страницах

@@ -1,4 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
+import '../profile/types.dart' show Badge;
 import 'enums.dart';
 part 'release.g.dart';
 
@@ -82,6 +83,8 @@ final class Release {
     this.yourVote,
     this.myVote,
     required this.favoritesCount,
+    this.badgeCount,
+    this.badgesPreview,
   });
 
   @JsonKey(name: 'id')
@@ -315,6 +318,12 @@ final class Release {
 
   @JsonKey(name: 'favorites_count')
   final int favoritesCount;
+
+  @JsonKey(includeIfNull: false)
+  final int? badgeCount;
+
+  @JsonKey(includeIfNull: false)
+  final List<Badge>? badgesPreview;
 
   factory Release.fromJson(Map<String, dynamic> json) =>
       _$ReleaseFromJson(json);

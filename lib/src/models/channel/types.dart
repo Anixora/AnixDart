@@ -35,6 +35,11 @@ final class Channel {
     required this.isPermBlocked,
     required this.isCreator,
     required this.isAdministratorOrHigher,
+    this.badgeId,
+    this.badgeName,
+    this.badgeType,
+    this.badgeUrl,
+    this.lastArticleDate,
   });
 
   @JsonKey(name: 'id')
@@ -126,6 +131,21 @@ final class Channel {
 
   @JsonKey(name: 'is_administrator_or_higher')
   final bool isAdministratorOrHigher;
+
+  @JsonKey(includeIfNull: false)
+  final int? badgeId;
+
+  @JsonKey(includeIfNull: false)
+  final String? badgeName;
+
+  @JsonKey(includeIfNull: false)
+  final int? badgeType;
+
+  @JsonKey(includeIfNull: false)
+  final String? badgeUrl;
+
+  @JsonKey(includeIfNull: false)
+  final int? lastArticleDate;
 
   factory Channel.fromJson(Map<String, dynamic> json) =>
       _$ChannelFromJson(json);

@@ -136,7 +136,7 @@ final class ProfileArticleNotification {
   final int jsonId;
 
   @JsonKey(name: 'article')
-  final int article;
+  final ArticleCompact article;
 
   @JsonKey(name: 'profile')
   final Profile profile;

@@ -1,4 +1,5 @@
 import 'anixart_client.dart';
+import '../api/achievement_api.dart';
 import '../api/auth_api.dart';
 import '../api/channel_api.dart';
 import '../api/config_api.dart';
@@ -43,7 +44,8 @@ import '../api/release/schedule_api.dart';
 
 final class Endpoints {
   Endpoints(Anixart client)
-    : article = ArticleApi(client.http),
+    : achievement = AchievementApi(client.http),
+      article = ArticleApi(client.http),
       articleComment = ArticleCommentApi(client.http),
       articleSuggestion = ArticleSuggestionApi(client.http),
       auth = AuthApi(client.http),
@@ -85,6 +87,7 @@ final class Endpoints {
       search = SearchApi(client.http),
       type = TypeApi(client.http);
 
+  final AchievementApi achievement;
   final ArticleApi article;
   final ArticleCommentApi articleComment;
   final ArticleSuggestionApi articleSuggestion;

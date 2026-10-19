@@ -162,3 +162,14 @@ enum ChannelUnsubscribeResult {
   final int value;
   final String codeName;
 }
+
+enum ChannelDeleteResult {
+  @JsonValue(2)
+  channelNotFound(2, 'ChannelNotFound'),
+  @JsonValue(3)
+  channelNotOwned(3, 'ChannelNotOwned');
+
+  const ChannelDeleteResult(this.value, this.codeName);
+  final int value;
+  final String codeName;
+}

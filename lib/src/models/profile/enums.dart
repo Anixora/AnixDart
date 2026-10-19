@@ -224,3 +224,46 @@ enum AppealStatus {
   final String value;
   final String codeName;
 }
+
+enum AchievementResult {
+  @JsonValue(2)
+  alreadyGranted(2, 'AlreadyGranted'),
+  @JsonValue(3)
+  achievementNotFound(3, 'AchievementNotFound'),
+  @JsonValue(4)
+  profileNotFound(4, 'ProfileNotFound'),
+  @JsonValue(5)
+  grantLimitReached(5, 'GrantLimitReached'),
+  @JsonValue(6)
+  badgeChanged(6, 'BadgeChanged');
+
+  const AchievementResult(this.value, this.codeName);
+  final int value;
+  final String codeName;
+}
+
+enum ProfileBadgeShowcaseResult {
+  @JsonValue(2)
+  invalidBadge(2, 'InvalidBadge'),
+  @JsonValue(3)
+  limitReached(3, 'LimitReached');
+
+  const ProfileBadgeShowcaseResult(this.value, this.codeName);
+  final int value;
+  final String codeName;
+}
+
+enum BadgeAwardTrigger {
+  @JsonValue('CLAIM_CODE')
+  claimCode('CLAIM_CODE', 'ClaimCode'),
+  @JsonValue('EPISODE_WATCHED')
+  episodeWatched('EPISODE_WATCHED', 'EpisodeWatched'),
+  @JsonValue('MANUAL')
+  manual('MANUAL', 'Manual'),
+  @JsonValue('PROFILE_LIST_STATUS')
+  profileListStatus('PROFILE_LIST_STATUS', 'ProfileListStatus');
+
+  const BadgeAwardTrigger(this.value, this.codeName);
+  final String value;
+  final String codeName;
+}

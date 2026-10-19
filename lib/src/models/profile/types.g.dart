@@ -133,6 +133,10 @@ Profile _$ProfileFromJson(Map<String, dynamic> json) => Profile(
   isSocialHidden: json['is_social_hidden'] as bool,
   isFriendRequestsDisallowed: json['is_friend_requests_disallowed'] as bool,
   isOnline: json['is_online'] as bool,
+  badgeCount: (json['badge_count'] as num?)?.toInt(),
+  badgesPreview: (json['badges_preview'] as List<dynamic>?)
+      ?.map((e) => Badge.fromJson(e as Map<String, dynamic>))
+      .toList(),
 );
 
 Map<String, dynamic> _$ProfileToJson(Profile instance) => <String, dynamic>{
@@ -238,6 +242,8 @@ Map<String, dynamic> _$ProfileToJson(Profile instance) => <String, dynamic>{
   'is_social_hidden': instance.isSocialHidden,
   'is_friend_requests_disallowed': instance.isFriendRequestsDisallowed,
   'is_online': instance.isOnline,
+  'badge_count': ?instance.badgeCount,
+  'badges_preview': ?instance.badgesPreview?.map((e) => e.toJson()).toList(),
 };
 
 const _$PrivilegeLevelEnumMap = {
@@ -346,7 +352,23 @@ Badge _$BadgeFromJson(Map<String, dynamic> json) => Badge(
   name: json['name'] as String,
   timestamp: (json['timestamp'] as num).toInt(),
   type: (json['type'] as num).toInt(),
-  imageUrl: json['image_url'] as String,
+  imageUrl: json['image_url'] as String?,
+  badgeUrl: json['badge_url'] as String?,
+  imageSmallUrl: json['image_small_url'] as String?,
+  imageMediumUrl: json['image_medium_url'] as String?,
+  description: json['description'] as String?,
+  category: json['category'] == null
+      ? null
+      : BadgeCategory.fromJson(json['category'] as Map<String, dynamic>),
+  rarity: json['rarity'] as String?,
+  award: json['award'] == null
+      ? null
+      : BadgeAward.fromJson(json['award'] as Map<String, dynamic>),
+  isAvailable: json['is_available'] as bool?,
+  isOwned: json['is_owned'] as bool?,
+  isSelected: json['is_selected'] as bool?,
+  isShowcased: json['is_showcased'] as bool?,
+  ownershipPercentage: (json['ownership_percentage'] as num?)?.toDouble(),
 );
 
 Map<String, dynamic> _$BadgeToJson(Badge instance) => <String, dynamic>{
@@ -354,7 +376,19 @@ Map<String, dynamic> _$BadgeToJson(Badge instance) => <String, dynamic>{
   'name': instance.name,
   'timestamp': instance.timestamp,
   'type': instance.type,
-  'image_url': instance.imageUrl,
+  'image_url': ?instance.imageUrl,
+  'badge_url': ?instance.badgeUrl,
+  'image_small_url': ?instance.imageSmallUrl,
+  'image_medium_url': ?instance.imageMediumUrl,
+  'description': ?instance.description,
+  'category': ?instance.category?.toJson(),
+  'rarity': ?instance.rarity,
+  'award': ?instance.award?.toJson(),
+  'is_available': ?instance.isAvailable,
+  'is_owned': ?instance.isOwned,
+  'is_selected': ?instance.isSelected,
+  'is_showcased': ?instance.isShowcased,
+  'ownership_percentage': ?instance.ownershipPercentage,
 };
 
 WatchDynamics _$WatchDynamicsFromJson(Map<String, dynamic> json) =>
@@ -780,4 +814,155 @@ Map<String, dynamic> _$BookmarksExportResponseToJson(
 ) => <String, dynamic>{
   'code': instance.code,
   'releases': instance.releases?.map((e) => e.toJson()).toList(),
+};
+
+BadgeCategory _$BadgeCategoryFromJson(Map<String, dynamic> json) =>
+    BadgeCategory(
+      id: (json['id'] as num).toInt(),
+      title: json['title'] as String,
+    );
+
+Map<String, dynamic> _$BadgeCategoryToJson(BadgeCategory instance) =>
+    <String, dynamic>{'id': instance.id, 'title': instance.title};
+
+BadgeAward _$BadgeAwardFromJson(Map<String, dynamic> json) => BadgeAward(
+  trigger: json['trigger'] as String,
+  episodeName: json['episode_name'] as String?,
+  profileListStatus: (json['profile_list_status'] as num?)?.toInt(),
+  releaseId: (json['release_id'] as num?)?.toInt(),
+  releaseImage: json['release_image'] as String?,
+  releaseTitle: json['release_title'] as String?,
+);
+
+Map<String, dynamic> _$BadgeAwardToJson(BadgeAward instance) =>
+    <String, dynamic>{
+      'trigger': instance.trigger,
+      'episode_name': instance.episodeName,
+      'profile_list_status': instance.profileListStatus,
+      'release_id': instance.releaseId,
+      'release_image': instance.releaseImage,
+      'release_title': instance.releaseTitle,
+    };
+
+BadgeSection _$BadgeSectionFromJson(Map<String, dynamic> json) => BadgeSection(
+  id: (json['id'] as num).toInt(),
+  title: json['title'] as String,
+  count: (json['count'] as num).toInt(),
+  content: (json['content'] as List<dynamic>)
+      .map((e) => Badge.fromJson(e as Map<String, dynamic>))
+      .toList(),
+);
+
+Map<String, dynamic> _$BadgeSectionToJson(BadgeSection instance) =>
+    <String, dynamic>{
+      'id': instance.id,
+      'title': instance.title,
+      'count': instance.count,
+      'content': instance.content.map((e) => e.toJson()).toList(),
+    };
+
+AchievementPreview _$AchievementPreviewFromJson(Map<String, dynamic> json) =>
+    AchievementPreview(
+      name: json['name'] as String,
+      badge: Badge.fromJson(json['badge'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$AchievementPreviewToJson(AchievementPreview instance) =>
+    <String, dynamic>{'name': instance.name, 'badge': instance.badge.toJson()};
+
+ProfileBadgeSectionsResponse _$ProfileBadgeSectionsResponseFromJson(
+  Map<String, dynamic> json,
+) => ProfileBadgeSectionsResponse(
+  code: (json['code'] as num).toInt(),
+  profile: Profile.fromJson(json['profile'] as Map<String, dynamic>),
+  recent: (json['recent'] as List<dynamic>)
+      .map((e) => Badge.fromJson(e as Map<String, dynamic>))
+      .toList(),
+  sections: (json['sections'] as List<dynamic>)
+      .map((e) => BadgeSection.fromJson(e as Map<String, dynamic>))
+      .toList(),
+  showcased: (json['showcased'] as List<dynamic>)
+      .map((e) => Badge.fromJson(e as Map<String, dynamic>))
+      .toList(),
+  totalCount: (json['total_count'] as num).toInt(),
+);
+
+Map<String, dynamic> _$ProfileBadgeSectionsResponseToJson(
+  ProfileBadgeSectionsResponse instance,
+) => <String, dynamic>{
+  'code': instance.code,
+  'profile': instance.profile.toJson(),
+  'recent': instance.recent.map((e) => e.toJson()).toList(),
+  'sections': instance.sections.map((e) => e.toJson()).toList(),
+  'showcased': instance.showcased.map((e) => e.toJson()).toList(),
+  'total_count': instance.totalCount,
+};
+
+ProfileBadgePageableResponse _$ProfileBadgePageableResponseFromJson(
+  Map<String, dynamic> json,
+) => ProfileBadgePageableResponse(
+  code: (json['code'] as num).toInt(),
+  content: (json['content'] as List<dynamic>)
+      .map((e) => Badge.fromJson(e as Map<String, dynamic>))
+      .toList(),
+  totalCount: (json['total_count'] as num).toInt(),
+  totalPageCount: (json['total_page_count'] as num).toInt(),
+  currentPage: (json['current_page'] as num).toInt(),
+  profile: Profile.fromJson(json['profile'] as Map<String, dynamic>),
+);
+
+Map<String, dynamic> _$ProfileBadgePageableResponseToJson(
+  ProfileBadgePageableResponse instance,
+) => <String, dynamic>{
+  'code': instance.code,
+  'content': instance.content.map((e) => e.toJson()).toList(),
+  'total_count': instance.totalCount,
+  'total_page_count': instance.totalPageCount,
+  'current_page': instance.currentPage,
+  'profile': instance.profile.toJson(),
+};
+
+ProfileBadgeResponse _$ProfileBadgeResponseFromJson(
+  Map<String, dynamic> json,
+) => ProfileBadgeResponse(
+  code: (json['code'] as num).toInt(),
+  badge: Badge.fromJson(json['badge'] as Map<String, dynamic>),
+);
+
+Map<String, dynamic> _$ProfileBadgeResponseToJson(
+  ProfileBadgeResponse instance,
+) => <String, dynamic>{'code': instance.code, 'badge': instance.badge.toJson()};
+
+ProfileBadgeShowcaseResponse _$ProfileBadgeShowcaseResponseFromJson(
+  Map<String, dynamic> json,
+) => ProfileBadgeShowcaseResponse(code: (json['code'] as num).toInt());
+
+Map<String, dynamic> _$ProfileBadgeShowcaseResponseToJson(
+  ProfileBadgeShowcaseResponse instance,
+) => <String, dynamic>{'code': instance.code};
+
+ReorderBadgeShowcaseRequest _$ReorderBadgeShowcaseRequestFromJson(
+  Map<String, dynamic> json,
+) => ReorderBadgeShowcaseRequest(
+  ids: (json['ids'] as List<dynamic>).map((e) => (e as num).toInt()).toList(),
+);
+
+Map<String, dynamic> _$ReorderBadgeShowcaseRequestToJson(
+  ReorderBadgeShowcaseRequest instance,
+) => <String, dynamic>{'ids': instance.ids};
+
+AchievementPreviewResponse _$AchievementPreviewResponseFromJson(
+  Map<String, dynamic> json,
+) => AchievementPreviewResponse(
+  code: (json['code'] as num).toInt(),
+  achievement: AchievementPreview.fromJson(
+    json['achievement'] as Map<String, dynamic>,
+  ),
+);
+
+Map<String, dynamic> _$AchievementPreviewResponseToJson(
+  AchievementPreviewResponse instance,
+) => <String, dynamic>{
+  'code': instance.code,
+  'achievement': instance.achievement.toJson(),
 };

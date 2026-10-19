@@ -1,5 +1,7 @@
 library;
 
+export 'src/api/achievement_api.dart';
+
 export 'src/api/profile/profile_api.dart';
 export 'src/api/profile/profile_badge_api.dart';
 export 'src/api/profile/profile_block_list_api.dart';

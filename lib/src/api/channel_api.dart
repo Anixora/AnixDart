@@ -518,4 +518,23 @@ final class ChannelApi {
     );
     return response.data;
   }
+
+  Future<ApiResponse> delete(
+    int channelId, {
+    RequestOptions options = const RequestOptions(),
+  }) async {
+    final response = await _http.request<ApiResponse>(
+      HttpRequest(
+        method: HttpMethod.post,
+        path: '/channel/delete/$channelId',
+        auth: const AnixartAuth(required: true),
+        resultEnum: {
+          for (final e in ChannelDeleteResult.values) e.value: e.codeName,
+        },
+        options: options,
+      ),
+      decoder: (value) => ApiResponse.fromJson(value as Map<String, dynamic>),
+    );
+    return response.data;
+  }
 }

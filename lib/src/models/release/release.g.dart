@@ -112,6 +112,10 @@ Release _$ReleaseFromJson(Map<String, dynamic> json) => Release(
   yourVote: (json['your_vote'] as num?)?.toInt(),
   myVote: (json['my_vote'] as num?)?.toInt(),
   favoritesCount: (json['favorites_count'] as num).toInt(),
+  badgeCount: (json['badge_count'] as num?)?.toInt(),
+  badgesPreview: (json['badges_preview'] as List<dynamic>?)
+      ?.map((e) => Badge.fromJson(e as Map<String, dynamic>))
+      .toList(),
 );
 
 Map<String, dynamic> _$ReleaseToJson(Release instance) => <String, dynamic>{
@@ -199,6 +203,8 @@ Map<String, dynamic> _$ReleaseToJson(Release instance) => <String, dynamic>{
   'your_vote': instance.yourVote,
   'my_vote': instance.myVote,
   'favorites_count': instance.favoritesCount,
+  'badge_count': ?instance.badgeCount,
+  'badges_preview': ?instance.badgesPreview?.map((e) => e.toJson()).toList(),
 };
 
 EpisodeUpdate _$EpisodeUpdateFromJson(Map<String, dynamic> json) =>
